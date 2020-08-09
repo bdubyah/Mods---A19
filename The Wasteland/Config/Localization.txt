@@ -1,0 +1,259 @@
+Key,Source,Context,Changes,English
+drinkNukaCola,items,Food,New,Nuka Cola,,,,,
+drinkNukaColaDesc,items,Food,New,The wastelander's favorite beverage! Helps recover stamina quicker and restore a small amount of max health and stamina. The small trace of radiation also allow for a slight movement speed boost for a limited time!,,,,,
+drinkNukaCherry,items,Food,New,Nuka Cherry,,,,,
+drinkNukaCherryDesc,items,Food,New,Mmm...Nuka Cherry! Energizes you and helps you hit harder. Also restore a decent amount of max health and stamina. The traces of radiation also allow for a moderate movement speed boost for a limited time!,,,,,
+drinkNukaQuantum,items,Food,New,Nuka Quantum,,,,,
+drinkNukaQuantumDesc,items,Food,New,Nuka Quantum is totally safe! Boost yourself for a limited time but beware possible side effects!,,,,,
+drinkNukaQuartz,items,Food,New,Nuka Quartz,,,,,
+drinkNukaQuartzDesc,items,Food,New,Doesn't look too good but beggars can't be choosers! Damage resistance is increased and health will regenerate but it does make you queasy!,,,,,
+drinkSunsetSarsaparilla,items,Food,New,Sunset Sarsaparilla,,,,,
+drinkSunsetSarsaparillaDesc,items,Food,New,Probably not the freshest but it's still better than water. Helps recover stamina quicker and restore a small amount of health and stamina.,,,,,
+drinkSunsetSarsaparillaStar,items,Food,New,Sunset Sarsaparilla,,,,,
+drinkSunsetSarsaparillaStarDesc,items,Food,New,Probably not the freshest but it's still better than water. Helps recover stamina quicker and restore a small amount of health and stamina.,,,,,
+resourceNukaBaseIngredients,items,Item,New,Nuka Base Ingredients,,,,,
+resourceNukaBaseIngredientsDesc,items,Item,New,Base ingredients used to brew different Nuka flavors.,,,,,
+bookNukaRecipes,items,Item,New,Nuka Recipes,,,,,
+bookNukaRecipesDesc,items,Item,New,This will teach you how to brew multiple flavors of Nuka Cola!,,,,,
+thrownNukaNade,items,Gun,New,Nuka Nade (Ammo),,,,,
+thrownNukaNadeDesc,items,Gun,New,Too scared to drink that Quantum? May as well make a boom can out of it then!,,,,,
+
+NukaColaLight,blocks,blocks,New,Nuka Cola
+NukaQuantumLight,blocks,blocks,New,Nuka Quantum
+NukaQuartzLight,blocks,blocks,New,Nuka Quartz
+NukaCherryLight,blocks,blocks,New,Nuka Cherry
+NukaTruck,blocks,blocks,New,Nuka Truck
+
+cntNukaCrateS1,blocks,Container,New,Sealed Nuka Crate
+cntNukaCrateS2,blocks,Container,New,Sealed Nuka Crate
+cntNukaCrate1,blocks,Container,New,Nuka Crate
+cntNukaCrate2,blocks,Container,New,Nuka Crate
+cntNukaSafeSecure,blocks,Container,New,Secure Nuka Safe
+cntNukaSafeSecureDesc,blocks,Container,New,Nuka Safe.
+cntNukaSafe,blocks,Container,New,Nuka Safe
+cntNukaSafeDesc,blocks,Container,New,Nuka Safe.
+cntNukaVendingMachineBroken,blocks,Container,New,Broken Nuka Vending Machine
+cntNukaVendingMachineBrokenDesc,blocks,Container,New,Broken Nuka Vending Machine.
+cntNukaVendingMachine,blocks,Container,New,Nuka Vending Machine
+cntNukaVendingMachineDesc,blocks,Container,New,Working Nuka Vending Machine.
+cntSSVendingMachineBroken,blocks,Container,New,Broken Sunset Sarsaparilla Vending Machine
+cntSSVendingMachineBrokenDesc,blocks,Container,New,Broken Sunset Sarsaparilla Vending Machine.
+cntSSVendingMachine,blocks,Container,New,Sunset Sarsaparilla Vending Machine
+cntSSVendingMachineDesc,blocks,Container,New,Working Sunset Sarsaparilla Vending Machine.
+
+Terminal,blocks,Container,New,Terminal
+TerminalDesc,blocks,Container,New,Old terminal that surprisingly still works.
+Terminaloff,blocks,Container,New,Broken Terminal
+TerminaloffDesc,blocks,Container,New,Old terminal that no longer works.
+Telephone,blocks,Container,New,Old Telephone
+TelephoneDesc,blocks,Container,New,"Old telephone. Doesn't really matter if it works now, does it?"
+
+mineBottlecapMine,items,Gun,New,Bottlecap Mine (Ammo),,,,,
+mineBottlecapMineDesc,items,Item,New,Homemade mine using an old lunchbox and some bottlecaps.,,,,,
+mineBottlecapMine,blocks,blocks,New,Bottlecap Mine
+cntLunchbox,blocks,Container,New,Old Lunchbox
+cntLunchboxDesc,blocks,Container,New,Some old lunchbox. Might be useful for something...
+cntLunchbox,items,Item,New,Old Lunchbox,,,,,
+cntLunchboxDesc,items,Item,New,Some old lunchbox. Might be useful for something...
+resourceBottlecaps,items,Item,New,Bottlecaps,,,,,
+resourceBottlecapsDesc,items,Item,New,Bottlecaps left over from various Nuka Colas. Might be useful for something...,,,,,
+resourceBottlecapStar,items,Item,New,Sunset Sarsaparilla Star Bottlecap,,,,,
+resourceBottlecapStarDesc,items,Item,New,Very rare Sunset Sarsaparilla cap. Probably worth some coin or collect 100 and craft a reward...,,,,,
+
+
+
+gun10mmPistol,items,Gun,New,10mm Pistol,,,,,
+gun10mmPistolDesc,items,Gun,New,Civilian pistol. Slightly stronger than regular 9mm.,,,,,
+gun10mmRev,items,Gun,New,10mm Revolver,,,,,
+gun10mmRevDesc,items,Gun,New,Civilian revolver. Slightly stronger than regular 9mm. 6 round capacity with a bit more stopping power than the 10mm Pistol.,,,,,
+gun10mmSMG,items,Gun,New,10mm SMG,,,,,
+gun10mmSMGDesc,items,Gun,New,Civilian submachine gun. Slightly stronger than regular 9mm. High capacity magazine.,,,,,
+gunLaserPistol,items,Gun,New,Laser Pistol,,,,,
+gunLaserPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunLaserRifle,items,Gun,New,Laser Rifle,,,,,
+gunLaserRifleDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunPlasmaPistol,items,Gun,New,Plasma Pistol,,,,,
+gunPlasmaPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunPlasmaRifle,items,Gun,New,Plasma Rifle,,,,,
+gunPlasmaRifleDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunAlienBlaster,items,Gun,New,Alien Blaster,,,,,
+gunAlienBlasterDesc,items,Gun,New,"Not exactly sure how it works, but it has a trigger and it kills things...",,,,,
+gunFlareGun,items,Gun,New,Flare Gun,,,,,
+gunFlareGunDesc,items,Gun,New,Emergency flare gun. Can be used to show your location to others or to simply provide some light.,,,,,
+gunPipePistol,items,Gun,New,Pipe Pistol,,,,,
+gunPipePistolDesc,items,Gun,New,Weak homemade pistol. Uses 9mm. Low durability. Can break and disappear!,,,,,
+gunPipeRifle,items,Gun,New,Pipe Rifle,,,,,
+gunPipeRifleDesc,items,Gun,New,Weak homemade rifle. Uses 9mm. Low durability. Can break and disappear!,,,,,
+gunPipeShotgunSMSB,items,Gun,New,Short Pipe Shotgun,,,,,
+gunPipeShotgunSMSBDesc,items,Gun,New,Homemade shotgun. A bit unwieldy. Short range and low durability. Can break and disappear!,,,,,
+gunPipeShotgunEMSB,items,Gun,New,Short Pipe Shotgun (Extended Mag),,,,,
+gunPipeShotgunEMSBDesc,items,Gun,New,Homemade shotgun. A bit unwieldy. Short range and low durability. Custom cylinder mag allows for 4 shots before reloading. Can break and disappear!,,,,,
+gunTripleBarrelShotgun,items,Gun,New,Triple Barrel Shotgun,,,,,
+gunTripleBarrelShotgunDesc,items,Gun,New,Custom-made triple barrel shotgun.,,,,,
+gunCombatShotgun,items,Gun,New,Combat Shotgun,,,,,
+gunCombatShotgunDesc,items,Gun,New,Military tier shotgun.,,,,,
+gunHeavySniper,items,Gun,New,Heavy Sniper,,,,,
+gunHeavySniperDesc,items,Gun,New,Long range sniper rifle.,,,,,
+gunLAR,items,Gun,New,Lever Action Rifle,,,,,
+gunLARDesc,items,Gun,New,.44 Magnum and lever action. What more could you want?,,,,,
+gunRailwayRifle,items,Gun,New,Railway Rifle,,,,,
+gunRailwayRifleDesc,items,Gun,New,Custom made rifle that launches rail spikes. Fairly low durability due to the force of firing it.,,,,,
+gunFatMan,items,Gun,New,Fat Man,,,,,
+gunFatManDesc,items,Gun,New,Left over military launcher that makes use of any mini nukes you can find. Can maybe use some other round object as ammo if you find the right one...,,,,,
+gunIncinerator,items,Gun,New,Incinerator,,,,,
+gunIncineratorDesc,items,Gun,New,Modified flamethrower. Semi-auto molotovs!,,,,,
+
+ammoNuke,items,Gun,New,Nuke (Ammo),,,,,
+ammoNukeDesc,items,Gun,New,These things caused all of this so surely they can fix it. Right? Will wreck everything so handle with caution. Not advised for indoor use.,,,,,
+ammoNukeAP,items,Gun,New,Nuke AP (Ammo),,,,,
+ammoNukeAPDesc,items,Gun,New,Anti-Personnel version crafted from a scavenged mini nuke. Much lower block damage. Lower enitity damage and slightly decreased AOE.,,,,,
+ammoBowlingball,items,Gun,New,Bowling Ball (Ammo),,,,,
+ammoBowlingballDesc,items,Gun,New,Can't find any nukes to use with your shiny Fat Man? Use these! *Not PBA regulation*,,,,,
+ammoRailSpike,items,Gun,New,Rail Spike (Ammo),,,,,
+ammoRailSpikeDesc,items,Gun,New,Normal puny bullets not stopping those pesky zeds? Try these!,,,,,
+ammoIncinerator,items,Gun,New,Incinerator Fuel (Ammo),,,,,
+ammoIncineratorDesc,items,Gun,New,Ammo used by the Incinerator.,,,,,
+ammoFlareGun,items,Gun,New,Flare (Ammo),,,,,
+ammoFlareGunDesc,items,Gun,New,Ammo for the Flare Gun.,,,,,
+ammo10mmBullet,items,Gun,New,10mm (Ammo),,,,,
+ammo10mmBulletDesc,items,Gun,New,Regular 10mm round. Marginally better than regular 9mm rounds.,,,,,
+ammo10mmBulletHP,items,Gun,New,HP 10mm (Ammo),,,,,
+ammo10mmBulletHPDesc,items,Gun,New,HP 10mm round. Best against soft targets. Marginally better than HP 9mm rounds.,,,,,
+ammo10mmBulletAP,items,Gun,New,AP 10mm (Ammo),,,,,
+ammo10mmBulletAPDesc,items,Gun,New,AP 10mm round. Best against armored targets. Marginally better than AP 9mm rounds.,,,,,
+ammoAB,items,Gun,New,Alien Energy Cell (Ammo),,,,,
+ammoABDesc,items,Gun,New,Ammo used by the Alien Blaster.,,,,,
+ammoEC,items,Gun,New,Energy Cell (Ammo),,,,,
+ammoECDesc,items,Gun,New,Ammo used by the Laser Pistol.,,,,,
+ammoMFC,items,Gun,New,Microfusion Cell (Ammo),,,,,
+ammoMFCDesc,items,Gun,New,Ammo used by the Laser Rifle.,,,,,
+ammoPEC,items,Gun,New,Plasma Energy Cell (Ammo),,,,,
+ammoPECDesc,items,Gun,New,Ammo used by the Plasma Pistol.,,,,,
+ammoPMFC,items,Gun,New,Plasma Microfusion Cell (Ammo),,,,,
+ammoPMFCDesc,items,Gun,New,Ammo used by the Plasma Rifle.,,,,,
+ammoCMFC,items,Gun,New,Cryo Cell (Ammo),,,,,
+ammoCMFCDesc,items,Gun,New,Ammo used by the Cryolator.,,,,,
+thrownCryoGrenade,items,Gun,New,Cryo Grenade (Ammo),,,,,
+thrownCryoGrenadeDesc,items,Gun,New,"Experimental cryogenic grenade. Not as much upfront damage as a normal grenade, but makes up for it with its slowing and weakness effects. Short fuse.",,,,,
+thrownNukaGrenade,items,Gun,New,Nuka Grenade (Ammo),,,,,
+thrownNukaGrenadeDesc,items,Gun,New,Experimental Nuka grenade. Short fuse. Highly effective against organic matter...,,,,,
+
+modFlashlight,item_modifiers,mod,New,Flashlight (Mod),,,,,
+modFlashlightDesc,item_modifiers,mod,New,Homemade flashlight attachment.,,,,,
+modOilFilterSuppressor,item_modifiers,mod,New,Oil Filter Suppressor,,,,,
+modOilFilterSuppressorDesc,item_modifiers,mod,New,Might make it hard to aim but at least they shouldn't hear all those misses...,,,,,
+modLargeMag,item_modifiers,mod,New,Extended Mag (Pipe Guns),,,,,
+modLargeMagDesc,item_modifiers,mod,New,Double the ammo capacity of your pipe guns.,,,,,
+modLongRifleBarrel,item_modifiers,mod,New,Long Rifle Barrel (Pipe Rifle),,,,,
+modLongRifleBarrelDesc,item_modifiers,mod,New,Can be installed on a Pipe Rifle to increase range and damage at a cost to handling.,,,,,
+modShotgunCylinderMag,item_modifiers,mod,New,Shotgun Cylinder Mag,,,,,
+modShotgunCylinderMagDesc,item_modifiers,mod,New,Custom made 4 round cylinder for the Pipe Shotgun.,,,,,
+modLongShotgunBarrel,item_modifiers,mod,New,Long Shotgun Barrel(Pipe Shotgun),,,,,
+modLongShotgunBarrelDesc,item_modifiers,mod,New,Can be installed on a Pipe Shotgun to increase range at a small cost to handling.,,,,,
+modOverchargedCapacitor,item_modifiers,mod,New,Overcharged Capacitor,,,,,
+modOverchargedCapacitorDesc,item_modifiers,mod,New,Can be installed on a Laser weapon to increase magazine size and damage. Increases weapon degradation.,,,,,
+modLaserSplitter,item_modifiers,mod,New,Laser Beam Splitter,,,,,
+modLaserSplitterDesc,item_modifiers,mod,New,Can be installed on a Laser weapon. Splits the beam, firing 2 ammo cells at once. Increases weapon degradation.,,,,,
+modLaserFocuser,item_modifiers,mod,New,Laser Beam Focuser,,,,,
+modLaserFocuserDesc,item_modifiers,mod,New,Can be installed on a Laser weapon to increase range and damage. Increases weapon degradation.,,,,,
+modLaserScope,item_modifiers,mod,New,Laser Rifle Scope,,,,,
+modLaserScopeDesc,item_modifiers,mod,New,Can be installed on a Laser Rifle to add greater sight range. Works best with a Focuser.,,,,,
+
+
+gunPipePistol_Legendary,items,Gun,New,[FFC300]Silent But Deadly[-],,,,,
+gunPipePistol_LegendaryDesc,items,Gun,New,Unique variant of the Pipe Pistol. Won't disappear upon breaking. Better stats and an included silencer for increased stealth!,,,,,
+gunPipeShotgunSMSB_Legendary,items,Gun,New,[FFC300]Firestarter[-],,,,,
+gunPipeShotgunSMSB_LegendaryDesc,items,Gun,New,Unique variant of the Pipe Shotgun. Won't disappear upon breaking. Better stats and makes every round act like Dragon's Breath!,,,,,
+gunPipeRifle_Legendary,items,Gun,New,[FFC300]Long Distance[-],,,,,
+gunPipeRifle_LegendaryDesc,items,Gun,New,Unique variant of the Pipe Rifle. Won't disappear upon breaking. Hits harder and has a scope!,,,,,
+gunLAR_Legendary,items,Gun,New,[FFC300]Lincoln's Repeater[-],,,,,
+gunLAR_LegendaryDesc,items,Gun,New,Unique variant of the Lever Action Rifle. Hits harder and can penetrate multiple targets as well as dismember them. Has a variable zoom on the iron sights.,,,,,
+gunLeFusilTerribles,items,Gun,New,[FFC300]Le Fusil Terribles[-],,,,,
+gunLeFusilTerriblesDesc,items,Gun,New,Military tier shotgun.,,,,,
+gunHeavySniperGobi,items,Gun,New,[FFC300]Gobi Heavy Sniper[-],,,,,
+gunHeavySniperGobiDesc,items,Gun,New,Modified long range sniper rifle.,,,,,
+gunMaria,items,Gun,New,[FFC300]Maria[-],,,,,
+gunMariaDesc,items,Gun,New,Unique variant of the 9mm pistol. Hits harder and can dismember targets.,,,,,
+gunPewPew,items,Gun,New,[FFC300]Pew Pew[-],,,,,
+gunPewPewDesc,items,Gun,New,Unique variant of the laser pistol. Some homemade tweaks have increased the damage output.,,,,,
+gunAERPrototype,items,Gun,New,[FFC300]AER15 Prototype[-],,,,,
+gunAERPrototypeDesc,items,Gun,New,Unique prototype variant of the laser rifle. Higher damage per beam and shoots 5 rounds in one trigger pull. Hip fire behaves more like a shotgun while aimed fire allows heavy damage to a single target.,,,,,
+gunCryolator,items,Gun,New,[FFC300]Cryolator[-],,,,,
+gunCryolatorDesc,items,Gun,New,Unique military prototype. Able to slow enemies when hit and has a chance to completely freeze targets.,,,,,
+
+gun10mmPistolSchematic,items,GunRifle,New,10mm Pistol Schematic
+gun10mmPistolSchematicDesc,items,GunRifle,New,Teaches you to craft the 10mm Pistol. Scales with the Gunslinger perk.
+gun10mmRevSchematic,items,GunRifle,New,10mm Revolver Schematic
+gun10mmRevSchematicDesc,items,GunRifle,New,Teaches you to craft the 10mm Revolver. Scales with the Gunslinger perk.
+gun10mmSMGSchematic,items,GunRifle,New,10mm SMG Schematic
+gun10mmSMGSchematicDesc,items,GunRifle,New,Teaches you to craft the 10mm SMG. Scales with the Gunslinger perk.
+gunLARSchematic,items,GunRifle,New,Lever Action Rifle Schematic
+gunLARSchematicDesc,items,GunRifle,New,Teaches you to craft the Lever Action Rifle. Scales with the Deadeye perk.
+gunHeavySniperSchematic,items,GunRifle,New,Heavy Sniper Rifle Schematic
+gunHeavySniperSchematicDesc,items,GunRifle,New,Teaches you to craft the Heavy Sniper Rifle. Scales with the Deadeye perk.
+gunRailwayRifleSchematic,items,GunRifle,New,Railway Rifle Schematic
+gunRailwayRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Railway Rifle. Scales with the Advanced Engineering perk.
+gunIncineratorSchematic,items,GunRocket,New,Incinerator Schematic
+gunIncineratorSchematicDesc,items,GunRocket,New,Teaches you to craft the Incinerator. Scales with the Demolitions Expert perk.
+gunTripleBarrelShotgunSchematic,items,GunShotgun,New,Triple Barrel Shotgun Schematic
+gunTripleBarrelShotgunSchematicDesc,items,GunShotgun,New,Teaches you to craft the Triple Barrel Shotgun. Scales with the Boomstick perk.
+gunCombatShotgunSchematic,items,GunShotgun,New,Combat Shotgun Schematic
+gunCombatShotgunSchematicDesc,items,GunShotgun,New,Teaches you to craft the Combat Shotgun. Scales with the Boomstick perk.
+gunLaserPistolSchematic,items,GunPistol,New,Laser Pistol Schematic
+gunLaserPistolSchematicDesc,items,GunPistol,New,Teaches you to craft the Laser Pistol. Scales with the Advanced Engineering perk.
+gunLaserRifleSchematic,items,GunRifle,New,Laser Rifle Schematic
+gunLaserRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Laser Rifle. Scales with the Advanced Engineering perk.
+gunPlasmaPistolSchematic,items,GunPistol,New,Plasma Pistol Schematic
+gunPlasmaPistolSchematicDesc,items,GunPistol,New,Teaches you to craft the Plasma Pistol. Scales with the Advanced Engineering perk.
+gunPlasmaRifleSchematic,items,GunRifle,New,Plasma Rifle Schematic
+gunPlasmaRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Plasma Rifle. Scales with the Advanced Engineering perk.
+
+modOverchargedCapacitorSchematic,item_modifiers,mod,New,Overcharged Capacitor Schematic
+modLaserSplitterSchematic,item_modifiers,mod,New,Laser Splitter Schematic
+modLaserFocuserSchematic,item_modifiers,mod,New,Laser Focuser Schematic
+modLaserScopeSchematic,item_modifiers,mod,New,Laser Rifle Scope Schematic
+
+meleeBanjo,items,Melee,KgNone,Banjo,,,,,
+meleeBanjoDesc,items,Melee,KgNone,A melee weapon. A good choice when trying to win Zombie Kill of the Week!,,,,,
+meleeBaton,items,Melee,KgNone,Baton,,,,,
+meleeBatonDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
+meleeCleaver,items,Melee,KgNone,Cleaver,,,,,
+meleeCleaverDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
+meleeCrowbar,items,Melee,KgNone,Crowbar,,,,,
+meleeCrowbarDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
+meleeCuestick,items,Melee,KgNone,Cue Stick,,,,,
+meleeCuestickDesc,items,Melee,KgNone,"A pool cue. Not the most effective, but it might keep you alive.",,,,,
+meleeNailBoard,items,Melee,KgNone,Nail Board,,,,,
+meleeNailBoardDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
+meleePipeHammer,items,Melee,KgNone,Pipe Hammer,,,,,
+meleePipeHammerDesc,items,Melee,KgNone,A makeshift melee weapon.,,,,,
+meleePipeWrench,items,Melee,KgNone,Pipe Wrench,,,,,
+meleePipeWrenchDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
+meleeRebarClub,items,Melee,KgNone,Rebar Club,,,,,
+meleeRebarClubDesc,items,Melee,KgNone,A heavy melee weapon. Scavenged from the rubble out in the wasteland...,,,,,
+meleeRollingPin,items,Melee,KgNone,Rolling Pin,,,,,
+meleeRollingPinDesc,items,Melee,KgNone,A used kitchen utensil. Make Grandma proud!,,,,,
+meleeTireIron,items,Melee,KgNone,Tire Iron,,,,,
+meleeTireIronDesc,items,Melee,KgNone,"Heavy and metal? What else do you need?".,,,,,
+meleeSupaSledge,items,Melee,KgNone,Supa Sledge,,,,,
+meleeSupaSledgeDesc,items,Melee,KgNone,"Modified sledgehammer. Heavy and slow, but very powerful.",,,,,
+
+meleeDukeSledge,items,Melee,KgNone,[FFC300]Duke's Judgement[-],,,,,
+meleeDukeSledgeDesc,items,Melee,KgNone,A powerful supa sledge.,,,,,
+meleeMBC,items,Melee,KgNone,[FFC300]Mad Bean's Club[-],,,,,
+meleeMBCDesc,items,Melee,KgNone,A cobbled together melee weapon. Scavenged from the wasteland. Sure would hate to meet the maniac who made this thing...,,,,,
+meleeNavSlugger,items,Melee,KgNone,[FFC300]Navezgane Slugger[-],,,,,
+meleeNavSluggerDesc,items,Melee,KgNone,Send those zombie heads out of the park!,,,,,
+meleeOpenBreaker,items,Melee,KgNone,[FFC300]Open Breaker[-],,,,,
+meleeOpenBreakerDesc,items,Melee,KgNone,"Zombie killing is a 24/7 business. And cousin, business is a-boomin'!",,,,,
+
+cntUFO,blocks,Container,New,Crashed UFO
+cntUFODesc,blocks,Container,New,UFO block
+
+questPewPew,items,Quest,New,Sunset Sarsaparilla flier
+questPewPewDesc,items,Quest,New,A flier for the Star Bottlecap giveaway. Read it to learn where to go to claim your prize!
+questoldMap,items,Quest,New,Old Map
+questoldMapDesc,items,Quest,New,An old map the trader gave me to show where the fool's stash should be. Read it to learn where the prize should be.
+questLetter,items,Quest,New,Old Letter,,,,,
+questLetterDesc,items,Quest,New,Some old letter that didn't make it to its intended target.,,,,,
+cntPewPewLoot,blocks,Container,New,Hidden Stash

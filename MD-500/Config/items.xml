@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleMD500chassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MD500chassis"/>
+			<property name="DescriptionKey" value="vehicleMD500chassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMD500accessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MD500accessories"/>
+			<property name="DescriptionKey" value="vehicleMD500accessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMD500placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="MD500"/>
+			<property name="DescriptionKey" value="vehicleMD500placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MD500.unity3d?MD500heli.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMD500"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

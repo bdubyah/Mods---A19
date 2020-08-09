@@ -1,0 +1,28 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleUAZ452chassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="UAZchassis"/>
+			<property name="DescriptionKey" value="vehicleUAZ452chassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+				
+		<item name="vehicleUAZ452placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="UAZ"/>
+			<property name="DescriptionKey" value="vehicleUAZ452placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/UAZ1.unity3d?UAZ"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleUAZ452"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+					
+	 </append>
+ </configs>

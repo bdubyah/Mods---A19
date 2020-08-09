@@ -1,0 +1,24 @@
+<configs>
+
+	<insertAfter xpath="/lootcontainers/lootcontainer[@id='124']">
+
+		<lootcontainer id="932" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+		
+	</insertAfter>
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+		<lootgroup name="BRDM2group">
+			<item name="vehicleBRDM2chassis"/>
+			<item name="vehicleBRDM2accessories"/>
+		</lootgroup>
+	
+	</insertBefore>
+
+
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="BRDM2group" loot_prob_template="ProbT3"/>
+	</append>
+
+</configs>

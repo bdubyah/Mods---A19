@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleSHERPchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="SHERPchassis"/>
+			<property name="DescriptionKey" value="vehicleSHERPchassisDesc"/>
+			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleSHERPaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="SHERPaccessories"/>
+			<property name="DescriptionKey" value="vehicleSHERPaccessoriesDesc"/>
+			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleSHERPplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="SHERP"/>
+			<property name="DescriptionKey" value="vehicleSHERPplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/SHERP1.unity3d?SHERP.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleSHERP"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

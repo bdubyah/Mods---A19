@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleMRAPparts">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MRAPparts"/>
+			<property name="DescriptionKey" value="vehicleMRAPpartsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMRAPaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MRAPaccessories"/>
+			<property name="DescriptionKey" value="vehicleMRAPaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMRAPplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="MRAPrusty"/>
+			<property name="DescriptionKey" value="vehicleMRAPplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MRAP1.unity3d?MRAPrusty.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMRAP"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleMRAP2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="MRAP"/>
+			<property name="DescriptionKey" value="vehicleMRAPplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MRAP1.unity3d?MRAPclean.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMRAP2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

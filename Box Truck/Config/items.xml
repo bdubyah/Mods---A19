@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+	
+		<item name="vehicleBoxTruckchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="BoxTruckchassis"/>
+			<property name="DescriptionKey" value="vehicleBoxTruckchassisDesc"/>
+			<property name="EconomicValue" value="15000"/>
+		</item>
+		
+		<item name="vehicleBoxTruckbody">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="BoxTruckbody"/>
+			<property name="DescriptionKey" value="vehicleBoxTruckbodyDesc"/>
+			<property name="EconomicValue" value="15000"/>
+		</item>
+
+		<item name="vehicleBoxTruckPlainplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="BoxTruckplain"/>
+			<property name="DescriptionKey" value="vehicleBoxTruckPlainplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BoxTruck.unity3d?BoxTruckplain.prefab"/>
+			<property name="EconomicValue" value="30000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBoxTruckPlain"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleBoxTruckHostessplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="BoxTruckhostess"/>
+			<property name="DescriptionKey" value="vehicleBoxTruckHostessplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BoxTruck.unity3d?BoxTruckhostess.prefab"/>
+			<property name="EconomicValue" value="30000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBoxTruckHostess"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+					
+	 </append>
+ </configs>

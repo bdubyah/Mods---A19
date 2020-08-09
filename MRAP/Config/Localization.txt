@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleMRAP,vehicles,vehicle,new,MRAP,,,,,
+vehicleMRAP2,vehicles,vehicle,new,MRAP,,,,,
+vehicleMRAPplaceable,vehicles,item,EnChanged,MRAP,,,,,
+vehicleMRAP2placeableDesc,vehicles,item,EnChanged,A MRAP military vehicle. What else could you want?,,,,,
+vehicleMRAP2placeable,vehicles,item,EnChanged,MRAP,,,,,
+vehicleMRAPplaceableDesc,vehicles,item,EnChanged,A MRAP military vehicle. What else could you want?,,,,,
+vehicleMRAPaccessories,items,Part,EnChanged,MRAP Accessories,,,,,
+vehicleMRAPaccessoriesDesc,items,Part,EnChanged,Accessories needed to craft the MRAP.,,,,,
+vehicleMRAPparts,items,Part,EnChanged,MRAP Parts,,,,,
+vehicleMRAPpartsDesc,items,Part,EnChanged,Parts needed to craft the MRAP.,,,,,

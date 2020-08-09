@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehiclePickupchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Pickupchassis"/>
+			<property name="DescriptionKey" value="vehiclePickupchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehiclePickupaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Pickupaccessories"/>
+			<property name="DescriptionKey" value="vehiclePickupaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehiclePickupplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Pickup"/>
+			<property name="DescriptionKey" value="vehiclePickupplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/pup1.unity3d?Pickup"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehiclePickup"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+							
+	 </append>
+ </configs>

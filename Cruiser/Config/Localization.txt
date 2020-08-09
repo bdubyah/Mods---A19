@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleCruiser,vehicles,vehicle,new,Cruiser,,,,,
+vehicleCruiserplaceable,vehicles,item,EnChanged,Cruiser,,,,,
+vehicleCruiserplaceableDesc,vehicles,item,EnChanged,A custom Cruiser. Sweet!,,,,,
+vehicleCruiser2,vehicles,vehicle,new,Cruiser,,,,,
+vehicleCruiser2placeable,vehicles,item,EnChanged,Cruiser Faded,,,,,
+vehicleCruiser2placeableDesc,vehicles,item,EnChanged,A custom Cruiser. Sweet!,,,,,
+vehicleCruiserChassis,items,Part,EnChanged,Cruiser Chassis,,,,,
+vehicleCruiserChassisDesc,items,Part,EnChanged,The beginning of something...awesome!,,,,,
+vehicleCruiserbars,items,Part,EnChanged,Cruiser Handlebars,,,,,
+vehicleCruiserbarsDesc,items,Part,EnChanged,You might need these.,,,,,

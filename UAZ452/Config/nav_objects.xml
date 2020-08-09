@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/nav_object_classes">
+
+		<nav_object_class name="UAZ452" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="UAZ452UIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="UAZ452UIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+
+	</append>
+</configs>

@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleMarauder,vehicles,vehicle,new,Marauder,,,,,
+vehicleMarauderplaceable,vehicles,item,EnChanged,Marauder,,,,,
+vehicleMarauderplaceableDesc,vehicles,item,EnChanged,Those zombies will be jealous of this ride!,,,,,
+vehicleMarauderblack,vehicles,vehicle,new,Marauder,,,,,
+vehicleMarauderblackplaceable,vehicles,item,EnChanged,Marauder,,,,,
+vehicleMarauderblackplaceableDesc,vehicles,item,EnChanged,Those zombies will be jealous of this ride!,,,,,
+vehicleMarauderchassis,items,Part,EnChanged,Marauder Chassis,,,,,
+vehicleMarauderchassisDesc,items,Part,EnChanged,Parts needed to craft the Marauder. Grease Monkey level 5 required.,,,,,
+vehicleMarauderaccessories,items,Part,EnChanged,Marauder Accessories,,,,,
+vehicleMarauderaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the Marauder.,,,,,

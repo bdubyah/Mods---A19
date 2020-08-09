@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleGNXchassis,items,Part,EnChanged,GNX Chassis,,,,,
+vehicleGNXchassisDesc,items,Part,EnChanged,Parts needed to craft the GNX. Grease Monkey level 4 required.,,,,,
+vehicleGNXaccessories,items,Part,EnChanged,GNX Accessories,,,,,
+vehicleGNXaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the GNX.,,,,,
+vehicleGNXBlack,vehicles,vehicle,new,GNX Black,,,,,
+vehicleGNXBlackplaceable,vehicles,item,EnChanged,GNX Black,,,,,
+vehicleGNXBlackplaceableDesc,vehicles,item,EnChanged,Cruise the wasteland in style!,,,,,
+vehicleGNXRed,vehicles,vehicle,new,GNX Red,,,,,
+vehicleGNXRedplaceable,vehicles,item,EnChanged,GNX Red,,,,,
+vehicleGNXRedplaceableDesc,vehicles,item,EnChanged,Cruise the wasteland in style!,,,,,

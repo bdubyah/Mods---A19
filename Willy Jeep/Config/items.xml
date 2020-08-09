@@ -1,0 +1,35 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleWillyJeepplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Willy_Jeep"/>
+			<property name="DescriptionKey" value="vehicleWillyJeepplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/Willy_Jeep.unity3d?Willy_Jeep.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleWillyJeep"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleWillyJeepToplessplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Willy_Jeep_Topless"/>
+			<property name="DescriptionKey" value="vehicleWillyJeepToplessplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/Willy_Jeeptopless.unity3d?Willy_Jeeptopless.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleWillyJeepTopless"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+					
+	 </append>
+ </configs>

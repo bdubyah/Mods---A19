@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleRat,vehicles,vehicle,new,Rat,,,,,
+vehicleRatplaceable,vehicles,item,EnChanged,Rat,,,,,
+vehicleRatplaceableDesc,vehicles,item,EnChanged,A custom Rat bike.,,,,,
+vehicleRat2,vehicles,vehicle,new,Rat,,,,,
+vehicleRat2placeable,vehicles,item,EnChanged,Rat Red,,,,,
+vehicleRat2placeableDesc,vehicles,item,EnChanged,A custom Rat bike.,,,,,
+vehicleRatChassis,items,Part,EnChanged,Rat Chassis,,,,,
+vehicleRatChassisDesc,items,Part,EnChanged,The beginning of something...awesome!,,,,,
+vehicleRatbars,items,Part,EnChanged,Rat Handlebars,,,,,
+vehicleRatbarsDesc,items,Part,EnChanged,You might need these.,,,,,

@@ -1,0 +1,29 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="vehicleMD500chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleMD500accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleMD500placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="vehicleMD500accessories" count="1"/>
+			<ingredient name="vehicleMD500chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+								
+	</append>
+ </configs>

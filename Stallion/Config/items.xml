@@ -1,0 +1,79 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleStallionchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Schassis"/>
+			<property name="DescriptionKey" value="vehicleStallionchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleStallionaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Saccessories"/>
+			<property name="DescriptionKey" value="vehicleStallionaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleStalliongreenplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Sgreen"/>
+			<property name="DescriptionKey" value="vehicleStalliongreenplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stalliongreen.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleStalliongreen"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleStallionredplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Sred"/>
+			<property name="DescriptionKey" value="vehicleStallionredplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stallionred.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleStallionred"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleStallionblueplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Sblue"/>
+			<property name="DescriptionKey" value="vehicleStallionblueplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stallionblue.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleStallionblue"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleStallionwhiteplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Swhite"/>
+			<property name="DescriptionKey" value="vehicleStallionwhiteplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stallionwhite.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleStallionwhite"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

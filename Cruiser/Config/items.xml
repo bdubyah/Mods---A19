@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleCruiserChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Cruiserchassis"/>
+			<property name="DescriptionKey" value="vehicleCruiserChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleCruiserbars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Cruiserbars"/>
+			<property name="DescriptionKey" value="vehicleCruiserbarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleCruiserplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Cruiser"/>
+			<property name="DescriptionKey" value="vehicleCruiserplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Cruiser1.unity3d?Cruiser.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleCruiser"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleCruiser2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Cruiser2"/>
+			<property name="DescriptionKey" value="vehicleCruiser2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Cruiser1.unity3d?Cruiser2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleCruiser2"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

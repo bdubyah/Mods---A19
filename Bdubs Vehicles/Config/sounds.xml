@@ -1,0 +1,41 @@
+<configs>
+
+	<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/MaxRepeatRate/@value">10</set>
+	<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/Noise[@ID='0']/@noise">10</set>
+
+	<append xpath="/Sounds">
+
+			<SoundDataNode name="MD500_start"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+				<AudioClip ClipName="#@modfolder:Resources/MD500sounds.unity3d?heli_start"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+			<SoundDataNode name="MD500_stop"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+				<AudioClip ClipName="#@modfolder:Resources/MD500sounds.unity3d?heli_stop"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+			<SoundDataNode name="MD500_flying"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<AudioClip ClipName="#@modfolder:Resources/MD500sounds.unity3d?heli_flying" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+			<SoundDataNode name="UH60_start"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+				<AudioClip ClipName="#@modfolder:Resources/UH60sounds.unity3d?heli_start"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+			<SoundDataNode name="UH60_stop"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+				<AudioClip ClipName="#@modfolder:Resources/UH60sounds.unity3d?heli_stop"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+			<SoundDataNode name="UH60_flying"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<AudioClip ClipName="#@modfolder:Resources/UH60sounds.unity3d?heli_flying" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+			<SoundDataNode name="UH60_flying2"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<AudioClip ClipName="#@modfolder:Resources/UH60sounds.unity3d?heli_flying" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+	</append>
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Cruiser"/>
+			<Description value="A custom bike."/>
+			<Author value="bdubyah"/>
+			<Version value="1.2"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

@@ -1,0 +1,8 @@
+Key,Source,Context,Changes,English
+vehicleBuggychassis,items,Part,EnChanged,Buggy Chassis,,,,,
+vehicleBuggychassisDesc,items,Part,EnChanged,Parts needed to craft the Buggy. Grease Monkey level 4 required.,,,,,
+vehicleBuggybody,items,Part,EnChanged,Buggy Body,,,,,
+vehicleBuggybodyDesc,items,Part,EnChanged,Parts needed to craft the Buggy.,,,,,
+vehicleBuggy,vehicles,vehicle,new,Buggy,,,,,
+vehicleBuggyplaceable,vehicles,item,EnChanged,Buggy,,,,,
+vehicleBuggyplaceableDesc,vehicles,item,EnChanged,An old offraod buggy.,,,,,

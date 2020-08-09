@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleHumveechassis,items,Part,EnChanged,Humvee Chassis,,,,,
+vehicleHumveechassisDesc,items,Part,EnChanged,Parts needed to craft the Humvee. Grease Monkey level 4 required.,,,,,
+vehicleHumveebody,items,Part,EnChanged,Humvee Body,,,,,
+vehicleHumveebodyDesc,items,Part,EnChanged,Parts needed to craft the Humvee.,,,,,
+vehicleHumvee,vehicles,vehicle,new,Humvee,,,,,
+vehicleHumveeplaceable,vehicles,item,EnChanged,Humvee,,,,,
+vehicleHumveeplaceableDesc,vehicles,item,EnChanged,Military surplus at its finest!,,,,,
+vehicleHumveeTopless,vehicles,vehicle,new,Humvee,,,,,
+vehicleHumveeToplessplaceable,vehicles,item,EnChanged,Humvee (Topless),,,,,
+vehicleHumveeToplessplaceableDesc,vehicles,item,EnChanged,Military surplus at its finest!,,,,,

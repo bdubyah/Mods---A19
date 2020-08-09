@@ -1,0 +1,6 @@
+Key,Source,Context,Changes,English
+vehicleUAZ452chassis,items,Part,EnChanged,UAZ 452 Chassis,,,,,
+vehicleUAZ452chassisDesc,items,Part,EnChanged,Parts needed to craft the UAZ 452. Grease Monkey level 4 required.,,,,,
+vehicleUAZ452,vehicles,vehicle,new,UAZ 452,,,,,
+vehicleUAZ452placeable,vehicles,item,EnChanged,UAZ 452,,,,,
+vehicleUAZ452placeableDesc,vehicles,item,EnChanged,Blend right in with the apocalypse!,,,,,

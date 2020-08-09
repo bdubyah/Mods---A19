@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleBRDM2chassis,items,Part,EnChanged,BRDM-2 Chassis,,,,,
+vehicleBRDM2chassisDesc,items,Part,EnChanged,Parts needed to craft the BRDM-2. Grease Monkey level 5 required.,,,,,
+vehicleBRDM2accessories,items,Part,EnChanged,BRDM-2 Accessories,,,,,
+vehicleBRDM2accessoriesDesc,items,Part,EnChanged,Parts needed to craft the BRDM-2.,,,,,
+vehicleBRDM2,vehicles,vehicle,new,BRDM-2,,,,,
+vehicleBRDM2placeable,vehicles,item,EnChanged,BRDM-2,,,,,
+vehicleBRDM2placeableDesc,vehicles,item,EnChanged,A surprisingly intact military vehicle.,,,,,
+vehicleBRDM2desert,vehicles,vehicle,new,BRDM-2 Desert,,,,,
+vehicleBRDM2desertplaceable,vehicles,item,EnChanged,BRDM-2 Desert,,,,,
+vehicleBRDM2desertplaceableDesc,vehicles,item,EnChanged,A surprisingly intact military vehicle.,,,,,

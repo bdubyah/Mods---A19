@@ -1,0 +1,16 @@
+<configs>
+
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunLAR"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunHeavySniper"/>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunTripleBarrelShotgun"/>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,4" tags="EnergyWeapons"/>
+	</append>
+	
+</configs>

@@ -1,0 +1,213 @@
+<configs>
+
+	<append xpath="/vehicles">
+
+		<vehicle name="vehicleUH60">
+
+			<property name="cameraDistance" value="15, 15"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="motorTorqueMinQ" value="100"/>
+			<property name="motorTorqueMaxQ" value="1000"/>
+			<property name="brakeTorque" value="10"/>
+			<property name="steerRate" value="130"/>
+			<property name="steerCenteringRate" value="90"/>
+
+			<property name="tiltAngleMax" value="8"/>
+			<property name="tiltThreshold" value="2"/>
+			<property name="tiltDampening" value=".01"/>
+			<property name="tiltDampenThreshold" value="0"/>
+			<property name="tiltUpForce" value="1"/>
+			<property name="upAngleMax" value="60"/>
+			<property name="upForce" value=".5"/>
+
+			<property name="unstickForce" value="1"/>
+			<property name="velocityMax" value="25, 25"/>
+			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
+			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
+
+			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="foodDrain" value=".003,.003"/>
+				<property name="slot_type" value="engine"/>
+				<property name="fuelKmPerL" value="0.05"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 1500,9999,9999,
+									,
+									,
+									0, .5,  .35, .4,  -9, .1, .1, UH60_flying,
+									-.1, .1,  .45, .6,  0, 9, .1, UH60_flying2
+									"/>
+				<property name="sound_start" value="UH60_start"/>
+				<property name="sound_shut_off" value="UH60_stop"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Gyrocopter/gyrocopter_sputter"/>
+				<property name="parent_part" value="chassis"/>
+			</property>
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="parent_part" value="engine"/>
+				<property name="capacity" value="500"/>
+			</property>
+
+			<property class="handlebars">
+				<property name="parent_part" value="chassis"/>
+				<property name="class" value="Steering"/>
+				<property name="slot_type" value="handlebars"/>
+				<property name="transform" value="Origin"/>
+				<property name="steerMaxAngle" value="0"/>
+				<property name="IKHandLPosition" value="-.55, 1.23, 5.8"/>
+				<property name="IKHandLRotation" value="0, 17.2, 90"/>
+				<property name="IKHandRPosition" value="-.57, 1.48, 5.52"/>
+				<property name="IKHandRRotation" value="0, -17.2, -90"/>
+			</property>
+			
+			<property class="seat0">
+				<property name="position" value="-.8, 0.76, 5.4"/>
+				<property name="rotation" value="-38, 0, 0"/>
+				<property name="exit" value="-3.0,0,.9 ~ 3.0,0,.9 ~ 0,0,-4.4 ~ 0,0,4.4 ~ 0,4,0"/>
+			</property>
+			
+			<property class="seat1">
+				<property name="position" value="-.8, 0.76, 5.4"/>
+				<property name="rotation" value="-38, 0, 0"/>
+				<property name="exit" value="-3.0,0,.9 ~ 3.0,0,.9 ~ 0,0,-4.4 ~ 0,0,4.4 ~ 0,4,0"/>
+			</property>
+			
+			<property class="seat2">
+				<property name="position" value="-.8, 0.47, .85"/>
+				<property name="rotation" value="-38, 0, 0"/>
+				<property name="exit" value="-3.0,0,.9 ~ 3.0,0,.9 ~ 0,0,-4.4 ~ 0,0,4.4 ~ 0,4,0"/>
+			</property>
+			
+			<property class="seat3">
+				<property name="position" value="-.0, 0.47, .85"/>
+				<property name="rotation" value="-30, 0, 0"/>
+				<property name="exit" value="-3.0,0,.9 ~ 3.0,0,.9 ~ 0,0,-4.4 ~ 0,0,4.4 ~ 0,4,0"/>
+			</property>
+			
+			<property class="seat4">
+				<property name="position" value=".8, 0.47, .85"/>
+				<property name="rotation" value="-38, 0, 0"/>
+				<property name="exit" value="-3.0,0,.9 ~ 3.0,0,.9 ~ 0,0,-4.4 ~ 0,0,4.4 ~ 0,4,0"/>
+			</property>
+			
+			<property class="seat5">
+				<property name="position" value="0, 0.47, 2.9"/>
+				<property name="rotation" value="-30, 180, 0"/>
+				<property name="exit" value="-3.0,0,.9 ~ 3.0,0,.9 ~ 0,0,-4.4 ~ 0,0,4.4 ~ 0,4,0"/>
+			</property>
+				
+			<property class="motor0">
+				<property name="engine" value="engine"/>
+				<property name="engineOffPer" value=".02"/>
+				<property name="rpmAccel_min_max" value="0.01, .2"/>
+				<property name="rpmMax" value="8"/>
+				<property name="rpmDrag" value=".993"/>
+				<property name="trigger" value="relative"/> 
+				<property name="type" value="spin"/> 
+				<property name="transform" value="Origin/TopPropellerJoint"/>
+				<property name="axis" value="1"/>
+			</property>
+
+			<property class="motor1">
+				<property name="engine" value="engine"/>
+				<property name="turbo" value="1.35"/>
+				<property name="rpmAccel_min_max" value="0.01, .1"/>
+				<property name="rpmMax" value="8"/>
+				<property name="rpmDrag" value=".993"/>
+				<property name="trigger" value="relative"/>
+				<property name="type" value="spin"/>
+				<property name="transform" value="Origin/BackPropellerJoint"/>
+				<property name="axis" value="2"/>
+			</property>
+
+			<property class="force0">
+				<property name="trigger" value="motor0"/>
+				<property name="type" value="relative"/>
+				<property name="force" value="0, .192, 0"/>
+				<property name="ceiling" value="200, 280"/>
+			</property>
+
+			<property class="force1">
+				<property name="trigger" value="motor1"/>
+				<property name="type" value="relative"/>
+				<property name="force" value="0, 0,.0"/>
+			</property>
+
+			<property class="force2">
+				<property name="trigger" value="inputForward"/>
+				<property name="type" value="relative"/>
+				<property name="force" value="0, 0.037,0 "/>
+			</property>
+
+			<property class="force3">
+				<property name="trigger" value="inputStrafe"/>
+				<property name="type" value="relativeTorque"/>
+				<property name="force" value="0, .018, 0"/>
+			</property>
+
+			<property class="force4">
+				<property name="trigger" value="inputUp"/>
+				<property name="type" value="relativeTorque"/>
+				<property name="force" value="-.01, 0, 0"/>
+			</property>
+
+			<property class="force5">
+				<property name="trigger" value="inputDown"/>
+				<property name="type" value="relativeTorque"/>
+				<property name="force" value=".01, 0, 0"/>
+			</property>
+			
+			<property class="wheel0">
+				<property name="torqueScale_motor_brake" value="0, 1"/>
+			</property>
+			
+			<property class="wheel1">
+				<property name="parent_part" value="wheel0"/>
+				<property name="torqueScale_motor_brake" value="0, 1"/>
+			</property>
+			
+			<property class="wheel2">
+				<property name="parent_part" value="wheel0"/>
+				<property name="tireTransform" value="Origin/BackWheel"/>
+				<property name="torqueScale_motor_brake" value="0, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="parent_part" value="wheel0"/>
+				<property name="tireTransform" value="Origin/FrontLeftWheel"/>
+				<property name="torqueScale_motor_brake" value="0, 1"/>
+			</property>
+			
+			<property class="wheel4">
+				<property name="parent_part" value="wheel0"/>
+				<property name="tireTransform" value="Origin/FrontRightWheel"/>
+				<property name="torqueScale_motor_brake" value="0, 1"/>
+			</property>
+			
+			
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="parent_part" value="chassis"/>
+				<property name="transform" value="Origin/headlight"/>
+				<property name="bright" value=".75"/>
+			</property>
+
+			<property class="storage">
+				<property name="class" value="Storage"/>
+				<property name="display_name" value="basket"/>
+				<property name="slot_type" value="basket"/>
+				<property name="mesh" value="basket"/>
+				<property name="transform" value="basket"/>
+				<property name="parent_part" value="chassis"/>
+			</property>
+
+		</vehicle>
+		
+						
+	 </append>
+	  
+</configs>

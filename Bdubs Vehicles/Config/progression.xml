@@ -1,0 +1,8 @@
+<configs>
+
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='2,5']/@tags">,vehicleGolfCartaccessories,vehicleGolfCartchassis</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,vehicleJunkerChassis,vehicleJunkerbars,vehicleRatChassis,vehicleRatbars,vehicleCruiserChassis,vehicleCruiserbars,vehicleDirtBikeChassis,vehicleDirtBikeParts</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='4,5']/@tags">,vehicleBuggychassis,vehicleBuggyaccessories,vehicleHumveechassis,vehicleHumveebody,vehicleHotRodchassis,vehicleHotRodaccessories,vehicleSHERPchassis,vehicleSHERPaccessories,vehicleChargerchassis,vehicleChargeraccessories,vehicleStallionchassis,vehicleStallionaccessories,vehicleWorkTruckchassis,vehicleWorkTruckaccessories,vehicleNovachassis,vehicleNovaaccessories,vehiclePickupchassis,vehiclePickupaccessories,vehicleGNXaccessories,vehicleGNXchassis,vehicleUAZ452chassis</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='5']/@tags">,vehicleUH60chassis,vehicleUH60accessories,vehicleDusterchassis,vehicleDusteraccessories,vehicleMD500chassis,vehicleMD500accessories,vehicleBRDM2chassis,vehicleBRDM2accessories,vehicleMRAPparts,vehicleMRAPaccessories,vehicleMarauderchassis,vehicleMarauderaccessories</append>
+	
+ </configs>

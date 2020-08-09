@@ -1,0 +1,9 @@
+Key,Source,Context,Changes,English
+vehicleSHERPchassis,items,Part,EnChanged,SHERP Chassis,,,,,
+vehicleSHERPchassisDesc,items,Part,EnChanged,Parts needed to craft the SHERP. Grease Monkey level 4 required.,,,,,
+vehicleSHERPaccessories,items,Part,EnChanged,SHERP Accessories,,,,,
+vehicleSHERPaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the SHERP.,,,,,
+vehicleSHERP,vehicles,vehicle,new,SHERP,,,,,
+vehicleSHERPplaceable,vehicles,item,EnChanged,SHERP,,,,,
+vehicleSHERPplaceableDesc,vehicles,item,EnChanged,A custom offroad vehicle.,,,,,
+

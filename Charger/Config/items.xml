@@ -1,0 +1,211 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleChargerchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Chargerchassis"/>
+			<property name="DescriptionKey" value="vehicleChargerchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleChargeraccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Chargeraccessories"/>
+			<property name="DescriptionKey" value="vehicleChargeraccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleChargerblackplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerblack"/>
+			<property name="DescriptionKey" value="vehicleChargerblackplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerblack.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerblack"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargerblack2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerblack2"/>
+			<property name="DescriptionKey" value="vehicleChargerblack2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerblack2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerblack2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargerorangeplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerorange"/>
+			<property name="DescriptionKey" value="vehicleChargerorangeplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerorange.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerorange"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargerorange2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerorange2"/>
+			<property name="DescriptionKey" value="vehicleChargerorange2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerorange2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerorange2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargeryellowplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargeryellow"/>
+			<property name="DescriptionKey" value="vehicleChargeryellowplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargeryellow.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargeryellow"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargeryellow2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargeryellow2"/>
+			<property name="DescriptionKey" value="vehicleChargeryellow2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargeryellow2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargeryellow2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargergreenplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargergreen"/>
+			<property name="DescriptionKey" value="vehicleChargergreenplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargergreen.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargergreen"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargergreen2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargergreen2"/>
+			<property name="DescriptionKey" value="vehicleChargergreen2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargergreen2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargergreen2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargertealplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerteal"/>
+			<property name="DescriptionKey" value="vehicleChargertealplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerteal.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerteal"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargerteal2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerteal2"/>
+			<property name="DescriptionKey" value="vehicleChargerteal2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerteal2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerteal2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargerrustplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerrust"/>
+			<property name="DescriptionKey" value="vehicleChargerrustplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerrust.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerrust"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleChargerrust2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Chargerrust2"/>
+			<property name="DescriptionKey" value="vehicleChargerrust2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Charger1.unity3d?Chargerrust2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChargerrust2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

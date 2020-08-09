@@ -1,0 +1,5 @@
+<configs>
+
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='5']/@tags">,vehicleBRDM2chassis,vehicleBRDM2accessories</append>
+		
+ </configs>

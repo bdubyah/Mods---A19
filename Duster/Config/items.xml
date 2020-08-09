@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleDusterchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Dusterchassis"/>
+			<property name="DescriptionKey" value="vehicleDusterchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleDusteraccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Dusteraccessories"/>
+			<property name="DescriptionKey" value="vehicleDusteraccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleDusterplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Duster"/>
+			<property name="DescriptionKey" value="vehicleDusterplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Duster1.unity3d?vehicleDuster.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleDuster"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

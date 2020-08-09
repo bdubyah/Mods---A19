@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="vehicleBRDM2chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="400"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleBRDM2accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleBRDM2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleBRDM2accessories" count="1"/>
+			<ingredient name="vehicleBRDM2chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleBRDM2desertplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleBRDM2accessories" count="1"/>
+			<ingredient name="vehicleBRDM2chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+						
+	</append>
+ </configs>

@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleBoxTruckbody,items,Part,EnChanged,Box Truck Body,,,,,
+vehicleBoxTruckbodyDesc,items,Part,EnChanged,Parts needed to craft the Box Truck.,,,,,
+vehicleBoxTruckchassis,items,Part,EnChanged,Box Truck Chassis,,,,,
+vehicleBoxTruckchassisDesc,items,Part,EnChanged,Parts needed to craft the Box Truck.,,,,,
+vehicleBoxTruckPlain,vehicles,vehicle,new,Box Truck,,,,,
+vehicleBoxTruckPlainplaceable,vehicles,item,EnChanged,Box Truck,,,,,
+vehicleBoxTruckPlainplaceableDesc,vehicles,item,EnChanged,An old Box Truck.,,,,,
+vehicleBoxTruckHostess,vehicles,vehicle,new,Hostess Box Truck,,,,,
+vehicleBoxTruckHostessplaceable,vehicles,item,EnChanged,Hostess Box Truck,,,,,
+vehicleBoxTruckHostessplaceableDesc,vehicles,item,EnChanged,Tallahassee's favorite!,,,,,

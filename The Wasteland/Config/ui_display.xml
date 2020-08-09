@@ -1,0 +1,32 @@
+<configs>
+	<append xpath="/ui_display_info/item_display">
+
+		<item_display_info display_type="NukaDisplay1" display_group="groupConsumables">
+			<display_entry name="dMaxHealthBonus" title_key="statMaxHealthBonus" display_leading_plus="true"/>
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+		
+		<item_display_info display_type="NukaDisplay2" display_group="groupConsumables">
+			<display_entry name="dEntityDamageBrawling" title_key="statEntityDamageBrawling" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dMaxHealthBonus" title_key="statMaxHealthBonus" display_leading_plus="true"/>
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+		
+		<item_display_info display_type="SunsetDisplay" display_group="groupConsumables">
+			<display_entry name="dMaxHealthBonus" title_key="statMaxHealthBonus" display_leading_plus="true"/>
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+	</append>
+</configs>

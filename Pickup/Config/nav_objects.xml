@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/nav_object_classes">
+
+		<nav_object_class name="Pickup" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="PickupUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="PickupUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+
+	</append>
+</configs>

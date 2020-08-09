@@ -1,0 +1,8 @@
+Key,Source,Context,Changes,English
+vehicleWorkTruckchassis,items,Part,EnChanged,Work Truck Chassis,,,,,
+vehicleWorkTruckchassisDesc,items,Part,EnChanged,Parts needed to craft the Work Truck. Grease Monkey level 4 required.,,,,,
+vehicleWorkTruckaccessories,items,Part,EnChanged,Work Truck Accessories,,,,,
+vehicleWorkTruckaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the Work Truck.,,,,,
+vehicleWorkTruck,vehicles,vehicle,new,Work Truck,,,,,
+vehicleWorkTruckplaceable,vehicles,item,EnChanged,Work Truck,,,,,
+vehicleWorkTruckplaceableDesc,vehicles,item,EnChanged,Looks like it's been through more than just an apocalypse...,,,,,

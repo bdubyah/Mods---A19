@@ -1,0 +1,26 @@
+<configs>
+	<append xpath="/entity_classes">
+
+		<entity_class name="vehicleUH60">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVGyroCopter"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/uh60.unity3d?UH60heli.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="3"/>
+			<property name="Explosion.BlockDamage" value="30"/>
+			<property name="Explosion.EntityDamage" value="30"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="UH60icon"/>
+			<property name="NavObject" value="UH60" />
+		</entity_class>
+				
+	 </append>
+</configs>

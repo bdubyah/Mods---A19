@@ -1,0 +1,30 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<recipe name="vehicleDirtBikeChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="35"/>
+			<ingredient name="resourceMechanicalParts" count="30"/>
+			<ingredient name="resourceDuctTape" count="12"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+			<ingredient name="resourceSpring" count="3"/>
+		</recipe>
+		
+		<recipe name="vehicleDirtBikeParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="12"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceLeather" count="12"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+		</recipe>
+
+		<recipe name="vehicleDirtBikeplaceable" count="1" craft_time="150" craft_area="workbench">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleDirtBikeChassis" count="1"/>
+			<ingredient name="vehicleDirtBikeParts" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		
+	</append>
+ </configs>

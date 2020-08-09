@@ -1,0 +1,98 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleGolfCartchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GolfCartchassis"/>
+			<property name="DescriptionKey" value="vehicleGolfCartchassisDesc"/> 
+			<property name="EconomicValue" value="100"/>
+		</item>
+
+		<item name="vehicleGolfCartaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GolfCartaccessories"/>
+			<property name="DescriptionKey" value="vehicleGolfCartaccessoriesDesc"/> 
+			<property name="EconomicValue" value="100"/>
+		</item>
+
+		<item name="vehicleGolfCartplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="GolfCart"/>
+			<property name="DescriptionKey" value="vehicleGolfCartplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/GolfCart.unity3d?GolfCart.prefab"/>
+			<property name="EconomicValue" value="1000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleGolfCart"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,5500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeGolfClub">
+			<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="DescriptionKey" value="meleeGolfClubDesc"/> 
+			<property name="HoldType" value="33"/>
+			<property name="Meshfile" value="#@modfolder:Resources/GolfClub.unity3d?GolfClubprefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="CustomIcon" value="GolfClub"/>
+			<property name="RepairTools" value="resourceForgedIron"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			<property name="Weight" value="200"/>
+			<property name="CritChance" value="0.25"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="Blunt Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property name="RepairExpMultiplier" value="1.5"/>
+			
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value="0.15"/>  
+				<property name="Sound_start" value="SlowSwoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".1" param1="1"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value="0.15"/>   
+				<property name="Sound_start" value="SlowSwoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".1" param1="1"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+			</property>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+			    <passive_effect name="AttacksPerMinute" operation="base_set" value="38"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="700,1100" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		        <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		        <passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".2" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="45" tags="secondary"/>
+				
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+			        <requirement name="IsMale" target="self"/>
+		        </triggered_effect>
+		       <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+			        <requirement name="IsMale" target="self" invert="true"/>
+		       </triggered_effect>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

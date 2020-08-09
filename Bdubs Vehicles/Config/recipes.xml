@@ -1,0 +1,809 @@
+<configs>
+	<append xpath="/recipes">
+
+		<recipe name="vehicleBoxTruckchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="150"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleBoxTruckbody" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="15"/>
+	        <ingredient name="resourceLeather" count="25"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+		
+		<recipe name="vehicleBoxTruckPlainplaceable" count="1" craft_area="workbench" craft_time="30" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="6"/>
+			<ingredient name="vehicle4x4TruckChassis" count="1"/>
+			<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+			<ingredient name="smallEngine" count="2"/>
+	        <ingredient name="carBattery" count="2"/>
+		</recipe>
+		
+		<recipe name="vehicleBoxTruckHostessplaceable" count="1" craft_area="workbench" craft_time="30" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="6"/>
+			<ingredient name="vehicle4x4TruckChassis" count="1"/>
+			<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+			<ingredient name="smallEngine" count="2"/>
+	        <ingredient name="carBattery" count="2"/>
+		</recipe>
+		
+		<recipe name="vehicleBRDM2chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="400"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleBRDM2accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleBRDM2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleBRDM2accessories" count="1"/>
+			<ingredient name="vehicleBRDM2chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleBRDM2desertplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleBRDM2accessories" count="1"/>
+			<ingredient name="vehicleBRDM2chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>	
+		
+		<recipe name="vehicleBuggychassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="8"/>
+			<ingredient name="resourceForgedSteel" count="250"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleBuggyaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="20"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleBuggyplaceable" count="1" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleBuggychassis" count="1"/>
+			<ingredient name="vehicleBuggyaccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleChargeraccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleChargerblackplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerblack2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerorangeplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerorange2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargeryellowplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargeryellow2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargergreenplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargergreen2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargertealplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerteal2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerrustplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleChargerrust2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleChargeraccessories" count="1"/>
+			<ingredient name="vehicleChargerchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleCruiserChassis" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="55"/>
+			<ingredient name="resourceMechanicalParts" count="30"/>
+			<ingredient name="resourceDuctTape" count="12"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+			<ingredient name="resourceSpring" count="3"/>
+		</recipe>
+		
+		<recipe name="vehicleCruiserbars" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="12"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleCruiserplaceable" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleCruiserChassis" count="1"/>
+			<ingredient name="vehicleCruiserbars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleCruiser2placeable" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleCruiserChassis" count="1"/>
+			<ingredient name="vehicleCruiserbars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleDirtBikeChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="35"/>
+			<ingredient name="resourceMechanicalParts" count="30"/>
+			<ingredient name="resourceDuctTape" count="12"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+			<ingredient name="resourceSpring" count="3"/>
+		</recipe>
+		
+		<recipe name="vehicleDirtBikeParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="12"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceLeather" count="12"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+		</recipe>
+
+		<recipe name="vehicleDirtBikeplaceable" count="1" craft_time="150" craft_area="workbench">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleDirtBikeChassis" count="1"/>
+			<ingredient name="vehicleDirtBikeParts" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleDusterchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceForgedSteel" count="250"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleDusteraccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceSpring" count="20"/>
+		</recipe>
+	
+		<recipe name="vehicleDusterplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleDusteraccessories" count="1"/>
+			<ingredient name="vehicleDusterchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleGNXchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceLeather" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleGNXaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceDuctTape" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleGNXBlackplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleGNXchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+			<ingredient name="modDyeBlack" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleGNXRedplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleGNXchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+			<ingredient name="modDyeRed" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleGolfCartchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceLeather" count="20"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+	        <ingredient name="resourceMechanicalParts" count="12"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>
+		
+		<recipe name="vehicleGolfCartaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="20"/>
+	        <ingredient name="resourceMetalPipe" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceDuctTape" count="10"/>
+		</recipe>
+		
+		<recipe name="vehicleGolfCartplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleGolfCartchassis" count="1"/>
+			<ingredient name="vehicleGolfCartaccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="meleeGolfClub" count="1" craft_time="30" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRodchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="350"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRodaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleHotRod1placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHotRodaccessories" count="1"/>
+			<ingredient name="vehicleHotRodchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRod2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHotRodaccessories" count="1"/>
+			<ingredient name="vehicleHotRodchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRod3placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHotRodaccessories" count="1"/>
+			<ingredient name="vehicleHotRodchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRod4placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHotRodaccessories" count="1"/>
+			<ingredient name="vehicleHotRodchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRod5placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHotRodaccessories" count="1"/>
+			<ingredient name="vehicleHotRodchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHotRod6placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHotRodaccessories" count="1"/>
+			<ingredient name="vehicleHotRodchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHumveechassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceForgedSteel" count="350"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleHumveebody" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="20"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleHumveeplaceable" count="1" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHumveechassis" count="1"/>
+			<ingredient name="vehicleHumveebody" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleHumveeToplessplaceable" count="1" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHumveechassis" count="1"/>
+			<ingredient name="vehicleHumveebody" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleJunkerChassis" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="55"/>
+			<ingredient name="resourceMechanicalParts" count="30"/>
+			<ingredient name="resourceDuctTape" count="12"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+			<ingredient name="resourceSpring" count="3"/>
+		</recipe>
+		
+		<recipe name="vehicleJunkerbars" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="12"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleJunkerplaceable" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleJunkerChassis" count="1"/>
+			<ingredient name="vehicleJunkerbars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleJunker2placeable" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleJunkerChassis" count="1"/>
+			<ingredient name="vehicleJunkerbars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleMarauderchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceLeather" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleMarauderaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceDuctTape" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+			
+		<recipe name="vehicleMarauderplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleMarauderchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+			<ingredient name="vehicleMarauderaccessories" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleMarauderblackplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleMarauderchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+			<ingredient name="vehicleMarauderaccessories" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleMD500chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleMD500accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleMD500placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="vehicleMD500accessories" count="1"/>
+			<ingredient name="vehicleMD500chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleMRAPparts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="400"/>
+			<ingredient name="resourceMechanicalParts" count="75"/>
+			<ingredient name="resourceDuctTape" count="25"/>
+			<ingredient name="resourceLeather" count="50"/>
+			<ingredient name="resourceElectricParts" count="30"/>
+		</recipe>
+		
+		<recipe name="vehicleMRAPaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="40"/>
+			<ingredient name="resourceHeadlight" count="10"/>
+			<ingredient name="resourceMetalPipe" count="60"/>
+		</recipe>
+		
+		<recipe name="vehicleMRAPplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleMRAPparts" count="1"/>
+			<ingredient name="vehicleMRAPaccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="2"/>
+		</recipe>
+		
+		<recipe name="vehicleMRAP2placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleMRAPparts" count="1"/>
+			<ingredient name="vehicleMRAPaccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="2"/>
+		</recipe>
+		
+		<recipe name="vehicleNovachassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleNovaaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleNovaplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleNovaaccessories" count="1"/>
+			<ingredient name="vehicleNovachassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleNovaredplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleNovaaccessories" count="1"/>
+			<ingredient name="vehicleNovachassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleNovablackplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleNovaaccessories" count="1"/>
+			<ingredient name="vehicleNovachassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehiclePickupchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMetalPipe" count="60"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceLeather" count="50"/>
+		</recipe>
+		
+		<recipe name="vehiclePickupaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceDuctTape" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehiclePickupplaceable" count="1" craft_area="workbench" craft_time="300" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehiclePickupchassis" count="1"/>
+			<ingredient name="vehiclePickupaccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleRatChassis" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="55"/>
+			<ingredient name="resourceMechanicalParts" count="30"/>
+			<ingredient name="resourceDuctTape" count="12"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+			<ingredient name="resourceSpring" count="3"/>
+		</recipe>
+		
+		<recipe name="vehicleRatbars" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			<ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+
+		<recipe name="vehicleRatplaceable" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleRatChassis" count="1"/>
+			<ingredient name="vehicleRatbars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleRat2placeable" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleRatChassis" count="1"/>
+			<ingredient name="vehicleRatbars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleSHERPchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="350"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleSHERPaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleSHERPplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSHERPaccessories" count="1"/>
+			<ingredient name="vehicleSHERPchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleStallionchassis" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleStallionaccessories" count="1" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleStalliongreenplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleStallionaccessories" count="1"/>
+			<ingredient name="vehicleStallionchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleStallionredplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleStallionaccessories" count="1"/>
+			<ingredient name="vehicleStallionchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleStallionblueplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleStallionaccessories" count="1"/>
+			<ingredient name="vehicleStallionchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleStallionwhiteplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleStallionaccessories" count="1"/>
+			<ingredient name="vehicleStallionchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleUAZ452chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="325"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+			<ingredient name="resourceDuctTape" count="40"/>
+			<ingredient name="resourceLeather" count="50"/>
+		</recipe>
+			
+		<recipe name="vehicleUAZ452placeable" count="1" craft_area="workbench" craft_time="120" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleUAZ452chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+			<ingredient name="resourceSpring" count="4"/>
+		</recipe>
+		
+		<recipe name="vehicleUH60chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="25"/>
+			<ingredient name="resourceForgedSteel" count="350"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleUH60accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="2"/>
+		</recipe>
+	
+		<recipe name="vehicleUH60placeable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="3"/>
+			<ingredient name="vehicleUH60accessories" count="1"/>
+			<ingredient name="vehicleUH60chassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+			
+		<recipe name="vehicleWillyJeepplaceable" count="1" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicle4x4TruckChassis" count="1"/>
+			<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleWillyJeepToplessplaceable" count="1" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicle4x4TruckChassis" count="1"/>
+			<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleWorkTruckchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceMetalPipe" count="50"/>
+		</recipe>
+		
+		<recipe name="vehicleWorkTruckaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceLeather" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehicleWorkTruckplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleWorkTruckaccessories" count="1"/>
+			<ingredient name="vehicleWorkTruckchassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+	</append>
+ </configs>

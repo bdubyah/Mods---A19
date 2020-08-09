@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleJunkerChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Junkerchassis"/>
+			<property name="DescriptionKey" value="vehicleJunkerChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleJunkerbars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Junkerbars"/>
+			<property name="DescriptionKey" value="vehicleJunkerbarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleJunkerplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Junker"/>
+			<property name="DescriptionKey" value="vehicleJunkerplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Junker1.unity3d?Junker.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleJunker"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleJunker2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Junker2"/>
+			<property name="DescriptionKey" value="vehicleJunker2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Junker1.unity3d?Junker2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleJunker2"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleDirtBikeChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="DirtBikechassis"/>
+			<property name="DescriptionKey" value="vehicleDirtBikeChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleDirtBikeParts">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="DirtBikeparts"/>
+			<property name="DescriptionKey" value="vehicleDirtBikePartsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleDirtBikeplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="DirtBike"/>
+			<property name="DescriptionKey" value="vehicleDirtBikeplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/db1.unity3d?Dirt_Bike.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleDirtBike"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="1500"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

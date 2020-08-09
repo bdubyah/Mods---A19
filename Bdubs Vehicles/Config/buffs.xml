@@ -1,0 +1,40 @@
+<configs>
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" target_tags="moto" range="5" buff="buffMoto"/>
+		</effect_group>
+		
+	 </append>
+
+	
+	<append xpath="/buffs">	
+	
+		<buff name="buffMotoPedal" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value=".05"/>
+			<effect_group>
+				<requirement name="EntityTagCompare" tags="player"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="100"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffMotoPedal"/>
+			</effect_group>
+		</buff>	
+
+		<buff name="buffMoto"  name_key="Pedalstam"  icon="ui_game_symbol_steroids" icon_blink="false" hidden="true"> 
+			<stack_type value="replace"/>
+			<duration value="10"/>
+			<update_rate value=".05"/>
+			<effect_group>
+				<requirement name="!IsFPV"/>
+				<requirement name="EntityTagCompare" tags="pedals"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="0.1" buff="buffMotoPedal"/>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" target="selfAOE" range="0.1" buff="buffMotoPedal"/>
+			</effect_group>			
+		</buff>
+	
+	</append>
+</configs>

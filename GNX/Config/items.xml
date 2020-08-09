@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleGNXchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GNXchassis"/>
+			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleGNXaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GNXchassis"/>
+			<property name="DescriptionKey" value="vehicleGNXaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleGNXBlackplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="GNX"/>
+			<property name="DescriptionKey" value="vehicleGNXBlackplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/GNX.unity3d?GNXblack.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleGNXBlack"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleGNXRedplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="GNXred"/>
+			<property name="DescriptionKey" value="vehicleGNXRedplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/GNX.unity3d?GNXred.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleGNXRed"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+					
+	 </append>
+ </configs>

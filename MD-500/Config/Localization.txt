@@ -1,0 +1,9 @@
+Key,Source,Context,Changes,English
+vehicleMD500chassis,items,Part,EnChanged,MD-500 Chassis,,,,,
+vehicleMD500chassisDesc,items,Part,EnChanged,Parts needed to craft the MD-500. Grease Monkey level 5 required.,,,,,
+vehicleMD500accessories,items,Part,EnChanged,MD-500 Accessories,,,,,
+vehicleMD500accessoriesDesc,items,Part,EnChanged,Parts needed to craft the MD-500.,,,,,
+vehicleMD500,vehicles,vehicle,new,MD-500,,,,,
+vehicleMD500placeable,vehicles,item,EnChanged,MD-500,,,,,
+vehicleMD500placeableDesc,vehicles,item,EnChanged,They can't kill you if they can't hit you!,,,,,
+

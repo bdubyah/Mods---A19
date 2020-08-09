@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleUH60chassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="UH60chassis"/>
+			<property name="DescriptionKey" value="vehicleUH60chassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleUH60accessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="UH60accessories"/>
+			<property name="DescriptionKey" value="vehicleUH60accessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleUH60placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="UH60"/>
+			<property name="DescriptionKey" value="vehicleUH60placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/uh60.unity3d?UH60heli.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleUH60"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

@@ -1,0 +1,109 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleHotRodchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="HotRodchassis"/>
+			<property name="DescriptionKey" value="vehicleHotRodchassisDesc"/>
+			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleHotRodaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="HotRodaccessories"/>
+			<property name="DescriptionKey" value="vehicleHotRodaccessoriesDesc"/>
+			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleHotRod1placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHotRod1"/>
+			<property name="DescriptionKey" value="vehicleHotRod1placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/HotRods.unity3d?HotRod1.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHotRod1"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleHotRod2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHotRod2"/>
+			<property name="DescriptionKey" value="vehicleHotRod2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/HotRods.unity3d?HotRod2.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHotRod2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleHotRod3placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHotRod3"/>
+			<property name="DescriptionKey" value="vehicleHotRod3placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/HotRods.unity3d?HotRod3.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHotRod3"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleHotRod4placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHotRod4"/>
+			<property name="DescriptionKey" value="vehicleHotRod4placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/HotRods.unity3d?HotRod4.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHotRod4"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleHotRod5placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHotRod5"/>
+			<property name="DescriptionKey" value="vehicleHotRod5placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/HotRods.unity3d?HotRod5.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHotRod5"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleHotRod6placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHotRod6"/>
+			<property name="DescriptionKey" value="vehicleHotRod6placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/HotRods.unity3d?HotRod6.prefab"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHotRod6"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

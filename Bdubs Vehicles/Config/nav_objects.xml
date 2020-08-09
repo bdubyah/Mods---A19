@@ -1,0 +1,293 @@
+<configs>
+	<append xpath="/nav_object_classes">
+	
+		<nav_object_class name="BoxTruck" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BoxTruckUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BoxTruckUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="BRDM2" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BRDM2UIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BRDM2UIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Buggy" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="Buggyicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="Buggyicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Charger" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="ChargerUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="ChargerUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Cruiser" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="Cruisericon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="Cruisericon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="DirtBike" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="DirtBikeicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="DirtBikeicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+	
+		<nav_object_class name="Duster" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="DusterUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="DusterUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="GNX" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="GNXUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="GNXUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="GolfCart" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="GolfCartUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="GolfCartUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>		
+		
+		<nav_object_class name="HotRod" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="HotRodicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="HotRodicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Humvee" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="Humveeicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="Humveeicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Junker" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="Junkericon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="Junkericon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Marauder" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="MarauderUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="MarauderUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="MD500" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="MD500UIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="MD500UIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="MRAP" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="MRAPUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="MRAPUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Nova" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="NovaUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="NovaUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Pickup" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="PickupUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="PickupUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Rat" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="Raticon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="Raticon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="SHERP" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="SHERPicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="SHERPicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Stallion" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="SUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="SUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="UAZ452" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="UAZ452UIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="UAZ452UIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="UH60" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="UH60icon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="UH60icon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="WillyJeep" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="Willyicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="Willyicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="WorkTruck" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="WorkTruckUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="WorkTruckUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+
+	</append>
+</configs>

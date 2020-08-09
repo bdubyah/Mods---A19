@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleBRDM2chassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="BRDM2chassis"/>
+			<property name="DescriptionKey" value="vehicleBRDM2chassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleBRDM2accessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="BRDM2accessories"/>
+			<property name="DescriptionKey" value="vehicleBRDM2accessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleBRDM2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="BRDM2"/>
+			<property name="DescriptionKey" value="vehicleBRDM2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BRDM1.unity3d?BRDM2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBRDM2"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleBRDM2desertplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="BRDM2"/>
+			<property name="DescriptionKey" value="vehicleBRDM2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BRDM1.unity3d?BRDM2desert.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBRDM2desert"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

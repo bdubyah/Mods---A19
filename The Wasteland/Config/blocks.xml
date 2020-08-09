@@ -1,0 +1,640 @@
+<configs>
+	<append xpath="/blocks">
+	
+	<!-- Nuka Stuff -->
+	
+	<block name="NukaColaLight">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="true"/>	
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/NukaColas.unity3d?NukaColaDrink.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="" />
+		<property name="CanPickup" value="true" param1="drinkNukaCola"/>
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property class="RepairItems"> <property name="resourceBrokenGlass" value="1"/> </property>
+		<drop event="Destroy" name="resourceBrokenGlass" count="2" prob="1"/>
+		<property name="Group" value="Basics,Building"/>
+		<property name="DescriptionKey" value="NukaColaLightDesc"/>
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+		<property name="MaxDamage" value="25"/>
+	</block>
+	
+	<block name="NukaQuantumLight">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="true"/>	
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/NukaColas.unity3d?NukaQuantumDrink.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="" />
+		<property name="CanPickup" value="true" param1="drinkNukaQuantum"/>
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property class="RepairItems"> <property name="resourceBrokenGlass" value="1"/> </property>
+		<property name="Group" value="Basics,Building"/>
+		<property name="DescriptionKey" value="NukaQuantumLightDesc"/>
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+		<property name="MaxDamage" value="25"/>
+	</block>
+	
+	<block name="NukaQuartzLight">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="true"/>	
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/NukaColas.unity3d?NukaQuartzDrink.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="" />
+		<property name="CanPickup" value="true" param1="drinkNukaQuartz"/>
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property class="RepairItems"> <property name="resourceBrokenGlass" value="1"/> </property>
+		<property name="Group" value="Basics,Building"/>
+		<property name="DescriptionKey" value="NukaQuartzLightDesc"/>
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+		<property name="MaxDamage" value="25"/>
+	</block>
+
+	<block name="NukaCherryLight">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="true"/>	
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/NukaColas.unity3d?NukaCherryDrink.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="" />
+		<property name="CanPickup" value="true" param1="drinkNukaCherry"/>
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property class="RepairItems"> <property name="resourceBrokenGlass" value="1"/> </property>
+		<property name="Group" value="Basics,Building"/>
+		<property name="DescriptionKey" value="NukaCherryLightDesc"/>
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+		<property name="MaxDamage" value="25"/>
+	</block>
+	
+	<block name="SunsetSarsaparilla">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="true"/>	
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/SS.unity3d?Sunset1.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="" />
+		<property name="CanPickup" value="true" param1="drinkSunsetSarsaparilla"/>
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property class="RepairItems"> <property name="resourceBrokenGlass" value="1"/> </property>
+		<property name="Group" value="Basics,Building"/>
+		<property name="DescriptionKey" value="SunsetSarsaparillaDesc"/>
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+		<property name="MaxDamage" value="25"/>
+	</block>
+	
+	<block name="Terminal">
+		<property name="Material" value="Mmetal"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="DescriptionKey" value="TerminalDesc"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/Terminal.unity3d?Terminal1.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="Terminal" />
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CanPickup" value="true" param1="Terminal"/>
+		<property name="MaxDamage" value="350"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="5"/>
+		<property name="EconomicValue" value="1000"/>
+		<property class="RepairItems"> 
+			<property name="resourceForgedIron" value="1"/> 
+			<property name="resourceElectricParts" value="1"/>
+		</property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="3,7" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="0,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="0,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+		
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+	</block>
+	
+	<block name="Terminaloff">
+		<property name="Material" value="Mmetal"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="DescriptionKey" value="TerminaloffDesc"/> 
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/Terminal.unity3d?Terminaloff.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="Terminaloff" />
+		<property name="Stabilitysupport" value="false"/>
+		<property name="CanPickup" value="true" param1="Terminaloff"/>
+		<property name="MaxDamage" value="350"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="5"/>
+		<property name="EconomicValue" value="1000"/>
+		<property class="RepairItems"> <property name="resourceForgedIron" value="1"/> </property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="3,7" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="0,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="0,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+	</block>
+	
+	<block name="NukaWaterLight">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="false"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/NukaWater.unity3d?NukaWaterLight.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Collide" value="melee"/>	
+		<property name="CustomIcon" value="" />
+		<property name="Stabilitysupport" value="false"/>
+		<property name="MaxDamage" value="50"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="Group" value="Basics,Building"/>			
+		<property name="FilterTags" value="fdecor"/>
+		<property name="SortOrder1" value="70a0"/>	
+	</block>
+	
+	<block name="NukaSmoke">
+		<property name="Material" value="Mglass"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/NukaSmoke.unity3d?Nuka_Smoke.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Collide" value="melee"/>	
+		<property name="CustomIcon" value="" />
+		<property name="Stabilitysupport" value="false"/>
+		<property name="MaxDamage" value="50"/>			
+		<property name="Stacknumber" value="10"/>
+		<property name="Group" value="Basics,Building"/>			
+		<property name="FilterTags" value="fdecor,felectrical"/>
+		<property name="SortOrder1" value="70a0"/>	
+	</block>
+	
+	<block name="NukaTruck">
+		<property name="Material" value="Mmetal"/>
+		<property name="DescriptionKey" value="NukaTruckDesc"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="CarExplode"/>
+		<property name="CustomIcon" value=""/>
+		<property name="LootList" value="19"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property name="Model" value="#@modfolder:Resources/NukaTruck.unity3d?Truck_Wrecked.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="3,4,10"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ShowModelOnFall" value="false"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="ammoGasCan" count="50,150" prob="0.5" tag="allHarvest"/>
+		<drop event="Harvest" name="ammoGasCan" count="50,150" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceHeadlight" count="3" prob="0.45" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="3,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="3,5" prob="0.1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="12" tag="allHarvest"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="CanDecorateOnSlopes" value="false"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4"/>
+			<property name="RadiusBlocks" value="5"/> 
+			<property name="BlockDamage" value="500"/> 
+			<property name="RadiusEntities" value="5"/> 
+			<property name="EntityDamage" value="70"/>
+		</property>
+		<property name="ActivationDistance" value="6"/>
+		<property name="FilterTags" value="floot"/>
+	</block>
+	
+	<block name="cntNukaCrateS1">
+		<property name="CreativeMode" value="Dev"/>			
+		<property name="DescriptionKey" value="cntNukaCrateS1Desc"/>
+		<property name="Material" value="MwoodReinforced"/>
+		<property name="MaxDamage" value="250" />
+		<property name="CustomIcon" value="cntStorageHealth"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Model" value="#@modfolder:Resources/NukaCrate.unity3d?Nuka_Crate.prefab"/><property name="ModelOffset" value="0,.3,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="6"/>
+		</property>
+		<property name="DowngradeBlock" value="cntNukaCrate1"/>
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="EconomicValue" value="156"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+
+	<block name="cntNukaCrateS2">
+		<property name="CreativeMode" value="Dev"/>			
+		<property name="DescriptionKey" value="cntNukaCrateS2Desc"/>
+		<property name="Material" value="MwoodReinforced"/>
+		<property name="MaxDamage" value="250" />
+		<property name="CustomIcon" value="cntStorageHealth"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Model" value="#@modfolder:Resources/NukaCrate.unity3d?Nuka_Crate.prefab"/><property name="ModelOffset" value="0,.25,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="6"/>
+		</property>
+		<property name="DowngradeBlock" value="cntNukaCrate2"/>
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="EconomicValue" value="156"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="cntNukaCrate1">
+		<property name="Extends" value="cntNukaCrateS1" param1="DowngradeBlock"/>
+		<property name="CustomIcon" value="cntStorageHealth"/>
+		<property name="Class" value="Loot"/>
+		<property name="Model" value="#@modfolder:Resources/NukaCrate.unity3d?Nuka_Crate.prefab"/><property name="ModelOffset" value="0,.3,0"/>
+		<property name="LootList" value="936"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="DescriptionKey" value="cntNukaCrate1Desc"/>
+		<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	</block>
+	
+	<block name="cntNukaCrate2">
+		<property name="Extends" value="cntNukaCrateS2" param1="DowngradeBlock"/>
+		<property name="CustomIcon" value="cntStorageHealth"/>
+		<property name="Class" value="Loot"/>
+		<property name="Model" value="#@modfolder:Resources/NukaCrate.unity3d?Nuka_Crate.prefab"/><property name="ModelOffset" value="0,.25,0"/>
+		<property name="LootList" value="936"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="DescriptionKey" value="cntNukaCrate2Desc"/>
+		<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	</block>
+	
+	<block name="NukaStatue">
+		<property name="Material" value="Msteel"/>
+		<property name="IsTerrainDecoration" value="false"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/NukaStatue.unity3d?Nuka_Statue.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="5,4,5"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="NukaBuffIcon" />
+		<property name="Stabilitysupport" value="false"/>
+		<property name="MaxDamage" value="500"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="1"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
+		<drop event="Harvest" name="resourceMetalPipe" count="1,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceForgedSteel" count="1,4"/>
+		<property name="Group" value="Basics,Building"/>
+		<property name="DescriptionKey" value="torchGroupDesc"/>
+		<property name="FilterTags" value="fdecor,felectrical"/>
+		<property name="SortOrder1" value="70a0"/>	
+	</block>
+	
+	<block name="Telephone">
+		<property name="Material" value="Mmetal"/>
+		<property name="IsTerrainDecoration" value="false"/>	
+		<property name="DescriptionKey" value="TelephoneDesc"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/telephone.unity3d?telephone.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>			
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="CustomIcon" value="Telephone" />
+		<property name="Stabilitysupport" value="false"/>
+		<property name="MaxDamage" value="350"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="CanPickup" value="true" param1="Telephone"/>
+		<property class="RepairItems"> <property name="resourceForgedIron" value="1"/> </property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="3,7" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="0,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="0,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,10" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="1,5"/>
+		<property name="Group" value="Basics,Building"/>			
+		<property name="FilterTags" value="fdecor,felectrical"/>
+		<property name="SortOrder1" value="70a0"/>	
+	</block>
+	
+	<block name="cntNukaSafeSecure">
+		<property name="Class" value="SecureLoot"/>
+		<property name="Tags" value="safes,door"/>
+		<property name="CustomIcon" value="cntWallSafe"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="Mmetal_hard"/>
+		<property name="StabilitySupport" value="false"/> 
+		<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+		<property name="LootList" value="937"/>
+		<property name="DescriptionKey" value="cntGunSafeDesc"/>
+		<property class="RepairItems"> <property name="resourceForgedIron" value="15"/> </property>
+		<property name="DowngradeBlock" value="cntNukaSafe"/>
+			<property name="LockPickItem" value="resourceLockPick"/>
+			<property name="LockPickTime" value="15"/>
+			<property name="LockPickBreakChance" value="0.75"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="EconomicValue" value="300"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+
+	<block name="cntNukaSafe">
+		<property name="CreativeMode" value="None"/>
+		<property name="Tags" value="safes"/>
+		<property name="CustomIcon" value="cntWallSafe"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="Mmetal_hard"/>
+		<property name="StabilitySupport" value="false"/> 
+		<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="937"/>
+		<property class="RepairItems"> <property name="resourceForgedIron" value="15"/> </property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceForgedIron" count="3,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="1,2" prob="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="cntNukaVendingMachineBroken">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Group" value="Science"/>
+		<property name="DescriptionKey" value="cntNukaVendingMachineBrokenDesc"/>
+		<property name="CustomIcon" value="cntNukaVendingMachine"/>
+		<property name="DisplayType" value="blockHardenedMulti"/>
+		<property name="Material" value="Mmetal_medium"/>
+		<property name="StabilitySupport" value="false"/> 
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/NukaVend.unity3d?NukaVendingMachineBroken.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property class="RepairItems"> <property name="resourceForgedIron" value="5"/> </property>
+		<property name="Stacknumber" value="10"/>
+		<property name="EconomicValue" value="2000"/>
+		<property name="Buff" value="buffShocked"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceForgedIron" count="1,3" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceSpring" count="1,3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="2,3" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="cntNukaVendingMachine">
+		<property name="Extends" value="cntNukaVendingMachineBroken"/>
+		<property name="DescriptionKey" value="cntNukaVendingMachineDesc"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Model" value="#@modfolder:Resources/NukaVend.unity3d?NukaVendingMachine.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Class" value="VendingMachine"/>
+		<property name="TraderID" value="22"/>			
+	</block>
+	
+	<block name="cntSSVendingMachineBroken">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Group" value="Science"/>
+		<property name="DescriptionKey" value="cntSSVendingMachineBrokenDesc"/>
+		<property name="CustomIcon" value="cntSSVendingMachine"/>
+		<property name="DisplayType" value="blockHardenedMulti"/>
+		<property name="Material" value="Mmetal_medium"/>
+		<property name="StabilitySupport" value="false"/> 
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/SSVend.unity3d?SSVendingMachineBroken.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property class="RepairItems"> <property name="resourceForgedIron" value="5"/> </property>
+		<property name="Stacknumber" value="10"/>
+		<property name="EconomicValue" value="2000"/>
+		<property name="Buff" value="buffShocked"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceForgedIron" count="1,3" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceSpring" count="1,3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="2,3" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="cntSSVendingMachine">
+		<property name="Extends" value="cntSSVendingMachineBroken"/>
+		<property name="DescriptionKey" value="cntSSVendingMachineDesc"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Model" value="#@modfolder:Resources/SSVend.unity3d?SSVendingMachine.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Class" value="VendingMachine"/>
+		<property name="TraderID" value="23"/>
+	</block>
+	
+	<block name="cntLunchbox">
+		<property name="CustomIcon" value="cntLunchbox"/>
+		<property name="Material" value="Miron"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NukaBottlecapMine.unity3d?Lunchbox.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Class" value="SecureLoot"/>
+		<property name="LootList" value="1"/>
+		<property name="MaxDamage" value="150"/>
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="FilterTags" value="floot"/>
+		<property name="DescriptionKey" value="cntLunchboxDesc"/>
+	</block>
+	
+	<block name="mineBottlecapMine">
+		<property name="Class" value="Mine"/> 
+		<property name="Tags" value="Mine"/>
+		<property name="CustomIcon" value="mineBottlecapMine"/>
+		<property name="ItemTypeIcon" value="explosion"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MLandMine"/>
+		<property name="Shape" value="ModelEntity"/> 
+		<property name="Path" value="solid"/>
+		<property name="Model" value="#@modfolder:Resources/NukaBottlecapMine.unity3d?BottlecapMine.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="AllowAllRotations" value="false"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Stacknumber" value="5"/> 
+		<property name="MaxDamage" value="4"/>
+		<property name="TriggerDelay" value="0.5"/>
+		<property name="TriggerSound" value="landmine_trigger"/>
+		<property name="Explosion.ParticleIndex" value="11"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="4"/>
+		<property name="Explosion.BlockDamage" value="10"/>
+		<property name="Explosion.EntityDamage" value="350"/> 
+		<property name="Explosion.DamageBonus.stone" value="0.1"/>
+		<property name="Explosion.DamageBonus.metal" value="0.1"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="0"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="DismemberMultiplierLegs" value="1"/>
+		<property name="CanPickup" value="true"/>
+		<property name="Place" value="TowardsPlacerInverted"/>		
+		<property name="DropScale" value="1.5"/> 
+		<drop event="Destroy" count="0"/>
+		<property name="Group" value="Tools/Traps,Science"/>
+		<property name="EconomicValue" value="97"/>
+		<property name="FilterTags" value="fdecor,ftraps"/>
+		<property name="SortOrder1" value="70g0"/>
+	</block>
+	
+	<!-- WW Stuff -->
+	
+	
+	<block name="cntPewPewLoot">
+		<property name="Class" value="Loot"/>
+		<property name="CustomIcon" value="cntChest01"/>
+		<property name="Material" value="MwoodReinforced"/>
+		<property name="DescriptionKey" value="cntPewPewLootDesc"/>			
+		<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+		<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+		<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="LootList" value="935"/>
+		<property name="CreativeMode" value="None"/>
+		<drop event="Destroy" name="resourceWood" count="1,3"/>
+		<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+		<property name="FilterTags" value="floot"/>
+	</block>
+	
+	<block name="cntUFO">
+		<property name="Material" value="Mmetal"/>
+		<property name="DescriptionKey" value="cntUFODesc"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="CarExplodeLoot"/>
+		<property name="CustomIcon" value="cntUFO"/>
+		<property name="LootList" value="934"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property name="Model" value="#@modfolder:Resources/UFO1.unity3d?blockUFO"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="10,6,10"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ShowModelOnFall" value="false"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="15" prob="0.5" tag="salvageHarvest"/>			
+		<drop event="Harvest" name="resourceHeadlight" count="3" prob="0.45" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="300" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="20,30" tag="salvageHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="25,35" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="15,25" prob="0.1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="CanDecorateOnSlopes" value="false"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4"/>
+			<property name="RadiusBlocks" value="8"/> 
+			<property name="BlockDamage" value="500"/> 
+			<property name="RadiusEntities" value="15"/> 
+			<property name="EntityDamage" value="70"/>
+		</property>
+		<property name="ActivationDistance" value="8"/>
+		<property name="FilterTags" value="floot"/>
+	</block>	
+	</append>
+	
+	<!-- Oil Filter Mod -->
+
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage0Master']">	
+		<drop event="Harvest" name="modOilFilterSuppressor" prob=".001" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">	
+		<drop event="Harvest" name="modOilFilterSuppressor" prob=".001" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBusSchool']">	
+		<drop event="Harvest" name="modOilFilterSuppressor" prob=".01" tag="salvageHarvest"/>
+	</append>
+	
+</configs>

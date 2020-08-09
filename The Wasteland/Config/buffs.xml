@@ -1,0 +1,291 @@
+<configs>
+	<append xpath="/buffs">
+	
+	<!-- Nuka Stuff -->
+	
+	<buff name="NukaColaBuff" name_key="Nuka Cola" description_key="The delicious taste of Nuka Cola has you feeling revitalized! Recover stamina quicker, and restore a small amount of max health and stamina. The small trace of radiation also allow for a slight movement speed boost for a limited time!" icon="NukaBuffIcon" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="180"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".1">
+				<requirement name="NotHasBuff" buff="NukaQuantumBuff"/>
+				<requirement name="NotHasBuff" buff="NukaQuartzBuff"/>
+				<requirement name="NotHasBuff" buff="NukaCherryBuff"/>
+			</passive_effect>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.05"/>		
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>			
+			<passive_effect name="HealthMax" operation="base_add" value="5"/>
+			<passive_effect name="StaminaMax" operation="base_add" value="5"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="NukaCherryBuff" name_key="Nuka Cherry" description_key="Mmm...Nuka Cherry! Recover stamina quicker, increase melee damage, and restore a decent amount of max health and stamina. The traces of radiation also allow for a moderate movement speed boost for a limited time!" icon="NukaBuffIcon" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="240"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2">
+				<requirement name="NotHasBuff" buff="NukaQuantumBuff"/>
+				<requirement name="NotHasBuff" buff="NukaQuartzBuff"/>
+				<requirement name="NotHasBuff" buff="NukaColaBuff"/>
+			</passive_effect>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.05"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.28">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="EntityDamage" operation="perc_add" value="5">
+				<requirement name="HoldingItemHasTags" tags="fists,melee" />
+			</passive_effect>			
+			<passive_effect name="HealthMax" operation="base_add" value="15"/>
+			<passive_effect name="StaminaMax" operation="base_add" value="15"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="NukaQuantumBuff" name_key="Nuka Quantum" description_key="Nuka Quantum has put you into overdrive! Recover stamina and health quicker, and restore a large amount of max health and stamina. The large amount of radiation also allows for a substantial movement speed boost for a limited time, but you'll probably feel it later!" icon="NukaBuffIcon" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="300"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".5">
+				<requirement name="NotHasBuff" buff="NukaColaBuff"/>
+				<requirement name="NotHasBuff" buff="NukaQuartzBuff"/>
+				<requirement name="NotHasBuff" buff="NukaCherryBuff"/>
+			</passive_effect>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1"/>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="0.2"/>				
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.33">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>			
+			<passive_effect name="HealthMax" operation="base_add" value="50"/>
+			<passive_effect name="StaminaMax" operation="base_add" value="50"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="NukaQuantumSideEffect"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NukaQuantumSideEffect">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
+	
+	<buff name="NukaQuantumSideEffect" name_key="Quantum Effect" description_key="Your body has crashed from the Quantum rush! But hey, at least your pee will glow for a week! Maybe you should lie down..." tooltip_key="buffDrugSteroidsSideEffectTooltip" icon="NukaSideEffectIcon" icon_color="255,128,0" tags="drug">
+		<damage_type value="disease"/>
+		<stack_type value="ignore"/>
+		<duration value="120"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value=".1"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.2"/>
+			<passive_effect name="AttributeLevel" tags="attStrength,attAgility" operation="base_subtract" value="2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+		</effect_group>
+	</buff> 
+			
+	<buff name="NukaQuartzBuff" name_key="Nuka Quartz" description_key="Was that expired? Too late now! Damage resistance is increased and health will regenerate, but it does make you queasy!" icon="NukaBuffIcon" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="240"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".3">
+				<requirement name="NotHasBuff" buff="NukaQuantumBuff"/>
+				<requirement name="NotHasBuff" buff="NukaColaBuffBuff"/>
+				<requirement name="NotHasBuff" buff="NukaCherryBuff"/>
+			</passive_effect>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1"/>
+			<passive_effect name="HealthLoss" operation="perc_subtract" value="0.25"/>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="0.1"/>			
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.27">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>			
+			<passive_effect name="HealthMax" operation="base_add" value="35"/>
+			<passive_effect name="StaminaMax" operation="base_add" value="35"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned01CHTrigger,buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned01Shotgun,buffInjuryStunned02,buffInjuryStunned02Shotgun,buffInjuryStunned03,buffInjuryStunned03Shotgun"/>
+		</effect_group>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="NukaQuartzSideEffect"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NukaQuartzSideEffect">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="33"/>
+			</triggered_effect>
+		</effect_group>
+
+		
+	</buff>
+	
+	<buff name="NukaQuartzSideEffect" name_key="Quartz Effect" description_key="Your body did not appreciate that! Hopefully it was worth it..." tooltip_key="buffDrugSteroidsSideEffectTooltip" icon="NukaSideEffectIcon" icon_color="255,128,0" tags="drug">
+		<damage_type value="disease"/>
+		<stack_type value="ignore"/>
+		<duration value="120"/>
+		<effect_group>
+			<passive_effect name="HealthLoss" operation="perc_add" value="0.1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength,attAgility" operation="base_subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+		</effect_group>
+	</buff> 
+	
+	<buff name="SunsetSarsaparillaBuff" name_key="Sunset Sarsaparilla" description_key="The refreshing taste of Sunset Sarsaparilla has you feeling reinvigorated! Recover stamina quicker, and restore a small amount of max health and stamina." icon="NukaBuffIcon" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="180"/>
+		<update_rate value="1"/>
+		<effect_group>			
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.2">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="HealthMax" operation="base_add" value="10"/>
+			<passive_effect name="StaminaMax" operation="base_add" value="10"/>
+		</effect_group>
+	</buff>
+	
+	<!-- WW Stuff -->
+
+	<buff name="buffRailSpike" name_key="Spike" icon="ui_game_symbol_medical" hidden="true">
+		<damage_type value="knockdown"/>
+		<stack_type value="ignore"/>
+		<duration value="4"/>
+		<requirements compare_type="or">
+			<requirement name="NotHasBuff" buff="buffRailSpikeCooldown"/>
+		</requirements>
+
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_set" value="0" />
+			<passive_effect name="WalkSpeed" operation="perc_set" value="0" />
+			<passive_effect name="CrouchSpeed" operation="perc_set" value="0" />
+			<passive_effect name="JumpStrength" operation="perc_set" value="0" />			
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffRailSpikeBleed,buffRailSpikeCooldown"/>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" target="self" duration="2"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffRailSpikeBleed" name_key="Spike" icon="ui_game_symbol_medical" hidden="true">
+		<damage_type value="bloodloss"/>
+		<stack_type value="ignore"/>
+		<duration value="10"/>
+		
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,10" value="2,4"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffRailSpikeCooldown" hidden="true"> <duration value="10"/> <stack_type value="ignore"/> </buff>
+	
+	<buff name="buffLaserCrit" hidden="true">
+		<damage_type value="heat"/>
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,1" value="1500,1500"/>					
+		</effect_group>
+		
+		<effect_group name="run particles, cleanup"> 
+		<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>-->
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Hips"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="Hips"/>
+		</effect_group>		
+	</buff>
+	
+	<buff name="buffCryo" hidden="true">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="8"/>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$CryoEffect" operation="set" value="1">
+				<requirement name="NotHasBuff" buff="buffCryoCritCooldown"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$CryoEffect" operation="set" value="2">
+				<requirement name="NotHasBuff" buff="buffCryoCritCooldown"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffCryoCrit">
+				<requirement name="CVarCompare" cvar="CryoEffect" operation="Equals" value="2"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+				<requirement name="NotHasBuff" buff="buffCryoCrit"/>
+				<requirement name="NotHasBuff" buff="buffCryoCritCooldown"/>
+			</triggered_effect>
+			<passive_effect name="HealthLoss" operation="perc_add" value=".25"/>
+			<passive_effect name="RunSpeed" operation="perc_set" value=".4"/>
+			<passive_effect name="WalkSpeed" operation="perc_set" value=".5"/>
+			<passive_effect name="CrouchSpeed" operation="perc_set" value=".4"/>
+			<passive_effect name="JumpStrength" operation="perc_set" value=".5"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>	
+		</effect_group>
+	</buff>	
+	
+	<buff name="buffCryoCrit" hidden="true">
+		<damage_type value="stun"/>
+		<stack_type value="ignore"/>
+		<duration value="15"/>			
+			
+		<effect_group>				
+			<passive_effect name="HealthLoss" operation="perc_add" value=".2"/>
+			<passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+			<passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+			<passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+			<passive_effect name="JumpStrength" operation="perc_set" value="0"/>				
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="Icicle1" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="Icicle1" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Cryo1.unity3d?Icicle1" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Cryo1.unity3d?Icicle1" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffCryoCritCooldown"/>		
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffCryoCritCooldown" hidden="true"> <duration value="5"/> <stack_type value="ignore"/> </buff>
+	
+	<buff name="buffCryoGrenade" hidden="true">
+		<damage_type value="stun"/>
+		<stack_type value="ignore"/>
+		<duration value="15"/>			
+			
+		<effect_group>				
+			<passive_effect name="HealthLoss" operation="perc_add" value=".1"/>
+			<passive_effect name="RunSpeed" operation="perc_set" value=".3"/>
+			<passive_effect name="WalkSpeed" operation="perc_set" value=".3"/>
+			<passive_effect name="CrouchSpeed" operation="perc_set" value=".3"/>
+			<passive_effect name="JumpStrength" operation="perc_set" value=".3"/>			
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>			
+		</effect_group>	
+	</buff>
+	
+	<!--
+	<buff name="buffNuke">
+		<damage_type value="knockout"/>
+		<stack_type value="replace"/>
+		<duration value="2"/>
+		<update_rate value="0.5" />
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP" local_offset="0,0.5,0" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP" local_offset="0,0.5,0" />
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,1,2" value="25,40,55"/>
+				
+		</effect_group>
+	</buff>
+			-->
+	</append>
+</configs>

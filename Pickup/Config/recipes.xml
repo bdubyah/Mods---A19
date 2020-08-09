@@ -1,0 +1,30 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="vehiclePickupchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMetalPipe" count="60"/>
+			<ingredient name="resourceForgedSteel" count="300"/>
+	        <ingredient name="resourceMechanicalParts" count="50"/>
+	        <ingredient name="resourceDuctTape" count="40"/>
+	        <ingredient name="resourceLeather" count="50"/>
+		</recipe>
+		
+		<recipe name="vehiclePickupaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceDuctTape" count="50"/>
+	        <ingredient name="resourceElectricParts" count="40"/>
+	        <ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+	
+		<recipe name="vehiclePickupplaceable" count="1" craft_area="workbench" craft_time="300" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehiclePickupchassis" count="1"/>
+			<ingredient name="vehiclePickupaccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+				
+	</append>
+ </configs>

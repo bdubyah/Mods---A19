@@ -1,0 +1,11 @@
+Key,Source,Context,Changes,English
+vehicleJunker,vehicles,vehicle,new,Junker,,,,,
+vehicleJunkerplaceable,vehicles,item,EnChanged,Junker,,,,,
+vehicleJunkerplaceableDesc,vehicles,item,EnChanged,An old custom bike.,,,,,
+vehicleJunker2,vehicles,vehicle,new,Junker,,,,,
+vehicleJunker2placeable,vehicles,item,EnChanged,Junker Purple,,,,,
+vehicleJunker2placeableDesc,vehicles,item,EnChanged,An old custom bike.,,,,,
+vehicleJunkerChassis,items,Part,EnChanged,Junker Chassis,,,,,
+vehicleJunkerChassisDesc,items,Part,EnChanged,The beginning of something...awesome!,,,,,
+vehicleJunkerbars,items,Part,EnChanged,Junker Handlebars,,,,,
+vehicleJunkerbarsDesc,items,Part,EnChanged,You might need these.,,,,,

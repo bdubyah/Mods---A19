@@ -1,0 +1,58 @@
+<config>
+
+	<append xpath="/quests/quest_items">
+		<quest_item id="10" name="questLetter" description_key="questLetterDesc" icon="questLetter" icon_color="255,255,255"/>
+	</append>
+  
+	<append xpath="/quests">
+
+			<quest id="questPewPewstart">
+				
+				<property name="offer" value="You have collected enough Star Bottle Caps to redeem your reward!" />
+				<property name="name" value="The Legend of the Star" />
+				<property name="subtitle" value="The Legend of the Star" />
+				<property name="description" value="Head to the trader to collect your prize!" />
+				<property name="icon" value="ui_game_symbol_map_trader"/>
+				<property name="category_key" value="challenge"/>
+				<property name="difficulty" value="medium"/>
+				<property name="shareable" value="false"/>
+				<property name="repeatable" value="false"/>
+				
+				<objective type="Goto" id="trader" value="5" phase="1"/>
+
+				<objective type="InteractWithNPC">
+					<property name="phase" value="2"/>
+				</objective>
+
+				<reward type="Exp" value="500"/>
+				<reward type="Item" id="questoldMap">
+					
+				</reward>
+			</quest>
+			
+			<quest id="questPewPewfind">	
+				
+				<property name="offer" value="Someone ran off with the reward, but I heard where they should be headed. Here's a map of the area, hopefully you can find where they hid it." />
+				<property name="name" value="A Valuable Lesson" />
+				<property name="subtitle" value="A Valuable Lesson" />
+				<property name="description" value="I guess I'd better get to hunting for their stash so I can get my reward." />
+				<property name="icon" value="ui_game_symbol_quest"/>
+				<property name="repeatable" value="false"/>
+				<property name="category_key" value="challenge"/>
+				<property name="difficulty" value="medium"/>				
+				<property name="statement_key" value="quest_fetch_clear_statement"/>
+				<property name="response_key" value="quest_fetch_clear_response"/>
+				
+
+				<objective type="TreasureChest">
+					<property name="block" value="cntPewPewLoot"/>
+					<property name="distance" value="3000-4500"/>
+				</objective>
+
+				<reward type="Exp" value="5000"/>				
+				
+			</quest>
+			
+			
+	</append>
+</config>

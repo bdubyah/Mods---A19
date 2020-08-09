@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleHumveechassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Humveechassis"/>
+			<property name="DescriptionKey" value="vehicleHumveechassisDesc"/>
+			<property name="EconomicValue" value="20000"/>
+		</item>
+		
+		<item name="vehicleHumveebody">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Humveebody"/>
+			<property name="DescriptionKey" value="vehicleHumveebodyDesc"/>
+			<property name="EconomicValue" value="20000"/>
+		</item>
+
+		<item name="vehicleHumveeplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Humvee"/>
+			<property name="DescriptionKey" value="vehicleHumveeplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/Hummer.unity3d?Humvee1.prefab"/>
+			<property name="EconomicValue" value="40000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHumvee"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleHumveeToplessplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="HumveeTopless"/>
+			<property name="DescriptionKey" value="vehicleHumveeToplessplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/Hummer.unity3d?Humvee2.prefab"/>
+			<property name="EconomicValue" value="40000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHumveeTopless"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+					
+	 </append>
+ </configs>

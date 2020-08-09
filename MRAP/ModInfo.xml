@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="MRAP"/>
+			<Description value="Adds a MRAP military vehicle"/>
+			<Author value="bdubyah"/>
+			<Version value="2.1"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

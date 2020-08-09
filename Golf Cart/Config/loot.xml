@@ -1,0 +1,17 @@
+<configs>
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+		<lootgroup name="GolfCartgroup">
+			<item name="vehicleGolfCartchassis"/>
+			<item name="vehicleGolfCartaccessories"/>
+		</lootgroup>
+	
+	</insertBefore>
+
+
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="GolfCartgroup" loot_prob_template="ProbT1"/>
+	</append>
+
+</configs>

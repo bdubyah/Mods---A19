@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleRatChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Ratchassis"/>
+			<property name="DescriptionKey" value="vehicleRatChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleRatbars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Ratbars"/>
+			<property name="DescriptionKey" value="vehicleRatbarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleRatplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Rat"/>
+			<property name="DescriptionKey" value="vehicleRatplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Rat1.unity3d?Rat.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleRat"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleRat2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Rat2"/>
+			<property name="DescriptionKey" value="vehicleRat2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Rat1.unity3d?Rat2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleRat2"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+				
+	 </append>
+ </configs>

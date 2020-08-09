@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleWorkTruckchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="WorkTruckchassis"/>
+			<property name="DescriptionKey" value="vehicleWorkTruckchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleWorkTruckaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="WorkTruckaccessories"/>
+			<property name="DescriptionKey" value="vehicleWorkTruckaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleWorkTruckplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="WorkTruck"/>
+			<property name="DescriptionKey" value="vehicleWorkTruckplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/OOBS.unity3d?Old_Pickup.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleWorkTruck"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>

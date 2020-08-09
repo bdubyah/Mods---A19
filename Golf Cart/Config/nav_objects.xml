@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/nav_object_classes">
+
+		<nav_object_class name="GolfCart" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="GolfCartUIicon"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="GolfCartUIicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+
+	</append>
+</configs>
