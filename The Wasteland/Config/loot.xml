@@ -37,7 +37,8 @@
 		<item name="gunLAR" count="1"/>		
 		<item name="gunCombatShotgun" count="1"/>		
 		<item name="gunIncinerator" count="1"/>		
-		<item name="gunHeavySniper"  count="1"/>		
+		<item name="gunHeavySniper"  count="1"/>	
+		<item name="gunServiceRifle"  count="1"/>
 	</lootgroup>
 	
 	<lootgroup name="RegularMelee">		
