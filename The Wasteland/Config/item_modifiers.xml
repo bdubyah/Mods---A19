@@ -38,9 +38,9 @@
 		
 		<item_property_overrides name="gun10mmRev">
 			<property name="CrosshairOnAim" value="false"/>
-			<property name="ScopeOffset" value="0,0.0,-0."/>
+			<property name="ScopeOffset" value="0,0.0,0"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
-			<property name="ScopeCameraOffset" value="0,-.02,0"/>
+			<property name="ScopeCameraOffset" value="0,-.0215,0"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="gun10mmSMG">
@@ -62,6 +62,12 @@
 			<property name="ScopeCameraOffset" value="0.0002,.0452,0.0"/>
 		</item_property_overrides>
 		
+		<item_property_overrides name="gunServiceRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeOffset" value="0,0.0,-0."/>
+			<property name="ScopeCameraOffset" value="-0.00015,-.0748,0.0"/>
+		</item_property_overrides>
+		
 	</append>
 	
 	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
@@ -71,6 +77,13 @@
 			<property name="ScopeOffset" value="0,0,0"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="0,-.05,0.2"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunServiceRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="0.02,0.02,0.02"/>
+			<property name="ScopeCameraOffset" value="-0.00015,-.0748,0.0"/>
 		</item_property_overrides>
 		
 	</append>
@@ -128,6 +141,11 @@
 		</item_property_overrides>
 		
 		<item_property_overrides name="gunLeFusilTerribles">
+			<property name="SideOffset" value="0,0.0,-0.00"/>
+			<property name="SideScale" value=".5,.5,.5"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunServiceRifle">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
@@ -190,6 +208,11 @@
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
+		
+		<item_property_overrides name="gunServiceRifle">
+			<property name="SideOffset" value="0,0.0,0"/>
+			<property name="SideScale" value=".5,.5,.5"/>
+		</item_property_overrides>
 	
 	</append>
 	
@@ -237,6 +260,14 @@
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="Sound_start" value="pump_shotgun_s_fire"/>
 			<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunServiceRifle">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="ak47_s_fire"/>
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
@@ -525,6 +556,10 @@
 			</item_property_overrides>
 			<item_property_overrides name="gunLeFusilTerribles">
 				<property name="SideOffset" value="-0.035,0.065,0.58"/>
+				<property name="SideScale" value=".5,.5,.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunServiceRifle">
+				<property name="SideOffset" value="0,0,0"/>
 				<property name="SideScale" value=".5,.5,.5"/>
 			</item_property_overrides>
 			<effect_group tiered="false">
