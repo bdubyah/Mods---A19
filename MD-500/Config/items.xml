@@ -20,13 +20,15 @@
 			<property name="CustomIcon" value="MD500"/>
 			<property name="DescriptionKey" value="vehicleMD500placeableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/MD500.unity3d?MD500heli.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="55000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleMD500"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="4500"/>
 			</effect_group>
 		</item>
 				

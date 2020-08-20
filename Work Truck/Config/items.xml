@@ -26,7 +26,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		

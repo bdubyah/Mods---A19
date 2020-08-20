@@ -20,13 +20,15 @@
 			<property name="CustomIcon" value="Marauder"/>
 			<property name="DescriptionKey" value="vehicleMarauderplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Marauder1.unity3d?vehicleMarauder.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="40000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleMarauder"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="8500,12500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -41,7 +43,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="8500,12500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		

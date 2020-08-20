@@ -20,13 +20,15 @@
 			<property name="CustomIcon" value="DirtBike"/>
 			<property name="DescriptionKey" value="vehicleDirtBikeplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/db1.unity3d?Dirt_Bike.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="8500"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleDirtBike"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="1500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 				

@@ -20,13 +20,15 @@
 			<property name="CustomIcon" value="Rat"/>
 			<property name="DescriptionKey" value="vehicleRatplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Rat1.unity3d?Rat.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="11000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleRat"/>
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -35,13 +37,15 @@
 			<property name="CustomIcon" value="Rat2"/>
 			<property name="DescriptionKey" value="vehicleRat2placeableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Rat1.unity3d?Rat2.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="11000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleRat2"/>
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 				

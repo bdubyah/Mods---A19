@@ -20,12 +20,14 @@
 			<property name="CustomIcon" value="Sgreen"/>
 			<property name="DescriptionKey" value="vehicleStalliongreenplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stalliongreen.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleStalliongreen"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -35,12 +37,14 @@
 			<property name="CustomIcon" value="Sred"/>
 			<property name="DescriptionKey" value="vehicleStallionredplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stallionred.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleStallionred"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -50,12 +54,14 @@
 			<property name="CustomIcon" value="Sblue"/>
 			<property name="DescriptionKey" value="vehicleStallionblueplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stallionblue.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleStallionblue"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -65,12 +71,14 @@
 			<property name="CustomIcon" value="Swhite"/>
 			<property name="DescriptionKey" value="vehicleStallionwhiteplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Stallion1.unity3d?Stallionwhite.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleStallionwhite"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>

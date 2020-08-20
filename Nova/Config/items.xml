@@ -20,12 +20,14 @@
 			<property name="CustomIcon" value="Nova"/>
 			<property name="DescriptionKey" value="vehicleNovaplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Nova1.unity3d?Nova.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleNova"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -35,12 +37,14 @@
 			<property name="CustomIcon" value="Novared"/>
 			<property name="DescriptionKey" value="vehicleNovaredplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Nova1.unity3d?Novared.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleNovared"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -50,12 +54,14 @@
 			<property name="CustomIcon" value="Novablack"/>
 			<property name="DescriptionKey" value="vehicleNovablackplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/Nova1.unity3d?Novablack.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="30000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleNovablack"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
