@@ -2,7 +2,12 @@
 
 	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunLAR"/>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunHeavySniper"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="gunHeavySniper"/>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="thrownNukaGrenade"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="thrownCryoGrenade"/>
 	</append>
 	
 	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">

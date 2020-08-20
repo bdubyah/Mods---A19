@@ -5,14 +5,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="9000"/>
 		</item>
 		
 		<item name="vehicleGNXaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="9000"/>
 		</item>
 		
 		<item name="vehicleGNXBlackplaceable">

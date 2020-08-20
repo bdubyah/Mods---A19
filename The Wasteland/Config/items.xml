@@ -675,8 +675,7 @@
 		<property name="ActionSkillGroup" value="Blunt Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 		<property name="RepairExpMultiplier" value="1.5"/>
-		<property name="ShowQuality" value="true"/>
-		<property name="UnlockedBy" value="meleeBanjoSchematic"/>
+		<property name="ShowQuality" value="true"/>		
 		
 		<property class="Action0">
 			<property name="Class" value="DynamicMelee"/>
@@ -1102,8 +1101,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="FuelValue" value="250"/>
 		<property name="EconomicValue" value="700"/>
-		<property name="Group" value="Ammo/Weapons"/>
-		<property name="UnlockedBy" value="meleeWpnSledgeT3SteelSledgehammerSchematic"/>
+		<property name="Group" value="Ammo/Weapons"/>		
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -1363,8 +1361,7 @@
 		<property name="ActionSkillGroup" value="Blunt Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 		<property name="RepairExpMultiplier" value="1.5"/>
-		<property name="ShowQuality" value="true"/>
-		<property name="UnlockedBy" value="meleeRebarClubSchematic"/>
+		<property name="ShowQuality" value="true"/>		
 		<property class="Action0">
 			<property name="Class" value="DynamicMelee"/>
 			<property name="Sphere" value=".15"/>   
@@ -2547,7 +2544,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="UnlockedBy" value="perkDeadEye,gunMR10Schematic"/>
+		<property name="UnlockedBy" value="gunLARSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -2631,7 +2628,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="700"/>
-		<property name="UnlockedBy" value="perkDeadEye,gunHuntingRifleSchematic"/>
+		<property name="UnlockedBy" value="gunHeavySniperSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -5045,8 +5042,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="FuelValue" value="250"/>
 		<property name="EconomicValue" value="700"/>
-		<property name="Group" value="Ammo/Weapons"/>
-		<property name="UnlockedBy" value="meleeWpnSledgeT3SteelSledgehammerSchematic"/>
+		<property name="Group" value="Ammo/Weapons"/>		
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -5210,8 +5206,7 @@
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="EconomicValue" value="350"/>
-		<property name="FuelValue" value="250"/>
-		<property name="UnlockedBy" value="perkPummelPete,meleeWpnClubT1BaseballBatSchematic"/>
+		<property name="FuelValue" value="250"/>		
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
