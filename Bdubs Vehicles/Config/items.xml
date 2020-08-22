@@ -26,7 +26,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="6500"/>
 			</effect_group>
 		</item>
 		
@@ -41,7 +43,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="6500"/>
 			</effect_group>
 		</item>
 		
@@ -70,7 +74,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="8500"/>
 			</effect_group>
 		</item>
 		
@@ -85,7 +91,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="8500"/>
 			</effect_group>
 		</item>
 		
@@ -114,7 +122,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>		
 		
@@ -143,8 +153,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -159,8 +170,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -175,8 +187,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -191,8 +204,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -207,8 +221,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -223,8 +238,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -239,8 +255,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -255,8 +272,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -271,8 +289,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -287,8 +306,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -303,8 +323,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -319,8 +340,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
 			</effect_group>
 		</item>
 		
@@ -349,7 +371,9 @@
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -364,7 +388,9 @@
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -393,7 +419,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="1500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -422,7 +450,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -430,14 +460,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
-			<property name="EconomicValue" value="90000"/>
+			<property name="EconomicValue" value="9000"/>
 		</item>
 		
 		<item name="vehicleGNXaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXaccessoriesDesc"/>
-			<property name="EconomicValue" value="90000"/>
+			<property name="EconomicValue" value="9000"/>
 		</item>
 		
 		<item name="vehicleGNXBlackplaceable">
@@ -451,7 +481,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -466,7 +498,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -495,7 +529,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,5500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -588,7 +624,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -603,7 +641,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -618,7 +658,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -633,7 +675,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -648,7 +692,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -663,7 +709,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>		
 		
@@ -692,7 +740,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="8500"/>
 			</effect_group>
 		</item>
 		
@@ -707,7 +757,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="8500"/>
 			</effect_group>
 		</item>
 		
@@ -736,7 +788,9 @@
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -751,7 +805,9 @@
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -780,7 +836,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="8500,12500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -795,7 +853,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="8500,12500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -824,7 +884,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="4500"/>
 			</effect_group>
 		</item>
 		
@@ -853,7 +915,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
 			</effect_group>
 		</item>
 		
@@ -868,7 +932,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
 			</effect_group>
 		</item>
 		
@@ -897,7 +963,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -912,6 +980,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -927,6 +997,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -956,7 +1028,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -985,7 +1059,9 @@
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -1000,7 +1076,9 @@
 				<property name="VehicleSize" value="2.7, 2.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
 			</effect_group>
 		</item>
 		
@@ -1029,6 +1107,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
 			</effect_group>
 		</item>
@@ -1058,6 +1138,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -1073,6 +1155,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -1088,6 +1172,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -1103,6 +1189,8 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
@@ -1125,7 +1213,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -1154,7 +1244,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="4500"/>
 			</effect_group>
 		</item>
 		
@@ -1169,7 +1261,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -1184,7 +1278,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 		
@@ -1213,7 +1309,9 @@
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
 			</property>
 			<effect_group name="Base Effects">
-				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 			

@@ -1,0 +1,13 @@
+<configs>
+ 
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup4k']">
+        <prefab name="Trader_Mechanic" min_count="1" max_count="1" min_repeat_distance="3500" />		
+    </append>
+	
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup8k']">
+        <prefab name="Trader_Mechanic" min_count="1" max_count="1" min_repeat_distance="5500" />
+    </append>
+   
+</configs>
+  
+ 

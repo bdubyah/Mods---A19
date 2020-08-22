@@ -1,0 +1,9 @@
+<configs>
+
+	<append xpath="/root/content">
+
+		<property type="SingleClip" name="traderMechanic" source ="Sounds/AudioSource_TraderTheme" sections="None" path="#Sounds/Music?TraderJoel.wav"/>
+
+	</append>
+
+</configs>

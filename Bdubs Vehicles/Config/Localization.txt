@@ -1,4 +1,6 @@
 Key,Source,Context,Changes,English
+TraderMechanic_b,blocks,Entity,New,The Mechanic
+
 vehicleBoxTruckbody,items,Part,EnChanged,Box Truck Body,,,,,
 vehicleBoxTruckbodyDesc,items,Part,EnChanged,Parts needed to craft the Box Truck.,,,,,
 vehicleBoxTruckchassis,items,Part,EnChanged,Box Truck Chassis,,,,,

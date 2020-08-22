@@ -6,7 +6,7 @@
   <property name="ExcludeDistantPOIMesh" value="False" />
   <property name="ExcludePOICulling" value="False" />
   <property name="DifficultyTier" value="5" />
-  <property name="Zoning" value="Commercial,Downtown,Industrial,ResidentialNew,ResidentialOld,Residential" />
+  <property name="Zoning" value="Downtown,Industrial" />
   <property name="YOffset" value="-17" />
   <property name="DistantPOIYOffset" value="0" />
   <property name="Condition" value="New" />
@@ -14,7 +14,7 @@
   <property name="StaticSpawner.Size" value="131,25,131" />
   <property name="StaticSpawner.Trigger" value="69" />
   <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland_hub,wasteland,city,city_wasteland" />
-  <property name="AllowedTownships" value="city,rural,town,wilderness" />
+  <property name="AllowedTownships" value="city,wilderness" />
   <property name="DisallowedBiomes" value="water,radiated" />
   <property name="EditorGroups" value="commercial, downtown, industrial, Wilderness, rural" /> 
   <property name="SleeperVolumeStart" value="77, 18, 53#61, 19, 54#50, 22, 51#47, 18, 55#73, 17, 30#52, 15, 26#29, 7, 5#22, 18, 18#23, 18, 33#42, 16, 42#60, 17, 36#16, 26, 15" />

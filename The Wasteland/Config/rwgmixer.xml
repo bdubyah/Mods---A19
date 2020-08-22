@@ -1,7 +1,7 @@
 <configs>
  
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup4k']">
-        <prefab name="Nuka_Factory" max_count="2" min_repeat_distance="2500" />
+        <prefab name="Nuka_Factory" max_count="2" min_repeat_distance="2000" />
 		<prefab name="UFO_Crash" max_count="2" min_repeat_distance="2500" />
 		<prefab name="UFO_Crash_desert" max_count="1" min_repeat_distance="3000" />
     </append>
