@@ -18,7 +18,15 @@
 	<lootgroup name="LegendaryEnergyGuns">		
 		<item name="gunCryolator" count="1"/>
 		<item name="gunPewPew" count="1"/>
-		<item name="gunAERPrototype" count="1"/>
+		<item name="gunAERPrototype" count="1"/>		
+	</lootgroup>
+	
+	<lootgroup name="EnergyAmmo">		
+		<item name="ammoEC" count="25,50" />
+		<item name="ammoMFC" count="25,50" />
+		<item name="ammoPEC" count="25,50" />
+		<item name="ammoPMFC" count="25,50" />
+		<item name="ammoCMFC" count="25,50" />
 	</lootgroup>
 	
 	<lootgroup name="LegendaryMelee">
@@ -465,6 +473,8 @@
 	<item group="LegendaryPipeGuns" prob=".007"/>
 	<item group="LegendaryGuns" prob=".002"/>
 	<item group="RegularGuns" prob=".01"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 </append>
 
 <!-- EntityLootContainerBoss, rare random drop off bosses -->
@@ -541,6 +551,8 @@
 	<item group="LegendaryGuns" prob=".005"/>
 	<item group="RegularMelee" prob=".15"/>
 	<item group="RegularGuns" prob=".1"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 </append>
 
 <!-- cntWeaponsBagSmall -->
@@ -550,6 +562,8 @@
 	<item group="RegularMelee" prob=".15"/>
 	<item group="LegendaryGuns" prob=".005"/>
 	<item group="RegularGuns" prob=".1"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 </append>
 
 <!-- cntWeaponsBagLarge -->
@@ -558,15 +572,15 @@
 	<item group="RegularMelee" prob=".15"/>
 	<item group="LegendaryGuns" prob=".005"/>
 	<item group="RegularGuns" prob=".1"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 </append>
 
 <!-- cntBuriedStashChest -->
 <append xpath="/lootcontainers/lootcontainer[@id='102']">
 	<item group="LegendaryPipeGuns" prob=".007"/>
-	<item name="ammoEC" count="14,18" prob="0.01"/>
-	<item name="ammoMFC" count="12,18" prob="0.01"/>
-	<item name="ammoPEC" count="10,18" prob="0.01"/>
-	<item name="ammoPMFC" count="12,18" prob="0.01"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 	<item group="RegularMelee" prob=".15"/>
 	<item group="LegendaryGuns" prob=".005"/>
 	<item group="RegularGuns" prob=".1"/>
@@ -600,10 +614,8 @@
 	<item group="LegendaryPipeGuns" prob=".007"/>
 	<item name="gunFatMan" prob="0.01"/>
 	<item name="ammoNuke" count="1,4" prob="0.02"/>
-	<item name="ammoEC" count="14,18" prob="0.01"/>
-	<item name="ammoMFC" count="12,18" prob="0.01"/>
-	<item name="ammoPEC" count="10,18" prob="0.01"/>
-	<item name="ammoPMFC" count="12,18" prob="0.01"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 	<item name="gunLaserPistol" prob="0.005"/>
 	<item name="gunLaserRifle" prob="0.003"/>
 	<item name="gunPlasmaPistol" prob="0.0045"/>
@@ -620,6 +632,8 @@
 	<item group="LegendaryPipeGuns" prob=".007"/>
 	<item group="RegularGuns" prob=".1"/>
 	<item group="LegendaryGuns" prob=".005"/>
+	<item group="LegendaryEnergyGuns" prob=".005"/>
+	<item group="EnergyAmmo" prob=".01"/>
 	<item group="RegularMelee" prob=".15"/>
 	<item group="LegendaryMelee" prob=".15"/>
 </append>
