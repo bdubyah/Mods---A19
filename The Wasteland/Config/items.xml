@@ -1869,7 +1869,7 @@
 	</item>	
 
 	<item name="gunPipeShotgunSMSB">
-		<property name="Tags" value="weapon,holdBreathAiming,shortRange,perkShotgunMessiah,PipeShotgun"/>
+		<property name="Tags" value="weapon,holdBreathAiming,shortRange,PipeShotgun"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="DescriptionKey" value="gunPipeShotgunSMSBDesc"/>
 		<property name="CustomIcon" value="gunPipeShotgunSMSB"/>
@@ -1956,7 +1956,7 @@
 	</item>
 
 	<item name="gunPipeShotgunEMSB">
-		<property name="Tags" value="weapon,holdBreathAiming,reloadPenalty,shortRange,perkShotgunMessiah,PipeShotgun"/>
+		<property name="Tags" value="weapon,holdBreathAiming,reloadPenalty,shortRange,PipeShotgun"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="DescriptionKey" value="gunPipeShotgunEMSBDesc"/>
 		<property name="CustomIcon" value="gunPipeShotgunEMSB"/>
