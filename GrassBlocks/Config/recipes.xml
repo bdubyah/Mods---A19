@@ -1,0 +1,21 @@
+<configs>
+	<append xpath="/recipes">
+
+		<recipe name="GrassBlock" count="1">
+			<ingredient name="resourceClayLump" count="16"/>
+		</recipe>
+		
+		<recipe name="GrassBlock2" count="1">
+			<ingredient name="resourceClayLump" count="16"/>
+		</recipe>
+		
+		<recipe name="GrassBlock3" count="1">
+			<ingredient name="resourceClayLump" count="16"/>
+		</recipe>
+		
+		<recipe name="GrassBlock4" count="1">
+			<ingredient name="resourceClayLump" count="16"/>
+		</recipe>
+		
+	</append>
+</configs>
