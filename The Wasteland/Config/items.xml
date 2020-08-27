@@ -664,6 +664,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Banjo.unity3d?BanjoPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mwood"/>
+		<property name="Weight" value="15"/>
 		<property name="CustomIcon" value="BanjoIcon"/>
 		<property name="RepairTools" value="resourceWood"/>
 		<property name="DegradationBreaksAfter" value="false"/>
@@ -761,6 +762,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?Baton"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="25"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -842,7 +844,7 @@
 		<property name="DisplayType" value="meleeKnife"/>
 		<property name="HoldType" value="47"/>
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?Cleaver"/>
-		<property name="Material" value="MmeleeWpnBladeParts"/> <property name="Weight" value="6"/>
+		<property name="Material" value="MmeleeWpnBladeParts"/> <property name="Weight" value="1"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="EconomicValue" value="700"/>
@@ -932,6 +934,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?Crowbar"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="15"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -1014,7 +1017,7 @@
 		<property name="HoldType" value="18"/>
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?Cuestick"/>
 		<property name="Material" value="Mwood"/>
-		<property name="StickyMaterial" value="#Other/Items?Weapons/Melee/Spear/Materials/spear_sticky.mat"/>
+		<property name="Weight" value="5"/>
 		<property name="RepairTools" value="resourceWood"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -1094,7 +1097,7 @@
 		<property name="DisplayType" value="meleeHeavy"/>
 		<property name="HoldType" value="33"/>
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?NailBoard"/>
-		<property name="Material" value="MmeleeWpnSledgeParts"/> <property name="Weight" value="6"/>
+		<property name="Material" value="Mwood"/> <property name="Weight" value="10"/>
 		<property name="RepairTools" value="resourceWood"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -1183,6 +1186,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?PipeHammer"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="25"/>
 		<property name="RepairTools" value="resourceMetalPipe"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -1266,6 +1270,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?PipeWrench"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="25"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -1349,6 +1354,7 @@
 		<property name="HoldType" value="33"/>
 		<property name="Meshfile" value="#@modfolder:Resources/rebarclub.unity3d?Rebar_Club1"/>
 		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="50"/>
 		<property name="CustomIcon" value="rebarclubicon"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="DegradationBreaksAfter" value="false"/>
@@ -1449,6 +1455,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?RollingPin"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mwood"/>
+		<property name="Weight" value="15"/>
 		<property name="RepairTools" value="resourceWood"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -1530,7 +1537,7 @@
 		<property name="DisplayType" value="meleeHeavy"/>
 		<property name="HoldType" value="33"/>
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?SuperSledge"/>
-		<property name="Material" value="MmeleeWpnSledgeParts"/> <property name="Weight" value="6"/>
+		<property name="Material" value="MmeleeWpnSledgeParts"/> <property name="Weight" value="5"/>
 		<property name="RepairTools" value="resourceForgedSteel"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -1612,6 +1619,7 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?TireIron"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="15"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -2451,7 +2459,7 @@
 		<property name="HoldType" value="71"/>
 		<property name="Meshfile" value="#@modfolder:Resources/sr1.unity3d?m16.prefab"/>
 		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
-		<property name="CrosshairOnAim" value="false"/>
+		<property name="CrosshairOnAim" value="true"/>
 		<property name="CrosshairUpAfterShot" value="true"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
@@ -2479,7 +2487,7 @@
 			<property name="Class" value="Zoom"/>
 			<property name="Zoom_max_out" value="55"/>
 			<property name="Zoom_max_in" value="55"/>
-			<property name="ScopeCameraOffset" value="-.000,-0.001,-.37"/>
+			<property name="ScopeCameraOffset" value="-.000,-0.021,.1"/>
 		</property>
 
 		<effect_group name="gunServiceRifle">
@@ -4955,13 +4963,13 @@
 		<property name="HoldType" value="18"/>
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?TheBreak"/>
 		<property name="Material" value="Mwood"/>
-		<property name="StickyMaterial" value="#Other/Items?Weapons/Melee/Spear/Materials/spear_sticky.mat"/>
+		<property name="Weight" value="500"/>		
 		<property name="RepairTools" value="resourceWood"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="FuelValue" value="75"/>
-		<property name="EconomicValue" value="175"/>
+		<property name="EconomicValue" value="2000"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="IsSticky" value="true"/>
@@ -5041,7 +5049,7 @@
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="FuelValue" value="250"/>
-		<property name="EconomicValue" value="700"/>
+		<property name="EconomicValue" value="2000"/>
 		<property name="Group" value="Ammo/Weapons"/>		
 		<property name="ShowQuality" value="true"/>
 
@@ -5118,11 +5126,12 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?MadBeanClub"/>
 		<property name="HoldType" value="2"/>
 		<property name="Material" value="Mwood"/>
+		<property name="Weight" value="500"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="5000"/>
+		<property name="EconomicValue" value="2000"/>
 		<property name="FuelValue" value="250"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -5201,11 +5210,12 @@
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?BloodyBat"/>
 		<property name="HoldType" value="65"/>
 		<property name="Material" value="Mwood"/>
+		<property name="Weight" value="500"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="2000"/>
 		<property name="FuelValue" value="250"/>		
 		<property name="ShowQuality" value="true"/>
 
@@ -5294,9 +5304,10 @@
 		<property name="HoldType" value="33"/>
 		<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?OpenBreaker"/>
 		<property name="Material" value="Mmetal"/>		
+		<property name="Weight" value="500"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
-		<property name="EconomicValue" value="5000"/>
+		<property name="EconomicValue" value="2000"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="Weight" value="200"/>

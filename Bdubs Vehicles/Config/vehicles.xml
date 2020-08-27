@@ -3466,7 +3466,7 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 18"/>
+			<property name="velocityMax" value="18, 18"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
