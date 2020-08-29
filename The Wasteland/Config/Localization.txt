@@ -58,7 +58,7 @@ cntLunchboxDesc,items,Item,New,Some old lunchbox. Might be useful for something.
 resourceBottlecaps,items,Item,New,Bottlecaps,,,,,
 resourceBottlecapsDesc,items,Item,New,Bottlecaps left over from various Nuka Colas. Might be useful for something...,,,,,
 resourceBottlecapStar,items,Item,New,Sunset Sarsaparilla Star Bottlecap,,,,,
-resourceBottlecapStarDesc,items,Item,New,Very rare Sunset Sarsaparilla cap. Probably worth some coin or collect 100 and craft a reward...,,,,,
+resourceBottlecapStarDesc,items,Item,New,Very rare Sunset Sarsaparilla cap. Probably worth some coin or collect 50 and craft a reward...,,,,,
 
 
 

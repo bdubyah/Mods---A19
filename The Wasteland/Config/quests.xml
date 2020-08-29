@@ -46,7 +46,7 @@
 
 				<objective type="TreasureChest">
 					<property name="block" value="cntPewPewLoot"/>
-					<property name="distance" value="3000-4500"/>
+					<property name="distance" value="2000-2500"/>
 				</objective>
 
 				<reward type="Exp" value="5000"/>				
