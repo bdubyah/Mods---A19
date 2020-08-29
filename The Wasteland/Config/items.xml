@@ -657,12 +657,11 @@
 	<!-- Melee -->
 
 	<item name="meleeBanjo">
-		<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon,canHaveCosmetic"/>
+		<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkSkullCrusher,weapon,canHaveCosmetic"/>
 		<property name="DisplayType" value="melee"/>
 		<property name="DescriptionKey" value="meleeBanjoDesc"/>
 		<property name="HoldType" value="33"/>
-		<property name="Meshfile" value="#@modfolder:Resources/Banjo.unity3d?BanjoPrefab"/>
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Meshfile" value="#@modfolder:Resources/Banjo.unity3d?BanjoPrefab"/>		
 		<property name="Material" value="Mwood"/>
 		<property name="Weight" value="15"/>
 		<property name="CustomIcon" value="BanjoIcon"/>
@@ -1348,7 +1347,7 @@
 	</item>
 	
 	<item name="meleeRebarClub">
-		<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon,canHaveCosmetic"/>
+		<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkSkullCrusher,weapon,canHaveCosmetic"/>
 		<property name="DisplayType" value="melee"/>
 		<property name="DescriptionKey" value="meleeRebarClubDesc"/>
 		<property name="HoldType" value="33"/>
@@ -2530,7 +2529,7 @@
 	</item>
 	
 	<item name="gunLAR"> 
-		<property name="Tags" value="weapon,sideAttachments,LAR,ranged,holdBreathAiming,largeTopAttachments,reloadPenalty,attPerception,perkDeadEye,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,revolver,sideAttachments,LAR,ranged,holdBreathAiming,largeTopAttachments,reloadPenalty,attPerception,perkDeadEye,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="11"/>
 		<property name="DescriptionKey" value="gunLARDesc"/>
@@ -3010,7 +3009,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
-			<passive_effect name="DegradationMax" operation="base_set" value="35" tier="1"/> 		
+			<passive_effect name="DegradationMax" operation="base_set" value="35"/> 		
 		</effect_group>
 	</item>
 
@@ -3094,8 +3093,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.0"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/> 
-			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5" />
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -3182,8 +3181,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
-			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5" />
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -3266,8 +3265,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.0"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/> 
-			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -3353,8 +3352,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
-			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5" />
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -4358,7 +4357,7 @@
 	</item>
 
 	<item name="gunLAR_Legendary"> 
-		<property name="Tags" value="weapon,ranged,LAR,holdBreathAiming,largeTopAttachments,reloadPenalty,sideAttachments,attPerception,perkDeadEye"/>
+		<property name="Tags" value="weapon,ranged,revolver,LAR,holdBreathAiming,largeTopAttachments,reloadPenalty,sideAttachments,attPerception,perkDeadEye"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="DescriptionKey" value="gunLAR_LegendaryDesc"/>
 		<property name="HoldType" value="11"/>
@@ -4520,8 +4519,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.0"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/> 
-			<passive_effect name="DegradationMax" operation="base_set" value="250,450" tier="1,6" tags="perkGunslinger,9mmGun"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkGunslinger,9mmGun"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="250,450" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -4607,8 +4606,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
-			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -4691,8 +4690,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.0"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/> 
-			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5" />
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -4777,8 +4776,8 @@
 			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
-			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" tags="perkAdvancedEngineering"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkAdvancedEngineering"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="500,2500" tier="1,6" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5" />
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -5298,7 +5297,7 @@
 	</item>
 	
 	<item name="meleeOpenBreaker">
-		<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon,canHaveCosmetic"/>
+		<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkSkullCrusher,weapon,canHaveCosmetic"/>
 		<property name="DisplayType" value="melee"/>
 		<property name="DescriptionKey" value="meleeRebarClubDesc"/>
 		<property name="HoldType" value="33"/>
