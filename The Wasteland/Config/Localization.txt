@@ -183,6 +183,8 @@ gunCryolatorDesc,items,Gun,New,Unique military prototype. Able to slow enemies w
 gunAlienBlaster,items,Gun,New,[FFC300]Alien Blaster[-],,,,,
 gunAlienBlasterDesc,items,Gun,New,"Not exactly sure how it works, but it has a trigger and it kills things...",,,,,
 
+gunServiceRifleSchematic,items,GunRifle,New,Service Rifle Schematic
+gunServiceRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Service Rifle. Scales with the Machine Gunner perk.
 gun10mmPistolSchematic,items,GunRifle,New,10mm Pistol Schematic
 gun10mmPistolSchematicDesc,items,GunRifle,New,Teaches you to craft the 10mm Pistol. Scales with the Gunslinger perk.
 gun10mmRevSchematic,items,GunRifle,New,10mm Revolver Schematic

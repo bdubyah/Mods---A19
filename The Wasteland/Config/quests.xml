@@ -1,7 +1,12 @@
 <config>
 
-	<append xpath="/quests/quest_items">
-		<quest_item id="10" name="questLetter" description_key="questLetterDesc" icon="questLetter" icon_color="255,255,255"/>
+	<append xpath="/quests/quest[@id='challenge_killthewabbit']/requirement[@id='requirementGroupShotgun']" >
+		<requirement type="Holding" id="gunCombatShotgun"/>
+		<requirement type="Holding" id="gunPipeShotgunSMSB"/>
+		<requirement type="Holding" id="gunPipeShotgunEMSB"/>
+		<requirement type="Holding" id="gunTripleBarrelShotgun"/>
+		<requirement type="Holding" id="gunPipeShotgunSMSB_Legendary"/>
+		<requirement type="Holding" id="gunLeFusilTerribles"/>
 	</append>
   
 	<append xpath="/quests">
@@ -46,7 +51,12 @@
 
 				<objective type="TreasureChest">
 					<property name="block" value="cntPewPewLoot"/>
-					<property name="distance" value="2000-2500"/>
+					<property name="distance" value="1500-1700"/>
+					<property name="default_radius" value="9"/>
+					<property name="nav_object" value="treasure" />
+					<property name="direct_nav_object" value="treasure_direct" />
+					<property name="blocks_per_reduction" value="10" />
+					<property name="radius_reduction_sound" value="ui_radius_shrink" />
 				</objective>
 
 				<reward type="Exp" value="5000"/>				
