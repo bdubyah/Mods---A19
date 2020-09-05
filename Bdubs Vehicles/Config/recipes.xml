@@ -336,7 +336,7 @@
 	        <ingredient name="carBattery" count="1"/>
 		</recipe>
 		
-		<recipe name="meleeGolfClub" count="1" craft_time="30" tags="workbenchCrafting">
+		<recipe name="meleeGolfClub" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting,perkPummelPete">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceScrapPolymers" count="4"/>
 			<ingredient name="resourceLeather" count="10"/>

@@ -534,9 +534,9 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
-		
+				
 		<item name="meleeGolfClub">
-			<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon"/>
+			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="DescriptionKey" value="meleeGolfClubDesc"/> 
 			<property name="HoldType" value="33"/>
@@ -554,6 +554,7 @@
 			<property name="ActionSkillGroup" value="Blunt Weapons"/>
 			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 			<property name="RepairExpMultiplier" value="1.5"/>
+			<property name="ShowQuality" value="true"/>
 			
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
@@ -570,32 +571,36 @@
 			</property>
 			
 			<effect_group name="Base Effects">
-				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="35"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-			    <passive_effect name="AttacksPerMinute" operation="base_set" value="38"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="700,1100" tier="1,6"/>
-				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		        <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-		        <passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="15" tags="perkPummelPete"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="22.1" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="52" tags="perkPummelPete,perkFlurryOfBlows"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="23.7" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,700" tier="1,6" tags="perkPummelPete"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkPummelPete"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkPummelPete"/>
+
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkPummelPete"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkPummelPete"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkPummelPete"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkPummelPete"/>
+
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
 			</effect_group>
 			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="DismemberChance" operation="base_add" value=".2" tags="secondary"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="45" tags="secondary"/>
-				
-				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
-			        <requirement name="IsMale" target="self"/>
-		        </triggered_effect>
-		       <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
-			        <requirement name="IsMale" target="self" invert="true"/>
-		       </triggered_effect>
+				<passive_effect name="StaminaLoss" operation="base_set" value="40.3" tags="secondary"/>
 			</effect_group>
 		</item>		
 		

@@ -20,11 +20,11 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 15"/>
+			<property name="velocityMax" value="10, 12"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -52,30 +52,30 @@
 				<property name="fuelKmPerL" value=".06"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 150,9999,9999,
-									Vehicles/Suv/suv_accel1,
+									,
 									Vehicles/Suv/suv_decel1,
-									0, .3,  .45, .1,  -9, .1, .1, Vehicles/Suv/suv_idle_lp,
-									-.1, .1,  .65, .3,  0, 8, .1, Vehicles/Suv/suv_max_speed_lp
+									0, .3,  .45, .1,  -9, .1, .1, truck_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck_max_speed_lp
 									"/>
-			<!--<property name="gear2" value="
+				<property name="gear2" value="
 									500,2500, -2000,1000,2000, 400,9999,9999,
-									Vehicles/Suv/suv_accel2,
-									Vehicles/Suv/suv_decel1,
-									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									,
+									truck_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck_max_speed_lp
 									"/>
 				<property name="gear3" value="
 									500,2500, -2000,1000,2000, 350,2200,1000,
-									Vehicles/Suv/suv_accel3,
-									Vehicles/Suv/suv_decel2,
-									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									,
+									truck_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck_max_speed_lp
 									"/>
 				<property name="gear4" value="
 									500,2500, -2000,1000,2000, 250,9999,9999,
 									,
-									Vehicles/Suv/suv_decel2,
-									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> -->
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+									truck_idle,
+									-.31, -.08, .6, .9, -1, 1, .1, truck_max_speed_lp
+									"/> 
+				<property name="sound_start" value="truck_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -188,12 +188,12 @@
 			<property name="tiltDampenThreshold" value="8"/>
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
-			<property name="unstickForce" value="5"/>
-			<property name="velocityMax" value="15, 15"/>
+			<property name="unstickForce" value="1"/>
+			<property name="velocityMax" value="10, 12"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -221,30 +221,30 @@
 				<property name="fuelKmPerL" value=".06"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 150,9999,9999,
-									Vehicles/Suv/suv_accel1,
+									,
 									Vehicles/Suv/suv_decel1,
-									0, .5,  .45, .1,  -9, .1, .1, Vehicles/Suv/suv_idle_lp,
-									-.1, .1,  .65, .3,  0, 9, .1, Vehicles/Suv/suv_max_speed_lp
+									0, .3,  .45, .1,  -9, .1, .1, truck2_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck2_max_speed_lp
 									"/>
-			<!---	<property name="gear2" value="
+				<property name="gear2" value="
 									500,2500, -2000,1000,2000, 400,9999,9999,
-									Vehicles/Suv/suv_accel2,
-									Vehicles/Suv/suv_decel1,
-									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									,
+									truck2_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck2_max_speed_lp
 									"/>
 				<property name="gear3" value="
 									500,2500, -2000,1000,2000, 350,2200,1000,
-									Vehicles/Suv/suv_accel3,
-									Vehicles/Suv/suv_decel2,
-									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									,
+									truck2_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck2_max_speed_lp
 									"/>
 				<property name="gear4" value="
 									500,2500, -2000,1000,2000, 250,9999,9999,
 									,
-									Vehicles/Suv/suv_decel2,
-									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> -->
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+									truck2_idle,
+									-.31, -.08, .6, 1.9, -1, 1, .1, truck2_max_speed_lp
+									"/> 
+				<property name="sound_start" value="truck2_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -362,7 +362,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -389,31 +389,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.07"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck4_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck4_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck4_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck4_idle,
+									-.31, -.08, .6, 1.9, -1, 1, .1, truck4_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="truck4_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -549,7 +549,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -576,31 +576,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.07"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck4_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck4_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck4_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck4_idle,
+									-.31, -.08, .6, 1.9, -1, 1, .1, truck4_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="truck4_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -736,7 +736,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="horn_loud"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -766,7 +766,7 @@
 									500,2500, -1400,800,0, 350,2200,900,
 								Vehicles/Suv/suv_accel1,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								0, .7, 1, .1, -9, .12, .1, oldV8_idle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear2" value="
@@ -779,13 +779,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .6, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
@@ -912,7 +912,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -939,31 +939,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -1075,7 +1075,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -1102,31 +1102,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -1238,7 +1238,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -1265,31 +1265,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -1401,7 +1401,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -1428,31 +1428,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -1564,7 +1564,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -1591,31 +1591,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -1727,7 +1727,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -1754,31 +1754,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -1890,7 +1890,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -1917,31 +1917,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -2053,7 +2053,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -2080,31 +2080,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -2216,7 +2216,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -2243,31 +2243,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -2379,7 +2379,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -2406,31 +2406,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -2542,7 +2542,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -2569,31 +2569,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -2705,7 +2705,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -2732,31 +2732,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								,
+								Vehicles/Suv/suv_decel1,
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								Vehicles/Suv/suv_decel1,
+								-.31, -.08, .3, .18, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -2868,7 +2868,7 @@
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="horn_loud"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>
@@ -3022,7 +3022,7 @@
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="horn_loud"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>
@@ -3176,7 +3176,7 @@
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="horn_loud"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>
@@ -3311,7 +3311,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="engine">
 				<property name="class" value="Engine"/>
@@ -3470,7 +3470,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -3500,7 +3500,7 @@
 									500,2500, -1400,800,0, 350,2200,900,
 								Vehicles/Suv/suv_accel1,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								0, .7, 1, .1, -9, .12, .1, modernV8_idle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear2" value="
@@ -3513,13 +3513,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .6, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
@@ -3633,7 +3633,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -3663,7 +3663,7 @@
 									500,2500, -1400,800,0, 350,2200,900,
 								Vehicles/Suv/suv_accel1,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								0, .7, 1, .1, -9, .12, .1, modernV8_idle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear2" value="
@@ -3676,13 +3676,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .6, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
@@ -3796,7 +3796,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -3941,7 +3941,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -3968,34 +3968,34 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/suv_accel1,
+									500,2500, -1400,800,0, 350,2200,900,
+								,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 600,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
-			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
-			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
-			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
-			<property name="parent_part" value="chassis"/>
+			<property name="gear4" value="
+								500,2500, -2000,1000,2000, 600,9999,9999,
+								,
+								Vehicles/Suv/suv_decel2,
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
+									"/> 
+				<property name="sound_start" value="modernV8_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+				<property name="parent_part" value="chassis"/>
 			</property>
 			
             <property class="exhaust">
@@ -4104,7 +4104,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -4131,34 +4131,34 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/suv_accel1,
+									500,2500, -1400,800,0, 350,2200,900,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 600,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 500,9999,9999,
-								,
+								500,2500, -2000,1000,2000, 600,9999,9999,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
-			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
-			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
-			<property name="parent_part" value="chassis"/>
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
+									"/> 
+				<property name="sound_start" value="modernV8_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+				<property name="parent_part" value="chassis"/>
 			</property>
 			
             <property class="exhaust">
@@ -4267,7 +4267,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -4294,34 +4294,34 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/suv_accel1,
+									500,2500, -1400,800,0, 350,2200,900,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 600,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 500,9999,9999,
-								,
+								500,2500, -2000,1000,2000, 600,9999,9999,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
-			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
-			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
-			<property name="parent_part" value="chassis"/>
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
+									"/> 
+				<property name="sound_start" value="modernV8_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+				<property name="parent_part" value="chassis"/>
 			</property>
 			
             <property class="exhaust">
@@ -4430,7 +4430,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -4457,34 +4457,34 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/suv_accel1,
+									500,2500, -1400,800,0, 350,2200,900,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 600,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 500,9999,9999,
-								,
+								500,2500, -2000,1000,2000, 600,9999,9999,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
-			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
-			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
-			<property name="parent_part" value="chassis"/>
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
+									"/> 
+				<property name="sound_start" value="modernV8_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+				<property name="parent_part" value="chassis"/>
 			</property>
 			
             <property class="exhaust">
@@ -4593,7 +4593,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -4620,34 +4620,34 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/suv_accel1,
+									500,2500, -1400,800,0, 350,2200,900,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 600,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 500,9999,9999,
-								,
+								500,2500, -2000,1000,2000, 600,9999,9999,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
-			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
-			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
-			<property name="parent_part" value="chassis"/>
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
+									"/> 
+				<property name="sound_start" value="modernV8_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+				<property name="parent_part" value="chassis"/>
 			</property>
 			
             <property class="exhaust">
@@ -4756,7 +4756,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -4783,34 +4783,34 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/suv_accel1,
+									500,2500, -1400,800,0, 350,2200,900,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 600,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 500,9999,9999,
-								,
+								500,2500, -2000,1000,2000, 600,9999,9999,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
-			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
-			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
-			<property name="parent_part" value="chassis"/>
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
+									"/> 
+				<property name="sound_start" value="modernV8_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+				<property name="parent_part" value="chassis"/>
 			</property>
 			
             <property class="exhaust">
@@ -4902,7 +4902,7 @@
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorqueMaxQ" value="4000"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -4919,7 +4919,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -4946,31 +4946,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="1.15"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck4_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck4_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck4_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck4_idle,
+									-.31, -.08, .6, 1, -1, 1, .1, truck4_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="truck4_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -5077,7 +5077,7 @@
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorqueMaxQ" value="4000"/>
 			<property name="brakeTorque" value="1000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -5094,7 +5094,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -5121,31 +5121,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="1.15"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck4_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck4_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck4_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck4_idle,
+									-.31, -.08, .6, 1, -1, 1, .1, truck4_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="truck4_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -5269,7 +5269,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="horn_loud"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -5423,7 +5423,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="horn_loud"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -5577,7 +5577,7 @@
 				<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 				<property name="wheelPtlScale" value="1"/>
 
-				<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+				<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -5740,7 +5740,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -5905,7 +5905,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="engine">
 				<property name="class" value="Engine"/>
@@ -6050,8 +6050,8 @@
 
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorqueMinQ" value="2500"/>
+			<property name="motorTorqueMaxQ" value="4000"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6063,11 +6063,12 @@
 			<property name="tiltDampenThreshold" value="8"/>
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="0"/>
-			<property name="unstickForce" value="0"/>
+			<property name="unstickForce" value="1"/>
 			<property name="velocityMax" value="13, 13"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			
+			<property name="hornSound" value="truck_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -6094,38 +6095,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value=".65"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 1500,9999,9999,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.1, .08,  .3, .3,  0, 9, .1, Vehicles/Suv/suv_max_speed_lp
-								"/> <!--
-				<property name="gear1" value="
-									500,2500, -1400,800,0, 150,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, 
-								"/> 
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 250,2200,800,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/> 
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 300,2200,1000,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, 
-								"/> 
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 300,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> -->
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck4_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck4_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck4_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck4_idle,
+									-.31, -.08, .6, 1, -1, 1, .1, truck4_max_speed_lp
+									"/> 
+				<property name="sound_start" value="truck4_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -6231,8 +6225,8 @@
 
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorqueMinQ" value="2500"/>
+			<property name="motorTorqueMaxQ" value="4000"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6244,11 +6238,11 @@
 			<property name="tiltDampenThreshold" value="8"/>
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="0"/>
-			<property name="unstickForce" value="0"/>
+			<property name="unstickForce" value="1"/>
 			<property name="velocityMax" value="13, 13"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -6275,38 +6269,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value=".65"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 1500,9999,9999,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.1, .08,  .3, .3,  0, 9, .1, Vehicles/Suv/suv_max_speed_lp
-								"/> <!--
-				<property name="gear1" value="
-									500,2500, -1400,800,0, 150,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, 
-								"/> 
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 250,2200,800,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/> 
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 300,2200,1000,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, 
-								"/> 
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 300,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> -->
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck4_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck4_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck4_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck4_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck4_idle,
+									-.31, -.08, .6, 1, -1, 1, .1, truck4_max_speed_lp
+									"/> 
+				<property name="sound_start" value="truck4_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -6412,8 +6399,8 @@
 
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="3000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
+			<property name="motorTorqueMinQ" value="2500"/>
+			<property name="motorTorqueMaxQ" value="3000"/>
 			<property name="brakeTorque" value="4000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -6430,7 +6417,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -6457,31 +6444,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.65"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								-.31, -.08, .4, .2, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -6512,14 +6499,14 @@
 			</property>
 
 			<property class="seat0">
-				<property name="position" value="-.44, .3, .60"/>
-				<property name="rotation" value="-45, 0, 0"/>
+				<property name="position" value="-.44, .4, .50"/>
+				<property name="rotation" value="-65, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 
 			<property class="seat1">
-				<property name="position" value=".44, .3, .60"/>
-				<property name="rotation" value="-45, 0, 0"/>
+				<property name="position" value=".44, .4, .50"/>
+				<property name="rotation" value="-65, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>
 						
@@ -6593,7 +6580,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -6620,31 +6607,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.65"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								-.31, -.08, .4, .2, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -6675,14 +6662,14 @@
 			</property>
 
 			<property class="seat0">
-				<property name="position" value="-.44, .3, .60"/>
-				<property name="rotation" value="-45, 0, 0"/>
+				<property name="position" value="-.44, .4, .50"/>
+				<property name="rotation" value="-65, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 
 			<property class="seat1">
-				<property name="position" value=".44, .3, .60"/>
-				<property name="rotation" value="-45, 0, 0"/>
+				<property name="position" value=".44, .4, .50"/>
+				<property name="rotation" value="-65, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>
 						
@@ -6756,7 +6743,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -6783,31 +6770,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.65"/>
 				<property name="gear1" value="
-									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								500,2500, -1400,800,0, 700,2200,900,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, oldV8_idle,
+								-.4, -.02, .3, .3, -.2, 9, .2, oldV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 600,2200,800,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								oldV8_accel2,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .3, -1, 1, .1, oldV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 600,9999,9999,
+								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+								-.31, -.08, .4, .2, -1, 1, .1, oldV8_max_speed_lp
+								"/>
+				<property name="sound_start" value="oldV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -6838,14 +6825,14 @@
 			</property>
 
 			<property class="seat0">
-				<property name="position" value="-.44, .3, .60"/>
-				<property name="rotation" value="-45, 0, 0"/>
+				<property name="position" value="-.44, .4, .50"/>
+				<property name="rotation" value="-65, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 
 			<property class="seat1">
-				<property name="position" value=".44, .3, .60"/>
-				<property name="rotation" value="-45, 0, 0"/>
+				<property name="position" value=".44, .4, .50"/>
+				<property name="rotation" value="-65, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>
 						
@@ -6919,7 +6906,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -7082,7 +7069,7 @@
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="horn_loud"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>
@@ -7236,7 +7223,7 @@
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="horn_loud"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>
@@ -7390,7 +7377,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -7417,31 +7404,31 @@
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value="0.1"/>
 				<property name="gear1" value="
-								500,2500, -1400,800,0, 100,2200,900,
-								Vehicles/Suv/suv_accel1,
-								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 100,2200,800,
-								,
-								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear3" value="
-								500,2500, -2000,1000,2000, 150,2200,1000,
-								Vehicles/Suv/suv_accel3,
-								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-			<property name="gear4" value="
-								500,2500, -2000,1000,2000, 150,9999,9999,
-								,
-								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
-								"/>
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+									500,2500, -1400,800,0, 150,9999,9999,
+									,
+									Vehicles/Suv/suv_decel1,
+									0, .3,  .45, .1,  -9, .1, .1, truck_idle,
+									-.1, .1,  .65, .3,  0, 8, .1, truck_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 400,9999,9999,
+									,
+									truck_idle,
+									-.25, -.05, .2, .4, -1, 1, .1, truck_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 350,2200,1000,
+									,
+									truck_idle,
+									-.28, -.07, .3, .6, -1, 1, .1, truck_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 250,9999,9999,
+									,
+									truck_idle,
+									-.31, -.08, .6, 1.9, -1, 1, .1, truck_max_speed_lp
+									"/> 
+				<property name="sound_start" value="truck_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -7565,7 +7552,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -7593,30 +7580,30 @@
 				<property name="fuelKmPerL" value="0.13"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .01, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="modernV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -7728,7 +7715,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -7756,30 +7743,30 @@
 				<property name="fuelKmPerL" value="0.13"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="modernV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -7891,7 +7878,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -7919,30 +7906,30 @@
 				<property name="fuelKmPerL" value="0.13"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="modernV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -8054,7 +8041,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -8082,30 +8069,30 @@
 				<property name="fuelKmPerL" value="0.13"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 350,2200,900,
-								Vehicles/Suv/suv_accel1,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								0, .7, 1, .1, 0, 0, .1, modernV8_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, modernV8_max_speed_lp
 								"/>
 			<property name="gear2" value="
-								500,2500, -2000,1000,2000, 450,2200,800,
-								Vehicles/Suv/suv_accel2,
+								500,2500, -2000,1000,2000, 450,2200,800,								
+								modernV8_idle,
 								Vehicles/Suv/suv_decel1,
-								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.25, -.05, .2, .4, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
-								Vehicles/Suv/suv_accel3,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .6, -1, 1, .1, modernV8_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
-								,
+								modernV8_idle,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .4, .25, -1, 1, .1, modernV8_max_speed_lp
 									"/> 
-				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_start" value="modernV8_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
 				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
 				<property name="parent_part" value="chassis"/>
@@ -8217,7 +8204,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -8247,7 +8234,7 @@
 									500,2500, -1400,800,0, 350,2200,900,
 								Vehicles/Suv/suv_accel1,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								0, .7, 1, .1, -9, .12, .1, oldV8_idle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear2" value="
@@ -8260,13 +8247,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .5, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
@@ -8407,7 +8394,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="truck_horn"/>
 
 			<property class="engine">
 				<property name="class" value="Engine"/>
@@ -8610,7 +8597,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -8653,13 +8640,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .6, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
@@ -8773,7 +8760,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -8816,13 +8803,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .3, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
@@ -8936,7 +8923,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="car_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -8979,13 +8966,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .4, .3, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>

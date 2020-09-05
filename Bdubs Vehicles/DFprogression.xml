@@ -1,0 +1,9 @@
+<configs>
+
+		<!-- This was a quick attempt at getting my vehicles to work with Darkness Falls. I do not play the mod, so I haven't tested it myself. But I've been told the main issue is Grease Monkey in DF only has 3 levels, so this file has been edited to work with that. 
+			 If you are using my mod with DF, rename this file to just progression.xml and replace the original one in this mod with it and hopefully it will fix the errors. Again, I HAVE NOT TESTED THIS. So if it doesn't work, let me know! -->
+
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='2,5']/@tags">,vehicleGolfCartaccessories,vehicleGolfCartchassis</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,vehicleJunkerChassis,vehicleJunkerbars,vehicleRatChassis,vehicleRatbars,vehicleCruiserChassis,vehicleCruiserbars,vehicleDirtBikeChassis,vehicleDirtBikeParts,vehicleBoxTruckbody,vehicleBoxTruckchassis,vehicleBuggychassis,vehicleBuggyaccessories,vehicleHumveechassis,vehicleHumveebody,vehicleHotRodchassis,vehicleHotRodaccessories,vehicleSHERPchassis,vehicleSHERPaccessories,vehicleChargerchassis,vehicleChargeraccessories,vehicleStallionchassis,vehicleStallionaccessories,vehicleWorkTruckchassis,vehicleWorkTruckaccessories,vehicleNovachassis,vehicleNovaaccessories,vehiclePickupchassis,vehiclePickupaccessories,vehicleGNXaccessories,vehicleGNXchassis,vehicleUAZ452chassis,vehicleUH60chassis,vehicleUH60accessories,vehicleDusterchassis,vehicleDusteraccessories,vehicleMD500chassis,vehicleMD500accessories,vehicleBRDM2chassis,vehicleBRDM2accessories,vehicleMRAPparts,vehicleMRAPaccessories,vehicleMarauderchassis,vehicleMarauderaccessories</append>
+	
+ </configs>
