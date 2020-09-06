@@ -18,6 +18,13 @@
 		<SoundDataNode name="UH60_flying2"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
 			<AudioClip ClipName="#@modfolder:Resources/UH60sounds.unity3d?heli_flying" Loop="true"/>
 			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
-
+			
+	<!-- Horns -->
+	
+		<SoundDataNode name="UH60truck_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+			<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+			<AudioClip ClipName="#@modfolder:Resources/UH60horns1.unity3d?UH60truck_horn"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+			
 	</append>
 </configs>

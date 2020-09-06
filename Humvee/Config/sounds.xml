@@ -1,4 +1,44 @@
 <configs>
 <set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/MaxRepeatRate/@value">10</set>
 <set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/Noise[@ID='0']/@noise">10</set>
+
+<append xpath="/Sounds">
+	
+	<!-- Heavy Duty Trucks -->
+			<SoundDataNode name="HVtruck4_startup"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVvehiclesounds4.unity3d?HVstartup"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+			
+			<SoundDataNode name="HVtruck4_idle"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVvehiclesounds4.unity3d?HVidle" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+			<SoundDataNode name="HVtruck4_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVvehiclesounds4.unity3d?HVlow_off" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+			<SoundDataNode name="HVtruck4_accel2"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVvehiclesounds4.unity3d?HVmed_off" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+			<SoundDataNode name="HVtruck4_accel3"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVvehiclesounds4.unity3d?HVhigh_off" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+			<SoundDataNode name="HVtruck4_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVvehiclesounds4.unity3d?HVhigh_on" Loop="true"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+		<!-- Horns -->
+		
+			<SoundDataNode name="HVtruck_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+				<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+				<AudioClip ClipName="#@modfolder:Resources/HVhorns1.unity3d?HVtruck_horn"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+	</append>
 </configs>

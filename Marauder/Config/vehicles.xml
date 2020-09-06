@@ -4,27 +4,27 @@
 
 		<vehicle name="vehicleMarauder">
 
-			<property name="cameraDistance" value="7.5, 7"/>
-			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="5000"/>
-			<property name="brakeTorque" value="2000"/>
-			<property name="upAngleMax" value="70"/>
-			<property name="upForce" value="1"/>
-			<property name="steerRate" value="160"/>
-			<property name="steerCenteringRate" value="100"/>
-			<property name="tiltAngleMax" value="180"/>
-			<property name="tiltThreshold" value="50"/>
-			<property name="tiltDampening" value=".22"/>
-			<property name="tiltDampenThreshold" value="80"/>
-			<property name="tiltUpForce" value="0"/>
-			<property name="hopForce" value="1"/>
-			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 18"/>
-			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
-			<property name="wheelPtlScale" value="1"/>
+				<property name="cameraDistance" value="7.5, 7"/>
+				<property name="cameraTurnRate" value=".2, .35"/>
+				<property name="motorTorqueMinQ" value="4000"/>
+				<property name="motorTorqueMaxQ" value="5000"/>
+				<property name="brakeTorque" value="2000"/>
+				<property name="upAngleMax" value="70"/>
+				<property name="upForce" value="1"/>
+				<property name="steerRate" value="160"/>
+				<property name="steerCenteringRate" value="100"/>
+				<property name="tiltAngleMax" value="180"/>
+				<property name="tiltThreshold" value="50"/>
+				<property name="tiltDampening" value=".22"/>
+				<property name="tiltDampenThreshold" value="80"/>
+				<property name="tiltUpForce" value="0"/>
+				<property name="hopForce" value="1"/>
+				<property name="unstickForce" value="1"/>
+				<property name="velocityMax" value="15, 18"/>
+				<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+				<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+				<property name="hornSound" value="Maratruck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -82,9 +82,9 @@
 			</property>
 			
             <property class="exhaust">
-			<property name="class" value="Exhaust"/>
-			<property name="parent_part" value="engine"/>
-			<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine"/>
+				<property name="class" value="Exhaust"/>
+				<property name="parent_part" value="engine"/>
+				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine"/>
 		    </property>
 		
 			<property class="fuelTank">
@@ -187,7 +187,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="Maratruck_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>

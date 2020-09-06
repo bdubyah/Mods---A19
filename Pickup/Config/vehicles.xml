@@ -24,7 +24,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="PUcar_horn2"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -106,13 +106,13 @@
 			</property>
 
 			<property class="seat0">
-				<property name="position" value="-.44, .53, .8"/>
+				<property name="position" value="-.44, .465, .8"/>
 				<property name="rotation" value="-55, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 
 			<property class="seat1">
-				<property name="position" value=".44, .53, .8"/>
+				<property name="position" value=".44, .465, .8"/>
 				<property name="rotation" value="-55, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>

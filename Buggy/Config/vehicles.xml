@@ -24,7 +24,7 @@
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="Buggyhorn_loud"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -54,7 +54,7 @@
 									500,2500, -1400,800,0, 350,2200,900,
 								Vehicles/Suv/suv_accel1,
 								Vehicles/Suv/suv_decel1,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								0, .7, 1, .1, -9, .12, .1, BuggyoldV8_idle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear2" value="
@@ -67,13 +67,13 @@
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/suv_accel3,
 								Vehicles/Suv/suv_decel2,
-								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.28, -.07, .3, .5, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 								"/>
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 600,9999,9999,
 								,
 								Vehicles/Suv/suv_decel2,
-								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								-.31, -.08, .6, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
 									"/> 
 				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
 				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>

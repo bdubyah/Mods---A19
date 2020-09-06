@@ -24,7 +24,7 @@
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="DBhorn_loud"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>

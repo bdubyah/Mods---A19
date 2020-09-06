@@ -20,11 +20,11 @@
 			<property name="tiltUpForce" value="0"/>
 			<property name="hopForce" value="1"/>
 			<property name="unstickForce" value=".1"/>
-			<property name="velocityMax" value="10, 11"/>
+			<property name="velocityMax" value="7, 9"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 
-			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="GCcar_horn"/>
 
 			<property class="battery">
 				<property name="class" value="Battery"/>
@@ -44,7 +44,7 @@
 
 			<property class="engine">
 				<property name="class" value="Engine"/>
-				<property name="foodDrain" value=".001,.001"/>
+				<property name="foodDrain" value=".003,.003"/>
 				<property name="slot_type" value="engine"/>
 				<property name="mesh" value="engine_small"/>
 				<property name="transform" value="engine_small"/>

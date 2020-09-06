@@ -1,0 +1,15 @@
+<configs>
+<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/MaxRepeatRate/@value">10</set>
+<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/Noise[@ID='0']/@noise">10</set>
+
+<append xpath="/Sounds">	
+	
+		<!-- Horns -->
+		
+			<SoundDataNode name="Dustertruck_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+				<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+				<AudioClip ClipName="#@modfolder:Resources/Dusterhorns1.unity3d?Dustertruck_horn"/>
+				<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+				
+	</append>
+</configs>
