@@ -1,0 +1,55 @@
+<configs>
+	<append xpath="/gamestages">
+	
+		<spawner name="SleeperRaidersMelee_b">
+			<gamestage stage="1"><spawn group="RaidersMeleesleepers_b" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="500"><spawn group="RaidersMeleesleepers_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+		</spawner>		
+		<spawner name="SleeperRaidersRanged_b">
+			<gamestage stage="1"><spawn group="RaiderRangedsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="500"><spawn group="RaiderRangedsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+		</spawner>		
+		<spawner name="SleeperRaidersMix_b">
+			<gamestage stage="1"><spawn group="RaiderMixsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="500"><spawn group="RaiderMixsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+		</spawner>
+		
+		<spawner name="SleeperRaiderBossMelee_b">
+			<gamestage stage="1"><spawn group="RaiderBossMeleesleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="500"><spawn group="RaiderBossMeleesleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+		</spawner>
+		<spawner name="SleeperRaiderBossRangedsleeper_b">
+			<gamestage stage="1"><spawn group="RaiderBossRangedsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="500"><spawn group="RaiderBossRangedsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+		</spawner>
+		<spawner name="SleeperRaiderBossMixsleeper_b">
+			<gamestage stage="1"><spawn group="RaiderBossMixsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="500"><spawn group="RaiderBossMixsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+		</spawner>
+
+
+
+		<group name="RaidersMelee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperRaidersMelee_b" count="5"/>
+		</group>
+		<group name="RaidersRanged" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperRaidersRanged_b" count="5"/>
+		</group>
+		<group name="RaidersMix" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperRaidersMix_b" count="5"/>
+		</group>
+		
+		<group name="RaiderBossMelee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperRaiderBossMelee_b" count="1"/>
+		</group>
+		<group name="RaiderBossRanged" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperRaiderBossMelee_b" count="1"/>
+		</group>
+		<group name="RaiderBossMix" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperRaiderBossMelee_b" count="1"/>
+		</group>
+
+
+	
+	</append>
+</configs>

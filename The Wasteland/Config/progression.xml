@@ -18,4 +18,12 @@
 		<passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,4" tags="EnergyWeapons"/>
 	</append>
 	
+	<append xpath="/progression/perks/perk[@name='perkPistolPeteHPAmmo']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo10mmBulletHP"/>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkPistolPeteAPAmmo']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo10mmBulletAP"/>
+	</append>
+	
 </configs>

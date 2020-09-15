@@ -268,6 +268,46 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>			
 		</effect_group>	
 	</buff>
+	<!--
+	<buff name="IsHuman_b">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group name="IsHuman_b">
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="IsHuman" value="2"/>
+			</effect_group>
+		</buff>	-->
+		
+		<buff name="UseFactionsNo_b"> <!-- This sets the UseFactions switch to false incase its a vanilla only game.   -->
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group name="UseFactions">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HasFactions" operation="set" value="0"/>				
+			</effect_group>
+		</buff>	
+		<buff name="UseFactionsYes_b"> <!-- This sets the UseFactions switch to true for NPCs.   -->
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group name="UseFactions">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HasFactions" operation="set" value="1"/>				
+			</effect_group>
+		</buff>	
+<!--  Prevent bandits class characters from getting near trader POIs  -->
+
+		<buff name="buffTraderTrigger_b" hidden="true">
+				<stack_type value="replace"/>
+				<update_rate value="1"/>
+				<effect_group>
+					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="buffInfection04" target_tags="bandit,survivor"/>
+				</effect_group>
+		</buff>
+			
+		<buff name="buffTraderRagdollNPC" hidden="true" icon="ui_game_symbol_medical"> <!-- Not used, but funny to watch  -->
+			<stack_type value="ignore"/>
+			<duration value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="3" target_tags="bandit,survivor"/>
+			</effect_group>
+		</buff>  
 	
 	<!--
 	<buff name="buffNuke">

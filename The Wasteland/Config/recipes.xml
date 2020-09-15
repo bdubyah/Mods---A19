@@ -59,6 +59,13 @@
 		<ingredient name="resourceBottlecapStar" count="50"/>
 	</recipe>	
 	
+	<recipe name="cntVTstorageSecurePlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
 	<!-- Weapons -->
 	
 	<recipe name="gun10mmPistol" count="1" craft_area="workbench" tags="learnable,perkGunslinger">

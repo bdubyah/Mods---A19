@@ -1,0 +1,1012 @@
+<configs>
+
+	<append xpath="//entity_class[@name='zombieTemplateMale']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
+	<append xpath="//entity_class[@name='zombieTemplateMale']/property[@value='SetAsTargetIfHurt']/@data">,EntityAnimalStag,EntityBandit,EntitySurvivor</append>
+	<append xpath="//entity_class[@name='zombieTemplateMale']/property[@value='SetNearestEntityAsTarget']/@data">,EntityEnemyAnimal,0,0,EntityAnimalStag,0,0,EntityBandit,0,0,EntitySurvivor,0,0</append>
+	<append xpath="//entity_class[@name='zombieSpider']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
+	<append xpath="//entity_class[@name='zombieFatCop']/property[@value='ApproachAndAttackTarget']/@data">,0,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
+	<append xpath="//entity_class[@name='zombieDemolition']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
+
+	<!-- Adds a buff to the traders in POIs so they kill bandits and survivors before the NRE when entering the trader protected zone  -->
+
+	<append xpath="/entity_classes/entity_class[@name='npcTraderTemplate']">
+		<effect_group name="Backaway or Die bandit">
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffTraderTrigger_b"/>
+		</effect_group>
+	</append>
+
+
+	<append xpath="/entity_classes">
+	
+<!-- Templates  -->	
+
+		<!--  These Templates use the BanditClass, which has the advantage of spawning a weapon into a properly configured Hand/Gun Joint.  Ranged characters can be very accurate.  In vanilla, faction is decided by class, so good guys need to use a different class, like the enemyanimal class for example. -->
+
+		<!--  GrandParent Templates  -->
+
+		<entity_class name="humanMeleeMaleTemplate_b"> <!-- If you want to make a bandit without spawning in weapons, use this Template  -->
+			<property name="EntityType" value="Player"/>
+			<property name="Tags" value="entity,male,human,melee"/> <!-- entity/sex/type/role/attacktype/name: Entity is required for code filtering, sex for sound filtering, type/role and Atype for buff filtering.  These DO NOT Extend! -->
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="HideInSpawnMenu" value="true"/> <!-- A19  -->
+			<property name="ModelType" value="Standard"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="Prefab" value="NPC"/>
+			<!--<property name="Class" value="EntityEnemyAnimal"/> -->
+			<property name="Class" value="EntityBandit"/>  <!-- This class NREs when inside a trader protection area, so POI traders have a buff that will kill them if they get close  -->
+			<property name="Parent" value="Enemies"/>
+			<property name="Mass" value="150"/>
+			<property name="Weight" value="70"/>			
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="IsEnemyEntity" value="true"/>			
+			<!--<property name="MapIcon" value="ui_game_symbol_enemy_dot" />  --> 
+			<property name="CompassIcon" value="ui_game_symbol_enemy_dot" />  <!-- comment out these lines if you dont want to see the NPC name and location on map -->
+			<property name="CompassUpIcon" value="ui_game_symbol_enemy_dot_up" />
+			<property name="CompassDownIcon" value="ui_game_symbol_enemy_dot_down" />
+			<property name="TrackerIcon" value="ui_game_symbol_run"/>		
+			<property name="AINoiseSeekDist" value="30"/>	
+			<property name="AIPathCostScale" value=".8, 1"/>
+			<property name="LookAtAngle" value="0"/> <!-- A19  Fixs broken necks for now -->
+			<property name="AttackTimeoutDay" value="1.2"/> 
+			<property name="AttackTimeoutNight" value="1.2"/>
+			<property name="RightHandJointName" value="RightWeapon" />  <!-- melee weapons goes on this child object -->
+			<property class="FallLandBehavior">
+				<property name="1None" data="anim=None;height=0,1;weight=0.4"/>
+				<property name="1Land" data="anim=Land;height=0,1;weight=0.4"/>
+				<property name="1LandLow" data="anim=LandLow;height=0,1;weight=0.15"/>
+				<property name="1Stumble" data="anim=Stumble;height=0,1;weight=0.05"/>
+
+				<property name="LowLand" data="anim=LandLow;height=1,3;weight=0.7"/>
+				<property name="LowStumble" data="anim=Stumble;height=1,3;weight=0.3"/>
+
+				<property name="MidStumble" data="anim=Stumble;height=3,5;weight=0.3"/>
+				<property name="MidStumbleAndRage" data="anim=Stumble;height=3,5;weight=0.3;ragePer=0.5,1.5;rageTime=1.0,2.0"/>
+				<property name="MidLandHard" data="anim=LandHard;height=3,5;weight=0.3"/>
+				<property name="MidLandHardAndRage" data="anim=LandHard;height=3,5;weight=0.3;ragePer=0.5,1.5;rageTime=1.0,2.0"/>
+
+				<property name="Ragdoll" data="anim=Ragdoll;height=3;weight=0.4"/>
+			</property>
+			<property class="DestroyBlockBehavior">
+				<property name="None" data="weight=0.0"/>
+				<property name="Stumble" data="weight=0.2"/>
+				<property name="Ragdoll" data="weight=0.2"/>
+			</property>
+			<property name="SwimSpeed" value="1.3"/><!-- A19  -->
+			<property name="SwimStrokeRate" value="1.1,1.5"/><!-- A19  -->
+			<property name="NavObject" value="clear_sleeper" /><!-- A19  -->
+			<property name="AITask-1" value="BreakBlock"/> 
+			<property name="AITask-2" value="ApproachDistraction"/>
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,15,EntitySurvivor,0,EntityEnemyAnimal,0"/> 
+			<property name="AITask-4" value="ApproachSpot"/> 
+			<property name="AITask-5" value="Territorial"/>
+			<property name="AITask-6" value="Look"/> 
+			<property name="AITask-7" value="Wander"/>	
+			<property name="AITask-8" value=""/>	
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityZombie,EntitySurvivor,EntityEnemyAnimal"/> 
+			<property name="AITarget-2" value="BlockingTargetTask"/> 
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/> 
+			<property name="AITarget-4" value=""/> 	
+			<property name="WalkType" value="7"/>
+			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
+			<property name="SoundStamina" value="Player_Male/player1stamina"/>
+			<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player1Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="SoundAlertTime" value="25.0"/>
+			<property name="SoundRandomTime" value="200.0"/>
+			<property name="SoundRandom" value="malehateroam"/>
+			<property name="SoundAlert" value="malehatealert"/>
+			<property name="SoundSense" value="malehatesense"/>
+			<property name="SoundHurt" value="malehatepain"/>
+			<property name="SoundDeath" value="malehatedeath"/>
+			<property name="SoundAttack" value="malehateattack"/>			
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="ParticleOnDeath" value="blood_death"/>
+			<property name="SurfaceCategory" value="organic"/> 
+			<property name="DismemberMultiplierHead" value="1"/>
+			<property name="DismemberMultiplierArms" value="1"/>
+			<property name="DismemberMultiplierLegs" value="1"/>
+			<property name="LegCrippleScale" value="1"/> 
+			<property name="LegCrawlerThreshold" value="0"/> 
+			<property name="KnockdownProneDamageThreshold" value="0.5"/>
+			<property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.4"/>
+			<property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value="1"/>
+			<property name="ArmsExplosionDamageMultiplier" value="1"/>
+			<property name="HeadExplosionDamageMultiplier" value="1"/>
+			<property name="ChestExplosionDamageMultiplier" value="1"/>
+			<property name="PainResistPerHit" value=".5"/>		
+			<property name="MaxViewAngle" value="230"/>
+			<property name="SightRange" value="70"/>
+			<property name="LegCrippleScale" value="0"/><!--  Needed to prevent crippling which changes walktype to zombie (may change that eventually  -->
+			<property name="SightLightThreshold" value="-2,150"/> 
+			<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> 
+			<property name="SleeperWakeupSightDetectionMax" value="340,480"/> 
+			<property name="SleeperSenseSightDetectionMin" value="-10,0"/> 
+			<property name="SleeperSenseSightDetectionMax" value="200,300"/>
+			<property name="SleeperNoiseSenseThreshold" value="3,8"/> 
+			<property name="SleeperNoiseWakeThreshold" value="9,12"/>
+			<property name="SleeperSmellSenseThreshold" value="20,50"/> 
+			<property name="SoundSleeperSenseChance" value=".5"/> 
+			<property name="SleeperSmellWakeThreshold" value="40,100"/>
+			<property name="NoiseAlertThreshold" value="50"/> 
+			<property name="SmellAlertThreshold" value="40"/> 
+			<property name="MaxTurnSpeed" value="250"/>
+			<property name="MoveSpeed" value="0.25"/> 
+			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
+			<property name="MoveSpeedPanic" value="1.1"/>
+			<property name="MoveSpeedRand" value="-.2, .25"/> 
+			<property name="CanClimbLadders" value="true"/>
+			<property name="CanClimbVertical" value="false"/>
+			<property name="JumpMaxDistance" value="2.8, 3.9"/>
+			<property name="Immunity" value="sickness;disease;wellness"/> 
+			<property name="ExperienceGain" value="500"/> 
+			<property name="LootDropProb" value="0.1"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+			<property name="TimeStayAfterDeath" value="30"/>
+			<property name="DeadBodyHitPoints" value="400"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="StaminaMax" operation="base_set" value="200"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+			</effect_group>
+			<effect_group name="SelfMedicate Effects">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value=".1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>				
+			<effect_group name="IsHuman"> <!-- This activates the IsHuman Buff which sets an animator parameter value to path to only human animations  -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="IsHuman"/>		
+			</effect_group>	
+			<effect_group name="UseFactions"> <!-- This activates thr Usefactions Buff which tells the game not to use DMT faction classes  -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="UseFactionsNo"/>		
+			</effect_group>	
+			<!--<effect_group name="ragtestforNREs">
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ragtest"/>		
+			</effect_group>-->				
+			<property name="RotateToGround" value="false"/>	
+			<property name="PushFactor" value="10"/>			
+		</entity_class>
+		
+		<entity_class name="humanMeleeFemaleTemplate_b" extends="humanMeleeMaleTemplate_b">
+			<property name="Class" value="EntityBandit"/>
+			<property name="Tags" value="entity,female,human,melee"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>			
+		</entity_class>
+		
+		<entity_class name="humanRangedMaleTemplate_b" extends="humanMeleeMaleTemplate_b"> 	<!-- If you want to make a ranged bandit without spawning in weapons, use this Template  -->
+			<property name="Class" value="EntityBandit"/>
+			<property name="Tags" value="entity,male,human,ranged"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="MoveSpeed" value="0.25"/> 
+			<property name="MoveSpeedAggro" value="1.0, 1.0"/> 
+			<property name="MoveSpeedPanic" value="1.0"/>
+			<property name="MoveSpeedRand" value="-.2, .25"/> 		
+			<property name="SightRange" value="70"/>
+			<property name="LegCrippleScale" value="0"/>
+			<property name="RightHandJointName" value="Gunjoint" /> <!-- Ranged weapons goes on this child object (Except longbows) -->
+			<property name="HandItem" value="gunBanditHuntingRifle_b"/>
+			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> 
+			<property name="AITask-2" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> 
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityZombie,0,EntitySurvivor,0,EntityEnemyAnimal,0"/>
+			<property name="AITask-4" value="RunawayWhenHurt" data="runChance=.7;healthPer=.5;healthPerMax=0.75"/> 
+			<property name="AITask-5" value="BreakBlock"/> 
+			<property name="AITask-6" value="ApproachSpot"/>
+			<property name="AITask-7" value="Territorial"/>
+			<property name="AITask-8" value="Look"/> 
+			<property name="AITask-9" value="Wander"/>
+			<property name="AITask-10" value=""/>	
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityZombie,EntitySurvivor,EntityEnemyAnimal"/> 
+			<property name="AITarget-2" value="BlockingTargetTask"/> 
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/> 
+			<property name="AITarget-4" value=""/> 			
+		</entity_class>
+
+		<entity_class name="humanRangedFemaleTemplate_b" extends="humanRangedMaleTemplate_b">
+			<property name="Class" value="EntityBandit"/>
+			<property name="Tags" value="entity,female,human,ranged"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>				
+		</entity_class>	
+		
+		<entity_class name="humanMeleeMaleBanditTemplate_b" extends="humanMeleeMaleTemplate_b"> <!-- If you want to make a bandit that spawns in melee weapons, use this Template  -->
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Class" value="EntityBandit"/>
+			<property name="LootDropProb" value="0.25"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/>  
+		</entity_class>	
+
+		<entity_class name="humanRangedMaleBanditTemplate_b" extends="humanRangedMaleTemplate_b"> 	<!-- If you want to make a bandit that spawns in ranged weapons, use this Template  -->
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Class" value="EntityBandit"/>
+			<property name="LootDropProb" value="0.25"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/> 
+		</entity_class>	
+		
+		<entity_class name="humanMeleeMaleSleeperTemplate_b" extends="humanMeleeMaleTemplate_b">
+			<property name="Tags" value="entity,male,human,melee,sleeper"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Faction" value="bandits"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+		</entity_class>	<!--  Without this edit, sleeping bandits will not wake up when players are near.  -->
+		
+		<entity_class name="humanMeleeFemaleSleeperTemplate_b" extends="humanMeleeFemaleTemplate_b">
+			<property name="Tags" value="entity,female,human,melee,sleeper"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Faction" value="bandits"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+		</entity_class>			
+		
+		<entity_class name="humanRangedMaleSleeperTemplate_b" extends="humanRangedMaleTemplate_b">
+			<property name="Tags" value="entity,male,human,ranged,sleeper"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Faction" value="bandits"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+		</entity_class>	
+		
+		<entity_class name="humanRangedFemaleSleeperTemplate_b" extends="humanRangedFemaleTemplate_b">
+			<property name="Tags" value="entity,female,human,ranged,sleeper"/>
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Faction" value="bandits"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+		</entity_class>
+		
+
+<!-- _______________________________________________________________________________________________________________________________________________________________________________________________________________________________ -->			
+		
+		
+		
+		<entity_class name="humanRaiderScoutClub" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditAxe_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanRaiderScoutSMG" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaiderScoutRifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider1Club" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditCrowbar_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCrowbar_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCrowbar_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider1SMG" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider1Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider2Club" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditTireIron_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditTireIron_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditTireIron_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider2SMG" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider2Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider3Club" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit3"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditNailBoard_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditNailBoard_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditNailBoard_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider3Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit3"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider3Shotty" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit3"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider4Club" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditPipeHammer_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditPipeHammer_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditPipeHammer_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider4Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
+			<property name="WalkType" value="2"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider4Shotty" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider5Club" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditCleaver_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCleaver_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCleaver_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider5Shotty" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider5Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaiderLeaderClub" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditLeader"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditSupaSledge_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditSupaSledge_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditSupaSledge_b"/>
+			<property name="ExperienceGain" value="1000"/> 
+			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropProb" value=".5"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="750"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaiderLeaderRifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditLeader"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ExperienceGain" value="1000"/> 
+			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropProb" value=".5"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="750"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>	
+		
+		<entity_class name="humanRaiderLeaderShotgun" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditLeaderRanged"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/> 
+			<property name="ExperienceGain" value="1000"/> 
+			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropProb" value=".5"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="750"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class> 
+		
+	<!-- Sleeper Entries -->
+	
+		<entity_class name="humanRaiderScoutClubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditAxe_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanRaiderScoutSMGsleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaiderScoutRiflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider1Clubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditCrowbar_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCrowbar_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCrowbar_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider1SMGsleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider1Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider2Clubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditAxe_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider2SMGsleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider2Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider3Clubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit3"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditNailBoard_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditNailBoard_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditNailBoard_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider3Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit3"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider3Shottysleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit3"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider4Clubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditPipeHammer_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditPipeHammer_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditPipeHammer_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider4Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider4Shottysleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider5Clubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditCleaver_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCleaver_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCleaver_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider5Shottysleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaider5Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaiderLeaderClubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditLeader"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditSupaSledge_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditSupaSledge_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditSupaSledge_b"/>
+			<property name="ExperienceGain" value="1000"/> 
+			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropProb" value=".5"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="750"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanRaiderLeaderRiflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditLeader"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ExperienceGain" value="1000"/> 
+			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropProb" value=".5"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="750"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>	
+		
+		<entity_class name="humanRaiderLeaderShotgunsleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditLeaderRanged"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/> 
+			<property name="ExperienceGain" value="1000"/> 
+			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropProb" value=".5"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="750"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+	<!-- Loot Bags -->
+		
+		<entity_class name="RaiderLeaderLoot">
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Mesh" value="#Entities/LootContainers?zpackPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="1200"/>
+			<property name="LootListOnDeath" value="938"/> 
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+	</append>
+</configs>

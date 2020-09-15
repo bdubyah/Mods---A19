@@ -1,0 +1,86 @@
+<configs>
+
+	<append xpath="/entitygroups">
+		<entitygroup name="RaiderMixsleeper_b">
+			<entity name="humanRaiderScoutClubsleeper"  />
+			<entity name="humanRaiderScoutSMGsleeper"  />
+			<entity name="humanRaiderScoutRiflesleeper"  />			
+			<entity name="humanRaider1Clubsleeper"  />
+			<entity name="humanRaider1SMGsleeper"  />
+			<entity name="humanRaider1Riflesleeper"  />			
+			<entity name="humanRaider2Clubsleeper"  />
+			<entity name="humanRaider2SMGsleeper"  />
+			<entity name="humanRaider2Riflesleeper"  />			
+			<entity name="humanRaider3Clubsleeper"  />
+			<entity name="humanRaider3Riflesleeper"  />
+			<entity name="humanRaider3Shottysleeper"  />			
+			<entity name="humanRaider4Clubsleeper"  />
+			<entity name="humanRaider4Riflesleeper"  />
+			<entity name="humanRaider4Shottysleeper"  />			
+			<entity name="humanRaider5Clubsleeper"  />
+			<entity name="humanRaider5Shottysleeper"  />
+			<entity name="humanRaider5Riflesleeper"  />				
+		</entitygroup>
+		<entitygroup name="RaiderRangedsleeper_b">			
+			<entity name="humanRaiderScoutSMGsleeper"  />
+			<entity name="humanRaiderScoutRiflesleeper"  />				
+			<entity name="humanRaider1SMGsleeper"  />
+			<entity name="humanRaider1Riflesleeper"  />				
+			<entity name="humanRaider2SMGsleeper"  />
+			<entity name="humanRaider2Riflesleeper"  />				
+			<entity name="humanRaider3Riflesleeper"  />
+			<entity name="humanRaider3Shottysleeper"  />			
+			<entity name="humanRaider4Riflesleeper"  />
+			<entity name="humanRaider4Shottysleeper"  />				
+			<entity name="humanRaider5Shottysleeper"  />
+			<entity name="humanRaider5Riflesleeper"  />					
+		</entitygroup>		
+		<entitygroup name="RaidersMeleesleepers_b">
+			<entity name="humanRaiderScoutClub"  />			
+			<entity name="humanRaider1Clubsleeper"  />			
+			<entity name="humanRaider2Clubsleeper"  />			
+			<entity name="humanRaider3Clubsleeper"  />			
+			<entity name="humanRaider4Clubsleeper"  />			
+			<entity name="humanRaider5Clubsleeper"  />							
+		</entitygroup>
+		
+		<entitygroup name="RaiderBossMeleesleeper_b">				
+			<entity name="humanRaiderLeaderClubsleeper"  />					
+		</entitygroup>
+		<entitygroup name="RaiderBossRangedsleeper_b">				
+			<entity name="humanRaiderLeaderRiflesleeper"  />
+			<entity name="humanRaiderLeaderShotgunsleeper"  />
+		</entitygroup>
+		<entitygroup name="RaiderBossMixsleeper_b">				
+			<entity name="humanRaiderLeaderRiflesleeper"  />
+			<entity name="humanRaiderLeaderClubsleeper"  />
+			<entity name="humanRaiderLeaderShotgunsleeper"  />
+		</entitygroup>
+	</append> 
+	
+	<append xpath="/entitygroups/entitygroup[ starts-with(@name, 'ZombiesAll')]">
+		<entity name="humanRaiderScoutClubsleeper"  prob="0.01" />
+		<entity name="humanRaiderScoutSMGsleeper"  prob="0.01" />
+		<entity name="humanRaiderScoutRiflesleeper"  prob="0.01" />			
+		<entity name="humanRaider1Clubsleeper"  prob="0.01" />
+		<entity name="humanRaider1SMGsleeper"  prob="0.01" />
+		<entity name="humanRaider1Riflesleeper"  prob="0.01" />			
+		<entity name="humanRaider2Clubsleeper"  prob="0.01" />
+		<entity name="humanRaider2SMGsleeper"  prob="0.01" />
+		<entity name="humanRaider2Riflesleeper"  prob="0.01" />			
+		<entity name="humanRaider3Clubsleeper"  prob="0.01" />
+		<entity name="humanRaider3Riflesleeper"  prob="0.01" />
+		<entity name="humanRaider3Shottysleeper"  prob="0.01" />			
+		<entity name="humanRaider4Clubsleeper"  prob="0.01" />
+		<entity name="humanRaider4Riflesleeper"  prob="0.01" />
+		<entity name="humanRaider4Shottysleeper"  prob="0.01" />			
+		<entity name="humanRaider5Clubsleeper"  prob="0.01" />
+		<entity name="humanRaider5Shottysleeper"  prob="0.01" />
+		<entity name="humanRaider5Riflesleeper"  prob="0.01" />				
+		<entity name="humanRaiderLeaderRifle"  prob="0.007" />
+		<entity name="humanRaiderLeaderClub"  prob="0.007" />
+		<entity name="humanRaiderLeaderShotgun"  prob="0.007" />		
+	</append> 
+
+
+</configs>

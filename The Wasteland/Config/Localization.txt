@@ -24,6 +24,14 @@ NukaQuartzLight,blocks,blocks,New,Nuka Quartz
 NukaCherryLight,blocks,blocks,New,Nuka Cherry
 NukaTruck,blocks,blocks,New,Nuka Truck
 
+cntVTstoragePlayer,blocks,Container,New,Vault Tec Container
+cntVTstoragePlayerDesc,blocks,Container,New,Storage container.
+cntVTstorageSecurePlayer,blocks,Container,New,Vault Tec Container
+cntVTstorageSecurePlayerDesc,blocks,Container,New,Storage container.
+cntVTstorageLoot,blocks,Container,New,Vault Tec Container
+cntVTstorageLootDesc,blocks,Container,New,Storage container.
+cntVTstorageLootInsecure,blocks,Container,New,Vault Tec Container
+cntVTstorageLootInsecureDesc,blocks,Container,New,Storage container.
 cntNukaCrateS1,blocks,Container,New,Sealed Nuka Crate
 cntNukaCrateS2,blocks,Container,New,Sealed Nuka Crate
 cntNukaCrate1,blocks,Container,New,Nuka Crate
@@ -216,6 +224,7 @@ modOverchargedCapacitorSchematic,item_modifiers,mod,New,Overcharged Capacitor Sc
 modLaserSplitterSchematic,item_modifiers,mod,New,Laser Splitter Schematic
 modLaserFocuserSchematic,item_modifiers,mod,New,Laser Focuser Schematic
 modLaserScopeSchematic,item_modifiers,mod,New,Laser Rifle Scope Schematic
+cntVTstorageSecurePlayerSchematic,blocks,cnt,New,Vault Tec Storage Schematic
 
 meleeBanjo,items,Melee,KgNone,Banjo,,,,,
 meleeBanjoDesc,items,Melee,KgNone,A melee weapon. A good choice when trying to win Zombie Kill of the Week!,,,,,
@@ -256,10 +265,13 @@ meleeOpenBreakerDesc,items,Melee,KgNone,"Zombie killing is a 24/7 business. And 
 cntUFO,blocks,Container,New,Crashed UFO
 cntUFODesc,blocks,Container,New,UFO block
 
+RaiderLeaderLoot,blocks,Container,New,Raider Leader's Loot
+RaiderLeaderLootDesc,blocks,Container,New,Raider Leader's Loot
+
 questPewPew,items,Quest,New,Sunset Sarsaparilla flier
 questPewPewDesc,items,Quest,New,A flier for the Star Bottlecap giveaway. Read it to learn where to go to claim your prize!
 questoldMap,items,Quest,New,Old Map
-questoldMapDesc,items,Quest,New,An old map the trader gave me to show where the fool's stash should be. Read it to learn where the prize should be.
+questoldMapDesc,items,Quest,New,An old map the trader gave me to show where the fool's stash is. Read it to learn where the prize should be.
 questLetter,items,Quest,New,Old Letter,,,,,
 questLetterDesc,items,Quest,New,Some old letter that didn't make it to its intended target.,,,,,
 cntPewPewLoot,blocks,Container,New,Hidden Stash

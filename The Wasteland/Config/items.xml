@@ -14,7 +14,7 @@
 		<property name="CustomIcon" value="NukaCola"/>
 		<property name="Stacknumber" value="15"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="125"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property name="UnlockedBy" value="bookNukaRecipes"/>
 		<property class="Action0">
@@ -62,7 +62,7 @@
 		<property name="CustomIcon" value="NukaCherry"/>
 		<property name="Stacknumber" value="15"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="175"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property name="UnlockedBy" value="bookNukaRecipes"/>
 		<property class="Action0">
@@ -111,7 +111,7 @@
 		<property name="CustomIcon" value="NukaQuantum"/>
 		<property name="Stacknumber" value="15"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="500"/>
+		<property name="EconomicValue" value="75"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property name="UnlockedBy" value="bookNukaRecipes"/>
 		<property class="Action0">
@@ -159,7 +159,7 @@
 		<property name="CustomIcon" value="NukaQuartz"/>
 		<property name="Stacknumber" value="15"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="250"/>
+		<property name="EconomicValue" value="75"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property name="UnlockedBy" value="bookNukaRecipes"/>
 		<property class="Action0">
@@ -207,7 +207,7 @@
 		<property name="CustomIcon" value="SunsetSarsaparilla"/>
 		<property name="Stacknumber" value="15"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="250"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property name="UnlockedBy" value="bookNukaRecipes"/>
 		<property class="Action0">
@@ -215,7 +215,7 @@
 			<property name="Delay" value="1"/>
 			<property name="Use_time" value="..."/>
 			<property name="Sound_start" value="player_drinking"/>
-			<property name="Create_item" value="resourceBottlecapStar"/>
+			<property name="Create_item" value="resourceBottlecaps"/>
 		</property>
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock"/>
@@ -254,7 +254,7 @@
 		<property name="Material" value="MresourceScrapIron"/>
 		<property name="Weight" value="2"/>
 		<property name="Stacknumber" value="1000"/> 
-		<property name="EconomicValue" value="10"/>
+		<property name="EconomicValue" value="100"/>
 		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources"/>
 	</item>
@@ -269,7 +269,7 @@
 		<property name="Material" value="MresourceScrapIron"/>
 		<property name="Weight" value="2"/>
 		<property name="Stacknumber" value="10"/> 
-		<property name="EconomicValue" value="1500"/>
+		<property name="EconomicValue" value="500"/>
 		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources"/>
 	</item>
@@ -284,7 +284,7 @@
 		<property name="CustomIcon" value="schematicMaster"/> <property name="CustomIconTint" value="D42F2F"/>	
 		<property name="AltItemTypeIcon" value="book_read"/>
 		<property name="Stacknumber" value="50"/> 
-		<property name="EconomicValue" value="10000"/>
+		<property name="EconomicValue" value="1000"/>
 		<property name="SellableToTrader" value="true"/>
 		<property name="FuelValue" value="4"/>
 		<property name="Weight" value="40"/>
@@ -385,7 +385,7 @@
 		<property name="CustomIcon" value="cntLunchbox"/>
 		<property name="Stacknumber" value="15"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="250"/>
+		<property name="EconomicValue" value="25"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock"/>
@@ -406,7 +406,7 @@
 		<property name="CustomIcon" value="mineBottlecapMine"/>
 		<property name="Stacknumber" value="5"/> 
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="250"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock"/>
@@ -665,6 +665,17 @@
 			<property name="Delay" value="0"/>
 		</property>	
 	</item>	
+	
+	<item name="cntVTstorageSecurePlayerSchematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="cntVTstorage"/>
+		<property name="Unlocks" value="cntVTstorageSecurePlayer"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntVTstorageSecurePlayer" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
 
 	<!-- Melee -->
 
@@ -679,7 +690,7 @@
 		<property name="CustomIcon" value="BanjoIcon"/>
 		<property name="RepairTools" value="resourceWood"/>
 		<property name="DegradationBreaksAfter" value="false"/>
-		<property name="EconomicValue" value="300"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="CritChance" value="0.35"/>
@@ -778,7 +789,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="FuelValue" value="0"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -858,7 +869,7 @@
 		<property name="Material" value="MmeleeWpnBladeParts"/> <property name="Weight" value="1"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="DegradationBreaksAfter" value="false"/>
-		<property name="EconomicValue" value="700"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="Group" value="Ammo/Weapons"/>
@@ -950,7 +961,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="FuelValue" value="0"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -1034,7 +1045,7 @@
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="FuelValue" value="75"/>
-		<property name="EconomicValue" value="175"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="IsSticky" value="true"/>
@@ -1114,7 +1125,7 @@
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="FuelValue" value="250"/>
-		<property name="EconomicValue" value="700"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="Group" value="Ammo/Weapons"/>		
 		<property name="ShowQuality" value="true"/>
 
@@ -1202,7 +1213,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="FuelValue" value="0"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -1286,7 +1297,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="FuelValue" value="0"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -1369,7 +1380,7 @@
 		<property name="CustomIcon" value="rebarclubicon"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
 		<property name="DegradationBreaksAfter" value="false"/>
-		<property name="EconomicValue" value="300"/>
+		<property name="EconomicValue" value="75"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="Weight" value="200"/>
@@ -1471,7 +1482,7 @@
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="FuelValue" value="250"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -1554,7 +1565,7 @@
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="FuelValue" value="250"/>
-		<property name="EconomicValue" value="700"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="Group" value="Ammo/Weapons"/>		
 		<property name="ShowQuality" value="true"/>
 
@@ -1635,7 +1646,7 @@
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="350"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="FuelValue" value="0"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -1736,7 +1747,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="150"/>
+		<property name="EconomicValue" value="100"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="Stacknumber" value="1"/> 
 		<property name="RepairTools" value="resourceForgedIron"/>
@@ -1824,7 +1835,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="200"/>
+		<property name="EconomicValue" value="100"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="Stacknumber" value="1"/>
 		<property name="RepairTools" value="resourceForgedIron"/>
@@ -1912,7 +1923,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="200"/>
+		<property name="EconomicValue" value="100"/>
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -1934,7 +1945,7 @@
 			<property name="Class" value="Zoom"/>
 			<property name="Zoom_max_out" value="55"/>
 			<property name="Zoom_max_in" value="55"/>
-			<property name="ScopeCameraOffset" value="0,-.016,0"/>
+			<property name="ScopeCameraOffset" value="0,-.009,0"/>
 		</property>
 
 		<effect_group name="Base Effects"> 
@@ -1999,7 +2010,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="200"/>
+		<property name="EconomicValue" value="100"/>
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -2021,7 +2032,7 @@
 			<property name="Class" value="Zoom"/>
 			<property name="Zoom_max_out" value="55"/>
 			<property name="Zoom_max_in" value="55"/>
-			<property name="ScopeCameraOffset" value="0,-.016,0"/>
+			<property name="ScopeCameraOffset" value="0,-.009,0"/>
 		</property>
 
 		<effect_group name="Base Effects"> 
@@ -2081,7 +2092,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="500"/>
+		<property name="EconomicValue" value="350"/>
 		<property name="UnlockedBy" value="gun10mmPistolSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -2160,7 +2171,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="500"/>
+		<property name="EconomicValue" value="350"/>
 		<property name="UnlockedBy" value="gun10mmRevSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -2238,7 +2249,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="1500"/>
+		<property name="EconomicValue" value="400"/>
 		<property name="UnlockedBy" value="gun10mmSMGSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -2327,7 +2338,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="800"/>
+		<property name="EconomicValue" value="400"/>
 		<property name="UnlockedBy" value="gunTripleBarrelShotgunSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -2404,7 +2415,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="1500"/>
+		<property name="EconomicValue" value="600"/>
 		<property name="UnlockedBy" value="gunCombatShotgunSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -2470,7 +2481,7 @@
 		<property name="HoldType" value="71"/>
 		<property name="Meshfile" value="#@modfolder:Resources/sr1.unity3d?m16.prefab"/>
 		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
-		<property name="CrosshairOnAim" value="true"/>
+		<property name="CrosshairOnAim" value="false"/>
 		<property name="CrosshairUpAfterShot" value="true"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
@@ -2478,7 +2489,7 @@
 		<property name="Sound_Sight_In" value="rifle_sight_in"/>
 		<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
-		<property name="EconomicValue" value="1000"/>
+		<property name="EconomicValue" value="600"/>
 		<property name="UnlockedBy" value="gunServiceRifleSchematic"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="Group" value="Ammo/Weapons"/>
@@ -2514,7 +2525,7 @@
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkMachineGunner"/> 
 			<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> 
 			<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkMachineGunner"/> 
-			<passive_effect name="RoundsPerMinute" operation="base_set" value="300" tags="perkMachineGunner"/>
+			<passive_effect name="RoundsPerMinute" operation="base_set" value="500" tags="perkMachineGunner"/>
 			<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkMachineGunner"/>
 			<passive_effect name="MagazineSize" operation="base_set" value="30" tags="perkMachineGunner"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".7" tags="perkMachineGunner"/> <!-- 3.8s -->
@@ -2646,7 +2657,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="700"/>
+		<property name="EconomicValue" value="600"/>
 		<property name="UnlockedBy" value="gunHeavySniperSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -2725,9 +2736,11 @@
 		<property name="Attachments" value="meleeToolFlashlight02"/>
 		<property name="CrosshairOnAim" value="true"/> 
 		<property name="CrosshairUpAfterShot" value="true"/>
+		<property name="EconomicValue" value="500"/>
 		<property name="Sound_Sight_In" value="pistol_sight_in"/>
 		<property name="Sound_Sight_Out" value="pistol_sight_out"/>
 		<property name="ShowQuality" value="true"/>
+		<property name="UnlockedBy" value="gunIncineratorSchematic"/>
 
 		<property class="Action0">
 			<property name="Class" value="Launcher"/>
@@ -2806,8 +2819,9 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
-		<property name="EconomicValue" value="1800"/>
+		<property name="EconomicValue" value="500"/>
 		<property name="ShowQuality" value="true"/>
+		<property name="UnlockedBy" value="gunRailwayRifleSchematic"/>
 
 		<property class="Action0">
 			<property name="Class" value="Launcher"/>
@@ -2966,7 +2980,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="300"/>
+		<property name="EconomicValue" value="100"/>
 		<property name="LightValue" value="0.0"/>
 		<property name="LightSource" value="lightSource"/>
 		<property name="ActivateObject" value="lightSource"/>
@@ -3048,7 +3062,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="1500"/>
+		<property name="EconomicValue" value="800"/>
 		<property name="UnlockedBy" value="gunLaserPistolSchematic"/>
 		<property name="ShowQuality" value="true"/>
 		<property class="Action0">
@@ -3134,7 +3148,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="2500"/>
+		<property name="EconomicValue" value="1000"/>
 		<property name="UnlockedBy" value="gunLaserRifleSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -3220,7 +3234,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="1500"/>
+		<property name="EconomicValue" value="800"/>
 		<property name="UnlockedBy" value="gunPlasmaPistolSchematic"/>
 		<property name="ShowQuality" value="true"/>
 		<property class="Action0">
@@ -3305,7 +3319,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="2500"/>
+		<property name="EconomicValue" value="1000"/>
 		<property name="UnlockedBy" value="gunPlasmaRifleSchematic"/>
 		<property name="ShowQuality" value="true"/>
 
@@ -3383,7 +3397,7 @@
 		<property name="DropScale" value="2"/>
 		<property name="Material" value="Mmetal"/>
 		<property name="Stacknumber" value="25"/>
-		<property name="EconomicValue" value="41"/>
+		<property name="EconomicValue" value="250"/>
 		<property name="Weight" value="0"/>
 		<property name="Explosion.ParticleIndex" value="13"/>
 		<property name="Explosion.RadiusBlocks" value="4"/>
@@ -4032,7 +4046,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="7500"/>		
+		<property name="EconomicValue" value="3000"/>		
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -4123,7 +4137,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="6500"/>
+		<property name="EconomicValue" value="2500"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 
@@ -4216,7 +4230,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="6500"/>
+		<property name="EconomicValue" value="2500"/>
 		<property name="Stacknumber" value="1"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
@@ -4281,7 +4295,7 @@
 	</item>
 
 	<item name="gunPipeRifle_Legendary">
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,magazine,perkGunslinger,LongBarrel,PipeGun"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,magazine,perkDeadEye,LongBarrel,PipeGun"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="DescriptionKey" value="gunPipeRifle_LegendaryDesc"/>
 		<property name="HoldType" value="11"/>
@@ -4305,7 +4319,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="6500"/>
+		<property name="EconomicValue" value="2500"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="Stacknumber" value="1"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
@@ -4391,7 +4405,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="9000"/>	
+		<property name="EconomicValue" value="3000"/>	
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -4474,7 +4488,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="7500"/>		
+		<property name="EconomicValue" value="3000"/>		
 		<property name="ShowQuality" value="true"/>
 		
 		<property class="Action0">
@@ -4560,7 +4574,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="10000"/>		
+		<property name="EconomicValue" value="3000"/>		
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -4646,7 +4660,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="10000"/>		
+		<property name="EconomicValue" value="3500"/>		
 		<property name="ShowQuality" value="true"/>
 		<property class="Action0">
 			<property name="Class" value="Launcher"/>
@@ -4671,7 +4685,7 @@
 
 		<effect_group name="gunAlienBlaster">
 			<passive_effect name="MaxRange" operation="base_set" value="50"/>
-			<passive_effect name="EntityDamage" operation="base_add" value="64"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="94"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="15"/>
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> 
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
@@ -4704,6 +4718,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value="1"/> 
 			<passive_effect name="DegradationMax" operation="base_set" value="550,2500" tier="1,6" />
 			<passive_effect name="DegradationPerUse" operation="base_set" value="5" />
+			<passive_effect name="DismemberChance" operation="base_set" value="1" tags="leg,arm"/>	
 			<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="Reload" value="true"/>
 			<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="Reload" value="false"/>
 		</effect_group>
@@ -4730,7 +4745,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="10000"/>		
+		<property name="EconomicValue" value="3000"/>		
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -4817,7 +4832,7 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="10000"/>	
+		<property name="EconomicValue" value="3000"/>	
 		<property name="ShowQuality" value="true"/>
 
 		<property class="Action0">
@@ -4905,7 +4920,7 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value=".45"/>
-		<property name="EconomicValue" value="10000"/>		
+		<property name="EconomicValue" value="3000"/>		
 		<property name="ShowQuality" value="true"/>
 		
 		<property class="Action0">
@@ -4980,7 +4995,7 @@
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="FuelValue" value="75"/>
-		<property name="EconomicValue" value="2000"/>
+		<property name="EconomicValue" value="1500"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="IsSticky" value="true"/>
@@ -5060,7 +5075,7 @@
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="FuelValue" value="250"/>
-		<property name="EconomicValue" value="2000"/>
+		<property name="EconomicValue" value="1500"/>
 		<property name="Group" value="Ammo/Weapons"/>		
 		<property name="ShowQuality" value="true"/>
 
@@ -5142,7 +5157,7 @@
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="2000"/>
+		<property name="EconomicValue" value="1500"/>
 		<property name="FuelValue" value="250"/>	
 		<property name="ShowQuality" value="true"/>
 
@@ -5226,7 +5241,7 @@
 		<property name="SoundDestroy" value="wooddestroy1"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="EconomicValue" value="2000"/>
+		<property name="EconomicValue" value="1500"/>
 		<property name="FuelValue" value="250"/>		
 		<property name="ShowQuality" value="true"/>
 
@@ -5271,7 +5286,7 @@
 		</property>
 
 		<effect_group name="meleeNavSlugger">
-			<passive_effect name="EntityDamage" operation="base_set" value="20.4" tags="perkPummelPete"/> 
+			<passive_effect name="EntityDamage" operation="base_set" value="35" tags="perkPummelPete"/> 
 			<passive_effect name="BlockDamage" operation="base_set" value="14.6" tags="perkPummelPete"/>
 			<passive_effect name="AttacksPerMinute" operation="base_set" value="52" tags="perkPummelPete,perkFlurryOfBlows"/>
 			<passive_effect name="StaminaLoss" operation="base_set" value="20.9" tags="primary"/>
@@ -5318,7 +5333,7 @@
 		<property name="Weight" value="500"/>
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
-		<property name="EconomicValue" value="2000"/>
+		<property name="EconomicValue" value="1500"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="SoundDestroy" value="metaldestroy1"/>
 		<property name="Weight" value="200"/>
@@ -5409,6 +5424,1188 @@
 		</effect_group>
 	</item>	
 
+	<!-- NPC Melee Weapons  -->
+
+		<item name="meleeBanditPipeHammer_b"> 
+			<property name="Tags" value="blunt,club,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CreativeMode" value="Dev"/>			
+			<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?PipeHammer"/>
+			<property name="HoldType" value="2"/>
+			<property name="Candrop" value="false"/>
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="CustomIcon" value="meleeClubWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="DamageEntity" value="30"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Range" value="2.2"/>
+				<property name="Sphere" value="1.2"/>
+			</property>
+			<effect_group name="meleeBanditClubWood">
+				<passive_effect name="EntityDamage" operation="base_set" value="30"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeBanditCrowbar_b"> 
+			<property name="Tags" value="blunt,club,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CreativeMode" value="Dev"/>			
+			<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?Crowbar"/>
+			<property name="HoldType" value="2"/>
+			<property name="Candrop" value="false"/>
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="CustomIcon" value="meleeClubWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="DamageEntity" value="30"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Range" value="2.2"/>
+				<property name="Sphere" value="1.2"/>
+			</property>
+			<effect_group name="meleeBanditClubWood">
+				<passive_effect name="EntityDamage" operation="base_set" value="30"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeBanditAxe_b"> 
+			<property name="Tags" value="blunt,club,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Raiders1.unity3d?Bandit_Axe"/>
+			<property name="HoldType" value="2"/>
+			<property name="Candrop" value="false"/>
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="CustomIcon" value="meleeClubWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="DamageEntity" value="30"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Range" value="2.2"/>
+				<property name="Sphere" value="1.2"/>
+			</property>
+			<effect_group name="meleeBanditClubWood">
+				<passive_effect name="EntityDamage" operation="base_set" value="45"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeBanditCleaver_b"> 
+			<property name="Tags" value="knife,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="HoldType" value="36"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?Cleaver"/>
+			<property name="Candrop" value="false"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="FuelValue" value="100"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property class="Action0">
+				<property name="Class" value="Melee"/>
+				<property name="DamageEntity" value="30"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Delay" value="1.2" />
+				<property name="Range" value="1.5" />
+				<property name="Sphere" value="1.2"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<effect_group name="meleeBanditKnifeIron">
+				<passive_effect name="EntityDamage" operation="base_set" value="25"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.1"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>	
+
+		<item name="meleeBanditNailBoard_b"> 
+			<property name="Tags" value="blunt,club,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?NailBoard"/>
+			<property name="Candrop" value="false"/>
+			<property name="HoldType" value="2"/>
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="CustomIcon" value="meleeClubWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="DamageEntity" value="15"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Range" value="2.3" />
+				<property name="Sphere" value="1.2" />
+				<property name="Sound_start" value="swoosh" />
+			</property>
+			<effect_group name="meleeBanditBat">
+				<passive_effect name="EntityDamage" operation="base_set" value="40"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeBanditSupaSledge_b"> 
+			<property name="Tags" value="blunt,club,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?SuperSledgeNPC"/>
+			<property name="Candrop" value="false"/>
+			<property name="HoldType" value="2"/>
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="CustomIcon" value="meleeClubWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="DamageEntity" value="15"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Range" value="2.3" />
+				<property name="Sphere" value="1.2" />
+				<property name="Sound_start" value="swoosh" />
+			</property>
+			<effect_group name="meleeBanditBat">
+				<passive_effect name="EntityDamage" operation="base_set" value="50"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeBanditTireIron_b"> 
+			<property name="Tags" value="blunt,club,melee,grunting,weapon,meleeWeapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Melee1.unity3d?TireIron"/>
+			<property name="Candrop" value="false"/>
+			<property name="HoldType" value="2"/>
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="CustomIcon" value="meleeClubWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="DamageEntity" value="15"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Range" value="2.0" />
+				<property name="Sphere" value="1.2" />
+				<property name="Sound_start" value="swoosh" />
+			</property>
+			<effect_group name="meleeBanditBat">
+				<passive_effect name="EntityDamage" operation="base_set" value="25"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		<!-- NPC Ranged Weapons -->
+		
+		
+		<item name="gunBanditSMG5_b"> 
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>	
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="smg_sight_in"/>
+			<property name="Sound_Sight_Out" value="smg_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/> 
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPC9mmBulletBall_b" />
+				<property name="Reload_time" value="0" /> 
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start" />
+				<property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp" />
+				<property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end" />
+				<property name="Sound_empty" value="Weapons/weapon_empty" />
+				<property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload" />
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/>
+				<passive_effect name="MaxRange" operation="base_set" value="40"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> 
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+			</effect_group> 
+		</item>	
+		
+		<item name="gunBanditPistol_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="HoldType" value="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>	
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="smg_sight_in"/>
+			<property name="Sound_Sight_Out" value="smg_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="false"/>
+			<property name="AutoReload" value="true"/>
+			<property name="CustomIcon" value="gunPistol"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Delay" value="0" />
+				<property name="Auto_fire" value="true" />
+				<property name="Crosshair_min_distance" value="5" />
+				<property name="Crosshair_max_distance" value="30" />
+				<property name="Reload_time" value="0" />
+				<property name="Infinite_ammo" value="true" />
+				<property name="Sound_start" value="Pistol_Fire"/>
+				<property name="Sound_loop" value="Pistol_Fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="AutoReload" value="true"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/> <!-- lowering this to a small number seemed to stop them from firing until in that range  -->
+				<passive_effect name="MaxRange" operation="base_set" value="40"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> <!-- Bullets per shot?  -->
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  <!-- Rays per Round  -->
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+			</effect_group> 
+		</item>	
+		
+		<item name="gunBanditDesertVulture_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="HoldType" value="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>	
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="smg_sight_in"/>
+			<property name="Sound_Sight_Out" value="smg_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="false"/>
+			<property name="AutoReload" value="true"/>
+			<property name="CustomIcon" value="gunPistol"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Delay" value="0" />
+				<property name="Auto_fire" value="true" />
+				<property name="Crosshair_min_distance" value="5" />
+				<property name="Crosshair_max_distance" value="30" />
+				<property name="Reload_time" value="0" />
+				<property name="Magazine_items" value="ammoNPC44magnumBulletBall_b" />
+				<property name="Infinite_ammo" value="true" />
+				<property name="Sound_start" value="Pistol_Fire"/>
+				<property name="Sound_loop" value="Pistol_Fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="AutoReload" value="true"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/> <!-- lowering this to a small number seemed to stop them from firing until in that range  -->
+				<passive_effect name="MaxRange" operation="base_set" value="40"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> <!-- Bullets per shot?  -->
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  <!-- Rays per Round  -->
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+			</effect_group> 
+		</item>	
+		
+		<item name="gunBanditAk47">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/ak47/ak47Prefab.prefab"/>
+			<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="CustomIcon" value="gunAK47"/>
+			<property name="HoldType" value="48"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property name="Candrop" value="false"/>	
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPC762mmBulletBall_b" />
+				<property name="Reload_time" value="0" /> 
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start" />
+				<property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp" />
+				<property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end" />
+				<property name="Sound_empty" value="Weapons/weapon_empty" />
+				<property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload" />
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/> <!-- lowering this to a small number seemed to stop them from firing until in that range  -->
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> <!-- Bullets per shot  -->
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  <!-- Rays per Round  -->
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+			</effect_group> 
+		</item>	
+				
+		<item name="gunBanditServiceRifle_b"> 
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="71"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>	
+			<property name="Meshfile" value="#@modfolder:Resources/sr1.unity3d?m16NPC"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="smg_sight_in"/>
+			<property name="Sound_Sight_Out" value="smg_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPC762mmBulletAP_b" />
+				<property name="Reload_time" value="0" /> 
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="m16_fire"/>
+				<property name="Sound_loop" value="m16_fire"/>
+				<property name="Sound_end" value="m16_fire"/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/> 
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> 
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+			</effect_group> 
+		</item>	
+
+		<item name="gunBandit10mmSMG_b"> 
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>	
+			<property name="Meshfile" value="#@modfolder:Resources/10mm.unity3d?10mmSMG"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="smg_sight_in"/>
+			<property name="Sound_Sight_Out" value="smg_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/> 
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPC9mmBulletBall_b" />
+				<property name="Reload_time" value="0" /> 
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="10mmRev_fire"/>
+				<property name="Sound_loop" value="10mmRev_fire"/>
+				<property name="Sound_end" value="10mmRev_fire"/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="mp5_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/>
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> 
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+			</effect_group> 
+		</item>	
+				
+		<item name="gunBandit10mmRev_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>			
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="HoldType" value="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>	
+			<property name="Meshfile" value="#@modfolder:Resources/10mm.unity3d?10mmRevNPC"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="smg_sight_in"/>
+			<property name="Sound_Sight_Out" value="smg_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="false"/>
+			<property name="AutoReload" value="true"/>
+			<property name="CustomIcon" value="gunPistol"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged" />
+				<property name="Delay" value="0" />
+				<property name="Auto_fire" value="true" />
+				<property name="Magazine_items" value="ammoNPC9mmBulletBall_b" />
+				<property name="Crosshair_min_distance" value="5" />
+				<property name="Crosshair_max_distance" value="30" />
+				<property name="Reload_time" value="0" />
+				<property name="Infinite_ammo" value="true" />
+				<property name="Sound_start" value="10mmRev_fire"/>
+				<property name="Sound_loop" value="10mmRev_fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="AutoReload" value="true"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/> 
+				<passive_effect name="MaxRange" operation="base_set" value="40"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>  
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+			</effect_group> 
+		</item>	
+		
+		<item name="gunBanditLAR_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="11"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>			
+			<property name="Meshfile" value="#@modfolder:Resources/LAR1.unity3d?LeverActionRifleNPC"/>
+			<property name="Material" value="MRifleParts"/> <property name="Weight" value="4"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPC762mmBulletAP_b"/>
+				<property name="Reload_time" value="2"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="LAR_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="hunting_rifle_reload"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="60"/>
+				<passive_effect name="MaxRange" operation="base_set" value="80"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+			</effect_group> 
+		</item>	
+
+		<item name="gunBanditHSniper_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged,"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="11"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Hsniper.unity3d?HeavySniper"/>
+			<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammoNPC762mmBulletAP_b"/>
+				<property name="Reload_time" value="0"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="hunting_rifle_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="sniperrifle_reload"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
+			</property>
+			<effect_group name="gunBanditMR10">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+					<passive_effect name="DamageFalloffRange" operation="base_set" value="80"/>
+					<passive_effect name="MaxRange" operation="base_set" value="120"/>
+					<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+					<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+					<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
+					<passive_effect name="RoundsPerMinute" operation="base_set" value="3000"/>
+					<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+					<passive_effect name="RoundRayCount" operation="base_set" value="1"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+				</effect_group> 
+		</item>
+		
+		<item name="gunBanditTripleShotgun_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged,gun,shotgun,shortRange"/>
+			<property name="DisplayType" value="rangedShotgun"/>
+			<property name="HoldType" value="56"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#@modfolder:Resources/tripleshotty.unity3d?tripleshotgunNPC"/>
+			<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPCShotgunShell_b"/>
+				<property name="Reload_time" value="1.5"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="pump_shotgun_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Particles_muzzle_fire" value="gunfire_shotgun"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_shotgun_fpv"/>
+				<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+				<property name="Buff" value="buffInjuryBleedingZombie"/>
+			</property>
+			<effect_group name="gunPumpShotgun">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/>
+				<passive_effect name="MaxRange" operation="base_set" value="40"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3"/>				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="100"/> 
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="8"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+				<passive_effect name="BuffProcChance" operation="base_set" value=".02" tags="buffInjuryBleedingZombie"/>
+			</effect_group>
+		</item>	
+		
+		<item name="gunBanditPumpShotgun_b">
+			<property name="Tags" value="weapon,ranged,gun,shotgun,shortRange"/>
+			<property name="DisplayType" value="rangedShotgun"/>
+			<property name="HoldType" value="5"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab.prefab"/>
+			<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPCShotgunShell_b"/>
+				<property name="Reload_time" value="0.5"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="pump_shotgun_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Particles_muzzle_fire" value="gunfire_shotgun"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_shotgun_fpv"/>
+				<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+				<property name="Buff" value="buffInjuryBleedingZombie"/>
+			</property>
+			<effect_group name="gunPumpShotgun">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="30"/>
+				<passive_effect name="MaxRange" operation="base_set" value="30"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3"/>				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="5000"/> 
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="10"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+				<passive_effect name="BuffProcChance" operation="base_set" value=".02" tags="buffInjuryBleedingZombie"/>
+			</effect_group>
+		</item>	
+		
+		<item name="gunBanditAutoShotty_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged,gun,shotgun,shortRange"/>
+			<property name="DisplayType" value="rangedShotgun"/>
+			<property name="HoldType" value="56"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
+			<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPCShotgunShell_b"/>
+				<property name="Reload_time" value="1.5"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="pump_shotgun_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Particles_muzzle_fire" value="gunfire_shotgun"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_shotgun_fpv"/>
+				<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+				<property name="Buff" value="buffInjuryBleedingZombie"/>
+			</property>
+			<effect_group name="gunPumpShotgun">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/>
+				<passive_effect name="MaxRange" operation="base_set" value="40"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3"/>				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1000"/> 
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="8"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
+				<passive_effect name="BuffProcChance" operation="base_set" value=".02" tags="buffInjuryBleedingZombie"/>
+			</effect_group>
+		</item>	
+		
+		<item name="gunBanditHuntingRifle_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="30"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>			
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/HuntingRifle/HuntingRiflePrefab.prefab"/>
+			<property name="Material" value="MRifleParts"/> <property name="Weight" value="4"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Auto_fire" value="true" /> 
+				<property name="Magazine_items" value="ammoNPC762mmBulletAP_b"/>
+				<property name="Reload_time" value="2"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="sniperrifle_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="hunting_rifle_reload"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="60"/>
+				<passive_effect name="MaxRange" operation="base_set" value="60"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="1"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+			</effect_group> 
+		</item>	
+		
+		<item name="gunBanditMR10">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged,"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="11"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SniperRifle/sniperRiflePrefab.prefab"/>
+			<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammoNPC762mmBulletAP_b"/>
+				<property name="Reload_time" value="0"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="sniperrifle_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="sniperrifle_reload"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
+			</property>
+			<effect_group name="gunBanditMR10">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+					<passive_effect name="DamageFalloffRange" operation="base_set" value="70"/>
+					<passive_effect name="MaxRange" operation="base_set" value="70"/>
+					<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+					<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+					<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
+					<passive_effect name="RoundsPerMinute" operation="base_set" value="3000"/>
+					<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+					<passive_effect name="RoundRayCount" operation="base_set" value="1"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+				</effect_group> 
+		</item>
+		
+		<item name="gunBanditSniperRifle_b">
+			<property name="Extends" value="gunBanditSMG5_b"/>
+			<property name="Tags" value="weapon,ranged,"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="11"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Sharp Shooter/sharpShooterGunPrefab.prefab"/>
+			<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CrosshairOnAim" value="false"/> 
+			<property name="CrosshairUpAfterShot" value="false"/> 
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="AutoReload" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammoNPC762mmBulletAP_b"/>
+				<property name="Reload_time" value="0"/>
+				<property name="Infinite_ammo" value="true" />
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Bullet_icon" value="uzi" />
+				<property name="Sound_start" value="sniperrifle_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="sniperrifle_reload"/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
+			</property>
+			<effect_group name="gunBanditMR10">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+					<passive_effect name="DamageFalloffRange" operation="base_set" value="70"/>
+					<passive_effect name="MaxRange" operation="base_set" value="70"/>
+					<passive_effect name="MagazineSize" operation="base_set" value="5"/> 
+					<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+					<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
+					<passive_effect name="RoundsPerMinute" operation="base_set" value="3000"/>
+					<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+					<passive_effect name="RoundRayCount" operation="base_set" value="1"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1000"/> 
+				</effect_group> 
+		</item>
+					
+	<!-- NPC Weapon Ammo -->			
+		
+		<item name="ammoNPC9mmBulletBall_b">
+			<property name="Tags" value="ammo,ranged"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Candrop" value="false"/>				
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammoNPC9mmBulletBall_b" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="15"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.3"/> 
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.3"/> 
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammoNPC44magnumBulletBall_b">
+			<property name="Tags" value="ammo,ranged"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Candrop" value="false"/>				
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammoNPC9mmBulletBall_b" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="25"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.3"/> 
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.3"/> 
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammoNPC762mmBulletBall_b">
+			<property name="Tags" value="ammo,ranged"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Candrop" value="false"/>				
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="Stacknumber" value="5"/> 
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammoNPC762mmBulletBall_b" tiered="false"> 
+				<passive_effect name="EntityDamage" operation="base_set" value="20"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.2"/> 
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>		
+		
+		<item name="ammoNPC762mmBulletAP_b"> 
+			<property name="Tags" value="ammo,ranged"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Candrop" value="false"/>				
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="Stacknumber" value="5"/> 
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammoNPC762mmBulletAP_b" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="25"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="15"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.2"/> 
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammoNPC762mmBulletHP_b">
+			<property name="Tags" value="ammo,ranged"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Candrop" value="false"/>				
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="Stacknumber" value="5"/> 
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammoNPC762mmBulletHP_b" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="30"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.2"/> 
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.2"/> 
+				<passive_effect name="TargetArmor" operation="perc_add" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>			
+		
+		<item name="ammoNPCShotgunShell_b">
+			<property name="Tags" value="ammo,shotgun"/>
+			<property name="DisplayType" value="ammoShotgun"/>
+			<property name="HoldType" value="45"/>
+			<property name="Candrop" value="false"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mlead_scrap"/>
+			<property name="Stacknumber" value="3"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammoNPCShotgunShell_b" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="10" tags="wood"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="10"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
+			</effect_group>
+		</item>
 
 </append>
 

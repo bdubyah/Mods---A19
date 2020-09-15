@@ -37,7 +37,7 @@
 			
 			<quest id="questPewPewfind">	
 				
-				<property name="offer" value="Someone ran off with the reward, but I heard where they should be headed. Here's a map of the area, hopefully you can find where they hid it." />
+				<property name="offer" value="Someone ran off with the reward, but I heard where they should be headed. Here's a map of the area, hopefully you can find where they hid it. I'd keep my eyes peeled if I were you." />
 				<property name="name" value="A Valuable Lesson" />
 				<property name="subtitle" value="A Valuable Lesson" />
 				<property name="description" value="I guess I'd better get to hunting for their stash so I can get my reward." />
@@ -48,16 +48,22 @@
 				<property name="statement_key" value="quest_fetch_clear_statement"/>
 				<property name="response_key" value="quest_fetch_clear_response"/>
 				
+				<objective type="RandomGoto" value="1100-1200" phase="1">
+					<property name="completion_distance" value="30"/>
+					<property name="nav_object" value="quest" />
+				</objective>				
 
-				<objective type="TreasureChest">
+				<objective type="TreasureChest" phase="2">
 					<property name="block" value="cntPewPewLoot"/>
-					<property name="distance" value="1500-1700"/>
-					<property name="default_radius" value="9"/>
+					<property name="distance" value="15-30"/>
+					<property name="default_radius" value="12"/>
 					<property name="nav_object" value="treasure" />
 					<property name="direct_nav_object" value="treasure_direct" />
-					<property name="blocks_per_reduction" value="10" />
+					<property name="blocks_per_reduction" value="15" />
 					<property name="radius_reduction_sound" value="ui_radius_shrink" />
 				</objective>
+				
+				<action type="SpawnEnemy" id="humanRaider5Club,humanRaider4Club,humanRaider5SMG,humanRaider3Club,humanRaider2Club,humanRaider1Club" value="5-6" phase="2"/>
 
 				<reward type="Exp" value="5000"/>				
 				

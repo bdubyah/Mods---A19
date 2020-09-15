@@ -1,0 +1,18 @@
+NitrgoGen prefab list. Should be able to copy and paste these into whatever prefablist.txt you are using to generate your maps.
+
+
+
+Bombshelter_lg_02,none,2,-10,27,22,37,alone;houses
+Bombshelter_md_02,none,2,-12,29,22,34,alone;houses
+House_Modern_5,none,2,-1,45,20,72,houses
+House_Old_Pyramid_4,none,2,-5,40,27,52,houses
+House_old_spanish_1,none,2,-15,31,25,49,alone;houses
+House_old_tudor_1,none,2,-30,56,66,45,alone;houses
+House_old_victorian_1,none,2,-10,49,27,56,houses
+Installation_red_mesa1,none,2,-23,72,43,83,alone;industrial
+Nuka_Factory,none,0,-17,120,36,86,alone;industrial
+Old_House01,none,2,-2,34,23,29,houses
+Prison_02,none,2,-1,38,19,48,industrial;smalltown
+School_k6_02,none,2,-1,49,18,79,smalltown;downtown
+UFO_Crash,none,2,-7,50,13,107,alone
+UFO_Crash_desert,none,2,-7,50,13,107,alone
