@@ -1211,7 +1211,7 @@
 			<property name="FilterTags" value="fdecor"/>
 			<property name="SortOrder1" value="70a0"/>	
 		</block>
-		
+		<!--
 		<block name="spawnTraderMechanic">
 			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
 			<property name="CustomIcon" value="metalTrussingRampOld"/>
@@ -1225,7 +1225,7 @@
 			<property name="FilterTags" value="fdesign"/>
 			<property name="Collide" value="sight"/>
 			<property name="IndexName" value="Trader"/>
-		</block>
+		</block> -->
 		
 		<block name="TraderMechanic_b">
 			<property name="Material" value="Morganic"/>
@@ -1240,7 +1240,7 @@
 			<property name="CustomIcon" value="" />
 			<property name="Stabilitysupport" value="false"/>
 			<property name="CanPickup" value="false"/>
-			<property name="MaxDamage" value="10000000"/>
+			<property name="MaxDamage" value="1000"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Stacknumber" value="5"/>
 			<property name="EconomicValue" value="1000"/>
@@ -1251,7 +1251,7 @@
 			<property name="TraderID" value="75"/>
 			<property name="NavObject" value="trader" />
 		</block>
-		
+		<!--
 		<block name="spawnTJ2">
 			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
 			<property name="CustomIcon" value="metalTrussingRampOld"/>
@@ -1265,7 +1265,7 @@
 			<property name="FilterTags" value="fdesign"/>
 			<property name="Collide" value="sight"/>
 			<property name="IndexName" value="Trader"/>
-		</block>
+		</block> -->
 		
 	</append>
 
