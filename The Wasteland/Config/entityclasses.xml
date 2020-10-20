@@ -263,9 +263,9 @@
 			<property name="Class" value="EntityBandit"/>
 			<property name="LootDropProb" value="0.25"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/> 
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/> 
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/>  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditAxe_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>  
 		</entity_class>	
 
 		<entity_class name="humanRangedMaleBanditTemplate_b" extends="humanRangedMaleTemplate_b"> 	<!-- If you want to make a bandit that spawns in ranged weapons, use this Template  -->
@@ -350,9 +350,9 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
 			<property name="WalkType" value="6"/>			
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -398,9 +398,9 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
 			<property name="WalkType" value="6"/>			
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -446,9 +446,9 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
 			<property name="WalkType" value="6"/>			
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -526,9 +526,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
 			<property name="WalkType" value="2"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -691,9 +691,9 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?BanditScout"/>
 			<property name="WalkType" value="6"/>			
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC762mmBulletAP_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -739,9 +739,9 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit1"/>
 			<property name="WalkType" value="6"/>			
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -787,9 +787,9 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit2"/>
 			<property name="WalkType" value="6"/>			
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,ammoNPC762mmBulletBall_b"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -867,9 +867,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				

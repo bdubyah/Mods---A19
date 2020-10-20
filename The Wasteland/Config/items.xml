@@ -5871,7 +5871,7 @@
 			</effect_group> 
 		</item>	
 		
-		<item name="gunBanditAk47">
+		<item name="gunBanditAk47_b">
 			<property name="Extends" value="gunBanditSMG5_b"/>
 			<property name="Tags" value="weapon,ranged"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -6372,7 +6372,7 @@
 			</effect_group> 
 		</item>	
 		
-		<item name="gunBanditMR10">
+		<item name="gunBanditMR10_b">
 			<property name="Extends" value="gunBanditSMG5_b"/>
 			<property name="Tags" value="weapon,ranged,"/>
 			<property name="DisplayType" value="rangedGun"/>
