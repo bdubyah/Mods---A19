@@ -66,6 +66,31 @@
 		<ingredient name="resourceSpring" count="2"/>		
 	</recipe>
 	
+	<recipe name="cntVTstorageTallSecurePlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="13"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceScrapPolymers" count="7"/>
+		<ingredient name="resourceSpring" count="3"/>		
+	</recipe>
+	
+	<recipe name="ammoBundle10mmBullet" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceBulletTip" count="80"/>
+		<ingredient name="resourceGunPowder" count="100"/>
+		<ingredient name="resourceBulletCasing" count="80"/>
+	</recipe>
+
+	<recipe name="ammoBundle10mmBulletHP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceBulletTip" count="160"/>
+		<ingredient name="resourceGunPowder" count="100"/>
+		<ingredient name="resourceBulletCasing" count="80"/>
+	</recipe>
+
+	<recipe name="ammoBundle10mmBulletAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceBulletTip" count="80"/>
+		<ingredient name="resourceGunPowder" count="200"/>
+		<ingredient name="resourceBulletCasing" count="80"/>
+	</recipe>
+	
 	<!-- Weapons -->
 	
 	<recipe name="gun10mmPistol" count="1" craft_area="workbench" tags="learnable,perkGunslinger">

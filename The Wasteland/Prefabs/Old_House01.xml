@@ -15,17 +15,17 @@
   <property name="SleeperVolumeGroup" value="RaidersMelee,5,6,RaiderBossMelee,1,1" />
   <property name="SleeperIsLootVolume" value="False,True" />
   <property name="SleeperIsQuestExclude" value="False,False" />
-  <property name="SleeperVolumeFlags" value="2,0" />
+  <property name="SleeperVolumeFlags" value="0,2" />
   <property name="QuestTags" value="clear,fetch,hidden_cache" />
   <property name="DifficultyTier" value="2" />
   <property name="Zoning" value="ResidentialNew" />
   <property name="AllowedTownships" value="city,town,rural,wilderness" />
   <property class="Stats">
     <property name="TotalVertices" value="287476" />
-    <property name="TotalTriangles" value="288795" />
+    <property name="TotalTriangles" value="289843" />
     <property class="BlockEntities">
       <property name="Vertices" value="231445" />
-      <property name="Triangles" value="254672" />
+      <property name="Triangles" value="255720" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="46769" />

@@ -78,7 +78,7 @@
 			<property name="NavObject" value="clear_sleeper" /><!-- A19  -->
 			<property name="AITask-1" value="BreakBlock"/> 
 			<property name="AITask-2" value="ApproachDistraction"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,15,EntitySurvivor,0,EntityEnemyAnimal,0"/> 
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityZombie,3,EntitySurvivor,3,EntityEnemyAnimal,1"/> 
 			<property name="AITask-4" value="ApproachSpot"/> 
 			<property name="AITask-5" value="Territorial"/>
 			<property name="AITask-6" value="Look"/> 
@@ -86,7 +86,7 @@
 			<property name="AITask-8" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityZombie,EntitySurvivor,EntityEnemyAnimal"/> 
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/> 
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,10,10,EntityZombie,5,7,EntitySurvivor,7,7,EntityEnemyAnimal,4,6"/> 
 			<property name="AITarget-4" value=""/> 	
 			<property name="WalkType" value="7"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -127,7 +127,7 @@
 			<property name="ArmsExplosionDamageMultiplier" value="1"/>
 			<property name="HeadExplosionDamageMultiplier" value="1"/>
 			<property name="ChestExplosionDamageMultiplier" value="1"/>
-			<property name="PainResistPerHit" value=".5"/>		
+			<property name="PainResistPerHit" value=".75"/>		
 			<property name="MaxViewAngle" value="230"/>
 			<property name="SightRange" value="70"/>
 			<property name="LegCrippleScale" value="0"/><!--  Needed to prevent crippling which changes walktype to zombie (may change that eventually  -->
@@ -136,11 +136,11 @@
 			<property name="SleeperWakeupSightDetectionMax" value="340,480"/> 
 			<property name="SleeperSenseSightDetectionMin" value="-10,0"/> 
 			<property name="SleeperSenseSightDetectionMax" value="200,300"/>
-			<property name="SleeperNoiseSenseThreshold" value="3,8"/> 
-			<property name="SleeperNoiseWakeThreshold" value="9,12"/>
+			<property name="SleeperNoiseSenseThreshold" value="8,10"/> 
+			<property name="SleeperNoiseWakeThreshold" value="12,15"/>
 			<property name="SleeperSmellSenseThreshold" value="20,50"/> 
 			<property name="SoundSleeperSenseChance" value=".5"/> 
-			<property name="SleeperSmellWakeThreshold" value="40,100"/>
+			<property name="SleeperSmellWakeThreshold" value="20,80"/>
 			<property name="NoiseAlertThreshold" value="50"/> 
 			<property name="SmellAlertThreshold" value="40"/> 
 			<property name="MaxTurnSpeed" value="250"/>
@@ -524,11 +524,11 @@
 			<property name="Tags" value="entity,male,human,bandit,ranged"/>
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
-			<property name="WalkType" value="2"/> 
+			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				
@@ -572,7 +572,7 @@
 			<property name="Tags" value="entity,male,human,bandit,ranged"/>
 			<property name="Faction" value="bandits"/>
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit5"/>
-			<property name="WalkType" value="2"/> <!-- Walktype for rifles  -->
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
@@ -867,9 +867,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/Raiders1.unity3d?Bandit4"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC9mmBulletBall_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".1"/>
 			<effect_group name="Base Effects">				

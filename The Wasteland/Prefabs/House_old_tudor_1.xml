@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <prefab>
-  <property name="Zoning" value="ResidentialOld,ResidentialNew" />
+  <property name="Zoning" value="ResidentialOld, ResidentialNew" />
   <property name="AllowedTownships" value="city,town,rural,wilderness" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="CopyAirBlocks" value="True" />
@@ -20,7 +20,7 @@
   <property name="DifficultyTier" value="5" />
   <property name="ExcludePOICulling" value="False" />
   <property name="SleeperVolumeGroupId" value="3,0,0,0,0,0,0,0,0,0,0,3" />
-  <property name="SleeperVolumeFlags" value="0,2,0,0,2,0,2,2,0,0,0,2" />
+  <property name="SleeperVolumeFlags" value="2,0,0,0,2,0,2,2,0,2,0,2" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False" />
   <property class="Stats">
     <property name="TotalVertices" value="860270" />

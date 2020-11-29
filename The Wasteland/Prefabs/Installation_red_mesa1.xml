@@ -9,13 +9,13 @@
   <property name="ShowQuestClearCount" value="2" />
   <property name="DifficultyTier" value="5" />
   <property name="TraderArea" value="False" />
-  <property name="Zoning" value="industrial,downtown" />
+  <property name="Zoning" value="industrial, downtown" />
   <property name="AllowedTownships" value="wilderness,rural,town" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="EditorGroups" value="government" />
   <property name="YOffset" value="-23" />
-  <property name="SleeperVolumeSize" value="16, 2, 20#12, 3, 23#25, 3, 17#7, 14, 9#7, 18, 9#23, 3, 23#21, 3, 4#7, 3, 21#8, 3, 12#8, 5, 10#24, 3, 17#3, 3, 10#16, 5, 21#61, 3, 12#12, 3, 58#57, 3, 11#9, 4, 55#11, 3, 11#7, 5, 10#15, 3, 15#15, 3, 18#15, 6, 2" />
-  <property name="SleeperVolumeStart" value="31, 1, 52#49, 2, 40#33, 2, 26#20, 1, 60#20, 2, 51#32, 8, 25#49, 10, 15#41, 14, 30#18, 2, 39#17, 14, 40#32, 14, 29#53, 14, 52#31, 6, 49#7, 23, 16#4, 22, 22#14, 23, 72#62, 22, 18#18, 30, 31#22, 24, 31#36, 31, 48#17, 26, 51#43, 23, 30" />
+  <property name="SleeperVolumeSize" value="16, 2, 20#12, 3, 23#25, 3, 17#7, 14, 9#7, 18, 9#23, 3, 23#21, 3, 4#7, 3, 21#8, 3, 12#8, 5, 10#24, 3, 17#3, 3, 10#16, 5, 21#61, 3, 14#15, 3, 58#57, 3, 11#9, 4, 55#11, 3, 11#7, 5, 10#15, 3, 15#15, 3, 18#15, 6, 2" />
+  <property name="SleeperVolumeStart" value="31, 1, 52#49, 2, 40#33, 2, 26#20, 1, 60#20, 2, 51#32, 8, 25#49, 10, 15#41, 14, 30#18, 2, 39#17, 14, 40#32, 14, 29#53, 14, 52#31, 6, 49#7, 23, 14#1, 22, 22#14, 23, 72#62, 22, 18#18, 30, 31#22, 24, 31#36, 31, 48#17, 26, 51#43, 23, 30" />
   <property name="SleeperVolumeGroupId" value="0,0,0,1,1,0,0,4,1,0,4,0,0,5,5,5,5,5,0,0,0,0" />
   <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,5,6,S_-_Group_Zom_Badass,4,5,S_-_Group_Zom_Soldier,9,10,S_Zom_HazMat_Only,5,6,S_Zom_HazMat_Only,6,7,S_-_Group_Zom_Badass,9,10,S_-Group_Generic_Zombie,7,8,RaidersMelee,7,8,S_Zom_HazMat_Only,5,6,RaiderBossRanged,1,1,RaidersMelee,7,8,RaiderBossMelee,1,1,S_-_Group_Lab_Worker,9,10,S_-Group_Generic_Zombie,0,0,S_-Group_Generic_Zombie,0,0,S_-Group_Generic_Zombie,0,0,S_-Group_Generic_Zombie,0,0,RaidersRanged,2,3,RaidersMelee,5,6,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,5,6" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
@@ -23,15 +23,15 @@
   <property name="SleeperVolumeFlags" value="2,0,0,0,0,0,2,2,0,2,0,2,0,2,2,2,2,2,2,2,1,2" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property class="Stats">
-    <property name="TotalVertices" value="1885925" />
-    <property name="TotalTriangles" value="1890271" />
+    <property name="TotalVertices" value="1887808" />
+    <property name="TotalTriangles" value="1892659" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1388149" />
-      <property name="Triangles" value="1528362" />
+      <property name="Vertices" value="1389565" />
+      <property name="Triangles" value="1530458" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="394816" />
-      <property name="Triangles" value="251080" />
+      <property name="Vertices" value="395546" />
+      <property name="Triangles" value="251600" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -46,8 +46,8 @@
       <property name="Triangles" value="244" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="63452" />
-      <property name="Triangles" value="50465" />
+      <property name="Vertices" value="63189" />
+      <property name="Triangles" value="50237" />
     </property>
     <property class="ChunkMeshes5">
       <property name="Vertices" value="0" />

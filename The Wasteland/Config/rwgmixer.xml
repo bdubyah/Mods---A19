@@ -1,37 +1,30 @@
 <configs>
  
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup4k']">
-        <prefab name="Nuka_Factory" min_count="2" max_count="3" min_repeat_distance="1400" />
-		<prefab name="UFO_Crash" min_count="2" max_count="2" min_repeat_distance="1500" />
-		<prefab name="UFO_Crash_desert" min_count="2" max_count="2" min_repeat_distance="1500" />
-		<prefab name="Old_House01" min_count="2" max_count="4" min_repeat_distance="800" />
-		<prefab name="House_Modern_5" min_count="2" max_count="4" min_repeat_distance="600" />
-		<prefab name="House_Old_Pyramid_4" min_count="2" max_count="4" min_repeat_distance="600" />
-		<prefab name="House_old_spanish_1" min_count="2" max_count="2" min_repeat_distance="600" />
-		<prefab name="Bombshelter_lg_02" min_count="2" max_count="3" min_repeat_distance="800" />
-		<prefab name="Bombshelter_md_02" min_count="2" max_count="3" min_repeat_distance="800" />
-		<prefab name="House_old_victorian_1" min_count="2" max_count="3" min_repeat_distance="600" />
-		<prefab name="House_old_tudor_1" min_count="2" max_count="3" min_repeat_distance="800" />
+		<prefab name="Vault_101" min_count="2" max_count="2" min_repeat_distance="1500" />
+        <prefab name="Nuka_Factory" min_count="2" max_count="3" min_repeat_distance="1400" />	
 		<prefab name="Installation_red_mesa1" min_count="2" max_count="2" min_repeat_distance="1300" />
-		<prefab name="Prison_02" min_count="2" max_count="3" min_repeat_distance="1500" />
-		<prefab name="School_k6_02" min_count="2" max_count="3" min_repeat_distance="800" />
     </append>
 	
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup8k']">
-        <prefab name="Nuka_Factory" min_count="2" max_count="5" min_repeat_distance="1800" />
-		<prefab name="UFO_Crash" min_count="2" max_count="2" min_repeat_distance="2200" />
-		<prefab name="UFO_Crash_desert" min_count="1" max_count="1" min_repeat_distance="2200" />
-		<prefab name="Old_House01" min_count="2" max_count="5" min_repeat_distance="900" />
-		<prefab name="House_Modern_5" min_count="3" max_count="5" min_repeat_distance="1000" />
-		<prefab name="House_Old_Pyramid_4" min_count="3" max_count="5" min_repeat_distance="1200" />
-		<prefab name="House_old_spanish_1" min_count="3" max_count="5" min_repeat_distance="1500" />
-		<prefab name="Bombshelter_lg_02" min_count="3" max_count="5" min_repeat_distance="1500" />
-		<prefab name="Bombshelter_md_02" min_count="3" max_count="5" min_repeat_distance="1500" />
-		<prefab name="House_old_victorian_1" min_count="3" max_count="5" min_repeat_distance="1500" />
-		<prefab name="House_old_tudor_1" min_count="3" max_count="5" min_repeat_distance="1500" />
+		<prefab name="Vault_101" min_count="2" max_count="2" min_repeat_distance="2500" />
+        <prefab name="Nuka_Factory" min_count="2" max_count="5" min_repeat_distance="1800" />		
 		<prefab name="Installation_red_mesa1" min_count="2" max_count="4" min_repeat_distance="1400" />
-		<prefab name="Prison_02" min_count="4" max_count="4" min_repeat_distance="1700" />
-		<prefab name="School_k6_02" min_count="3" max_count="4" min_repeat_distance="1300" />
     </append>
+	
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabList']">
+		<prefab name="UFO_Crash" min_count="2" max_count="2" min_repeat_distance="2000" />
+		<prefab name="UFO_Crash_desert" min_count="2" max_count="2" min_repeat_distance="2000" />		
+		<prefab name="Old_House01" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="House_Modern_5" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="House_Old_Pyramid_4" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="House_old_spanish_1" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="Bombshelter_lg_02" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="Bombshelter_md_02" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="House_old_victorian_1" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="House_old_tudor_1" min_count="3" max_count="5" min_repeat_distance="500" />
+		<prefab name="School_k6_02" min_count="2" max_count="3" min_repeat_distance="500" />
+		<prefab name="Prison_02" min_count="2" max_count="4" min_repeat_distance="1200" />
+	</append>
    
 </configs>  

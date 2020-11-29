@@ -16,7 +16,7 @@
   <property name="SleeperVolumeGroup" value="RaidersMix,3,4,RaidersMelee,2,3,RaidersMelee,9,10,RaidersMelee,5,6,RaidersMelee,9,10,RaiderBossMix,1,2" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
-  <property name="SleeperVolumeFlags" value="0,2,2,2,2,2" />
+  <property name="SleeperVolumeFlags" value="0,0,0,2,2,2" />
   <property name="QuestTags" value="clear,fetch,hidden_cache" />
   <property name="Zoning" value="ResidentialNew" />
   <property name="AllowedTownships" value="city,town,rural,wilderness" />
@@ -33,15 +33,15 @@
     </property>
   </property>
   <property class="Stats">
-    <property name="TotalVertices" value="760640" />
-    <property name="TotalTriangles" value="642952" />
+    <property name="TotalVertices" value="761000" />
+    <property name="TotalTriangles" value="644994" />
     <property class="BlockEntities">
-      <property name="Vertices" value="588803" />
-      <property name="Triangles" value="519803" />
+      <property name="Vertices" value="589139" />
+      <property name="Triangles" value="521831" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="123339" />
-      <property name="Triangles" value="76425" />
+      <property name="Vertices" value="123363" />
+      <property name="Triangles" value="76439" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />

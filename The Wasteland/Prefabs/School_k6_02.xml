@@ -4,7 +4,7 @@
   <property name="AllowTopSoilDecorations" value="False" />
   <property name="YOffset" value="-1" />
   <property name="RotationToFaceNorth" value="2" />
-  <property name="Zoning" value="downtown,residentialnew" />
+  <property name="Zoning" value="downtown, residentialnew" />
   <property name="AllowedTownships" value="city,town,rural" />
   <property name="TraderArea" value="False" />
   <property name="ExcludeDistantPOIMesh" value="False" />
@@ -20,15 +20,15 @@
   <property name="QuestTags" value="clear,fetch,hidden_cache" />
   <property name="ExcludePOICulling" value="False" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,3,3" />
-  <property name="SleeperVolumeFlags" value="0,2,2,0,0,2" />
+  <property name="SleeperVolumeFlags" value="0,0,0,0,2,2" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
   <property class="Stats">
-    <property name="TotalVertices" value="415095" />
-    <property name="TotalTriangles" value="384646" />
+    <property name="TotalVertices" value="416511" />
+    <property name="TotalTriangles" value="387266" />
     <property class="BlockEntities">
-      <property name="Vertices" value="256313" />
-      <property name="Triangles" value="276175" />
+      <property name="Vertices" value="257729" />
+      <property name="Triangles" value="278795" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="83065" />

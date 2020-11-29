@@ -30,6 +30,7 @@
 		<item name="ammoPEC" count="25,50" />
 		<item name="ammoPMFC" count="25,50" />
 		<item name="ammoCMFC" count="25,50" />
+		<item name="ammoSMFC" count="64,320" />
 	</lootgroup>
 	
 	<lootgroup name="EnergyAmmoVT" count="all">		
@@ -38,6 +39,7 @@
 		<item name="ammoPEC" count="25,50" />
 		<item name="ammoPMFC" count="25,50" />
 		<item name="ammoCMFC" count="25,50" />
+		<item name="ammoSMFC" count="64,320" />
 		<item name="ammoAB" count="0,5" />
 	</lootgroup>
 	
@@ -66,7 +68,8 @@
 	
 	<lootgroup name="RegularEnergyGuns">		
 		<item name="gunLaserPistol" count="1"/>		
-		<item name="gunLaserRifle" count="1"/>		
+		<item name="gunLaserRifle" count="1"/>	
+		<item name="gunLaserShotgun" count="1"/>	
 		<item name="gunPlasmaPistol" count="1"/>			
 		<item name="gunPlasmaRifle" count="1"/>			
 	</lootgroup>
@@ -82,7 +85,8 @@
 	</lootgroup>
 	
 	<lootgroup name="RegularMeleeT2">		
-		<item name="meleeBanjo" count="1"/>		
+		<item name="meleeBanjo" count="1"/>	
+		<item name="meleeGuitar" count="1"/>	
 		<item name="meleeNailBoard" count="1"/>	
 		<item name="meleePipeHammer" count="1"/>		
 		<item name="meleeRebarClub" count="1"/>			
@@ -120,6 +124,7 @@
 	<lootgroup name="EnergyWeaponSchems">
 		<item name="gunLaserPistolSchematic" count="1"/>
 		<item name="gunLaserRifleSchematic" count="1"/>
+		<item name="gunLaserShotgunSchematic" count="1"/>
 		<item name="gunPlasmaPistolSchematic" count="1"/>
 		<item name="gunPlasmaRifleSchematic" count="1"/>		
 	</lootgroup>
@@ -141,7 +146,7 @@
 	
 	<!-- Nuka Stuff -->
 	
-	<lootgroup name="NukaGroup" count="all">
+	<lootgroup name="NukaGroup">
 		<item name="drinkNukaCola" count="1,8"/>
 		<item name="drinkNukaCherry" count="1,3"/>
 		<item name="drinkNukaQuartz" count="1,2"/>
@@ -164,8 +169,7 @@
 		<item name="drinkJarEmpty" />
 		<item name="resourceBottlecapStar" count="1"/>
 		<item name="resourceBottlecaps" count="1,4"/>
-		<item name="cntLunchbox"/>
-		<item name="drinkNukaQuantum"/>
+		<item name="cntLunchbox"/>		
 	</lootgroup>
 	
 </insertBefore>
@@ -173,23 +177,23 @@
 
 <insertAfter xpath="/lootcontainers/lootcontainer[@id='143']">
 
-	<lootcontainer id="934" count="1" size="5,5" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
+	<lootcontainer id="934" count="1" size="6,5" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
 		<item group="UFOloot" />		
 	</lootcontainer>
 	
-	<lootcontainer id="935" count="1" size="5,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" >	
+	<lootcontainer id="935" count="1" size="6,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" >	
 		<item group="PewPewloot"/>
 	</lootcontainer>
 	
-	<lootcontainer id="936" count="2" size="4,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2" loot_quality_template="qualBaseTemplate">
+	<lootcontainer id="936" count="2" size="6,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2" loot_quality_template="qualBaseTemplate">
 		<item group="NukaGroup" prob="1"/>
 	</lootcontainer>
 	
-	<lootcontainer id="937" count="1" size="3,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
+	<lootcontainer id="937" count="1" size="2,6" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
 		<item name="bookNukaRecipes" count="1" prob="1"/>
 	</lootcontainer>
 	
-	<lootcontainer id="938" count="5" size="5,5" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+	<lootcontainer id="938" count="5" size="6,5" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
 		<item name="ammo9mmBulletBall" count="25"  prob=".5"/>
 		<item name="ammo9mmBulletHP" count="25"  prob=".5"/>
 		<item name="ammo9mmBulletAP" count="25"  prob=".5"/>
@@ -222,11 +226,12 @@
 		<item group="rareMedicine" count="1" prob=".7"/>
 		<item name="drugPainkillers" count="1" prob=".7"/>
 		<item name="drugVitamins" count="1" prob=".7"/>
+		<item name="cntVTstorageTallSecurePlayerSchematic" count="1" prob=".7"/>
 		<item group="groupTreasureMaps" count="1" prob="0.3"/>
 		<item group="groupQuestChallenge" count="1" prob="0.4"/>
 		<item group="groupAmmoRegular" count="1" prob=".7"/>
 		<item group="groupWeaponsAllScaled" count="1" prob=".6"/>
-		<item group="EnergyAmmo" count="1" prob=".2"/>
+		<item group="EnergyAmmo" count="1" prob="1"/>
 		<item group="LaserMods" count="1" prob=".1"/>
 		<item group="LegendaryEnergyGuns" count="1" prob=".05"/>
 		<item group="LegendaryGuns" count="1" prob=".05"/>
@@ -240,6 +245,48 @@
 		<item name="ammo10mmBulletAP" count="20"  prob=".5"/>
 		<item name="ammo10mmBulletHP" count="20"  prob=".5"/>
 		<item name="ammoAB" count="5,15" prob=".005"/>
+	</lootcontainer>
+	
+	<lootcontainer id="940" count="3" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2" loot_quality_template="qualBaseTemplate">
+		<item group="NukaVendGroup" count="1" prob=".1"/>
+		<item group="SSGroup" count="1" prob=".1"/>		
+	</lootcontainer>
+	
+	<lootcontainer id="941" count="2" size="6,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
+		<item group="RegularGunsT1" prob=".5"/>
+		<item group="RegularGunsT2" prob=".1"/>
+		<item group="EnergyAmmo" prob=".1"/>
+		<item group="LaserMods" prob=".1"/>
+		<item group="LegendaryPipeGuns" count="1" prob=".075"/>
+		<item group="RegularEnergyGuns" count="1" prob=".1"/>
+		<item group="LegendaryEnergyGuns" count="1" prob=".05"/>
+		<item group="LegendaryGuns" count="1" prob=".05"/>
+	</lootcontainer>
+	
+	<lootcontainer id="942" count="5" size="6,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
+		<item name="ammo10mmBullet" count="50"  prob=".5"/>
+		<item name="ammo10mmBulletAP" count="30"  prob=".5"/>
+		<item name="ammo10mmBulletHP" count="20"  prob=".5"/>
+		<item group="EnergyAmmo" prob=".1"/>		
+		<item name="thrownCryoGrenade" count="5"  prob=".5"/>
+		<item name="ammoFlareGun" count="5"  prob=".5"/>
+		<item name="ammoIncinerator" count="10"  prob=".5"/>
+		<item name="ammoNuke" count="2"  prob=".2"/>
+		<item name="ammoNukeAP" count="2"  prob=".2"/>
+		<item name="ammo9mmBulletBall" count="50"  prob=".5"/>
+		<item name="ammo9mmBulletHP" count="30"  prob=".5"/>
+		<item name="ammo9mmBulletAP" count="20"  prob=".5"/>
+		<item name="ammo44MagnumBulletBall" count="50"  prob=".5"/>
+		<item name="ammo44MagnumBulletHP" count="30"  prob=".5"/>
+		<item name="ammo44MagnumBulletAP" count="20"  prob=".5"/>
+		<item name="ammo762mmBulletBall" count="50"  prob=".5"/>
+		<item name="ammo762mmBulletHP" count="30"  prob=".5"/>
+		<item name="ammo762mmBulletAP" count="20"  prob=".5"/>
+		<item name="ammoShotgunShell" count="50"  prob=".5"/>
+		<item name="ammoShotgunSlug" count="30"  prob=".5"/>
+		<item name="ammoShotgunBreachingSlug" count="20"  prob=".5"/>
+		<item name="ammoRocketHE" count="20"  prob=".2"/>
+		<item name="ammoRocketFrag" count="20"  prob=".2"/>
 	</lootcontainer>
 				
 </insertAfter>
@@ -257,7 +304,7 @@
 	<item group="EnergyAmmo"/>
 	<item group="EnergyWeaponSchems"/>
 	<item group="RegularEnergyGuns"/>
-	<item group="LegendaryPipeGuns" prob=".02"/>
+	<item group="LegendaryPipeGuns"/>
 	<item group="LegendaryEnergyGuns"/>
 	<item group="LegendaryGuns"/>
 </append>
@@ -326,15 +373,15 @@
 </append>
 
 <append xpath="/lootcontainers/lootgroup[@name='groupSafeLoot']">
-	<item name="gunCombatShotgun" prob=".001"/>	
-	<item name="gunTripleBarrelShotgun" prob=".002"/>
+	<item name="gunCombatShotgun" prob=".003"/>	
+	<item name="gunTripleBarrelShotgun" prob=".008"/>
 </append>
 
 <append xpath="/lootcontainers/lootgroup[@name='groupHeroChestLootSub']">
 	<item group="LaserMods" count="1" prob=".002"/>
 	<item name="ammoNuke" prob=".001"/>	
-	<item group="RegularEnergyGuns" count="1" prob=".002"/>	
-	<item group="EnergyAmmo" count="1" prob=".002"/>
+	<item group="RegularEnergyGuns" count="1" prob=".005"/>	
+	<item group="EnergyAmmo" count="1" prob=".01"/>
 	<item group="LegendaryPipeGuns" count="1" prob=".002"/>
 	<item group="LegendaryMelee" count="1" prob=".001"/>
 	<item group="LegendaryGuns" count="1" prob=".001"/>
@@ -344,8 +391,8 @@
 </append>
 
 <append xpath="/lootcontainers/lootgroup[@name='groupBuriedWeaponChest']">	
-	<item group="LegendaryPipeGuns" count="1" prob=".002"/>
-	<item group="LegendaryGuns" count="1" prob=".002"/>
+	<item group="LegendaryPipeGuns" count="1" prob=".005"/>
+	<item group="LegendaryGuns" count="1" prob=".005"/>
 	<item name="thrownNukaGrenade" count="1,2" prob=".1"/>
 	<item name="thrownCryoGrenade" count="1,2" prob=".1"/>
 </append>
@@ -386,15 +433,12 @@
 </append>
 
 <!-- canned or dry food cupboard door open sound-->
-<append xpath="/lootcontainers/lootcontainer[@id='17']">	
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".01"/>
+<append xpath="/lootcontainers/lootcontainer[@id='17']">		
 	<item name="cntLunchbox" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="SSGroup" prob=".1"/>
 	<item name="meleeCleaver" prob=".01"/>
-	<item name="meleeRollingPin" prob=".01"/>
-	<item name="drinkNukaQuartz" prob=".007"/>
-	<item name="drinkNukaQuantum" prob=".007"/>
+	<item name="meleeRollingPin" prob=".01"/>	
+	<item group="NukaGroup" count="1" prob=".1"/>
 </append>
 
 <!-- washing machine, clothes in good condition -->
@@ -406,22 +450,16 @@
 <append xpath="/lootcontainers/lootcontainer[@id='19']">
 	<item name="ammoBowlingball" count="1,2" prob=".05"/>
 	<item name="modOilFilterSuppressor" prob="0.001"/>
-	<item name="drinkNukaQuartz" prob=".01"/>
-	<item name="drinkNukaQuantum" prob=".01"/>
-	<item name="drinkNukaCherry" prob=".03"/>
-	<item name="drinkNukaCola" prob=".04"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 	<item group="NukaJunk" count="1" prob=".1"/>
 	<item name="meleeTireIron" prob=".01"/>	
 </append>
 
 <!-- frozen or refridgerated food, spoiled food -->
 <append xpath="/lootcontainers/lootcontainer[@id='20']">
-	<item name="drinkNukaQuartz" prob=".02"/>
-	<item name="drinkNukaQuantum" prob=".01"/>
-	<item name="drinkNukaCherry" prob=".06"/>
-	<item name="drinkNukaCola" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- garage stuff, tools, etc -->
@@ -443,20 +481,14 @@
 
 <!-- Shamway Manager's Safe -->
 <append xpath="/lootcontainers/lootcontainer[@id='38']">
-	<item name="drinkNukaQuartz" prob=".1"/>
-	<item name="drinkNukaQuantum" prob=".1"/>
-	<item name="drinkNukaCherry" prob=".1"/>
-	<item name="drinkNukaCola" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".2"/>
 </append>
 
 <!-- Brew Master's Safe -->
 <append xpath="/lootcontainers/lootcontainer[@id='39']">
-	<item name="drinkNukaQuartz" prob=".1"/>
-	<item name="drinkNukaQuantum" prob=".5"/>
-	<item name="drinkNukaCherry" prob=".1"/>
-	<item name="drinkNukaCola" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".2"/>
 </append>
 
 <!-- military munitions ammo box -->
@@ -475,11 +507,8 @@
 
 <!-- cooler loot -->
 <append xpath="/lootcontainers/lootcontainer[@id='45']">
-	<item name="drinkNukaQuartz" prob=".01"/>
-	<item name="drinkNukaQuantum" prob=".01"/>
-	<item name="drinkNukaCherry" prob=".03"/>
-	<item name="drinkNukaCola" prob=".04"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".15"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- trash compactor, trash deluxe! -->
@@ -489,67 +518,46 @@
 
 <!-- frozen or refridgerated food, spoiled food (Helper) -->
 <append xpath="/lootcontainers/lootcontainer[@id='47']">
-	<item name="drinkNukaQuartz" prob=".002"/>
-	<item name="drinkNukaQuantum" prob=".002"/>
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".015"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- purse -->
 <append xpath="/lootcontainers/lootcontainer[@id='48']">
-	<item name="drinkNukaQuartz" prob=".002"/>
-	<item name="drinkNukaQuantum" prob=".002"/>
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".015"/>
-	<item group="SSGroup" prob=".01"/>	
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>	
 </append>
 
 <!-- beer cooler -->
 <append xpath="/lootcontainers/lootcontainer[@id='52']">
-	<item name="drinkNukaQuartz" prob=".002"/>
-	<item name="drinkNukaQuantum" prob=".002"/>
-	<item name="drinkNukaCherry" prob=".005"/>
-	<item name="drinkNukaCola" prob=".01"/>
-	<item group="SSGroup" prob=".01"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- shopping cart-->
 <append xpath="/lootcontainers/lootcontainer[@id='54']">
-	<item name="drinkNukaQuartz" prob=".002"/>
-	<item name="drinkNukaQuantum" prob=".001"/>
-	<item name="drinkNukaCherry" prob=".005"/>
-	<item name="drinkNukaCola" prob=".01"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
 	<item name="cntLunchbox" prob=".2"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- shopping basket -->
 <append xpath="/lootcontainers/lootcontainer[@id='58']">
-	<item name="drinkNukaQuartz" prob=".002"/>
-	<item name="drinkNukaQuantum" prob=".001"/>
-	<item name="drinkNukaCherry" prob=".005"/>
-	<item name="drinkNukaCola" prob=".01"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
 	<item name="cntLunchbox" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- Shamway Cardboard Loot-->
 <append xpath="/lootcontainers/lootcontainer[@id='59']">
-	<item name="drinkNukaQuartz" prob=".008"/>
-	<item name="drinkNukaQuantum" prob=".005"/>
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".01"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!--  Zombie Loot 1 -->
 <append xpath="/lootcontainers/lootcontainer[@id='70']">	
-	<item name="drinkNukaQuartz" prob=".02"/>
-	<item name="drinkNukaQuantum" prob=".02"/>
-	<item name="drinkNukaCherry" prob=".05"/>
-	<item name="drinkNukaCola" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 	<item group="RegularMeleeT2" prob=".01"/>
 	<item group="LegendaryMelee" prob=".001"/>	
 	<item group="RegularGunsT1" prob=".01"/>
@@ -557,11 +565,8 @@
 
 <!-- Zombie Loot 2 -->
 <append xpath="/lootcontainers/lootcontainer[@id='71']">	
-	<item name="drinkNukaQuartz" prob=".02"/>
-	<item name="drinkNukaQuantum" prob=".02"/>
-	<item name="drinkNukaCherry" prob=".05"/>
-	<item name="drinkNukaCola" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 	<item group="RegularMeleeT2" prob=".01"/>
 	<item group="LegendaryMelee" prob=".001"/>	
 	<item group="RegularGunsT1" prob=".01"/>
@@ -572,8 +577,8 @@
 	<item name="drinkNukaQuartz" prob=".02"/>
 	<item name="drinkNukaQuantum" prob=".02"/>
 	<item name="drinkNukaCherry" prob=".05"/>
-	<item name="drinkNukaCola" prob=".1"/>
-	<item group="SSGroup" prob=".02"/>
+	<item name="drinkNukaCola" prob="1"/>
+	<item group="SSGroup" prob=".1"/>
 	<item group="RegularMeleeT2" prob=".01"/>
 	<item group="LegendaryMelee" prob=".001"/>
 	<item group="LegendaryPipeGuns" prob=".001"/>
@@ -600,35 +605,23 @@
 
 <!-- cntCollapsedChemistryStation -->
 <append xpath="/lootcontainers/lootcontainer[@id='94']">
-	<item name="drinkNukaQuartz" prob=".02"/>
-	<item name="drinkNukaQuantum" prob=".08"/>
-	<item name="drinkNukaCherry" prob=".03"/>
-	<item name="drinkNukaCola" prob=".05"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 	<item name="resourceNukaBaseIngredients" count="1,2" prob=".1"/>
 </append>
 
 <!-- cntFoodPileSmall, cntFoodPileMedium, cntFoodPileLarge -->
 <append xpath="/lootcontainers/lootcontainer[@id='111']">
-	<item name="drinkNukaQuartz" prob=".008"/>
-	<item name="drinkNukaQuantum" prob=".005"/>
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".01"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 <append xpath="/lootcontainers/lootcontainer[@id='112']">
-	<item name="drinkNukaQuartz" prob=".008"/>
-	<item name="drinkNukaQuantum" prob=".005"/>
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".01"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 <append xpath="/lootcontainers/lootcontainer[@id='113']">
-	<item name="drinkNukaQuartz" prob=".008"/>
-	<item name="drinkNukaQuantum" prob=".005"/>
-	<item name="drinkNukaCherry" prob=".01"/>
-	<item name="drinkNukaCola" prob=".01"/>
-	<item group="SSGroup" prob=".02"/>
+	<item group="NukaGroup" count="1" prob=".1"/>
+	<item group="SSGroup" prob=".1"/>
 </append>
 
 <!-- closet hanger, cntModularClosetClosed -->

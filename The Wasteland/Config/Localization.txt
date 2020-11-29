@@ -18,6 +18,20 @@ bookNukaRecipesDesc,items,Item,New,This will teach you how to brew multiple flav
 thrownNukaNade,items,Gun,New,Nuka Nade (Ammo),,,,,
 thrownNukaNadeDesc,items,Gun,New,Too scared to drink that Quantum? May as well make a boom can out of it then!,,,,,
 
+VaultDoorKey,items,Gun,New,Overseer Office Key,,,,,
+VaultDoorKeyDesc,items,Gun,New,Keycard needed to open the Overseer's office.,,,,,
+OVDeskKey,items,Gun,New,Overseer Desk Key,,,,,
+OVDeskKeyDesc,items,Gun,New,Keycard needed to unlock the Overseer's desk.,,,,,
+OVExitKey,items,Gun,New,Overseer Exit Key,,,,,
+OVExitKeyDesc,items,Gun,New,Keycard needed to unlock the Overseer's hidden exit door.,,,,,
+
+VaultDoorKey_b,items,Gun,New,Overseer Office Key (B),,,,,
+VaultDoorKey_bDesc,items,Gun,New,Keycard needed to open the Overseer's office. Right click on the door with this keycard equipped to unlock it.,,,,,
+OVDeskKey_b,items,Gun,New,Overseer Desk Key (B),,,,,
+OVDeskKey_bDesc,items,Gun,New,Keycard needed to unlock the Overseer's desk. Right click on the desk with this keycard equipped to unlock it.,,,,,
+OVExitKey_b,items,Gun,New,Overseer Exit Key (B),,,,,
+OVExitKey_bDesc,items,Gun,New,Keycard needed to unlock the Overseer's hidden exit door. Right click on the door with this keycard equipped to unlock it.,,,,,
+
 NukaColaLight,blocks,blocks,New,Nuka Cola
 NukaQuantumLight,blocks,blocks,New,Nuka Quantum
 NukaQuartzLight,blocks,blocks,New,Nuka Quartz
@@ -32,8 +46,18 @@ cntVTstorageLoot,blocks,Container,New,Vault Tec Container
 cntVTstorageLootDesc,blocks,Container,New,Storage container.
 cntVTstorageLootInsecure,blocks,Container,New,Vault Tec Container
 cntVTstorageLootInsecureDesc,blocks,Container,New,Storage container.
+cntVTstorageTallPlayer,blocks,Container,New,Vault Tec Container
+cntVTstorageTallPlayerDesc,blocks,Container,New,Storage container.
+cntVTstorageTallSecurePlayer,blocks,Container,New,Vault Tec Container
+cntVTstorageTallSecurePlayerDesc,blocks,Container,New,Storage container.
+cntVTstorageTallLoot,blocks,Container,New,Vault Tec Container
+cntVTstorageTallLootDesc,blocks,Container,New,Storage container.
+cntVTstorageTallLootInsecure,blocks,Container,New,Vault Tec Container
+cntVTstorageTallLootInsecureDesc,blocks,Container,New,Storage container.
+cntNukaCrateS0,blocks,Container,New,Sealed Nuka Crate
 cntNukaCrateS1,blocks,Container,New,Sealed Nuka Crate
 cntNukaCrateS2,blocks,Container,New,Sealed Nuka Crate
+cntNukaCrate0,blocks,Container,New,Nuka Crate
 cntNukaCrate1,blocks,Container,New,Nuka Crate
 cntNukaCrate2,blocks,Container,New,Nuka Crate
 cntNukaSafeSecure,blocks,Container,New,Secure Nuka Safe
@@ -48,6 +72,8 @@ cntSSVendingMachineBroken,blocks,Container,New,Broken Sunset Sarsaparilla Vendin
 cntSSVendingMachineBrokenDesc,blocks,Container,New,Broken Sunset Sarsaparilla Vending Machine.
 cntSSVendingMachine,blocks,Container,New,Sunset Sarsaparilla Vending Machine
 cntSSVendingMachineDesc,blocks,Container,New,Working Sunset Sarsaparilla Vending Machine.
+cntAmmoBox,blocks,Container,New,Ammo Box
+cntAmmoBoxDesc,blocks,Container,New,Military ammo storage box.
 
 Terminal,blocks,Container,New,Terminal
 TerminalDesc,blocks,Container,New,Old terminal that surprisingly still works.
@@ -55,6 +81,221 @@ Terminaloff,blocks,Container,New,Broken Terminal
 TerminaloffDesc,blocks,Container,New,Old terminal that no longer works.
 Telephone,blocks,Container,New,Old Telephone
 TelephoneDesc,blocks,Container,New,"Old telephone. Doesn't really matter if it works now, does it?"
+Telephone2,blocks,Container,New,Old Telephone
+Telephone2Desc,blocks,Container,New,"Old telephone. Doesn't really matter if it works now, does it?"
+OVglass,blocks,Container,New,OV Glass
+OVglassDesc,blocks,Container,New,Overseer office glass.
+VaultDoor,blocks,Door,New,Vault Door
+VaultDoorDesc,blocks,Door,New,Main Vault Door.
+VaultMetalDoorBroken,blocks,Door,New,Broken Vault Door
+VaultMetalDoorBrokenDesc,blocks,Door,New,Broken Vault Door.
+VaultMetalDoorLocked,blocks,Door,New,Vault Door
+VaultMetalDoorLockedDesc,blocks,Door,New,Interior Vault Door.
+VaultMetalDoorUnlocked,blocks,Door,New,Vault Door
+VaultMetalDoorUnlockedDesc,blocks,Door,New,Interior Vault Door.
+VaultMetalDoorSmall,blocks,Door,New,Vault Door
+VaultMetalDoorSmallDesc,blocks,Door,New,Small interior Vault Door.
+VaultMetalDoorSmallLocked,blocks,Door,New,Vault Door
+VaultMetalDoorSmallLockedDesc,blocks,Door,New,Small interior Vault Door.
+Bookcase1,blocks,Container,New,Bookcase
+Bookcase1Desc,blocks,Container,New,Old bookcase.
+Bookcase2,blocks,Container,New,Bookcase
+Bookcase2Desc,blocks,Container,New,Old bookcase.
+Bookcase3,blocks,Container,New,Bookcase
+Bookcase3Desc,blocks,Container,New,Old bookcase.
+BottleCarrierEmpty,blocks,Container,New,Bottle Carrier
+BottleCarrierEmptyDesc,blocks,Container,New,Old crate for carrying bottles.
+BottleCarrier,blocks,Container,New,Bottle Carrier
+BottleCarrierDesc,blocks,Container,New,Old crate for carrying bottles.
+Boxes1,blocks,Container,New,Old Boxes
+Boxes1Desc,blocks,Container,New,Old boxes.
+Boxes2,blocks,Container,New,Old Boxes
+Boxes2Desc,blocks,Container,New,Old boxes.
+Boxes3,blocks,Container,New,Old Boxes
+Boxes3Desc,blocks,Container,New,Old boxes.
+Boxes4,blocks,Container,New,Old Boxes
+Boxes4Desc,blocks,Container,New,Old boxes.
+Boxes5,blocks,Container,New,Old Boxes
+Boxes5Desc,blocks,Container,New,Old boxes.
+Boxes6,blocks,Container,New,Old Boxes
+Boxes6Desc,blocks,Container,New,Old boxes.
+Boxes7,blocks,Container,New,Old Boxes
+Boxes7Desc,blocks,Container,New,Old boxes.
+Bunkbed1,blocks,Container,New,Old Bunkbed
+Bunkbed1Desc,blocks,Container,New,Old bunkbed.
+Case1,blocks,Container,New,Case
+Case1Desc,blocks,Container,New,Case.
+Case2,blocks,Container,New,Case
+Case2Desc,blocks,Container,New,Case.
+Chair1,blocks,Container,New,Old Chair
+Chair1Desc,blocks,Container,New,Old chair.
+Chair2,blocks,Container,New,Old Retro Chair
+Chair2Desc,blocks,Container,New,Old chair.
+Cistern1,blocks,Container,New,Old Cistern
+Cistern1Desc,blocks,Container,New,Old cistern.
+Curtain1,blocks,Container,New,Old Curtain
+Curtain1Desc,blocks,Container,New,Old curtain.
+Desk1,blocks,Container,New,Old Desk
+Desk1Desc,blocks,Container,New,Old desk.
+Dresser1,blocks,Container,New,Old Dresser
+Dresser1Desc,blocks,Container,New,Old dresser.
+Dresser2,blocks,Container,New,Old Dresser
+Dresser2Desc,blocks,Container,New,Old dresser.
+Dresser3,blocks,Container,New,Old Dresser
+Dresser3Desc,blocks,Container,New,Old dresser.
+Fatman_b,blocks,Container,New,Fat Man
+Fatman_bDesc,blocks,Container,New,Block that will give a Fat Man weapon when picked up.
+ammoNuke_b,blocks,Container,New,Nuke
+ammoNuke_bDesc,blocks,Container,New,Block that will give a Nuke when picked up.
+Guitar1,blocks,Container,New,Old Guitar
+Guitar1Desc,blocks,Container,New,Old guitar.
+IndustrialFan,blocks,Container,New,Industrial Fan
+IndustrialFanDesc,blocks,Container,New,Large industrial fan.
+Lamp1,blocks,Container,New,Old Lamp
+Lamp1Desc,blocks,Container,New,Old lamp.
+MetalBox,blocks,Container,New,Metal Box
+MetalBoxDesc,blocks,Container,New,Old metal box.
+MetalBox2,blocks,Container,New,Metal Box
+MetalBox2Desc,blocks,Container,New,Old metal box.
+MetalContainer,blocks,Container,New,Metal Box
+MetalContainerDesc,blocks,Container,New,Old metal box.
+MetalContainer2,blocks,Container,New,Metal Box
+MetalContainer2Desc,blocks,Container,New,Old metal box.
+MetalContainer3,blocks,Container,New,Metal Container
+MetalContainer3Desc,blocks,Container,New,Old metal container.
+MetalContainer4,blocks,Container,New,Metal Container
+MetalContainer4Desc,blocks,Container,New,Old metal container.
+MetalShelves,blocks,Container,New,Metal Shelves
+MetalShelvesDesc,blocks,Container,New,Old metal shelves.
+MetalShelves2,blocks,Container,New,Metal Shelves
+MetalShelves2Desc,blocks,Container,New,Old metal shelves.
+NCRbobble,blocks,Container,New,NCR Bobblehead
+NCRbobbleDesc,blocks,Container,New,Old NCR bobblehead. Might be worth something.
+OldRadio,blocks,Container,New,Old Radio
+OldRadioDesc,blocks,Container,New,Old Radio. Doesn't appear to work anymore.
+OldSafeClosedInsecure,blocks,Container,New,Old Safe
+OldSafeClosedInsecureDesc,blocks,Container,New,Old safe.
+OldSafeClosed,blocks,Container,New,Old Safe
+OldSafeClosedDesc,blocks,Container,New,Old safe.
+OldSafe,blocks,Container,New,Old Safe
+OldSafeDesc,blocks,Container,New,Old safe.
+OldServer1,blocks,Container,New,Old Server
+OldServer1Desc,blocks,Container,New,Old server.
+OldServer2,blocks,Container,New,Old Server
+OldServer2Desc,blocks,Container,New,Old server.
+OldServer3,blocks,Container,New,Old Server
+OldServer3Desc,blocks,Container,New,Old server.
+OldTV,blocks,Container,New,Old TV
+OldTVDesc,blocks,Container,New,Old tv.
+OldTVon,blocks,Container,New,Old TV
+OldTVonDesc,blocks,Container,New,Old tv.
+PipBoy,blocks,Container,New,PipBoy 3000
+PipBoyDesc,blocks,Container,New,A surprisingly still functional PipBoy.
+Rug1,blocks,Container,New,Old Rug
+Rug1Desc,blocks,Container,New,Old rug.
+Server1,blocks,Container,New,Old Server
+Server1Desc,blocks,Container,New,Old server.
+Server2,blocks,Container,New,Old Server
+Server2Desc,blocks,Container,New,Old server.
+Server3,blocks,Container,New,Old Server
+Server3Desc,blocks,Container,New,Old server.
+ServerEmpty,blocks,Container,New,Old Empty Server
+ServerEmptyDesc,blocks,Container,New,Old empty server.
+ServerFull,blocks,Container,New,Old Full Server
+ServerFullDesc,blocks,Container,New,Old full server.
+Toolbox1,blocks,Container,New,Old Toolbox
+Toolbox1Desc,blocks,Container,New,Old toolbox.
+Transformer1,blocks,Container,New,Old Transformer
+Transformer1Desc,blocks,Container,New,Old transformer.
+Turbine1,blocks,Container,New,Old Turbine
+Turbine1Desc,blocks,Container,New,Old turbine.
+VaultBoycutout,blocks,Container,New,Vault Boy Cutout
+VaultBoycutoutDesc,blocks,Container,New,Vault Boy Cutout.
+Vent1,blocks,Container,New,Old Vent
+Vent1Desc,blocks,Container,New,Old vent.
+Vent2,blocks,Container,New,Old Vent (offset)
+Vent2Desc,blocks,Container,New,Old vent.
+WarehouseCrates,blocks,Container,New,Old Warehouse Crates
+WarehouseCratesDesc,blocks,Container,New,Old warehouse crates.
+WeaponCase,blocks,Container,New,Weapon Case
+WeaponCaseDesc,blocks,Container,New,Weapon case.
+OVglass,blocks,Container,New,Overseer Glass
+OVglassDesc,blocks,Container,New,Glass for the OV office.
+Grid,blocks,Container,New,Power Grid Display
+GridDesc,blocks,Container,New,Power Grid Display for the OV office.
+DeskRound,blocks,Container,New,Overseer's Desk
+DeskRoundDesc,blocks,Container,New,Overseer's Desk.
+DeskRound2,blocks,Container,New,Overseer's Desk
+DeskRound2Desc,blocks,Container,New,Overseer's Desk.
+BloodSplatter1,blocks,Container,New,Blood Splatter
+BloodSplatter2,blocks,Container,New,Blood Splatter
+BloodSplatter3,blocks,Container,New,Blood Splatter
+BloodSplatter4,blocks,Container,New,Blood Splatter
+BloodSplatter5,blocks,Container,New,Blood Splatter
+BloodSplatter6,blocks,Container,New,Blood Splatter
+BloodSplatter7,blocks,Container,New,Blood Splatter
+chainLink_b,blocks,Container,New,Chainlink Fence
+chainLink_bDesc,blocks,Container,New,Regular fence with advanced rotations.
+ConsoleWall,blocks,Container,New,Wall Console
+ConsoleWallDesc,blocks,Container,New,Wall Console.
+Door1L,blocks,Door,New,Metal Door (L)
+Door1LDesc,blocks,Door,New,Heavy Metal Door.
+Door1R,blocks,Door,New,Metal Door (R)
+Door1RDesc,blocks,Door,New,Heavy Metal Door.
+Door1L2,blocks,Door,New,Metal Door (L)
+Door1L2Desc,blocks,Door,New,Heavy Metal Door.
+Door1R2,blocks,Door,New,Metal Door (R)
+Door1R2Desc,blocks,Door,New,Heavy Metal Door.
+Door2L,blocks,Door,New,Metal Door (L)
+Door2LDesc,blocks,Door,New,Heavy Metal Door.
+Door2R,blocks,Door,New,Metal Door (R)
+Door2RDesc,blocks,Door,New,Heavy Metal Door.
+Door2L2,blocks,Door,New,Metal Door (L)
+Door2L2Desc,blocks,Door,New,Heavy Metal Door.
+Door2R2,blocks,Door,New,Metal Door (R)
+Door2R2Desc,blocks,Door,New,Heavy Metal Door.
+Door3L,blocks,Door,New,Security Door (L)
+Door3LDesc,blocks,Door,New,Heavy Security Door.
+Door3R,blocks,Door,New,Security Door (R)
+Door3RDesc,blocks,Door,New,Heavy Security Door.
+Door3L2,blocks,Door,New,Security Door (L)
+Door3L2Desc,blocks,Door,New,Heavy Security Door.
+Door3R2,blocks,Door,New,Security Door (R)
+Door3R2Desc,blocks,Door,New,Heavy Security Door.
+Door4L,blocks,Door,New,Security Door (L)
+Door4LDesc,blocks,Door,New,Heavy Security Door.
+Door4R,blocks,Door,New,Security Door (R)
+Door4RDesc,blocks,Door,New,Heavy Security Door.
+Door4L2,blocks,Door,New,Security Door (L)
+Door4L2Desc,blocks,Door,New,Heavy Security Door.
+Door4R2,blocks,Door,New,Security Door (R)
+Door4R2Desc,blocks,Door,New,Heavy Security Door.
+EspressoMachine,blocks,Door,New,Espresso
+EspressoMachineDesc,blocks,Door,New,Heavy Security Door.
+MedicalDivider,blocks,Door,New,Medical Divider
+MedicalDividerDesc,blocks,Door,New,Medical Divider.
+MetalDrawer1,blocks,Container,New,Metal Drawer
+MetalDrawer1Desc,blocks,Container,New,Old metal drawer.
+MetalDrawer2,blocks,Container,New,Metal Drawer
+MetalDrawer2Desc,blocks,Container,New,Old metal drawer.
+Microscope,blocks,Container,New,Microscope
+MicroscopeDesc,blocks,Container,New,Microscope.
+OldControlPanel,blocks,Container,New,Old Control Panel
+OldControlPanelDesc,blocks,Container,New,Old control panel.
+OldProjector,blocks,Container,New,Old Projector
+OldProjectorDesc,blocks,Container,New,Old projector.
+Stepladder,blocks,Container,New,Stepladder
+StepladderDesc,blocks,Container,New,Used stepladder.
+WelcomeMat,blocks,Container,New,Welcome Mat
+WelcomeMatDesc,blocks,Container,New,Welcome Mat.
+windowStoreThreeSidedBulletproofCTR,blocks,Container,New,Bulletproof Window
+windowStoreThreeSidedBulletproofCTRDesc,blocks,Container,New,Three-sided, centered bulletproof window.
+windowStoreTwoSidedBulletproofCTR,blocks,Container,New,Bulletproof Window
+windowStoreTwoSidedBulletproofCTRDesc,blocks,Container,New,Two-sided, centered bulletproof window.
+windowStoreThreeSidedCTR,blocks,Container,New,Window Frame
+windowStoreThreeSidedCTRDesc,blocks,Container,New,Three-sided, centered window frame.
+windowStoreTwoSidedCTR,blocks,Container,New,Window Frame
+windowStoreTwoSidedCTRDesc,blocks,Container,New,Two-sided, centered window frame.
 
 mineBottlecapMine,items,Gun,New,Bottlecap Mine (Ammo),,,,,
 mineBottlecapMineDesc,items,Item,New,Homemade mine using an old lunchbox and some bottlecaps.,,,,,
@@ -114,7 +355,7 @@ gunIncineratorDesc,items,Gun,New,Modified flamethrower. Semi-auto molotovs!,,,,,
 ammoNuke,items,Gun,New,Nuke (Ammo),,,,,
 ammoNukeDesc,items,Gun,New,These things caused all of this so surely they can fix it. Right? Will wreck everything so handle with caution. Not advised for indoor use.,,,,,
 ammoNukeAP,items,Gun,New,Nuke AP (Ammo),,,,,
-ammoNukeAPDesc,items,Gun,New,Anti-Personnel version crafted from a scavenged mini nuke. Much lower block damage. Lower enitity damage and slightly decreased AOE.,,,,,
+ammoNukeAPDesc,items,Gun,New,Anti-Personnel version crafted from a scavenged mini nuke. Much lower block damage. Slightly lower enitity damage and slightly decreased AOE.,,,,,
 ammoBowlingball,items,Gun,New,Bowling Ball (Ammo),,,,,
 ammoBowlingballDesc,items,Gun,New,Can't find any nukes to use with your shiny Fat Man? Use these! *Not PBA regulation*,,,,,
 ammoRailSpike,items,Gun,New,Rail Spike (Ammo),,,,,
@@ -135,6 +376,8 @@ ammoEC,items,Gun,New,Energy Cell (Ammo),,,,,
 ammoECDesc,items,Gun,New,Ammo used by the Laser Pistol.,,,,,
 ammoMFC,items,Gun,New,Microfusion Cell (Ammo),,,,,
 ammoMFCDesc,items,Gun,New,Ammo used by the Laser Rifle.,,,,,
+ammoSMFC,items,Gun,New,Shotgun Microfusion Cell (Ammo),,,,,
+ammoSMFCDesc,items,Gun,New,Ammo used by the Laser Shotgun.,,,,,
 ammoPEC,items,Gun,New,Plasma Energy Cell (Ammo),,,,,
 ammoPECDesc,items,Gun,New,Ammo used by the Plasma Pistol.,,,,,
 ammoPMFC,items,Gun,New,Plasma Microfusion Cell (Ammo),,,,,
@@ -225,6 +468,7 @@ modLaserSplitterSchematic,item_modifiers,mod,New,Laser Splitter Schematic
 modLaserFocuserSchematic,item_modifiers,mod,New,Laser Focuser Schematic
 modLaserScopeSchematic,item_modifiers,mod,New,Laser Rifle Scope Schematic
 cntVTstorageSecurePlayerSchematic,blocks,cnt,New,Vault Tec Storage Schematic
+cntVTstorageTallSecurePlayerSchematic,blocks,cnt,New,Vault Tec Tall Storage Schematic
 
 meleeBanjo,items,Melee,KgNone,Banjo,,,,,
 meleeBanjoDesc,items,Melee,KgNone,A melee weapon. A good choice when trying to win Zombie Kill of the Week!,,,,,
@@ -250,6 +494,8 @@ meleeTireIron,items,Melee,KgNone,Tire Iron,,,,,
 meleeTireIronDesc,items,Melee,KgNone,"Heavy and metal? What else do you need?".,,,,,
 meleeSupaSledge,items,Melee,KgNone,Supa Sledge,,,,,
 meleeSupaSledgeDesc,items,Melee,KgNone,"Modified sledgehammer. Heavy and slow, but very powerful.",,,,,
+meleeGuitar,items,Melee,KgNone,Guitar,,,,,
+meleeGuitarDesc,items,Melee,KgNone,"An old guitar. Probably only good for cracking skulls at this point.",,,,,
 
 meleeTheBreak,items,Melee,KgNone,[FFC300]The Break[-],,,,,
 meleeTheBreakDesc,items,Melee,KgNone,A custom pool cue. Higher damage and dismemberment.,,,,,

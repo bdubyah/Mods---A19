@@ -195,8 +195,8 @@
 		
 		<effect_group name="run particles, cleanup"> 
 		<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>-->
-			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Hips"/>
-			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="Hips"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="Spine1"/>
 		</effect_group>		
 	</buff>
 	

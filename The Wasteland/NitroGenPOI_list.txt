@@ -16,3 +16,4 @@ Prison_02,none,2,-1,38,19,48,industrial;smalltown
 School_k6_02,none,2,-1,49,18,79,smalltown;downtown
 UFO_Crash,none,2,-7,50,13,107,alone
 UFO_Crash_desert,none,2,-7,50,13,107,alone
+Vault_101,none,2,-32,105,43,168,alone

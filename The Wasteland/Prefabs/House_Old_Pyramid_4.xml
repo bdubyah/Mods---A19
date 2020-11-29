@@ -16,7 +16,7 @@
   <property name="SleeperVolumeGroup" value="RaidersMix,9,10,S_-Group_Generic_Zombie,9,10,RaiderBossMix,2,2" />
   <property name="SleeperIsLootVolume" value="False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False" />
-  <property name="SleeperVolumeFlags" value="2,2,2" />
+  <property name="SleeperVolumeFlags" value="0,2,2" />
   <property name="QuestTags" value="clear,fetch,hidden_cache" />
   <property name="Zoning" value="ResidentialNew" />
   <property name="AllowedTownships" value="city,town,rural,wilderness" />
@@ -33,10 +33,10 @@
   </property>
   <property class="Stats">
     <property name="TotalVertices" value="583648" />
-    <property name="TotalTriangles" value="505309" />
+    <property name="TotalTriangles" value="506357" />
     <property class="BlockEntities">
       <property name="Vertices" value="471416" />
-      <property name="Triangles" value="433202" />
+      <property name="Triangles" value="434250" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="88860" />

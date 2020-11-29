@@ -56,6 +56,12 @@
 			<property name="ScopeCameraOffset" value="0.00025,.0452,0.0"/>
 		</item_property_overrides>
 		
+		<item_property_overrides name="gunLaserShotgun">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeOffset" value="0,0.0,-0."/>			
+			<property name="ScopeCameraOffset" value="0.0,-.017,0.01"/>
+		</item_property_overrides>
+		
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0.0,-0."/>
@@ -140,6 +146,11 @@
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
 		
+		<item_property_overrides name="gunLaserShotgun">
+			<property name="SideOffset" value="0,0.0,-0.00"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
@@ -202,6 +213,11 @@
 		<item_property_overrides name="gunCombatShotgun">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunLaserShotgun">
+			<property name="SideOffset" value="0,0.0,-0.00"/>
+			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="gunLeFusilTerribles">
@@ -561,6 +577,10 @@
 			<item_property_overrides name="gunServiceRifle">
 				<property name="SideOffset" value="0,0,0"/>
 				<property name="SideScale" value=".5,.5,.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunLaserShotgun">
+				<property name="SideOffset" value="-0.0253,0.001,0.575"/>
+				<property name="SideScale" value="1,1,1"/>
 			</item_property_overrides>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?modFlashlight" parent_transform="Attachments/Side"/>
