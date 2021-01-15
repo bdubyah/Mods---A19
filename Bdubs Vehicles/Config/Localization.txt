@@ -283,3 +283,49 @@ vehicleBuggyaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the Buggy
 vehicleBuggy,vehicles,vehicle,new,Buggy,,,,,
 vehicleBuggyplaceable,vehicles,item,EnChanged,Buggy,,,,,
 vehicleBuggyplaceableDesc,vehicles,item,EnChanged,An old offroad buggy.,,,,,
+
+vehicleBoxTruckchassisSchematic,items,Part,EnChanged,Box Truck Chassis Schematic
+vehicleBoxTruckbodySchematic,items,Part,EnChanged,Box Truck Body Schematic
+vehicleBRDM2chassisSchematic,items,Part,EnChanged,BRDM-2 Chassis Schematic
+vehicleBRDM2accessoriesSchematic,items,Part,EnChanged,BRDM-2 Accessories Schematic
+vehicleBuggychassisSchematic,items,Part,EnChanged,Buggy Chassis Schematic
+vehicleBuggyaccessoriesSchematic,items,Part,EnChanged,Buggy Accessories Schematic
+vehicleChargerchassisSchematic,items,Part,EnChanged,Charger Chassis Schematic
+vehicleChargeraccessoriesSchematic,items,Part,EnChanged,Charger Accessories Schematic
+vehicleCruiserChassisSchematic,items,Part,EnChanged,Cruiser Chassis Schematic
+vehicleCruiserbarsSchematic,items,Part,EnChanged,Cruiser Handlebars Schematic
+vehicleDirtBikeChassisSchematic,items,Part,EnChanged,Dirt Bike Chassis Schematic
+vehicleDirtBikePartsSchematic,items,Part,EnChanged,Dirt Bike Parts Schematic
+vehicleDusterchassisSchematic,items,Part,EnChanged,Duster Chassis Schematic
+vehicleDusteraccessoriesSchematic,items,Part,EnChanged,Duster Accessories Schematic
+vehicleGNXchassisSchematic,items,Part,EnChanged,GNX Chassis Schematic
+vehicleGNXaccessoriesSchematic,items,Part,EnChanged,GNX Accessories Schematic
+vehicleGolfCartchassisSchematic,items,Part,EnChanged,Golf Cart Chassis Schematic
+vehicleGolfCartaccessoriesSchematic,items,Part,EnChanged,Golf Cart Accessories Schematic
+vehicleHotRodchassisSchematic,items,Part,EnChanged,Hot Rod Chassis Schematic
+vehicleHotRodaccessoriesSchematic,items,Part,EnChanged,Hot Rod Accessories Schematic
+vehicleHumveechassisSchematic,items,Part,EnChanged,Humvee Chassis Schematic
+vehicleHumveebodySchematic,items,Part,EnChanged,Humvee Body Schematic
+vehicleJunkerChassisSchematic,items,Part,EnChanged,Junker Chassis Schematic
+vehicleJunkerbarsSchematic,items,Part,EnChanged,Junker Handlebars Schematic
+vehicleMarauderchassisSchematic,items,Part,EnChanged,Marauder Chassis Schematic
+vehicleMarauderaccessoriesSchematic,items,Part,EnChanged,Marauder Accessories Schematic
+vehicleMD500chassisSchematic,items,Part,EnChanged,MD-500 Chassis Schematic
+vehicleMD500accessoriesSchematic,items,Part,EnChanged,MD-500 Accessories Schematic
+vehicleMRAPpartsSchematic,items,Part,EnChanged,MRAP Parts Schematic
+vehicleMRAPaccessoriesSchematic,items,Part,EnChanged,MRAP Accessories Schematic
+vehicleNovachassisSchematic,items,Part,EnChanged,Nova Chassis Schematic
+vehicleNovaaccessoriesSchematic,items,Part,EnChanged,Nova Accessories Schematic
+vehiclePickupchassisSchematic,items,Part,EnChanged,Pickup Chassis Schematic
+vehiclePickupaccessoriesSchematic,items,Part,EnChanged,Pickup Accessories Schematic
+vehicleRatChassisSchematic,items,Part,EnChanged,Rat Chassis Schematic
+vehicleRatbarsSchematic,items,Part,EnChanged,Rat Handlebars Schematic
+vehicleSHERPchassisSchematic,items,Part,EnChanged,SHERP Chassis Schematic
+vehicleSHERPaccessoriesSchematic,items,Part,EnChanged,SHERP Accessories Schematic
+vehicleStallionchassisSchematic,items,Part,EnChanged,Stallion Chassis Schematic
+vehicleStallionaccessoriesSchematic,items,Part,EnChanged,Stallion Accessories Schematic
+vehicleUAZ452chassisSchematic,items,Part,EnChanged,UAZ 452 Chassis Schematic
+vehicleUH60chassisSchematic,items,Part,EnChanged,UH-60 Chassis Schematic
+vehicleUH60accessoriesSchematic,items,Part,EnChanged,UH-60 Accessories Schematic
+vehicleWorkTruckchassisSchematic,items,Part,EnChanged,Work Truck Chassis Schematic
+vehicleWorkTruckaccessoriesSchematic,items,Part,EnChanged,Work Truck Accessories Schematic

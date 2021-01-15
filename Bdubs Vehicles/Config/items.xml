@@ -8,6 +8,30 @@
 			<property name="EconomicValue" value="15000"/>
 		</item>
 		
+		<item name="vehicleBoxTruckchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="BoxTruckchassis"/>
+			<property name="Unlocks" value="vehicleBoxTruckchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBoxTruckchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleBoxTruckbodySchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="BoxTruckbody"/>
+			<property name="Unlocks" value="vehicleBoxTruckbody"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBoxTruckbody" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleBoxTruckbody">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="BoxTruckbody"/>
@@ -54,6 +78,30 @@
 			<property name="CustomIcon" value="BRDM2chassis"/>
 			<property name="DescriptionKey" value="vehicleBRDM2chassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleBRDM2chassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="BRDM2chassis"/>
+			<property name="Unlocks" value="vehicleBRDM2chassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBRDM2chassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleBRDM2accessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="BRDM2accessories"/>
+			<property name="Unlocks" value="vehicleBoxTruckbody"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBRDM2accessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleBRDM2accessories">
@@ -104,6 +152,30 @@
 			<property name="EconomicValue" value="12000"/>
 		</item>
 		
+		<item name="vehicleBuggychassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Buggychassis"/>
+			<property name="Unlocks" value="vehicleBuggychassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBuggychassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleBuggyaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Buggyaccessories"/>
+			<property name="Unlocks" value="vehicleBuggyaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBuggyaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleBuggyaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Buggyaccessories"/>
@@ -133,6 +205,30 @@
 			<property name="CustomIcon" value="Chargerchassis"/>
 			<property name="DescriptionKey" value="vehicleChargerchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleChargerchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Chargerchassis"/>
+			<property name="Unlocks" value="vehicleChargerchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleChargerchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleChargeraccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Chargeraccessories"/>
+			<property name="Unlocks" value="vehicleChargeraccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleChargeraccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleChargeraccessories">
@@ -353,6 +449,30 @@
 			<property name="EconomicValue" value="5000"/>
 		</item>
 		
+		<item name="vehicleCruiserChassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Cruiserchassis"/>
+			<property name="Unlocks" value="vehicleCruiserChassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleCruiserChassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleCruiserbarsSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Cruiserbars"/>
+			<property name="Unlocks" value="vehicleCruiserbars"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleCruiserbars" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleCruiserbars">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Cruiserbars"/>
@@ -401,6 +521,30 @@
 			<property name="EconomicValue" value="3000"/>
 		</item>
 		
+		<item name="vehicleDirtBikeChassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="DirtBikechassis"/>
+			<property name="Unlocks" value="vehicleDirtBikeChassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleDirtBikeChassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleDirtBikePartsSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="DirtBikeparts"/>
+			<property name="Unlocks" value="vehicleDirtBikeParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleDirtBikeParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleDirtBikeParts">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="DirtBikeparts"/>
@@ -432,6 +576,30 @@
 			<property name="EconomicValue" value="18000"/>
 		</item>
 		
+		<item name="vehicleDusterchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Dusterchassis"/>
+			<property name="Unlocks" value="vehicleDusterchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleDusterchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleDusteraccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Dusteraccessories"/>
+			<property name="Unlocks" value="vehicleDusteraccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleDusteraccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleDusteraccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Dusteraccessories"/>
@@ -461,6 +629,30 @@
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
 			<property name="EconomicValue" value="9000"/>
+		</item>
+		
+		<item name="vehicleGNXchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="GNXchassis"/>
+			<property name="Unlocks" value="vehicleGNXchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGNXchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleGNXaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="GNXchassis"/>
+			<property name="Unlocks" value="vehicleGNXaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGNXaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleGNXaccessories">
@@ -509,6 +701,30 @@
 			<property name="CustomIcon" value="GolfCartchassis"/>
 			<property name="DescriptionKey" value="vehicleGolfCartchassisDesc"/> 
 			<property name="EconomicValue" value="2000"/>
+		</item>
+		
+		<item name="vehicleGolfCartchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="GolfCartchassis"/>
+			<property name="Unlocks" value="vehicleGolfCartchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGolfCartchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleGolfCartaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="GolfCartaccessories"/>
+			<property name="Unlocks" value="vehicleGolfCartaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGolfCartaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 
 		<item name="vehicleGolfCartaccessories">
@@ -609,6 +825,30 @@
 			<property name="CustomIcon" value="HotRodchassis"/>
 			<property name="DescriptionKey" value="vehicleHotRodchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleHotRodchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="HotRodchassis"/>
+			<property name="Unlocks" value="vehicleHotRodchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHotRodchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleHotRodaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="HotRodaccessories"/>
+			<property name="Unlocks" value="vehicleHotRodaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHotRodaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleHotRodaccessories">
@@ -727,6 +967,30 @@
 			<property name="EconomicValue" value="20000"/>
 		</item>
 		
+		<item name="vehicleHumveechassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Humveechassis"/>
+			<property name="Unlocks" value="vehicleHumveechassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHumveechassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleHumveebodySchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Humveebody"/>
+			<property name="Unlocks" value="vehicleHumveebody"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHumveebody" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleHumveebody">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Humveebody"/>
@@ -773,6 +1037,30 @@
 			<property name="CustomIcon" value="Junkerchassis"/>
 			<property name="DescriptionKey" value="vehicleJunkerChassisDesc"/>
 			<property name="EconomicValue" value="5000"/>
+		</item>
+		
+		<item name="vehicleJunkerChassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Junkerchassis"/>
+			<property name="Unlocks" value="vehicleJunkerChassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleJunkerChassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleJunkerbarsSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Junkerbars"/>
+			<property name="Unlocks" value="vehicleJunkerbars"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleJunkerbars" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleJunkerbars">
@@ -823,6 +1111,30 @@
 			<property name="EconomicValue" value="10000"/>
 		</item>
 		
+		<item name="vehicleMarauderchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Marauderchassis"/>
+			<property name="Unlocks" value="vehicleMarauderchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMarauderchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleMarauderaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Marauderaccessories"/>
+			<property name="Unlocks" value="vehicleMarauderaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMarauderaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleMarauderaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Marauderaccessories"/>
@@ -871,6 +1183,30 @@
 			<property name="EconomicValue" value="20000"/>
 		</item>
 		
+		<item name="vehicleMD500chassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="MD500chassis"/>
+			<property name="Unlocks" value="vehicleMD500chassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMD500chassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleMD500accessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="MD500accessories"/>
+			<property name="Unlocks" value="vehicleMD500accessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMD500accessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleMD500accessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="MD500accessories"/>
@@ -900,6 +1236,30 @@
 			<property name="CustomIcon" value="MRAPparts"/>
 			<property name="DescriptionKey" value="vehicleMRAPpartsDesc"/>
 			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleMRAPpartsSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="MRAPparts"/>
+			<property name="Unlocks" value="vehicleMRAPparts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMRAPparts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleMRAPaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="MRAPaccessories"/>
+			<property name="Unlocks" value="vehicleMRAPaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMRAPaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleMRAPaccessories">
@@ -948,6 +1308,30 @@
 			<property name="CustomIcon" value="Novachassis"/>
 			<property name="DescriptionKey" value="vehicleNovachassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleNovachassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Novachassis"/>
+			<property name="Unlocks" value="vehicleNovachassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleNovachassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleNovaaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Novaaccessories"/>
+			<property name="Unlocks" value="vehicleNovaaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleNovaaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleNovaaccessories">
@@ -1015,6 +1399,30 @@
 			<property name="EconomicValue" value="7000"/>
 		</item>
 		
+		<item name="vehiclePickupchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Pickupchassis"/>
+			<property name="Unlocks" value="vehiclePickupchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehiclePickupchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehiclePickupaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Pickupaccessories"/>
+			<property name="Unlocks" value="vehiclePickupaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehiclePickupaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehiclePickupaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Pickupaccessories"/>
@@ -1044,6 +1452,30 @@
 			<property name="CustomIcon" value="Ratchassis"/>
 			<property name="DescriptionKey" value="vehicleRatChassisDesc"/>
 			<property name="EconomicValue" value="5000"/>
+		</item>
+		
+		<item name="vehicleRatChassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Ratchassis"/>
+			<property name="Unlocks" value="vehicleRatChassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleRatChassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleRatbarsSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Ratbars"/>
+			<property name="Unlocks" value="vehicleRatbars"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleRatbars" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleRatbars">
@@ -1094,6 +1526,30 @@
 			<property name="EconomicValue" value="10000"/>
 		</item>
 		
+		<item name="vehicleSHERPchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="SHERPchassis"/>
+			<property name="Unlocks" value="vehicleSHERPchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleSHERPchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleSHERPaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="SHERPaccessories"/>
+			<property name="Unlocks" value="vehicleSHERPaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleSHERPaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleSHERPaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="SHERPaccessories"/>
@@ -1123,6 +1579,30 @@
 			<property name="CustomIcon" value="Schassis"/>
 			<property name="DescriptionKey" value="vehicleStallionchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleStallionchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Schassis"/>
+			<property name="Unlocks" value="vehicleStallionchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleStallionchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleStallionaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Saccessories"/>
+			<property name="Unlocks" value="vehicleStallionaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleStallionaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleStallionaccessories">
@@ -1206,6 +1686,18 @@
 			<property name="DescriptionKey" value="vehicleUAZ452chassisDesc"/>
 			<property name="EconomicValue" value="12000"/>
 		</item>
+		
+		<item name="vehicleUAZ452chassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="UAZchassis"/>
+			<property name="Unlocks" value="vehicleUAZ452chassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleUAZ452chassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
 				
 		<item name="vehicleUAZ452placeable">
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
@@ -1229,6 +1721,30 @@
 			<property name="CustomIcon" value="UH60chassis"/>
 			<property name="DescriptionKey" value="vehicleUH60chassisDesc"/>
 			<property name="EconomicValue" value="15000"/>
+		</item>
+		
+		<item name="vehicleUH60chassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="UH60chassis"/>
+			<property name="Unlocks" value="vehicleUH60chassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleUH60chassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleUH60accessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="UH60accessories"/>
+			<property name="Unlocks" value="vehicleUH60accessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleUH60accessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleUH60accessories">
@@ -1294,6 +1810,30 @@
 			<property name="CustomIcon" value="WorkTruckchassis"/>
 			<property name="DescriptionKey" value="vehicleWorkTruckchassisDesc"/>
 			<property name="EconomicValue" value="6000"/>
+		</item>
+		
+		<item name="vehicleWorkTruckchassisSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="WorkTruckchassis"/>
+			<property name="Unlocks" value="vehicleWorkTruckchassis"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWorkTruckchassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleWorkTruckaccessoriesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="WorkTruckaccessories"/>
+			<property name="Unlocks" value="vehicleWorkTruckaccessories"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWorkTruckaccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
 		</item>
 		
 		<item name="vehicleWorkTruckaccessories">

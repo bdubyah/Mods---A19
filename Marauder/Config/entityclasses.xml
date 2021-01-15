@@ -9,7 +9,7 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="77"/>
+			<property name="LootListAlive" value="79"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="5"/>
@@ -30,7 +30,7 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="77"/>
+			<property name="LootListAlive" value="79"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="5"/>

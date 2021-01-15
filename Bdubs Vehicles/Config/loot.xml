@@ -157,7 +157,56 @@
 		<item group="Humveegroup" loot_prob_template="ProbT3"/>
 		<item group="BoxTruckgroup" loot_prob_template="ProbT3"/>
 	</append>
-
-
+	
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
+		<item name="vehicleCruiserChassisSchematic"/>
+		<item name="vehicleCruiserbarsSchematic"/>
+		<item name="vehicleDirtBikeChassisSchematic"/>
+		<item name="vehicleDirtBikePartsSchematic"/>
+		<item name="vehicleGolfCartchassisSchematic"/>
+		<item name="vehicleGolfCartaccessoriesSchematic"/>
+		<item name="vehicleJunkerChassisSchematic"/>
+		<item name="vehicleJunkerbarsSchematic"/>
+		<item name="vehicleRatChassisSchematic"/>
+		<item name="vehicleRatbarsSchematic"/>
+		<item name="vehicleBuggyaccessoriesSchematic"/>
+		<item name="vehicleBuggychassisSchematic"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+		<item name="vehicleBoxTruckchassisSchematic"/>
+		<item name="vehicleBoxTruckbodySchematic"/>
+		<item name="vehicleBRDM2chassisSchematic"/>
+		<item name="vehicleBRDM2accessoriesSchematic"/>
+		<item name="vehicleChargerchassisSchematic"/>
+		<item name="vehicleChargeraccessoriesSchematic"/>
+		<item name="vehicleDusterchassisSchematic"/>
+		<item name="vehicleDusteraccessoriesSchematic"/>
+		<item name="vehicleGNXchassisSchematic"/>
+		<item name="vehicleGNXaccessoriesSchematic"/>
+		<item name="vehicleHotRodchassisSchematic"/>
+		<item name="vehicleHotRodaccessoriesSchematic"/>
+		<item name="vehicleHumveechassisSchematic"/>
+		<item name="vehicleHumveebodySchematic"/>
+		<item name="vehicleMarauderchassisSchematic"/>
+		<item name="vehicleMarauderaccessoriesSchematic"/>
+		<item name="vehicleMD500chassisSchematic"/>
+		<item name="vehicleMD500accessoriesSchematic"/>
+		<item name="vehicleMRAPpartsSchematic"/>
+		<item name="vehicleMRAPaccessoriesSchematic"/>
+		<item name="vehicleNovachassisSchematic"/>
+		<item name="vehicleNovaaccessoriesSchematic"/>
+		<item name="vehiclePickupchassisSchematic"/>
+		<item name="vehiclePickupaccessoriesSchematic"/>
+		<item name="vehicleSHERPchassisSchematic"/>
+		<item name="vehicleSHERPaccessoriesSchematic"/>
+		<item name="vehicleStallionchassisSchematic"/>
+		<item name="vehicleStallionaccessoriesSchematic"/>
+		<item name="vehicleUAZ452chassisSchematic"/>
+		<item name="vehicleUH60chassisSchematic"/>
+		<item name="vehicleUH60accessoriesSchematic"/>
+		<item name="vehicleWorkTruckchassisSchematic"/>
+		<item name="vehicleWorkTruckaccessoriesSchematic"/>
+	</append>
 
 </configs>
