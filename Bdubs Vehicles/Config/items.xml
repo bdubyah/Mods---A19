@@ -3,6 +3,7 @@
 	
 		<item name="vehicleBoxTruckchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleBoxTruckchassisSchematic"/>
 			<property name="CustomIcon" value="BoxTruckchassis"/>
 			<property name="DescriptionKey" value="vehicleBoxTruckchassisDesc"/>
 			<property name="EconomicValue" value="15000"/>
@@ -34,6 +35,7 @@
 		
 		<item name="vehicleBoxTruckbody">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleBoxTruckbodySchematic"/>
 			<property name="CustomIcon" value="BoxTruckbody"/>
 			<property name="DescriptionKey" value="vehicleBoxTruckbodyDesc"/>
 			<property name="EconomicValue" value="15000"/>
@@ -75,6 +77,7 @@
 		
 		<item name="vehicleBRDM2chassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleBRDM2chassisSchematic"/>
 			<property name="CustomIcon" value="BRDM2chassis"/>
 			<property name="DescriptionKey" value="vehicleBRDM2chassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -106,6 +109,7 @@
 		
 		<item name="vehicleBRDM2accessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleBRDM2accessoriesSchematic"/>
 			<property name="CustomIcon" value="BRDM2accessories"/>
 			<property name="DescriptionKey" value="vehicleBRDM2accessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -147,6 +151,7 @@
 		
 		<item name="vehicleBuggychassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleBuggychassisSchematic"/>
 			<property name="CustomIcon" value="Buggychassis"/>
 			<property name="DescriptionKey" value="vehicleBuggychassisDesc"/>
 			<property name="EconomicValue" value="12000"/>
@@ -178,6 +183,7 @@
 		
 		<item name="vehicleBuggyaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleBuggyaccessoriesSchematic"/>
 			<property name="CustomIcon" value="Buggyaccessories"/>
 			<property name="DescriptionKey" value="vehicleBuggyaccessoriesDesc"/>
 			<property name="EconomicValue" value="12000"/>
@@ -202,6 +208,7 @@
 		
 		<item name="vehicleChargerchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleChargerchassisSchematic"/>
 			<property name="CustomIcon" value="Chargerchassis"/>
 			<property name="DescriptionKey" value="vehicleChargerchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -233,6 +240,7 @@
 		
 		<item name="vehicleChargeraccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleChargeraccessoriesSchematic"/>
 			<property name="CustomIcon" value="Chargeraccessories"/>
 			<property name="DescriptionKey" value="vehicleChargeraccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -444,6 +452,7 @@
 		
 		<item name="vehicleCruiserChassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleCruiserChassisSchematic"/>
 			<property name="CustomIcon" value="Cruiserchassis"/>
 			<property name="DescriptionKey" value="vehicleCruiserChassisDesc"/>
 			<property name="EconomicValue" value="5000"/>
@@ -475,6 +484,7 @@
 		
 		<item name="vehicleCruiserbars">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleCruiserbarsSchematic"/>
 			<property name="CustomIcon" value="Cruiserbars"/>
 			<property name="DescriptionKey" value="vehicleCruiserbarsDesc"/>
 			<property name="EconomicValue" value="5000"/>
@@ -516,6 +526,7 @@
 		
 		<item name="vehicleDirtBikeChassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleDirtBikeChassisSchematic"/>
 			<property name="CustomIcon" value="DirtBikechassis"/>
 			<property name="DescriptionKey" value="vehicleDirtBikeChassisDesc"/>
 			<property name="EconomicValue" value="3000"/>
@@ -547,6 +558,7 @@
 		
 		<item name="vehicleDirtBikeParts">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleDirtBikePartsSchematic"/>
 			<property name="CustomIcon" value="DirtBikeparts"/>
 			<property name="DescriptionKey" value="vehicleDirtBikePartsDesc"/>
 			<property name="EconomicValue" value="3000"/>
@@ -571,6 +583,7 @@
 		
 		<item name="vehicleDusterchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleDusterchassisSchematic"/>
 			<property name="CustomIcon" value="Dusterchassis"/>
 			<property name="DescriptionKey" value="vehicleDusterchassisDesc"/>
 			<property name="EconomicValue" value="18000"/>
@@ -602,6 +615,7 @@
 		
 		<item name="vehicleDusteraccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleDusteraccessoriesSchematic"/>
 			<property name="CustomIcon" value="Dusteraccessories"/>
 			<property name="DescriptionKey" value="vehicleDusteraccessoriesDesc"/>
 			<property name="EconomicValue" value="18000"/>
@@ -626,6 +640,7 @@
 		
 		<item name="vehicleGNXchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleGNXchassisSchematic"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
 			<property name="EconomicValue" value="9000"/>
@@ -657,6 +672,7 @@
 		
 		<item name="vehicleGNXaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleGNXaccessoriesSchematic"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXaccessoriesDesc"/>
 			<property name="EconomicValue" value="9000"/>
@@ -698,6 +714,7 @@
 		
 		<item name="vehicleGolfCartchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleGolfCartchassisSchematic"/>
 			<property name="CustomIcon" value="GolfCartchassis"/>
 			<property name="DescriptionKey" value="vehicleGolfCartchassisDesc"/> 
 			<property name="EconomicValue" value="2000"/>
@@ -729,6 +746,7 @@
 
 		<item name="vehicleGolfCartaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleGolfCartaccessoriesSchematic"/>
 			<property name="CustomIcon" value="GolfCartaccessories"/>
 			<property name="DescriptionKey" value="vehicleGolfCartaccessoriesDesc"/> 
 			<property name="EconomicValue" value="2000"/>
@@ -822,6 +840,7 @@
 		
 		<item name="vehicleHotRodchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleHotRodchassisSchematic"/>
 			<property name="CustomIcon" value="HotRodchassis"/>
 			<property name="DescriptionKey" value="vehicleHotRodchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -853,6 +872,7 @@
 		
 		<item name="vehicleHotRodaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleHotRodaccessoriesSchematic"/>
 			<property name="CustomIcon" value="HotRodaccessories"/>
 			<property name="DescriptionKey" value="vehicleHotRodaccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -962,6 +982,7 @@
 		
 		<item name="vehicleHumveechassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleHumveechassisSchematic"/>
 			<property name="CustomIcon" value="Humveechassis"/>
 			<property name="DescriptionKey" value="vehicleHumveechassisDesc"/>
 			<property name="EconomicValue" value="20000"/>
@@ -993,6 +1014,7 @@
 		
 		<item name="vehicleHumveebody">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleHumveebodySchematic"/>
 			<property name="CustomIcon" value="Humveebody"/>
 			<property name="DescriptionKey" value="vehicleHumveebodyDesc"/>
 			<property name="EconomicValue" value="20000"/>
@@ -1034,6 +1056,7 @@
 		
 		<item name="vehicleJunkerChassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleJunkerChassisSchematic"/>
 			<property name="CustomIcon" value="Junkerchassis"/>
 			<property name="DescriptionKey" value="vehicleJunkerChassisDesc"/>
 			<property name="EconomicValue" value="5000"/>
@@ -1065,6 +1088,7 @@
 		
 		<item name="vehicleJunkerbars">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleJunkerbarsSchematic"/>
 			<property name="CustomIcon" value="Junkerbars"/>
 			<property name="DescriptionKey" value="vehicleJunkerbarsDesc"/>
 			<property name="EconomicValue" value="5000"/>
@@ -1106,6 +1130,7 @@
 		
 		<item name="vehicleMarauderchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMarauderchassisSchematic"/>
 			<property name="CustomIcon" value="Marauderchassis"/>
 			<property name="DescriptionKey" value="vehicleMarauderchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1137,6 +1162,7 @@
 		
 		<item name="vehicleMarauderaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMarauderaccessoriesSchematic"/>
 			<property name="CustomIcon" value="Marauderaccessories"/>
 			<property name="DescriptionKey" value="vehicleMarauderaccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1178,6 +1204,7 @@
 		
 		<item name="vehicleMD500chassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMD500chassisSchematic"/>
 			<property name="CustomIcon" value="MD500chassis"/>
 			<property name="DescriptionKey" value="vehicleMD500chassisDesc"/>
 			<property name="EconomicValue" value="20000"/>
@@ -1209,6 +1236,7 @@
 		
 		<item name="vehicleMD500accessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMD500accessoriesSchematic"/>
 			<property name="CustomIcon" value="MD500accessories"/>
 			<property name="DescriptionKey" value="vehicleMD500accessoriesDesc"/>
 			<property name="EconomicValue" value="20000"/>
@@ -1233,6 +1261,7 @@
 		
 		<item name="vehicleMRAPparts">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMRAPpartsSchematic"/>
 			<property name="CustomIcon" value="MRAPparts"/>
 			<property name="DescriptionKey" value="vehicleMRAPpartsDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1264,6 +1293,7 @@
 		
 		<item name="vehicleMRAPaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMRAPaccessoriesSchematic"/>
 			<property name="CustomIcon" value="MRAPaccessories"/>
 			<property name="DescriptionKey" value="vehicleMRAPaccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1305,6 +1335,7 @@
 		
 		<item name="vehicleNovachassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleNovachassisSchematic"/>
 			<property name="CustomIcon" value="Novachassis"/>
 			<property name="DescriptionKey" value="vehicleNovachassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1336,6 +1367,7 @@
 		
 		<item name="vehicleNovaaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleNovaaccessoriesSchematic"/>
 			<property name="CustomIcon" value="Novaaccessories"/>
 			<property name="DescriptionKey" value="vehicleNovaaccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1394,6 +1426,7 @@
 		
 		<item name="vehiclePickupchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehiclePickupchassisSchematic"/>
 			<property name="CustomIcon" value="Pickupchassis"/>
 			<property name="DescriptionKey" value="vehiclePickupchassisDesc"/>
 			<property name="EconomicValue" value="7000"/>
@@ -1425,6 +1458,7 @@
 		
 		<item name="vehiclePickupaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehiclePickupaccessoriesSchematic"/>
 			<property name="CustomIcon" value="Pickupaccessories"/>
 			<property name="DescriptionKey" value="vehiclePickupaccessoriesDesc"/>
 			<property name="EconomicValue" value="7000"/>
@@ -1449,6 +1483,7 @@
 		
 		<item name="vehicleRatChassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleRatChassisSchematic"/>
 			<property name="CustomIcon" value="Ratchassis"/>
 			<property name="DescriptionKey" value="vehicleRatChassisDesc"/>
 			<property name="EconomicValue" value="5000"/>
@@ -1480,6 +1515,7 @@
 		
 		<item name="vehicleRatbars">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleRatbarsSchematic"/>
 			<property name="CustomIcon" value="Ratbars"/>
 			<property name="DescriptionKey" value="vehicleRatbarsDesc"/>
 			<property name="EconomicValue" value="5000"/>
@@ -1521,6 +1557,7 @@
 		
 		<item name="vehicleSHERPchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleSHERPchassisSchematic"/>
 			<property name="CustomIcon" value="SHERPchassis"/>
 			<property name="DescriptionKey" value="vehicleSHERPchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1552,6 +1589,7 @@
 		
 		<item name="vehicleSHERPaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleSHERPaccessoriesSchematic"/>
 			<property name="CustomIcon" value="SHERPaccessories"/>
 			<property name="DescriptionKey" value="vehicleSHERPaccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1576,6 +1614,7 @@
 		
 		<item name="vehicleStallionchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleStallionchassisSchematic"/>
 			<property name="CustomIcon" value="Schassis"/>
 			<property name="DescriptionKey" value="vehicleStallionchassisDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1607,6 +1646,7 @@
 		
 		<item name="vehicleStallionaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleStallionaccessoriesSchematic"/>
 			<property name="CustomIcon" value="Saccessories"/>
 			<property name="DescriptionKey" value="vehicleStallionaccessoriesDesc"/>
 			<property name="EconomicValue" value="10000"/>
@@ -1682,6 +1722,7 @@
 		
 		<item name="vehicleUAZ452chassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleUAZ452chassisSchematic"/>
 			<property name="CustomIcon" value="UAZchassis"/>
 			<property name="DescriptionKey" value="vehicleUAZ452chassisDesc"/>
 			<property name="EconomicValue" value="12000"/>
@@ -1718,6 +1759,7 @@
 		
 		<item name="vehicleUH60chassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleUH60chassisSchematic"/>
 			<property name="CustomIcon" value="UH60chassis"/>
 			<property name="DescriptionKey" value="vehicleUH60chassisDesc"/>
 			<property name="EconomicValue" value="15000"/>
@@ -1749,6 +1791,7 @@
 		
 		<item name="vehicleUH60accessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleUH60accessoriesSchematic"/>
 			<property name="CustomIcon" value="UH60accessories"/>
 			<property name="DescriptionKey" value="vehicleUH60accessoriesDesc"/>
 			<property name="EconomicValue" value="15000"/>
@@ -1807,6 +1850,7 @@
 		
 		<item name="vehicleWorkTruckchassis">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleWorkTruckchassisSchematic"/>
 			<property name="CustomIcon" value="WorkTruckchassis"/>
 			<property name="DescriptionKey" value="vehicleWorkTruckchassisDesc"/>
 			<property name="EconomicValue" value="6000"/>
@@ -1838,6 +1882,7 @@
 		
 		<item name="vehicleWorkTruckaccessories">
 			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleWorkTruckaccessoriesSchematic"/>
 			<property name="CustomIcon" value="WorkTruckaccessories"/>
 			<property name="DescriptionKey" value="vehicleWorkTruckaccessoriesDesc"/>
 			<property name="EconomicValue" value="6000"/>
