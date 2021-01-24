@@ -689,6 +689,156 @@
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>	
 		
+	<!-- Power Armor Mods -->
+	
+		<item_modifier name="modPowerArmorHelmetRadar" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffPAhelmetRadar"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffPAhelmetRadar"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorHelmetRadarMK2" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffPAhelmetRadarMK2"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffPAhelmetRadarMK2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorHelmetScuba" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffPAhelmetScuba"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffPAhelmetScuba"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorArmsBlockBuster" installable_tags="powerarmorArms" modifier_tags="PAarms" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<passive_effect name="BlockDamage" operation="perc_add" value="10" tags="melee"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorArmsMelee" installable_tags="powerarmorArms" modifier_tags="PAarms" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire">
+						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+					</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false" name="Power Attack">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire">
+						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+					</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false" name="Always extend bleeding">
+				<requirement name="HasBuff" target="other" buff="buffInjuryBleeding"/>
+					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+					</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorChestPlating" installable_tags="powerarmorChest" modifier_tags="PAchest" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<passive_effect name="HealthLoss" operation="perc_subtract" value=".25"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorChestEmergencyProto" installable_tags="powerarmorChest" modifier_tags="PAchest" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">		
+				<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value="0.5"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value=".12"/>					
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value=".06"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorLegsShocks" installable_tags="powerarmorLegs" modifier_tags="PAlegs" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<passive_effect name="CarryCapacity" operation="base_add" value="300"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorLegsJumpBoost" installable_tags="powerarmorLegs" modifier_tags="PAlegs" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<passive_effect name="JumpStrength" operation="perc_add" value=".5"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorBootsGyros" installable_tags="powerarmorBoots" modifier_tags="PAboots" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".1"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modPowerArmorBootsDampener" installable_tags="powerarmorBoots" modifier_tags="PAboots" blocked_tags="noMods,clothing" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<effect_group tiered="false">				
+				<passive_effect name="FallDamageReduction" operation="perc_add" value=".75"/>
+			</effect_group>
+		</item_modifier>
+		
+		
+		
 	</append>	
 	
 </configs>			

@@ -26,4 +26,135 @@
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo10mmBulletAP"/>
 	</append>
 	
+	<!-- Magazine Perks -->
+	
+	<append xpath="/progression/skills">
+	
+		<skill name="skillWildWasteland" parent="attBooks" name_key="perkWildWasteland" desc_key="perkWildWastelandDesc" long_desc_key="perkBookGroupLongDesc" icon="WildWastelandUI"><effect_group/></skill>
+		<skill name="skillWhiteRiverSG" parent="attBooks" name_key="perkWhiteRiverSG" desc_key="perkWhiteRiverSGDesc" long_desc_key="perkBookGroupLongDesc" icon="WhiteRiverUI"><effect_group/></skill>
+	
+	</append>
+	
+	<append xpath="/progression/perks">
+	
+		<!-- Wild Wasteland -->
+		<perk name="perkWildWastelandHeavyHands" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandHeavyHandsDesc" long_desc_key="perkWildWastelandHeavyHandsLongDesc">
+			<effect_group>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ItemHasTags" tags="melee"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ItemHasTags" tags="melee"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				</triggered_effect>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkWildWastelandPrecisionStrike" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" name_key="bookWildWastelandHeavyHands" desc_key="perkWildWastelandPrecisionStrikeDesc" long_desc_key="perkWildWastelandPrecisionStrikeLongDesc">
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="1" />
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWildWastelandLordoftheLimbs" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandLordoftheLimbsDesc" long_desc_key="perkWildWastelandLordoftheLimbsLongDesc">
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".05" />
+					<requirement name="HitLocation" body_parts="LeftUpperArm,RightUpperArm,LeftLowerArm,RightLowerArm,LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWildWastelandDeepFreeze" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandDeepFreezeDesc" long_desc_key="perkWildWastelandDeepFreezeLongDesc">
+			<effect_group> 
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".2"/>
+					<requirement name="ItemHasTags" tags="Cryo"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWildWastelandZap" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandZapDesc" long_desc_key="perkWildWastelandZapLongDesc">
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".2"/>
+					<requirement name="ItemHasTags" tags="Alien"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWildWastelandRaiderBully" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandRaiderBullyDesc" long_desc_key="perkWildWastelandRaiderBullyLongDesc">
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.15" tags="bandit"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWildWastelandZedtheImpaler" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" name_key="bookWildWastelandZedtheImpaler" desc_key="perkWildWastelandZedtheImpalerDesc" long_desc_key="perkWildWastelandZedtheImpalerLongDesc">
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.1" tags="zombie"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWildWastelandComplete" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandCompleteDesc" long_desc_key="perkWildWastelandCompleteLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEC,ammoMFC,ammoSMFC,ammoPEC,ammoPMFC"/>
+			</effect_group>
+		</perk>
+		
+		<!-- White River Survival Guide -->
+		<perk name="perkWhiteRiverSGTheHaggler" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGTheHagglerDesc" long_desc_key="perkWhiteRiverSGTheHagglerLongDesc">
+			<effect_group>
+				<passive_effect name="BarteringBuying" operation="base_add" value="0.1"/>
+				<passive_effect name="BarteringSelling" operation="base_add" value="0.1"/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkWhiteRiverSGTumblers" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" name_key="bookWhiteRiverSGTumblers" desc_key="perkWhiteRiverSGTumblersDesc" long_desc_key="perkWhiteRiverSGTumblersLongDesc">
+			<effect_group>
+				<passive_effect name="LockPickBreakChance" operation="perc_subtract" value=".25"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWhiteRiverSGIronGut" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGIronGutDesc" long_desc_key="perkWhiteRiverSGIronGutLongDesc">
+			<effect_group>
+				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1" value="-.1"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="1" value="-.1"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="1" value="-.1"/>
+				<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".25" tags="buffInfectionCatch,buffDysenteryCatchFood,buffDysenteryCatchDrink"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWhiteRiverSGScratch" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGScratchDesc" long_desc_key="perkWhiteRiverSGScratchLongDesc">
+			<effect_group> 
+				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffDrowning01,buffDrowning02,buffArmorShredding,buffLegSprainedFallTrigger,buffLegBroken,buffArmSprained"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurningMolotov,buffBurning"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWhiteRiverSGRecovery" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGRecoveryDesc" long_desc_key="perkWhiteRiverSGRecoveryLongDesc">
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".011"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWhiteRiverSGSprinterWeekly" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGSprinterWeeklyDesc" long_desc_key="perkWhiteRiverSGSprinterWeeklyLongDesc">
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.1" tags="running"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWhiteRiverSGKeenEyes" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" name_key="bookWhiteRiverSGKeenEyes" desc_key="perkWhiteRiverSGKeenEyesDesc" long_desc_key="perkWhiteRiverSGKeenEyesLongDesc">
+			<effect_group>
+				<passive_effect name="LootGamestage" operation="perc_add" level="1" value=".15"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWhiteRiverSGComplete" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGCompleteDesc" long_desc_key="perkWhiteRiverSGCompleteLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="cntAmmoBoxPlayer,Bookcase1Player,Bunkbed1Player,Chair1,Chair2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="Door1L,Door1R,Door1L2,Door1R2,Door2L,Door2R,Door2L2,Door2R2,Door3L,Door3R,Door3L2,Door3R2,Door4L,Door4R,Door4L2,Door4R2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="EspressoMachine,MetalShelves2Player,Microscope,OldSafeClosedPlayer,Rug1,WeaponCasePlayer,WelcomeMat"/>
+			</effect_group>
+		</perk>
+	
+	</append>
+	
 </configs>

@@ -6,7 +6,20 @@
 	<append xpath="//entity_class[@name='zombieSpider']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
 	<append xpath="//entity_class[@name='zombieFatCop']/property[@value='ApproachAndAttackTarget']/@data">,0,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
 	<append xpath="//entity_class[@name='zombieDemolition']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
-
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='npcTraderTemplate']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
+	<append xpath="/entity_classes/entity_class[@name='animalStag']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
 	<!-- Adds a buff to the traders in POIs so they kill bandits and survivors before the NRE when entering the trader protected zone  -->
 
 	<append xpath="/entity_classes/entity_class[@name='npcTraderTemplate']">
@@ -75,18 +88,18 @@
 			</property>
 			<property name="SwimSpeed" value="1.3"/><!-- A19  -->
 			<property name="SwimStrokeRate" value="1.1,1.5"/><!-- A19  -->
-			<property name="NavObject" value="clear_sleeper" /><!-- A19  -->
+			<property name="NavObject" value="clear_sleeper,PAperception,PAperceptionMK2" /><!-- A19  -->
 			<property name="AITask-1" value="BreakBlock"/> 
 			<property name="AITask-2" value="ApproachDistraction"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityZombie,3,EntitySurvivor,3,EntityEnemyAnimal,1"/> 
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityEnemyAnimal,0"/> 
 			<property name="AITask-4" value="ApproachSpot"/> 
 			<property name="AITask-5" value="Territorial"/>
 			<property name="AITask-6" value="Look"/> 
 			<property name="AITask-7" value="Wander"/>	
 			<property name="AITask-8" value=""/>	
-			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityZombie,EntitySurvivor,EntityEnemyAnimal"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityPlayer,EntitySurvivor,EntityEnemyAnimal"/> 
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,10,10,EntityZombie,5,7,EntitySurvivor,7,7,EntityEnemyAnimal,4,6"/> 
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/> 
 			<property name="AITarget-4" value=""/> 	
 			<property name="WalkType" value="7"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -153,8 +166,8 @@
 			<property name="JumpMaxDistance" value="2.8, 3.9"/>
 			<property name="Immunity" value="sickness;disease;wellness"/> 
 			<property name="ExperienceGain" value="500"/> 
-			<property name="LootDropProb" value="0.1"/> 
-			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+			<property name="LootDropProb" value="0.75"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="TimeStayAfterDeath" value="30"/>
 			<property name="DeadBodyHitPoints" value="400"/>
 			<effect_group name="Base Effects">
@@ -176,10 +189,7 @@
 			</effect_group>	
 			<effect_group name="UseFactions"> <!-- This activates thr Usefactions Buff which tells the game not to use DMT faction classes  -->
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="UseFactionsNo"/>		
-			</effect_group>	
-			<!--<effect_group name="ragtestforNREs">
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ragtest"/>		
-			</effect_group>-->				
+			</effect_group>				
 			<property name="RotateToGround" value="false"/>	
 			<property name="PushFactor" value="10"/>			
 		</entity_class>
@@ -308,10 +318,163 @@
 			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
 		</entity_class>
 		
+		<entity_class name="zombieStrongTemplate_b">
+			<property name="EntityType" value="Zombie"/> <!-- This one decides for scoring -->
+			<property name="Tags" value="entity,cp,male,zombie,walker,melee,template"/>  <!-- entity/sex/type/role/attacktype: Entity is required for code filtering, sex for sound filtering, type/role and Atype for buff filtering.  These DO NOT Extend! -->
+			<property name="HideInSpawnMenu" value="true"/><!-- A19  -->
+			<property name="LookAtAngle" value="60"/> <!-- A19  -->
+			<property name="IsChunkObserver" value="true"/> <!-- When the player leaves the chunk that this zombie is in, can we flag it to despawn? True, we dont need them when a player is not around-->
+			<!-- Mesh and class properties -->
+			<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll"/>
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="Prefab" value="NPC"/>
+			<property name="Class" value="EntityZombie"/>
+			<property name="Parent" value="Enemies"/>
+			<property name="Mass" value="150"/>
+			<property name="Weight" value="70"/>
+			<property name="PhysicsBody" value="zombieStandard"/>
+			<property name="Faction" value="undead"/>
+			<property name="Tags" value="entity,cp,male,zombie,walker"/>
+			<property name="IsEnemyEntity" value="true"/>
+			<!-- <property name="MapIcon" value="ui_game_symbol_enemy_dot" /> -->
+			<property name="CompassIcon" value="ui_game_symbol_enemy_dot" />
+			<property name="CompassUpIcon" value="ui_game_symbol_enemy_dot_up" />
+			<property name="CompassDownIcon" value="ui_game_symbol_enemy_dot_down" />
+			<property name="TrackerIcon" value="ui_game_symbol_run"/>
+			<property name="AINoiseSeekDist" value="8"/>
+			<property name="AIPathCostScale" value=".15, .4"/>
+			<property name="AITask-1" value="BreakBlock"/>
+			<property name="AITask-2" value="DestroyArea"/>
+			<property name="AITask-3" value="Territorial"/>
+			<property name="AITask-4" value="ApproachDistraction"/>
+			<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,20,EntityEnemyAnimal,0,EntitySurvivor,0,EntityPlayer,0,EntityBandit,0"/>
+			<property name="AITask-6" value="ApproachSpot"/>
+			<property name="AITask-7" value="Look"/>
+			<property name="AITask-8" value="Wander"/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityEnemyAnimal,EntityPlayer"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAlive,0,0"/> 
+			<property class="FallLandBehavior">
+				<property name="1None" data="anim=None;height=0,1;weight=0.4"/>
+				<property name="1Land" data="anim=Land;height=0,1;weight=0.4"/>
+				<property name="1LandLow" data="anim=LandLow;height=0,1;weight=0.15"/>
+				<property name="1Stumble" data="anim=Stumble;height=0,1;weight=0.05"/>
+				<property name="LowLand" data="anim=LandLow;height=1,3;weight=0.7"/>
+				<property name="LowStumble" data="anim=Stumble;height=1,3;weight=0.3"/>
+				<property name="MidStumble" data="anim=Stumble;height=3,5;weight=0.3"/>
+				<property name="MidStumbleAndRage" data="anim=Stumble;height=3,5;weight=0.3;ragePer=0.5,1.5;rageTime=1.0,2.0"/>
+				<property name="MidLandHard" data="anim=LandHard;height=3,5;weight=0.3"/>
+				<property name="MidLandHardAndRage" data="anim=LandHard;height=3,5;weight=0.3;ragePer=0.5,1.5;rageTime=1.0,2.0"/>
+				<property name="Ragdoll" data="anim=Ragdoll;height=3;weight=0.4"/>
+			</property>
+			<property class="DestroyBlockBehavior">
+				<property name="None" data="weight=0.0"/>
+				<property name="Stumble" data="weight=0.2"/>
+				<property name="Ragdoll" data="weight=0.2"/>
+			</property>
+			<property name="WalkType" value="7"/>
+			<property name="SoundRandomTime" value="60.0"/> <!-- It will play the roam every 60/30 seconds -->
+			<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam"/>
+			<property name="SoundAlertTime" value="25.0"/> <!-- It will play the roam every 25/12.5 seconds-->
+			<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert"/>
+			<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense"/>
+			<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain"/>
+			<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath"/>
+			<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="ParticleOnDeath" value="blood_death"/>
+			<property name="SurfaceCategory" value="organic"/> <!-- determines the particle effect played on hit -->
+			<property name="DismemberMultiplierHead" value="1"/>
+			<property name="DismemberMultiplierArms" value="1"/>
+			<property name="DismemberMultiplierLegs" value="1"/>
+			<property name="LegCrippleScale" value="2"/> <!-- Scales chance to cripple (percent of health that a hit does is the chance) -->
+			<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
+			<property name="KnockdownProneDamageThreshold" value="0.5"/>
+			<property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.4"/>
+			<property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value="1"/>
+			<property name="ArmsExplosionDamageMultiplier" value="1"/>
+			<property name="HeadExplosionDamageMultiplier" value="1"/>
+			<property name="ChestExplosionDamageMultiplier" value="1"/>
+			<property name="PainResistPerHit" value=".45"/>
+			<property name="MaxViewAngle" value="180"/>
+			<property name="SightRange" value="40"/> <!-- distance in m -->
+			<property name="SightLightThreshold" value="-2,150"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
+			<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
+			<property name="SleeperWakeupSightDetectionMax" value="340,480"/> <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+			<property name="SleeperSenseSightDetectionMin" value="-10,0"/> <!-- same for groaning, not waking -->
+			<property name="SleeperSenseSightDetectionMax" value="200,300"/>
+			<property name="SleeperNoiseSenseThreshold" value="3,8"/> <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+			<property name="SleeperNoiseWakeThreshold" value="9,12"/>
+			<property name="SleeperSmellSenseThreshold" value="20,50"/> <!-- Indiv.Random. smell capability - "I smell something" player smell value -->
+			<property name="SoundSleeperSenseChance" value=".5"/> <!-- the chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered -->
+			<property name="SleeperSmellWakeThreshold" value="40,100"/>
+			<property name="NoiseAlertThreshold" value="40"/> <!-- DEPRECATED; an awake zombie triggers instantly if touched by the sound range/volume -->
+			<property name="SmellAlertThreshold" value="40"/> <!-- for awake zombies -->
+			<property name="MaxTurnSpeed" value="250"/>
+			<property name="MoveSpeed" value="0.08"/> <!-- Just shambling around -->
+			<property name="MoveSpeedAggro" value="0.2, 1.25"/> <!-- Chasing a target min/max (like day or night)-->
+			<property name="MoveSpeedRand" value="-.2, .25"/> <!-- Rand added to min aggro speed -->
+			<property name="MoveSpeedPanic" value="0.55"/>
+			<property name="SwimSpeed" value="1"/><!-- A19  -->
+			<property name="SwimStrokeRate" value="1,1.5"/><!-- A19  -->
+			<property name="CanClimbLadders" value="true"/>
+			<property name="JumpMaxDistance" value="2.8, 3.9"/>
+			<property name="HandItem" value="meleeHandZombie001"/>
+			<property name="HandItemCrawler" value="meleeHandZombie002"/> <!-- meleeHandZombie02 is referenced in code but can be overridden -->
+			<property name="AttackTimeoutDay" value="1.5"/> <!-- 1.5 in s -->
+			<property name="AttackTimeoutNight" value="1.1"/>
+			<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
+			<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+			<property name="ExperienceGain" value="413"/> <!-- XP grunt -->
+			<property name="LootDropProb" value="0.02"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- <property name="LootListOnDeath" value="45"/> -->
+			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+			<!-- <property name="CorpseBlock" value="air"/><property name="CorpseBlockChance" value="0"/> -->
+			<property name="TimeStayAfterDeath" value="10"/>
+			<property name="DeadBodyHitPoints" value="1000"/> <!-- For harvesting or resisting corpse destruction --> <!-- to adjust corpse destruction speed for the non-harvest zombie corpses. This property does not extend. -->
+			<property name="NavObject" value="clear_sleeper,PAperception,PAperceptionMK2" /><!-- A19  -->
+			<effect_group name="Base Effects"> <!-- zombieTemplateMale -->
+				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+				<passive_effect name="HealthMax" operation="base_set" value="150"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="0">
+					<requirement name="NotHasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
+					<requirement name="HasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
+			</effect_group>
+			<effect_group name="IsZombie"> <!-- <triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="IsZombie"/>	Broken in B173  -->	
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="IsZombie"/>		
+			</effect_group>	
+		</entity_class>
+		
+		<entity_class name="zombieStrongFemaleTemplate" extends="zombieStrongTemplate_b">
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Tags" value="entity,cp,female,zombie,walker,template"/> 
+			<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
+			<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
+			<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
+			<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
+			<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
+			<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
+		</entity_class> 
+		
 
 <!-- _______________________________________________________________________________________________________________________________________________________________________________________________________________________________ -->			
 		
-		
+	<!-- Raiders -->
 		
 		<entity_class name="humanRaiderScoutClub" extends="humanMeleeMaleBanditTemplate_b"> 
 			<property name="Tags" value="entity,male,human,bandit,melee"/>
@@ -321,7 +484,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -338,7 +501,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -354,7 +517,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -369,7 +532,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCrowbar_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCrowbar_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -386,7 +549,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -402,7 +565,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -417,7 +580,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditTireIron_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditTireIron_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -434,7 +597,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -450,7 +613,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -465,7 +628,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditNailBoard_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditNailBoard_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -482,7 +645,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -498,7 +661,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -513,7 +676,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditPipeHammer_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditPipeHammer_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -530,7 +693,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -546,7 +709,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -561,7 +724,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCleaver_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCleaver_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -578,7 +741,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -594,7 +757,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -652,7 +815,164 @@
 			</effect_group>
 		</entity_class> 
 		
-	<!-- Sleeper Entries -->
+	<!-- Soldiers -->
+	
+		<entity_class name="humanSoldier1Knife" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s1"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+	
+		<entity_class name="humanSoldier1Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s1"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier2Knife" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s2"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+	
+		<entity_class name="humanSoldier2Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s2"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier3Knife" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s3"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+	
+		<entity_class name="humanSoldier3Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s3"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier4Knife" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s4"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+	
+		<entity_class name="humanSoldier4Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s4"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier5Knife" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s5"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+	
+		<entity_class name="humanSoldier5Rifle" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s5"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>			
+				
+	<!-- Raider Sleeper Entries -->
 	
 		<entity_class name="humanRaiderScoutClubsleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
 			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
@@ -662,7 +982,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -679,7 +999,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -695,7 +1015,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -710,7 +1030,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCrowbar_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCrowbar_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -727,7 +1047,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -743,7 +1063,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -758,7 +1078,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditAxe_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditAxe_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -775,7 +1095,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5_b,ammoNPC9mmBulletBall_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -791,7 +1111,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47_b,ammoNPC762mmBulletBall_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -806,7 +1126,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditNailBoard_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditNailBoard_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -823,7 +1143,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -839,7 +1159,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -854,7 +1174,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditPipeHammer_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditPipeHammer_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -871,7 +1191,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMR10_b,ammoNPC762mmBulletAP_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -887,7 +1207,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun_b,ammoNPCShotgunShell_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -902,7 +1222,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditCleaver_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditCleaver_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -919,7 +1239,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -935,7 +1255,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle_b,ammoNPC762mmBulletAP_b"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="LootDropProb" value=".1"/>
+			<property name="LootDropProb" value=".75"/>
 			<effect_group name="Base Effects">				
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
@@ -993,6 +1313,169 @@
 			</effect_group>
 		</entity_class>
 		
+	<!-- Soldier Sleeper Entries -->
+	
+		<entity_class name="humanSoldier1Knifesleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s1"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanSoldier1Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s1"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier2Knifesleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s2"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanSoldier2Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s2"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier3Knifesleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s3"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanSoldier3Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s3"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier4Knifesleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s4"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanSoldier4Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s4"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="humanSoldier5Knifesleeper" extends="humanMeleeMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s5"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditMachete_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditMachete_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+				
+		<entity_class name="humanSoldier5Riflesleeper" extends="humanRangedMaleSleeperTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged,sleeper"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Rebels1.unity3d?s5"/>
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacAR_b,ammoNPC762mmBulletAP_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".75"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50" />
+			</effect_group>
+		</entity_class>
+	
+		
 	<!-- Loot Bags -->
 		
 		<entity_class name="RaiderLeaderLoot">
@@ -1007,6 +1490,572 @@
 			<property name="LootListOnDeath" value="938"/> 
 			<property name="Faction" value="none"/>
 		</entity_class>
+		
+	<!-- Zeds -->		
+		
+		<entity_class name="zombieFeralGhoul" extends="zombieStrongTemplate_b">
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?feralghoulnew"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.45"/>
+			<property name="HandItem" value="meleeHandZombieFeral_b"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".5"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="GhoulIdle"/>
+			<property name="SoundAlert" value="GhoulAlert"/>
+			<property name="SoundAttack" value="GhoulAttack"/>
+			<property name="SoundHurt" value="GhoulHurt"/>
+			<property name="SoundDeath" value="GhoulDeath"/>
+			<property name="SoundSense" value="GhoulAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="10"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieFeralGhoulAOE"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieGhoul1" extends="zombieStrongTemplate_b">
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?Ghoul1"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral_b"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".5"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+			<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+			<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+			<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+			<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+			<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde1" extends="zombieStrongTemplate_b"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>			
+			<property name="HandItem" value="meleeHandMutant_b"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropProb" value=".5"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<property name="KnockdownProneDamageThreshold" value="0"/>
+			<property name="KnockdownProneStunDuration" value="0"/>
+			<property name="KnockdownProneRefillRate" value="10"/>
+			<property name="KnockdownKneelDamageThreshold" value="0"/>
+			<property name="KnockdownKneelStunDuration" value="0"/>
+			<property name="KnockdownKneelRefillRate" value="10"/>
+			<property name="LegsExplosionDamageMultiplier" value="1.2"/>
+			<property name="ArmsExplosionDamageMultiplier" value="1.2"/>
+			<property name="HeadExplosionDamageMultiplier" value="1.2"/>
+			<property name="ChestExplosionDamageMultiplier" value="1.2"/>
+			<property name="PainResistPerHit" value="1"/>
+			<property name="DismemberMultiplierHead" value=".5"/>
+			<property name="DismemberMultiplierArms" value=".2"/>
+			<property name="DismemberMultiplierLegs" value=".2"/>
+			<property name="LegCrippleScale" value=".01"/> 
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="MoveSpeed" value="0.1"/> <!-- Just shambling around -->
+			<property name="MoveSpeedAggro" value="0.4, 1.45"/> <!-- Chasing a target min/max (like day or night)-->
+			<property name="MoveSpeedRand" value=".2, .35"/> <!-- Rand added to min aggro speed -->
+			<property name="MoveSpeedPanic" value="0.65"/>
+			<property name="SwimSpeed" value="1.5"/>
+			<property name="SwimStrokeRate" value="1,1.5"/>
+			<property name="CanClimbLadders" value="true"/>
+			<property name="JumpMaxDistance" value="3, 5"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W1"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde2" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W2"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde3" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W3"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde4" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W4"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde5" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W5"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde6" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W6"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde7" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W7"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde8" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>			
+			<effect_group name="Base Effects">
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W8"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantBehemoth" extends="MutantSM1horde1"> 
+			<property name="Tags" value="entity,cp,male,zombie,walker"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SMBenf"/>
+			<property name="DismemberMultiplierHead" value=".1"/>
+			<property name="DismemberMultiplierArms" value=".1"/>
+			<property name="DismemberMultiplierLegs" value=".1"/>
+			<property name="PainResistPerHit" value="3"/>
+			<property name="MoveSpeedAggro" value=".5, 1.25"/>
+			<property name="WalkType" value="7"/>
+			<property name="HandItem" value="meleeHandMutantBehemoth_b"/>
+			<property name="Mass" value="300"/>
+			<property name="ExperienceGain" value="2500"/>
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="SoundRandom" value="BehemothIdle"/>
+			<property name="SoundAlert" value="BehemothAlert"/>
+			<property name="SoundAttack" value="BehemothAttack"/>
+			<property name="SoundHurt" value="BehemothHurt"/>
+			<property name="SoundDeath" value="BehemothDeath"/>
+			<property name="SoundSense" value="BehemothSense"/>
+			<property name="SoundFootstepModifier" value="bear_footstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="2500"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SMBW1"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantBehemoth2" extends="MutantSM1horde1"> 
+			<property name="Tags" value="entity,cp,male,zombie,walker"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SMBenf"/>
+			<property name="DismemberMultiplierHead" value=".1"/>
+			<property name="DismemberMultiplierArms" value=".1"/>
+			<property name="DismemberMultiplierLegs" value=".1"/>
+			<property name="PainResistPerHit" value="3"/>
+			<property name="MoveSpeedAggro" value=".5, 1.25"/>
+			<property name="WalkType" value="7"/>
+			<property name="HandItem" value="meleeHandMutantBehemoth2_b"/>
+			<property name="Mass" value="300"/>
+			<property name="ExperienceGain" value="2500"/>
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="SoundRandom" value="BehemothIdle"/>
+			<property name="SoundAlert" value="BehemothAlert"/>
+			<property name="SoundAttack" value="BehemothAttack"/>
+			<property name="SoundHurt" value="BehemothHurt"/>
+			<property name="SoundDeath" value="BehemothDeath"/>
+			<property name="SoundSense" value="BehemothSense"/>
+			<property name="SoundFootstepModifier" value="bear_footstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="2500"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee1" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeMutantTireIron_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeMutantTireIron_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeMutantTireIron_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee2" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeMutantSupaSledge_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeMutantSupaSledge_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeMutantSupaSledge_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee3" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBloodBatNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBloodBatNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBloodBatNPC"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee4" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeCuestickNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeCuestickNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeCuestickNPC"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee5" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeMachete1NPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeMachete1NPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeMachete1NPC"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee6" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleePipeHammerNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleePipeHammerNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleePipeHammerNPC"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee7" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeRebarClubNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeRebarClubNPC"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeRebarClubNPC"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1melee8" extends="humanMeleeMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,melee"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeMutantNailBoard_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeMutantNailBoard_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeMutantNailBoard_b"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		<!--
+		<entity_class name="mutantSM1ranged1" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="WalkType" value="6"/>			
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1newAK"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47hidden_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47hidden_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47hidden_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1ranged2" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="WalkType" value="6"/>			
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1newHR"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRiflehidden_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRiflehidden_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRiflehidden_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="mutantSM1ranged3" extends="humanRangedMaleBanditTemplate_b"> 
+			<property name="Tags" value="entity,male,human,bandit,ranged"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Faction" value="bandits"/>
+			<property name="WalkType" value="6"/>			
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1newAR"/>
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value="1.5"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="1000"/>
+			<property name="LootDropProb" value=".75"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditTacARhidden_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditTacARhidden_b,ammoNPC762mmBulletAP_b"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditTacARhidden_b,ammoNPC762mmBulletAP_b"/> 
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="SoundRandom" value="MutantIdle"/>
+			<property name="SoundAlert" value="MutantAlert"/>
+			<property name="SoundAttack" value="MutantAttack"/>
+			<property name="SoundHurt" value="MutantHurt"/>
+			<property name="SoundDeath" value="MutantDeath"/>
+			<property name="SoundSense" value="MutantAlert"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<effect_group name="Base Effects">				
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
+			</effect_group>
+		</entity_class> -->
 		
 	</append>
 </configs>

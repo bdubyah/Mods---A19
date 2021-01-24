@@ -52,6 +52,204 @@
 		<ingredient name="resourceGunPowder" count="15"/>
 		<ingredient name="cntLunchbox" count="1"/>
 	</recipe>
+	
+	<!-- Furniture -->
+	
+	<recipe name="cntAmmoBoxPlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Bookcase1Player" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Bunkbed1Player" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Chair1" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Chair2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door1L" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door1R" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door1L2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door1R2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door2L" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door2R" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door2L2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door2R2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door3L" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door3R" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door3L2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door3R2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door4L" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door4R" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door4L2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Door4R2" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="EspressoMachine" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="MetalShelves2Player" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Microscope" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="OldSafeClosedPlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="Rug1" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="WeaponCasePlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
+	
+	<recipe name="WelcomeMat" count="1" craft_area="workbench" craft_time="30" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>		
+	</recipe>
 
 	<!-- Misc -->
 	
@@ -89,6 +287,14 @@
 		<ingredient name="resourceBulletTip" count="80"/>
 		<ingredient name="resourceGunPowder" count="200"/>
 		<ingredient name="resourceBulletCasing" count="80"/>
+	</recipe>
+	
+	<recipe name="resourcePowerArmorRepairKit" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="15"/>
+		<ingredient name="resourceMechanicalParts" count="25"/>
+		<ingredient name="resourceSpring" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="15"/>
+		<ingredient name="resourceElectricParts" count="15"/>
 	</recipe>
 	
 	<!-- Weapons -->
@@ -400,6 +606,46 @@
 		<ingredient name="resourceBulletTip" count="1"/>
 		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceBulletCasing" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoEC" count="50" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="100">
+		<ingredient name="carBattery" count="1"/>
+		<ingredient name="resourceAcid" count="1"/>
+		<ingredient name="resourceElectricParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+	</recipe>
+	
+	<recipe name="ammoMFC" count="40" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="120">
+		<ingredient name="carBattery" count="1"/>
+		<ingredient name="resourceAcid" count="1"/>
+		<ingredient name="resourceElectricParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+	</recipe>
+	
+	<recipe name="ammoSMFC" count="240" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="120">
+		<ingredient name="carBattery" count="1"/>
+		<ingredient name="resourceAcid" count="1"/>
+		<ingredient name="resourceElectricParts" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+	</recipe>
+	
+	<recipe name="ammoPEC" count="50" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="120">
+		<ingredient name="carBattery" count="1"/>
+		<ingredient name="resourceAcid" count="1"/>
+		<ingredient name="resourceElectricParts" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="25"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+	</recipe>
+	
+	<recipe name="ammoPMFC" count="40" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="140">
+		<ingredient name="carBattery" count="1"/>
+		<ingredient name="resourceAcid" count="1"/>
+		<ingredient name="resourceElectricParts" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="25"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
 	</recipe>
 
 </append>

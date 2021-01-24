@@ -321,6 +321,8 @@ gunLaserPistol,items,Gun,New,Laser Pistol,,,,,
 gunLaserPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
 gunLaserRifle,items,Gun,New,Laser Rifle,,,,,
 gunLaserRifleDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunLaserShotgun,items,Gun,New,Laser Shotgun,,,,,
+gunLaserShotgunDesc,items,Gun,New,Experimental military-tech.,,,,,
 gunPlasmaPistol,items,Gun,New,Plasma Pistol,,,,,
 gunPlasmaPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
 gunPlasmaRifle,items,Gun,New,Plasma Rifle,,,,,
@@ -458,6 +460,8 @@ gunLaserPistolSchematic,items,GunPistol,New,Laser Pistol Schematic
 gunLaserPistolSchematicDesc,items,GunPistol,New,Teaches you to craft the Laser Pistol. Scales with the Advanced Engineering perk.
 gunLaserRifleSchematic,items,GunRifle,New,Laser Rifle Schematic
 gunLaserRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Laser Rifle. Scales with the Advanced Engineering perk.
+gunLaserShotgunSchematic,items,GunRifle,New,Laser Shotgun Schematic
+gunLaserShotgunSchematicDesc,items,GunRifle,New,Teaches you to craft the Laser Rifle. Scales with the Advanced Engineering perk.
 gunPlasmaPistolSchematic,items,GunPistol,New,Plasma Pistol Schematic
 gunPlasmaPistolSchematicDesc,items,GunPistol,New,Teaches you to craft the Plasma Pistol. Scales with the Advanced Engineering perk.
 gunPlasmaRifleSchematic,items,GunRifle,New,Plasma Rifle Schematic
@@ -513,6 +517,165 @@ cntUFODesc,blocks,Container,New,UFO block
 
 RaiderLeaderLoot,blocks,Container,New,Raider Leader's Loot
 RaiderLeaderLootDesc,blocks,Container,New,Raider Leader's Loot
+resourcePowerArmorRepairKit,item,Items,New,Power Armor Repair Kit
+resourcePowerArmorRepairKitDesc,item,Items,New,Resource kit used to repair Power Armor.
+powerArmorMaster1Desc,armor,Armor,New,"A piece of Power Armor. When anything less than a full set is equipped, there is a mobility penalty. But when a full set is worn, you will get a small movement bonus. Repairs with Power Armor Repair Kit."
+powerArmorHelmet_Model_A1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_B1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_C1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_D1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_E1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_F1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_G1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_H1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_I1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_J1,armor,Armor,New,Power Armor (Helmet)
+powerArmorHelmet_Model_K1,armor,Armor,New,Power Armor (Helmet)
+powerArmorChest_Model_A1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_B1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_C1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_D1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_E1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_F1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_G1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_H1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_I1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_J1,armor,Armor,New,Power Armor (Chest)
+powerArmorChest_Model_K1,armor,Armor,New,Power Armor (Chest)
+powerArmorArms_Model_A1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_B1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_C1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_D1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_E1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_F1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_G1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_H1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_I1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_J1,armor,Armor,New,Power Armor (Arms)
+powerArmorArms_Model_K1,armor,Armor,New,Power Armor (Arms)
+powerArmorLegs_Model_A1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_B1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_C1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_D1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_E1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_F1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_G1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_H1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_I1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_J1,armor,Armor,New,Power Armor (Legs)
+powerArmorLegs_Model_K1,armor,Armor,New,Power Armor (Legs)
+powerArmorBoots_Model_A1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_B1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_C1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_D1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_E1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_F1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_G1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_H1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_I1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_J1,armor,Armor,New,Power Armor (Boots)
+powerArmorBoots_Model_K1,armor,Armor,New,Power Armor (Boots)
+PABundle1,bundle,Items,New,Power Armor Set
+PABundle1Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle2,bundle,Items,New,Power Armor Set
+PABundle2Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle3,bundle,Items,New,Power Armor Set
+PABundle3Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle4,bundle,Items,New,Power Armor Set
+PABundle4Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle5,bundle,Items,New,Power Armor Set
+PABundle5Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle6,bundle,Items,New,Power Armor Set
+PABundle6Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle7,bundle,Items,New,Power Armor Set
+PABundle7Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle8,bundle,Items,New,Power Armor Set
+PABundle8Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle9,bundle,Items,New,Power Armor Set
+PABundle9Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle10,bundle,Items,New,Power Armor Set
+PABundle10Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PABundle11,bundle,Items,New,Power Armor Set
+PABundle11Desc,bundle,Items,New,This bundle contains a full set of Power Armor.
+PowerArmorStand,blocks,Container,New,Power Armor Stand
+modPowerArmorHelmetRadar,item_modifiers,mod,New,Power Armor Radar,,,,,
+modPowerArmorHelmetRadarDesc,item_modifiers,mod,New,Can be installed in a Power Armor Helmet. Will show nearby enemies on the compass.,,,,,
+modPowerArmorHelmetRadarMK2,item_modifiers,mod,New,Power Armor Radar MkII,,,,,
+modPowerArmorHelmetRadarMK2Desc,item_modifiers,mod,New,Can be installed in a Power Armor Helmet. Will show enemies on the compass.,,,,,
+modPowerArmorHelmetScuba,item_modifiers,mod,New,Power Armor Oxygen Generator,,,,,
+modPowerArmorHelmetScubaDesc,item_modifiers,mod,New,Can be installed in a Power Armor Helmet. Allows you to remain underwater indefinitely.,,,,,
+modPowerArmorArmsBlockBuster,item_modifiers,mod,New,Power Armor Block Buster,,,,,
+modPowerArmorArmsBlockBusterDesc,item_modifiers,mod,New,Can be installed in Power Armor Arms. Increases melee block damage.,,,,,
+modPowerArmorArmsMelee,item_modifiers,mod,New,Power Armor Knuckles,,,,,
+modPowerArmorArmsMeleeDesc,item_modifiers,mod,New,Can be installed in a Power Armor Arms. Can cause enemies to bleed.,,,,,
+modPowerArmorChestPlating,item_modifiers,mod,New,Power Armor Reinforced Plating,,,,,
+modPowerArmorChestPlatingDesc,item_modifiers,mod,New,Can be installed in Power Armor Chest. Reduces damage taken.,,,,,
+modPowerArmorChestEmergencyProto,item_modifiers,mod,New,Power Armor Emergency Protocol,,,,,
+modPowerArmorChestEmergencyProtoDesc,item_modifiers,mod,New,Can be installed in a Power Armor Chest. Slowly regenerate health when below 50%.,,,,,
+modPowerArmorLegsShocks,item_modifiers,mod,New,Power Armor Sturdy Shocks,,,,,
+modPowerArmorLegsShocksDesc,item_modifiers,mod,New,Can be installed in Power Armor Legs. Removes all encumbrance slots.,,,,,
+modPowerArmorLegsJumpBoost,item_modifiers,mod,New,Power Armor Jump Boost,,,,,
+modPowerArmorLegsJumpBoostDesc,item_modifiers,mod,New,Can be installed in Power Armor Legs. Increases jump height by 50%.,,,,,
+modPowerArmorBootsGyros,item_modifiers,mod,New,Power Armor Enhanced Gyros,,,,,
+modPowerArmorBootsGyrosDesc,item_modifiers,mod,New,Can be installed in Power Armor Boots. Allows you to run faster while using less stamina.,,,,,
+modPowerArmorBootsDampener,item_modifiers,mod,New,Power Armor Fall Dampener,,,,,
+modPowerArmorBootsDampenerDesc,item_modifiers,mod,New,Can be installed in Power Armor Boots. Reduces fall damage by 75%.,,,,,
+
+perkWildWasteland,perk,book,New,Wild Wasteland
+perkWildWastelandDesc,perk,book,New,A collection of random knowledge to give you various benefits out in the Wasteland.
+
+perkWhiteRiverSG,perk,book,New,White River Survival Guide
+perkWhiteRiverSGDesc,perk,book,New,A collection of survival knowledge to help you get by out in the Wasteland.
+
+bookWildWastelandHeavyHands,items,book,New,Wild Wasteland Vol 1
+bookWildWastelandPrecisionStrike,items,book,New,Wild Wasteland Vol 2
+bookWildWastelandLordoftheLimbs,items,book,New,Wild Wasteland Vol 3
+bookWildWastelandDeepFreeze,items,book,New,Wild Wasteland Vol 4
+bookWildWastelandZap,items,book,New,Wild Wasteland Vol 5
+bookWildWastelandRaiderBully,items,book,New,Wild Wasteland Vol 6
+bookWildWastelandZedtheImpaler,items,book,New,Wild Wasteland Vol 7
+
+bookWhiteRiverSGTheHaggler,items,book,New,White River Survival Guide Vol 1
+bookWhiteRiverSGTumblers,items,book,New,White River Survival Guide Vol 2
+bookWhiteRiverSGIronGut,items,book,New,White River Survival Guide Vol 3
+bookWhiteRiverSGScratch,items,book,New,White River Survival Guide Vol 4
+bookWhiteRiverSGRecovery,items,book,New,White River Survival Guide Vol 5
+bookWhiteRiverSGSprinterWeekly,items,book,New,White River Survival Guide Vol 6
+bookWhiteRiverSGKeenEyes,items,book,New,White River Survival Guide Vol 7
+
+perkWildWastelandHeavyHandsDesc,perks,book,New,Gain a small chance to knock an enemy down when using melee weapons.
+perkWildWastelandHeavyHandsLongDesc,perks,book,New,"Heavy Hands: You've learned to be more effective with your melee attacks, allowing you a chance to knock your enemy down."
+perkWildWastelandPrecisionStrikeDesc,perks,book,New,Adds a small chance to deal double damage in combat.
+perkWildWastelandPrecisionStrikeLongDesc,perks,book,New,"Precision Strike: Learning the art of combat has given you a small chance to deal double damage."
+perkWildWastelandLordoftheLimbsDesc,perks,book,New,Increases damage to limbs.
+perkWildWastelandLordoftheLimbsLongDesc,perks,book,New,"Lord of the Limbs: The best way to deal with an enemy is to cripple their limbs. They can't catch you or hit you with the extra damage you now do to those appendages."
+perkWildWastelandDeepFreezeDesc,perks,book,New,Adds 20% damage to the Cryolator.
+perkWildWastelandDeepFreezeLongDesc,perks,book,New,"Deep Freeze: You have learned how to increase the damage output of the Cryolator."
+perkWildWastelandZapDesc,perks,book,New,Adds 20% damage to the Alien Blaster.
+perkWildWastelandZapLongDesc,perks,book,New,"Zap!: You have learned how to increase the damage output of the Alien Blaster."
+perkWildWastelandRaiderBullyDesc,perks,book,New,Deal more 15% damage to Raiders.
+perkWildWastelandRaiderBullyLongDesc,perks,book,New,"Raider Bully: You've grown tired of the Raiders crap. Any Raider you come across will feel your wrath!"
+perkWildWastelandZedtheImpalerDesc,perks,book,New,Deal 10% more damage to Zeds.
+perkWildWastelandZedtheImpalerLongDesc,perks,book,New,"Zed the Impaler: The experience you've gained fighting zeds has taught you to be more effective against them."
+perkWildWastelandCompleteDesc,perks,book,New,Learn how to craft energy ammo.
+perkWildWastelandCompleteLongDesc,perks,book,New,"The Ammo of Tomorrow: With the growing threats out in the Wasteland, more powerful weaponry is needed to ensure your survival. You can now craft energy weapon ammo."
+
+perkWhiteRiverSGTheHagglerDesc,perks,book,New,Sell for 10% more and buy for 10% less.
+perkWhiteRiverSGTheHagglerLongDesc,perks,book,New,"The Haggler: Part of surviving is being able to get better deals with traders. Save a bit of coin when buying and line your pockets a little more when selling."
+perkWhiteRiverSGTumblersDesc,perks,book,New,Lockpicks are 25% less likely to break.
+perkWhiteRiverSGTumblersLongDesc,perks,book,New,"Tumblers of Tomorrow: Lockpicking is now a bit easier for you."
+perkWhiteRiverSGIronGutDesc,perks,book,New,Slows water and food loss. Lessens the chance of getting dysentery
+perkWhiteRiverSGIronGutLongDesc,perks,book,New,"Iron Gut: Over time you have learned to be able to go longer between meals. You also won't get dysentery as easily."
+perkWhiteRiverSGScratchDesc,perks,book,New,Adds a 20% resistance to most negative effects.
+perkWhiteRiverSGScratchLongDesc,perks,book,New,"'Tis But A Scratch: All those injuries have increased your resistance to most negative effects."
+perkWhiteRiverSGRecoveryDesc,perks,book,New,Regenerate a small amount of health over time.
+perkWhiteRiverSGRecoveryLongDesc,perks,book,New,"Recovery: Your body has learned how to heal on its own. You will slowly gain health."
+perkWhiteRiverSGSprinterWeeklyDesc,perks,book,New,Use 10% less stamina when running.
+perkWhiteRiverSGSprinterWeeklyLongDesc,perks,book,New,"Sprinter Weekly: Just keep running! You use less stamina when running."
+perkWhiteRiverSGKeenEyesDesc,perks,book,New,Adds 15% to your gamestage.
+perkWhiteRiverSGKeenEyesLongDesc,perks,book,New,"Keen Eyes: The experience you've gained scrounging through the wastes has honed your eyes, making it easier to find better loot."
+perkWhiteRiverSGCompleteDesc,perks,book,New,Learn how to craft various furniture.
+perkWhiteRiverSGCompleteLongDesc,perks,book,New,"Survive and Thrive: The next step after surviving is thriving. That means making your living space more comfortable. You may now craft an assortment of furniture and storage containers."
 
 questPewPew,items,Quest,New,Sunset Sarsaparilla flier
 questPewPewDesc,items,Quest,New,A flier for the Star Bottlecap giveaway. Read it to learn where to go to claim your prize!

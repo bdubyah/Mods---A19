@@ -1377,6 +1377,21 @@
 		<property name="FilterTags" value="floot,ftrash"/>
 	</block>
 	
+	<block name="cntAmmoBoxPlayer">
+		<property name="Class" value="Loot"/>
+		<property name="Material" value="Mmetal_medium"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?AmmoBox.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="MaxDamage" value="300"/>
+		<property name="OnlySimpleRotations" value="false"/>	
+		<property name="AllowAllRotations" value="true"/>
+		<property name="LootList" value="1"/>
+		<property name="ImposterExclude" value="true"/>
+		<drop event="Destroy" count="0"/>
+		<property name="ShowModelOnFall" value="false"/>
+		<property name="FilterTags" value="floot,ftrash"/>
+	</block>
+	
 	<block name="ammoNuke_b">
 		<property name="Material" value="Mmetal_medium"/>
 		<property name="Shape" value="ModelEntity"/>
@@ -1432,6 +1447,23 @@
 	</block>
 		
 	<block name="Bookcase1">
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?Bookcase1.prefab"/><property name="ModelOffset" value="0,0,0"/>		
+		<property name="Class" value="Loot"/>
+		<property name="MaxDamage" value="150"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="LootList" value="49"/>
+		<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+		<drop event="Destroy" name="resourceWood" count="1,3"/>
+		<property name="FilterTags" value="floot,ffurniture"/>
+		<property name="SortOrder2" value="0060"/> 
+		<property name="DescriptionKey" value="furnitureGroupDesc"/>
+	</block>
+	
+	<block name="Bookcase1Player">
 		<property name="CreativeMode" value="Player"/>
 		<property name="Material" value="Mwood_weak"/>
 		<property name="Shape" value="ModelEntity"/>
@@ -1566,6 +1598,34 @@
 		<property name="DescriptionKey" value="bedGroupDesc"/>
 		<property name="Class" value="Loot"/>
 		<property name="LootList" value="15"/>
+		<property name="Material" value="Mfurniture"/>
+		<property name="Shape" value="ModelEntity"/> 
+		<property name="MaxDamage" value="250"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?Bed1"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,1"/>
+		<property name="IsTerrainDecoration" value="false"/>		
+		<property class="RepairItems">
+			<property name="resourceCloth" value="40"/>
+			<property name="resourceSpring" value="20"/>
+			<property name="resourceWood" value="20"/>
+			<property name="resourceMetalPipe" value="10"/>
+		</property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceCloth" count="16" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="15" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceSpring" count="6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="10,15"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="EconomicValue" value="2600"/>
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	</block>
+	
+	<block name="Bunkbed1Player">
+		<property name="DescriptionKey" value="bedGroupDesc"/>
+		<property name="Class" value="SleepingBag"/>
 		<property name="Material" value="Mfurniture"/>
 		<property name="Shape" value="ModelEntity"/> 
 		<property name="MaxDamage" value="250"/>
@@ -2255,6 +2315,27 @@
 		<property name="FilterTags" value="fdecor,fother"/>
 	</block>
 	
+	<block name="MetalShelves2Player">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="DisplayType" value="blockHardenedMulti"/>
+		<property name="Material" value="Mmetal_hard"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="1"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?MetalShelves2.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="2,2,1"/>
+		<property name="MaxDamage" value="500"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="5" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="250" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+		<property name="FilterTags" value="fdecor,fother"/>
+	</block>
+	
 	<block name="Microscope">
 		<property name="Extends" value="decoEntityMetalMaster"/>
 		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?Microscope.prefab"/><property name="ModelOffset" value="0,0,0"/>		
@@ -2418,6 +2499,18 @@
 		<property name="SortOrder1" value="7k3t"/>	
 	</block>
 	
+	<block name="OldSafeClosedPlayer">
+		<property name="Extends" value="OldSafeClosedInsecure" param1="HandleFace"/>		
+		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?OldSafeClosed.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Class" value="SecureLoot"/>
+		<property name="LootList" value="3"/>	
+		<property name="DowngradeBlock" value="OldSafeClosedInsecure"/>
+			<property name="LockPickItem" value="resourceLockPick"/>
+			<property name="LockPickTime" value="15"/>
+			<property name="LockPickBreakChance" value="0.75"/>
+		<property name="SortOrder1" value="7k3t"/>	
+	</block>
+	
 	<block name="OldSafe">
 		<property name="Material" value="Mmetal"/>
 		<property name="IsTerrainDecoration" value="false"/>	
@@ -2555,6 +2648,35 @@
 		<property name="SortOrder1" value="7k3t"/>	
 	</block>
 	
+	<block name="PowerArmorStandEmpty">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="DisplayType" value="blockHardenedMulti"/>
+		<property name="Material" value="Mmetal_hard"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/PAS.unity3d?PowerArmorStandEmpty"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="CustomIcon" value="" />
+		<property name="MaxDamage" value="2500"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Place" value="TowardsPlacerInverted"/>		
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="5" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="250" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+		<property name="FilterTags" value="fdecor,fother"/>
+	</block>
+	
+	<block name="PowerArmorStand">
+		<property name="Extends" value="OldSafeClosedInsecure"/>			
+		<property name="Model" value="#@modfolder:Resources/PAS.unity3d?PowerArmorStand"/><property name="ModelOffset" value="0,0,0"/>		
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="943"/>				
+		<property name="DowngradeBlock" value="PowerArmorStandEmpty"/>
+	</block>
+	
 	<block name="PipBoy">
 		<property name="Material" value="Mmetal"/>
 		<property name="IsTerrainDecoration" value="false"/>
@@ -2594,6 +2716,7 @@
 		<property name="EconomicValue" value="20"/>
 		<property name="FilterTags" value="fdecor,fwindows"/>
 		<property name="SortOrder1" value="7080"/>
+		<property name="BuffsWhenWalkedOn" value="sleepingBagEffect"/>
 	</block>
 	
 	<block name="Server1">		
@@ -2664,8 +2787,8 @@
 		<property class="RepairItems"> <property name="resourceForgedSteel" value="5"/> </property>
 		<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
 		<drop event="Harvest" name="resourceScrapIron" count="350" tag="salvageHarvest"/> 
-		<drop event="Harvest" name="resourceElectricParts" count="5" tag="allHarvest"/> 
-		<drop event="Harvest" name="resourceElectricParts" count="15" tag="salvageHarvest"/> 
+		<drop event="Harvest" name="resourceElectricParts" count="2" tag="allHarvest"/> 
+		<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/> 
 		<drop event="Destroy" count="0"/>		
 	</block>
 	
@@ -2879,6 +3002,27 @@
 		<property name="Material" value="Mmetal_hard"/>
 		<property name="Class" value="Loot"/>
 		<property name="LootList" value="941"/>
+		<property name="MaxDamage" value="500"/>
+		<property name="StabilitySupport" value="false"/> 
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#@modfolder:Resources/MiscBlocks.unity3d?WeaponCase.prefab"/><property name="ModelOffset" value="0,0,0"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="MultiBlockDim" value="2,1,1"/>
+		<property name="OnlySimpleRotations" value="false"/>	
+		<property name="AllowAllRotations" value="true"/>		
+		<property name="CanPickup" value="false"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>		
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="SortOrder1" value="7k3t"/>
+	</block>
+	
+	<block name="WeaponCasePlayer">
+		<property name="CreativeMode" value="Dev"/>		
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="Material" value="Mmetal_hard"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="3"/>
 		<property name="MaxDamage" value="500"/>
 		<property name="StabilitySupport" value="false"/> 
 		<property name="Shape" value="ModelEntity"/>

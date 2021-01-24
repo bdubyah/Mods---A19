@@ -10,7 +10,7 @@
   <property name="TraderArea" value="False" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="EditorGroups" value="Wilderness" />
-  <property name="Zoning" value="Commercial,ResidentialOld,Residential" />
+  <property name="Zoning" value="Commercial, ResidentialOld, Residential" />
   <property name="AllowedTownships" value="rural,wilderness,town" />
   <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,wasteland_hub,wasteland" />
   <property name="DisallowedBiomes" value="desert" />
