@@ -1550,7 +1550,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde1" extends="zombieStrongTemplate_b"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1hordetemplate" extends="zombieStrongTemplate_b"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>			
@@ -1593,11 +1593,20 @@
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="MutantSM1horde1" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+			<property name="Tags" value="entity,cp,male,zombie,feral"/>
+			<property name="PhysicsBody" value="Bandit_b"/>
+			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>		
+			<effect_group name="Base Effects">				
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W1"/>
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde2" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde2" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
@@ -1607,7 +1616,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde3" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde3" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
@@ -1617,7 +1626,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde4" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde4" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
@@ -1627,7 +1636,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde5" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde5" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
@@ -1637,7 +1646,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde6" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde6" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
@@ -1647,7 +1656,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde7" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde7" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
@@ -1657,7 +1666,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="MutantSM1horde8" extends="MutantSM1horde1"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
+		<entity_class name="MutantSM1horde8" extends="MutantSM1hordetemplate"> <!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>			
@@ -1667,7 +1676,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="mutantBehemoth" extends="MutantSM1horde1"> 
+		<entity_class name="mutantBehemoth" extends="MutantSM1hordetemplate"> 
 			<property name="Tags" value="entity,cp,male,zombie,walker"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SMBenf"/>
@@ -1696,7 +1705,7 @@
 			</effect_group>
 		</entity_class>
 		
-		<entity_class name="mutantBehemoth2" extends="MutantSM1horde1"> 
+		<entity_class name="mutantBehemoth2" extends="MutantSM1hordetemplate"> 
 			<property name="Tags" value="entity,cp,male,zombie,walker"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SMBenf"/>
