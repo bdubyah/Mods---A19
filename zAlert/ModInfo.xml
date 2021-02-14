@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="zAlert"/>
+			<Description value="Adds in on screen indicators when animals and enemies are nearby."/>
+			<Author value="bdubyah"/>
+			<Version value="1.2"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

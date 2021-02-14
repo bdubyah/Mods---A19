@@ -1,0 +1,16 @@
+<configs>
+
+		<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']">
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieAlertAOE"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieAlertAOE2"/>
+		</append>
+		<append xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/effect_group[@name='Base Effects']">
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="animalAlertAOE"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="animalAlertAOE2"/>
+		</append>
+		<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/effect_group[@name='Base Effects']">
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="animalEnemyAlertAOE"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="animalEnemyAlertAOE2"/>
+		</append>
+		
+</configs>

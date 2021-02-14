@@ -1,0 +1,97 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="zombieAlertAOE" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="zombieAlertAOEEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="zombieAlertAOE2" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="7" buff="zombieAlertsmallAOEEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="zombieAlertAOEEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="zombieAlertAOEEffect2">
+					<requirement name="NotHasBuff" buff="zombieAlertsmallAOEEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zombieAlertAOEEffect2" name_key="Enemies Around" description_key="Enemies in the area." icon="ui_game_symbol_enemy_dot" icon_color="252,140,3" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+		</buff>
+		<buff name="zombieAlertsmallAOEEffect" name_key="Enemies Close" description_key="Enemies animals close by." icon="ui_game_symbol_skull" icon_color="255,0,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+		</buff>
+		<buff name="animalEnemyAlertAOE" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="animalEnemyAlertAOEEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="animalEnemyAlertAOE2" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="7" buff="animalEnemyAlertsmallAOEEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="animalEnemyAlertAOEEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="animalEnemyAlertAOEEffect2">
+					<requirement name="NotHasBuff" buff="animalEnemyAlertsmallAOEEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="animalEnemyAlertAOEEffect2" name_key="Enemies Around" description_key="Hostile animals in the area." icon="ui_game_symbol_enemy_dot" icon_color="252,140,3" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+		</buff>
+		<buff name="animalEnemyAlertsmallAOEEffect" name_key="Enemies Close" description_key="Hostile animals close by." icon="ui_game_symbol_tracking_bear" icon_color="255,0,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+		</buff>
+		<buff name="animalAlertAOE" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="animalAlertAOEEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="animalAlertAOE2" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="5" buff="animalAlertsmallAOEEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="animalAlertAOEEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="animalAlertAOEEffect2">
+					<requirement name="NotHasBuff" buff="animalAlertsmallAOEEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="animalAlertAOEEffect2" name_key="Enemies Around" description_key="Passive animals in the area." icon="ui_game_symbol_enemy_dot" icon_color="252,140,3" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+		</buff>
+		<buff name="animalAlertsmallAOEEffect" name_key="Enemies Close" description_key="Passive animals close by." icon="ui_game_symbol_tracking_rabbit" icon_color="255,0,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+		</buff>
+	</append>
+</configs>
