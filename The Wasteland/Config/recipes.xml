@@ -450,6 +450,14 @@
 		<ingredient name="resourceRawDiamond" count="5"/>
 	</recipe>
 	
+	<recipe name="gunLaserShotgun" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkAdvancedEngineering">
+		<ingredient name="resourceForgedSteel" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="35"/>
+		<ingredient name="resourceElectricParts" count="35"/>
+		<ingredient name="resourceScrapPolymers" count="30"/>
+		<ingredient name="resourceRawDiamond" count="6"/>
+	</recipe>
+	
 	<recipe name="gunPlasmaPistol" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkAdvancedEngineering">
 		<ingredient name="resourceForgedSteel" count="25"/>
 		<ingredient name="resourceMechanicalParts" count="25"/>

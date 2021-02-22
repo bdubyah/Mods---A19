@@ -1,305 +1,266 @@
 <configs>
-
 	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
-
 		<lootgroup name="LegendaryPipeGuns">
 			<item name="gun10mmPistol" count="1"/>
 			<item name="gunPipePistol_Legendary" count="1"/>
 			<item name="gunPipeShotgunSMSB_Legendary" count="1"/>
 			<item name="gunPipeRifle_Legendary" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="LegendaryGuns">
 			<item name="gun10mmPistol" count="1"/>
 			<item name="gunLAR_Legendary" count="1"/>
 			<item name="gunMaria" count="1"/>
 			<item name="gunLeFusilTerribles" count="1"/>
-			<item name="gunHeavySniperGobi" count="1"/>	
-			<item name="gunFatMan"  count="1"/>
+			<item name="gunHeavySniperGobi" count="1"/>
+			<item name="gunFatMan" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="LegendaryEnergyGuns">	
+		<lootgroup name="LegendaryEnergyGuns">
 			<item name="gun10mmPistol" count="1"/>
-			<item name="gunCryolator" count="1"/>		
-			<item name="gunAERPrototype" count="1"/>		
+			<item name="gunCryolator" count="1"/>
+			<item name="gunAERPrototype" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="EnergyAmmo">		
-			<item name="ammoEC" count="25,50" />
-			<item name="ammoMFC" count="25,50" />
-			<item name="ammoPEC" count="25,50" />
-			<item name="ammoPMFC" count="25,50" />
-			<item name="ammoCMFC" count="25,50" />
-			<item name="ammoSMFC" count="64,320" />
+		<lootgroup name="EnergyAmmo">
+			<item name="ammoEC" count="25,50"/>
+			<item name="ammoMFC" count="25,50"/>
+			<item name="ammoPEC" count="25,50"/>
+			<item name="ammoPMFC" count="25,50"/>
+			<item name="ammoCMFC" count="25,50"/>
+			<item name="ammoSMFC" count="64,320"/>
 		</lootgroup>
-		
-		<lootgroup name="EnergyAmmoVT" count="all">		
-			<item name="ammoEC" count="25,50" />
-			<item name="ammoMFC" count="25,50" />
-			<item name="ammoPEC" count="25,50" />
-			<item name="ammoPMFC" count="25,50" />
-			<item name="ammoCMFC" count="25,50" />
-			<item name="ammoSMFC" count="64,320" />
-			<item name="ammoAB" count="0,5" />
+		<lootgroup name="EnergyAmmoVT" count="all">
+			<item name="ammoEC" count="25,50"/>
+			<item name="ammoMFC" count="25,50"/>
+			<item name="ammoPEC" count="25,50"/>
+			<item name="ammoPMFC" count="25,50"/>
+			<item name="ammoCMFC" count="25,50"/>
+			<item name="ammoSMFC" count="64,320"/>
+			<item name="ammoAB" count="0,5"/>
 		</lootgroup>
-		
 		<lootgroup name="LegendaryMelee">
 			<item name="meleeDukeSledge" count="1"/>
 			<item name="meleeMBC" count="1"/>
 			<item name="meleeNavSlugger" count="1"/>
-			<item name="meleeOpenBreaker" count="1"/>		
+			<item name="meleeOpenBreaker" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="RegularGunsT1">		
-			<item name="gun10mmSMG" count="1"/>		
-			<item name="gun10mmRev" count="1"/>		
-			<item name="gun10mmPistol" count="1"/>			
-			<item name="gunTripleBarrelShotgun" count="1"/>				
+		<lootgroup name="RegularGunsT1">
+			<item name="gun10mmSMG" count="1"/>
+			<item name="gun10mmRev" count="1"/>
+			<item name="gun10mmPistol" count="1"/>
+			<item name="gunTripleBarrelShotgun" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="RegularGunsT2">			
-			<item name="gunRailwayRifle" count="1"/>		
-			<item name="gunLAR" count="1"/>		
-			<item name="gunCombatShotgun" count="1"/>		
-			<item name="gunIncinerator" count="1"/>		
-			<item name="gunHeavySniper"  count="1"/>	
-			<item name="gunServiceRifle"  count="1"/>		
+		<lootgroup name="RegularGunsT2">
+			<item name="gunRailwayRifle" count="1"/>
+			<item name="gunLAR" count="1"/>
+			<item name="gunCombatShotgun" count="1"/>
+			<item name="gunIncinerator" count="1"/>
+			<item name="gunHeavySniper" count="1"/>
+			<item name="gunServiceRifle" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="RegularEnergyGuns">		
-			<item name="gunLaserPistol" count="1"/>		
-			<item name="gunLaserRifle" count="1"/>	
-			<item name="gunLaserShotgun" count="1"/>	
-			<item name="gunPlasmaPistol" count="1"/>			
-			<item name="gunPlasmaRifle" count="1"/>			
+		<lootgroup name="RegularEnergyGuns">
+			<item name="gunLaserPistol" count="1"/>
+			<item name="gunLaserRifle" count="1"/>
+			<item name="gunLaserShotgun" count="1"/>
+			<item name="gunPlasmaPistol" count="1"/>
+			<item name="gunPlasmaRifle" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="RegularMeleeT1">			
-			<item name="meleeBaton" count="1"/>		
-			<item name="meleeCleaver" count="1"/>	
-			<item name="meleeCrowbar" count="1"/>	
-			<item name="meleeCuestick" count="1"/>			
-			<item name="meleePipeWrench" count="1"/>		
-			<item name="meleeRollingPin" count="1"/>		
-			<item name="meleeTireIron" count="1"/>		
+		<lootgroup name="RegularMeleeT1">
+			<item name="meleeBaton" count="1"/>
+			<item name="meleeCleaver" count="1"/>
+			<item name="meleeCrowbar" count="1"/>
+			<item name="meleeCuestick" count="1"/>
+			<item name="meleePipeWrench" count="1"/>
+			<item name="meleeRollingPin" count="1"/>
+			<item name="meleeTireIron" count="1"/>
 		</lootgroup>
-		
-		<lootgroup name="RegularMeleeT2">		
-			<item name="meleeBanjo" count="1"/>	
-			<item name="meleeGuitar" count="1"/>	
-			<item name="meleeMachete1" count="1"/>	
-			<item name="meleeNailBoard" count="1"/>	
-			<item name="meleePipeHammer" count="1"/>		
-			<item name="meleeRebarClub" count="1"/>			
-			<item name="meleeSupaSledge" count="1"/>		
+		<lootgroup name="RegularMeleeT2">
+			<item name="meleeBanjo" count="1"/>
+			<item name="meleeGuitar" count="1"/>
+			<item name="meleeMachete1" count="1"/>
+			<item name="meleeNailBoard" count="1"/>
+			<item name="meleePipeHammer" count="1"/>
+			<item name="meleeRebarClub" count="1"/>
+			<item name="meleeSupaSledge" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="LaserMods">
 			<item name="modLaserSplitter" count="1"/>
 			<item name="modLaserFocuser" count="1"/>
 			<item name="modLaserScope" count="1"/>
 			<item name="modOverchargedCapacitor" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="LaserModsSchems">
 			<item name="modLaserSplitterSchematic" count="1"/>
 			<item name="modLaserFocuserSchematic" count="1"/>
 			<item name="modLaserScopeSchematic" count="1"/>
 			<item name="modOverchargedCapacitorSchematic" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="RegularWeaponSchemsT1">
 			<item name="gun10mmSMGSchematic" count="1"/>
 			<item name="gun10mmRevSchematic" count="1"/>
 			<item name="gun10mmPistolSchematic" count="1"/>
-			<item name="gunTripleBarrelShotgunSchematic" count="1"/>		
+			<item name="gunTripleBarrelShotgunSchematic" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="RegularWeaponSchemsT2">
 			<item name="gun10mmSMGSchematic" count="1"/>
 			<item name="gun10mmRevSchematic" count="1"/>
 			<item name="gun10mmPistolSchematic" count="1"/>
-			<item name="gunTripleBarrelShotgunSchematic" count="1"/>		
+			<item name="gunTripleBarrelShotgunSchematic" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="EnergyWeaponSchems">
 			<item name="gunLaserPistolSchematic" count="1"/>
 			<item name="gunLaserRifleSchematic" count="1"/>
 			<item name="gunLaserShotgunSchematic" count="1"/>
 			<item name="gunPlasmaPistolSchematic" count="1"/>
-			<item name="gunPlasmaRifleSchematic" count="1"/>		
+			<item name="gunPlasmaRifleSchematic" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="PewPewloot" count="all">
 			<item name="gunPewPew" quality="6"/>
 			<item name="ammoEC" count="100,200"/>
 			<item name="casinoCoin" count="1000,5000"/>
 		</lootgroup>
-		
 		<lootgroup name="UFOloot" count="all">
-			<item name="ammoEC" count="25,50" />
-			<item name="ammoMFC" count="25,50" />
-			<item name="ammoPEC" count="25,50" />
-			<item name="ammoPMFC" count="25,50" />
+			<item name="ammoEC" count="25,50"/>
+			<item name="ammoMFC" count="25,50"/>
+			<item name="ammoPEC" count="25,50"/>
+			<item name="ammoPMFC" count="25,50"/>
 			<item name="gunAlienBlaster" count="1"/>
-			<item name="ammoAB" count="75,150" />
+			<item name="ammoAB" count="75,150"/>
 		</lootgroup>
-		
 		<lootgroup name="PA1" count="all">
-			<item name="powerArmorArms_Model_A1" />
+			<item name="powerArmorArms_Model_A1"/>
 			<item name="powerArmorBoots_Model_A1"/>
 			<item name="powerArmorChest_Model_A1"/>
 			<item name="powerArmorHelmet_Model_A1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_A1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA2" count="all">
-			<item name="powerArmorArms_Model_B1" />
+			<item name="powerArmorArms_Model_B1"/>
 			<item name="powerArmorBoots_Model_B1"/>
 			<item name="powerArmorChest_Model_B1"/>
 			<item name="powerArmorHelmet_Model_B1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_B1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA3" count="all">
-			<item name="powerArmorArms_Model_C1" />
+			<item name="powerArmorArms_Model_C1"/>
 			<item name="powerArmorBoots_Model_C1"/>
 			<item name="powerArmorChest_Model_C1"/>
 			<item name="powerArmorHelmet_Model_C1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_C1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA4" count="all">
-			<item name="powerArmorArms_Model_D1" />
+			<item name="powerArmorArms_Model_D1"/>
 			<item name="powerArmorBoots_Model_D1"/>
 			<item name="powerArmorChest_Model_D1"/>
 			<item name="powerArmorHelmet_Model_D1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_D1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA5" count="all">
-			<item name="powerArmorArms_Model_E1" />
+			<item name="powerArmorArms_Model_E1"/>
 			<item name="powerArmorBoots_Model_E1"/>
 			<item name="powerArmorChest_Model_E1"/>
 			<item name="powerArmorHelmet_Model_E1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_E1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA6" count="all">
-			<item name="powerArmorArms_Model_F1" />
+			<item name="powerArmorArms_Model_F1"/>
 			<item name="powerArmorBoots_Model_F1"/>
 			<item name="powerArmorChest_Model_F1"/>
 			<item name="powerArmorHelmet_Model_F1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_F1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA7" count="all">
-			<item name="powerArmorArms_Model_G1" />
+			<item name="powerArmorArms_Model_G1"/>
 			<item name="powerArmorBoots_Model_G1"/>
 			<item name="powerArmorChest_Model_G1"/>
 			<item name="powerArmorHelmet_Model_G1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_G1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA8" count="all">
-			<item name="powerArmorArms_Model_H1" />
+			<item name="powerArmorArms_Model_H1"/>
 			<item name="powerArmorBoots_Model_H1"/>
 			<item name="powerArmorChest_Model_H1"/>
 			<item name="powerArmorHelmet_Model_H1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_H1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA9" count="all">
-			<item name="powerArmorArms_Model_I1" />
+			<item name="powerArmorArms_Model_I1"/>
 			<item name="powerArmorBoots_Model_I1"/>
 			<item name="powerArmorChest_Model_I1"/>
 			<item name="powerArmorHelmet_Model_I1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_I1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA10" count="all">
-			<item name="powerArmorArms_Model_J1" />
+			<item name="powerArmorArms_Model_J1"/>
 			<item name="powerArmorBoots_Model_J1"/>
 			<item name="powerArmorChest_Model_J1"/>
 			<item name="powerArmorHelmet_Model_J1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_J1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PA11" count="all">
-			<item name="powerArmorArms_Model_K1" />
+			<item name="powerArmorArms_Model_K1"/>
 			<item name="powerArmorBoots_Model_K1"/>
 			<item name="powerArmorChest_Model_K1"/>
 			<item name="powerArmorHelmet_Model_K1" mods="modPowerArmorHelmetRadar" mod_chance="1"/>
 			<item name="powerArmorLegs_Model_K1"/>
 			<item name="resourcePowerArmorRepairKit"/>
 		</lootgroup>
-		
 		<lootgroup name="PowerArmorMods">
-			<item name="modPowerArmorHelmetRadar" />
-			<item name="modPowerArmorHelmetRadarMK2" />
-			<item name="modPowerArmorHelmetScuba" />
-			<item name="modPowerArmorArmsBlockBuster" />
-			<item name="modPowerArmorArmsMelee" />	
-			<item name="modPowerArmorChestPlating" />
-			<item name="modPowerArmorChestEmergencyProto" />
-			<item name="modPowerArmorLegsShocks" />
-			<item name="modPowerArmorLegsJumpBoost" />
-			<item name="modPowerArmorBootsGyros" />	
-			<item name="modPowerArmorBootsDampener" />
+			<item name="modPowerArmorHelmetRadar"/>
+			<item name="modPowerArmorHelmetRadarMK2"/>
+			<item name="modPowerArmorHelmetScuba"/>
+			<item name="modPowerArmorArmsBlockBuster"/>
+			<item name="modPowerArmorArmsMelee"/>
+			<item name="modPowerArmorChestPlating"/>
+			<item name="modPowerArmorChestEmergencyProto"/>
+			<item name="modPowerArmorLegsShocks"/>
+			<item name="modPowerArmorLegsJumpBoost"/>
+			<item name="modPowerArmorBootsGyros"/>
+			<item name="modPowerArmorBootsDampener"/>
 		</lootgroup>
-		
 		<!-- Nuka Stuff -->
-		
 		<lootgroup name="NukaGroup">
-			<item name="drinkNukaCola" count="1,8"/>
-			<item name="drinkNukaCherry" count="1,3"/>
-			<item name="drinkNukaQuartz" count="1,2"/>
+			<item name="drinkNukaCola" count="1,2"/>
+			<item name="drinkNukaCherry" count="1,2"/>
+			<item name="drinkNukaQuartz" count="1"/>
 			<item name="drinkNukaQuantum" count="1"/>
 		</lootgroup>
-		
 		<lootgroup name="SSGroup">
-			<item name="drinkSunsetSarsaparilla" />	
-			<item name="drinkJarEmpty" />
+			<item name="drinkSunsetSarsaparilla"/>
+			<item name="drinkJarEmpty"/>
 		</lootgroup>
-		
 		<lootgroup name="NukaVendGroup">
 			<item name="drinkNukaCola"/>
 			<item name="drinkNukaCherry"/>
 			<item name="drinkNukaQuartz"/>
 			<item name="drinkNukaQuantum"/>
 		</lootgroup>
-
 		<lootgroup name="NukaJunk">
-			<item name="drinkJarEmpty" />
+			<item name="drinkJarEmpty"/>
 			<item name="resourceBottlecapStar" count="1"/>
 			<item name="resourceBottlecaps" count="1,4"/>
-			<item name="cntLunchbox"/>		
+			<item name="cntLunchbox"/>
 		</lootgroup>
-		
 	</insertBefore>
-
-
 	<insertAfter xpath="/lootcontainers/lootcontainer[@id='143']">
 		<!-- UFO Crash Loot -->
 		<lootcontainer id="934" count="1" size="6,5" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
-			<item group="UFOloot" />		
+			<item group="UFOloot"/>
 		</lootcontainer>
 		<!-- Pew Pew Quest Loot -->
-		<lootcontainer id="935" count="1" size="6,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" >	
+		<lootcontainer id="935" count="1" size="6,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1">
 			<item group="PewPewloot"/>
 		</lootcontainer>
 		<!-- Nuka Crates -->
-		<lootcontainer id="936" count="2" size="6,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2" loot_quality_template="qualBaseTemplate">
+		<lootcontainer id="936" count="3" size="6,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2" loot_quality_template="qualBaseTemplate">
 			<item group="NukaGroup" prob="1"/>
 		</lootcontainer>
 		<!-- Nuka Safe -->
@@ -308,28 +269,28 @@
 		</lootcontainer>
 		<!-- Raider Leader Loot -->
 		<lootcontainer id="938" count="5" size="6,5" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
-			<item name="ammo9mmBulletBall" count="25"  prob=".5"/>
-			<item name="ammo9mmBulletHP" count="25"  prob=".5"/>
-			<item name="ammo9mmBulletAP" count="25"  prob=".5"/>
-			<item name="ammo44MagnumBulletBall" count="25"  prob=".5"/>
-			<item name="ammo44MagnumBulletHP" count="25"  prob=".5"/>
-			<item name="ammo44MagnumBulletAP" count="25"  prob=".5"/>
-			<item name="ammoShotgunShell" count="25"  prob=".5"/>
-			<item name="ammoShotgunSlug" count="25"  prob=".5"/>
-			<item name="ammo762mmBulletBall" count="25"  prob=".5"/>
-			<item name="ammo762mmBulletHP" count="25"  prob=".5"/>
-			<item name="ammo762mmBulletAP" count="25"  prob=".5"/>
-			<item name="ammoArrowFlaming" count="25"  prob=".5"/>
-			<item name="ammo10mmBullet" count="20"  prob=".5"/>
-			<item name="ammo10mmBulletAP" count="20"  prob=".5"/>
-			<item name="ammo10mmBulletHP" count="20"  prob=".5"/>
-			<item name="ammoRocketFrag" count="2"  prob=".5"/>
-			<item name="thrownAmmoPipeBomb" count="5"  prob=".5"/>
-			<item name="thrownDynamite" count="5"  prob=".5"/>
-			<item name="thrownAmmoMolotovCocktail" count="5"  prob=".5"/>
-			<item name="thrownGrenade" count="5"   prob=".5"/>
-			<item name="thrownGrenadeContact" count="5"  prob=".5"/>
-			<item name="thrownTimedCharge" count="5"  prob=".5"/>
+			<item name="ammo9mmBulletBall" count="25" prob=".5"/>
+			<item name="ammo9mmBulletHP" count="25" prob=".5"/>
+			<item name="ammo9mmBulletAP" count="25" prob=".5"/>
+			<item name="ammo44MagnumBulletBall" count="25" prob=".5"/>
+			<item name="ammo44MagnumBulletHP" count="25" prob=".5"/>
+			<item name="ammo44MagnumBulletAP" count="25" prob=".5"/>
+			<item name="ammoShotgunShell" count="25" prob=".5"/>
+			<item name="ammoShotgunSlug" count="25" prob=".5"/>
+			<item name="ammo762mmBulletBall" count="25" prob=".5"/>
+			<item name="ammo762mmBulletHP" count="25" prob=".5"/>
+			<item name="ammo762mmBulletAP" count="25" prob=".5"/>
+			<item name="ammoArrowFlaming" count="25" prob=".5"/>
+			<item name="ammo10mmBullet" count="20" prob=".5"/>
+			<item name="ammo10mmBulletAP" count="20" prob=".5"/>
+			<item name="ammo10mmBulletHP" count="20" prob=".5"/>
+			<item name="ammoRocketFrag" count="2" prob=".5"/>
+			<item name="thrownAmmoPipeBomb" count="5" prob=".5"/>
+			<item name="thrownDynamite" count="5" prob=".5"/>
+			<item name="thrownAmmoMolotovCocktail" count="5" prob=".5"/>
+			<item name="thrownGrenade" count="5" prob=".5"/>
+			<item name="thrownGrenadeContact" count="5" prob=".5"/>
+			<item name="thrownTimedCharge" count="5" prob=".5"/>
 			<item group="cannedfood" prob=".8"/>
 			<item name="drinkJarBeer" count="1" prob=".8"/>
 			<item name="cntVTstorageSecurePlayerSchematic" count="1" prob=".7"/>
@@ -355,15 +316,15 @@
 		<!-- VT loot box -->
 		<lootcontainer id="939" count="2" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
 			<item group="EnergyAmmoVT" prob="1"/>
-			<item name="ammo10mmBullet" count="20"  prob=".5"/>
-			<item name="ammo10mmBulletAP" count="20"  prob=".5"/>
-			<item name="ammo10mmBulletHP" count="20"  prob=".5"/>
+			<item name="ammo10mmBullet" count="20" prob=".5"/>
+			<item name="ammo10mmBulletAP" count="20" prob=".5"/>
+			<item name="ammo10mmBulletHP" count="20" prob=".5"/>
 			<item name="ammoAB" count="5,15" prob=".005"/>
 		</lootcontainer>
 		<!-- Drink Carrier -->
 		<lootcontainer id="940" count="3" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2" loot_quality_template="qualBaseTemplate">
 			<item group="NukaVendGroup" count="1" prob=".1"/>
-			<item group="SSGroup" count="1" prob=".1"/>		
+			<item group="SSGroup" count="1" prob=".1"/>
 		</lootcontainer>
 		<!-- Weapon Case -->
 		<lootcontainer id="941" count="2" size="6,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
@@ -378,62 +339,74 @@
 		</lootcontainer>
 		<!-- Ammo Box -->
 		<lootcontainer id="942" count="5" size="6,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
-			<item name="ammo10mmBullet" count="50"  prob=".5"/>
-			<item name="ammo10mmBulletAP" count="30"  prob=".5"/>
-			<item name="ammo10mmBulletHP" count="20"  prob=".5"/>
-			<item group="EnergyAmmo" prob=".1"/>		
-			<item name="thrownCryoGrenade" count="5"  prob=".5"/>
-			<item name="ammoFlareGun" count="5"  prob=".5"/>
-			<item name="ammoIncinerator" count="10"  prob=".5"/>
-			<item name="ammoNuke" count="2"  prob=".2"/>
-			<item name="ammoNukeAP" count="2"  prob=".2"/>
-			<item name="ammo9mmBulletBall" count="50"  prob=".5"/>
-			<item name="ammo9mmBulletHP" count="30"  prob=".5"/>
-			<item name="ammo9mmBulletAP" count="20"  prob=".5"/>
-			<item name="ammo44MagnumBulletBall" count="50"  prob=".5"/>
-			<item name="ammo44MagnumBulletHP" count="30"  prob=".5"/>
-			<item name="ammo44MagnumBulletAP" count="20"  prob=".5"/>
-			<item name="ammo762mmBulletBall" count="50"  prob=".5"/>
-			<item name="ammo762mmBulletHP" count="30"  prob=".5"/>
-			<item name="ammo762mmBulletAP" count="20"  prob=".5"/>
-			<item name="ammoShotgunShell" count="50"  prob=".5"/>
-			<item name="ammoShotgunSlug" count="30"  prob=".5"/>
-			<item name="ammoShotgunBreachingSlug" count="20"  prob=".5"/>
-			<item name="ammoRocketHE" count="20"  prob=".2"/>
-			<item name="ammoRocketFrag" count="20"  prob=".2"/>
+			<item name="ammo10mmBullet" count="50" prob=".5"/>
+			<item name="ammo10mmBulletAP" count="30" prob=".5"/>
+			<item name="ammo10mmBulletHP" count="20" prob=".5"/>
+			<item group="EnergyAmmo" prob=".1"/>
+			<item name="thrownCryoGrenade" count="5" prob=".5"/>
+			<item name="ammoFlareGun" count="5" prob=".5"/>
+			<item name="ammoIncinerator" count="10" prob=".5"/>
+			<item name="ammoNuke" count="2" prob=".2"/>
+			<item name="ammoNukeAP" count="2" prob=".2"/>
+			<item name="ammo9mmBulletBall" count="50" prob=".5"/>
+			<item name="ammo9mmBulletHP" count="30" prob=".5"/>
+			<item name="ammo9mmBulletAP" count="20" prob=".5"/>
+			<item name="ammo44MagnumBulletBall" count="50" prob=".5"/>
+			<item name="ammo44MagnumBulletHP" count="30" prob=".5"/>
+			<item name="ammo44MagnumBulletAP" count="20" prob=".5"/>
+			<item name="ammo762mmBulletBall" count="50" prob=".5"/>
+			<item name="ammo762mmBulletHP" count="30" prob=".5"/>
+			<item name="ammo762mmBulletAP" count="20" prob=".5"/>
+			<item name="ammoShotgunShell" count="50" prob=".5"/>
+			<item name="ammoShotgunSlug" count="30" prob=".5"/>
+			<item name="ammoShotgunBreachingSlug" count="20" prob=".5"/>
+			<item name="ammoRocketHE" count="20" prob=".2"/>
+			<item name="ammoRocketFrag" count="20" prob=".2"/>
 			<item group="PowerArmorMods" prob=".01"/>
 		</lootcontainer>
 		<!-- Power Armor Stand -->
 		<lootcontainer id="943" count="1" size="6,2" destroy_on_close="true" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualPlus1Template">
-			<item group="PA1" />
-			<item group="PA2" />
-			<item group="PA3" />
-			<item group="PA4" />
-			<item group="PA5" />
-			<item group="PA6" />
-			<item group="PA7" />
-			<item group="PA8" />
-			<item group="PA9" />
-			<item group="PA10" />
-			<item group="PA11" />		
+			<item group="PA1"/>
+			<item group="PA2"/>
+			<item group="PA3"/>
+			<item group="PA4"/>
+			<item group="PA5"/>
+			<item group="PA6"/>
+			<item group="PA7"/>
+			<item group="PA8"/>
+			<item group="PA9"/>
+			<item group="PA10"/>
+			<item group="PA11"/>
 		</lootcontainer>
-					
 	</insertAfter>
-	
-	<append xpath="/lootcontainers/lootgroup[@name='groupModAllT3']">		
+	<append xpath="/lootcontainers/lootgroup[@name='groupModAllT3']">
 		<item group="PowerArmorMods" prob=".7"/>
 	</append>
-
+	<append xpath="/lootcontainers/lootgroup[@name='perkBooks']">
+		<item name="bookWildWastelandHeavyHands"/>
+		<item name="bookWildWastelandPrecisionStrike"/>
+		<item name="bookWildWastelandLordoftheLimbs"/>
+		<item name="bookWildWastelandDeepFreeze"/>
+		<item name="bookWildWastelandZap"/>
+		<item name="bookWildWastelandRaiderBully"/>
+		<item name="bookWildWastelandZedtheImpaler"/>
+		<item name="bookWhiteRiverSGTheHaggler"/>
+		<item name="bookWhiteRiverSGTumblers"/>
+		<item name="bookWhiteRiverSGIronGut"/>
+		<item name="bookWhiteRiverSGScratch"/>
+		<item name="bookWhiteRiverSGRecovery"/>
+		<item name="bookWhiteRiverSGSprinterWeekly"/>
+		<item name="bookWhiteRiverSGKeenEyes"/>
+	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT2']">
 		<item group="RegularGunsT1"/>
-		<item group="RegularWeaponSchemsT1"/>	
-		<item group="EnergyAmmo"/>	
+		<item group="RegularWeaponSchemsT1"/>
+		<item group="EnergyAmmo"/>
 		<item group="LegendaryPipeGuns" prob=".02"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT3']">
 		<item group="RegularGunsT2"/>
-		<item group="RegularWeaponSchemsT2"/>	
+		<item group="RegularWeaponSchemsT2"/>
 		<item group="EnergyAmmo"/>
 		<item group="EnergyWeaponSchems"/>
 		<item group="RegularEnergyGuns"/>
@@ -441,79 +414,62 @@
 		<item group="LegendaryEnergyGuns"/>
 		<item group="LegendaryGuns"/>
 	</append>
-
-	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT1']">	
-		<item group="RegularMeleeT1" />
-		<item group="RegularMeleeT2" />
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT1']">
+		<item group="RegularMeleeT1"/>
+		<item group="RegularMeleeT2"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT2']">
 		<item group="LegendaryMelee" count="1" prob=".02"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']">
-		<item group="RegularWeaponSchemsT1"/>	
+		<item group="RegularWeaponSchemsT1"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
 		<item group="RegularWeaponSchemsT2"/>
 		<item group="EnergyWeaponSchems" prob=".05"/>/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Boomstick']">
 		<item name="gunTripleBarrelShotgun" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Boomstick']">
 		<item name="gunCombatShotgun" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Machinegunner']">
 		<item name="gunServiceRifle" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Gunslinger']">
 		<item name="gun10mmPistol" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Gunslinger']">
 		<item name="gun10mmRev" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Gunslinger']">
 		<item name="gun10mmSMG" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_DeadEye']">
 		<item name="gunLAR" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_DeadEye']">
 		<item name="gun10mmSMG" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_DeadEye']">
 		<item name="gunHeavySniper" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Demolitionist']">
 		<item name="thrownNukaGrenade" count="1,2" prob=".8"/>
 		<item name="thrownCryoGrenade" count="1,2" prob=".8"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='modGunT3']">
 		<item group="LaserModsSchems" prob=".01"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupSafeLoot']">
-		<item name="gunCombatShotgun" prob=".003"/>	
+		<item name="gunCombatShotgun" prob=".003"/>
 		<item name="gunTripleBarrelShotgun" prob=".008"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupHeroChestLootSub']">
 		<item group="LaserMods" count="1" prob=".002"/>
-		<item name="ammoNuke" prob=".001"/>	
-		<item group="RegularEnergyGuns" count="1" prob=".005"/>	
+		<item name="ammoNuke" prob=".001"/>
+		<item group="RegularEnergyGuns" count="1" prob=".005"/>
 		<item group="EnergyAmmo" count="1" prob=".01"/>
 		<item group="LegendaryPipeGuns" count="1" prob=".002"/>
 		<item group="LegendaryMelee" count="1" prob=".001"/>
@@ -522,79 +478,65 @@
 		<item name="thrownNukaGrenade" count="1,2" prob=".1"/>
 		<item name="thrownCryoGrenade" count="1,2" prob=".1"/>
 	</append>
-
-	<append xpath="/lootcontainers/lootgroup[@name='groupBuriedWeaponChest']">	
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuriedWeaponChest']">
 		<item group="LegendaryPipeGuns" count="1" prob=".005"/>
 		<item group="LegendaryGuns" count="1" prob=".005"/>
 		<item name="thrownNukaGrenade" count="1,2" prob=".1"/>
 		<item name="thrownCryoGrenade" count="1,2" prob=".1"/>
 	</append>
-
 	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegularT1']">
 		<item name="ammo10mmBullet" count="5,15"/>
 		<item name="ammo10mmBulletHP" count="5,10" prob="0.6"/>
 		<item name="ammo10mmBulletAP" count="5,10" prob="0.3"/>
 	</append>
-
 	<!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
 	<append xpath="/lootcontainers/lootcontainer[@id='8']">
 		<item group="NukaJunk" count="1" prob=".1"/>
 		<item name="meleeCleaver" prob=".1"/>
 		<item name="meleeRollingPin" prob=".1"/>
 	</append>
-
 	<!-- garbage, cntTrashPile -->
 	<append xpath="/lootcontainers/lootcontainer[@id='10']">
 		<item group="NukaJunk" count="1" prob=".1"/>
 	</append>
-
 	<!-- stove/oven, cooking pots and pans rotten food -->
 	<append xpath="/lootcontainers/lootcontainer[@id='11']">
 		<item name="meleeCleaver" prob=".01"/>
 		<item name="meleeRollingPin" prob=".01"/>
 	</append>
-
 	<!-- misc storage, cardboard boxes-->
 	<append xpath="/lootcontainers/lootcontainer[@id='15']">
 		<item name="ammoBowlingball" count="1,2" prob=".07"/>
 		<item group="NukaJunk" count="1" prob=".1"/>
 	</append>
-
 	<!-- metal garbage can-->
 	<append xpath="/lootcontainers/lootcontainer[@id='16']">
 		<item group="NukaJunk" count="1" prob=".1"/>
 	</append>
-
 	<!-- canned or dry food cupboard door open sound-->
-	<append xpath="/lootcontainers/lootcontainer[@id='17']">		
+	<append xpath="/lootcontainers/lootcontainer[@id='17']">
 		<item name="cntLunchbox" prob=".1"/>
 		<item group="SSGroup" prob=".1"/>
 		<item name="meleeCleaver" prob=".01"/>
-		<item name="meleeRollingPin" prob=".01"/>	
-		<item group="NukaGroup" count="1" prob=".1"/>
+		<item name="meleeRollingPin" prob=".01"/>
 	</append>
-
 	<!-- washing machine, clothes in good condition -->
 	<append xpath="/lootcontainers/lootcontainer[@id='18']">
 		<item group="NukaJunk" count="1" prob=".1"/>
 	</append>
-
 	<!-- cars-->
 	<append xpath="/lootcontainers/lootcontainer[@id='19']">
 		<item name="ammoBowlingball" count="1,2" prob=".05"/>
 		<item name="modOilFilterSuppressor" prob="0.001"/>
-		<item group="NukaGroup" count="1" prob=".1"/>
 		<item group="SSGroup" prob=".1"/>
 		<item group="NukaJunk" count="1" prob=".1"/>
-		<item name="meleeTireIron" prob=".01"/>	
+		<item name="meleeTireIron" prob=".01"/>		
+		<item group="NukaGroup" count="1" prob=".01"/>
 	</append>
-
 	<!-- frozen or refridgerated food, spoiled food -->
 	<append xpath="/lootcontainers/lootcontainer[@id='20']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="SSGroup" prob=".07"/>
 	</append>
-
 	<!-- garage stuff, tools, etc -->
 	<append xpath="/lootcontainers/lootcontainer[@id='22']">
 		<item name="ammoBowlingball" count="1,2" prob=".1"/>
@@ -606,105 +548,88 @@
 		<item name="meleePipeHammer" prob=".01"/>
 		<item name="meleeCuestick" prob=".01"/>
 	</append>
-
 	<!-- metal desk -->
-	<append xpath="/lootcontainers/lootcontainer[@id='24']">	
+	<append xpath="/lootcontainers/lootcontainer[@id='24']">
 		<item group="NukaJunk" count="1" prob=".1"/>
 	</append>
-
 	<!-- Shamway Manager's Safe -->
 	<append xpath="/lootcontainers/lootcontainer[@id='38']">
 		<item group="NukaGroup" count="1" prob=".1"/>
 		<item group="SSGroup" prob=".2"/>
 	</append>
-
 	<!-- Brew Master's Safe -->
 	<append xpath="/lootcontainers/lootcontainer[@id='39']">
 		<item group="NukaGroup" count="1" prob=".1"/>
 		<item group="SSGroup" prob=".2"/>
 	</append>
-
 	<!-- military munitions ammo box -->
 	<append xpath="/lootcontainers/lootcontainer[@id='40']">
-		<item name="ammoNuke" count="1,2" prob=".002"/>	
-		<item name="ammoIncinerator" count="5,10" prob="0.01"/>	
+		<item name="ammoNuke" count="1,2" prob=".002"/>
+		<item name="ammoIncinerator" count="5,10" prob="0.01"/>
 		<item name="gunFlareGun" prob="0.01"/>
 	</append>
-
 	<!-- lockers -->
 	<append xpath="/lootcontainers/lootcontainer[@id='43']">
 		<item name="ammoBowlingball" count="1,2" prob=".2"/>
 		<item name="meleePipeHammer" prob=".01"/>
 		<item name="meleeNavSlugger" prob=".001"/>
 	</append>
-
 	<!-- cooler loot -->
 	<append xpath="/lootcontainers/lootcontainer[@id='45']">
-		<item group="NukaGroup" count="1" prob=".15"/>
+		<item group="NukaGroup" count="1" prob=".09"/>
 		<item group="SSGroup" prob=".1"/>
 	</append>
-
 	<!-- trash compactor, trash deluxe! -->
 	<append xpath="/lootcontainers/lootcontainer[@id='46']">
 		<item group="NukaJunk" count="1" prob=".1"/>
 	</append>
-
 	<!-- frozen or refridgerated food, spoiled food (Helper) -->
 	<append xpath="/lootcontainers/lootcontainer[@id='47']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="SSGroup" prob=".08"/>
 	</append>
-
 	<!-- purse -->
 	<append xpath="/lootcontainers/lootcontainer[@id='48']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>	
+		<item group="NukaGroup" count="1" prob=".01"/>
+		<item group="SSGroup" prob=".01"/>
 	</append>
-
 	<!-- beer cooler -->
 	<append xpath="/lootcontainers/lootcontainer[@id='52']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".08"/>
+		<item group="SSGroup" prob=".08"/>
 	</append>
-
 	<!-- shopping cart-->
 	<append xpath="/lootcontainers/lootcontainer[@id='54']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item name="cntLunchbox" prob=".2"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".05"/>
+		<item name="cntLunchbox" prob=".1"/>
+		<item group="SSGroup" prob=".05"/>
 	</append>
-
 	<!-- shopping basket -->
 	<append xpath="/lootcontainers/lootcontainer[@id='58']">
 		<item group="NukaGroup" count="1" prob=".1"/>
 		<item name="cntLunchbox" prob=".1"/>
 		<item group="SSGroup" prob=".1"/>
 	</append>
-
 	<!-- Shamway Cardboard Loot-->
 	<append xpath="/lootcontainers/lootcontainer[@id='59']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".01"/>
+		<item group="SSGroup" prob=".01"/>
 	</append>
-
 	<!--  Zombie Loot 1 -->
-	<append xpath="/lootcontainers/lootcontainer[@id='70']">	
+	<append xpath="/lootcontainers/lootcontainer[@id='70']">
 		<item group="NukaGroup" count="1" prob=".1"/>
 		<item group="SSGroup" prob=".1"/>
 		<item group="RegularMeleeT2" prob=".01"/>
-		<item group="LegendaryMelee" prob=".001"/>	
+		<item group="LegendaryMelee" prob=".001"/>
 		<item group="RegularGunsT1" prob=".01"/>
 	</append>
-
 	<!-- Zombie Loot 2 -->
-	<append xpath="/lootcontainers/lootcontainer[@id='71']">	
+	<append xpath="/lootcontainers/lootcontainer[@id='71']">
 		<item group="NukaGroup" count="1" prob=".1"/>
 		<item group="SSGroup" prob=".1"/>
 		<item group="RegularMeleeT2" prob=".01"/>
-		<item group="LegendaryMelee" prob=".001"/>	
+		<item group="LegendaryMelee" prob=".001"/>
 		<item group="RegularGunsT1" prob=".01"/>
 	</append>
-
 	<!-- EntityLootContainerBoss, rare random drop off bosses -->
 	<append xpath="/lootcontainers/lootcontainer[@id='73']">
 		<item name="drinkNukaQuartz" prob=".02"/>
@@ -718,53 +643,45 @@
 		<item group="LegendaryGuns" prob=".001"/>
 		<item group="RegularGunsT2" prob=".01"/>
 	</append>
-
 	<!-- army truck-->
 	<append xpath="/lootcontainers/lootcontainer[@id='83']">
 		<item name="ammoNuke" count="1" prob="0.01"/>
-		<item group="EnergyAmmo" count="1" prob=".02"/>	
+		<item group="EnergyAmmo" count="1" prob=".02"/>
 	</append>
-
 	<!-- construction supplies shipping crate -->
-	<append xpath="/lootcontainers/lootcontainer[@id='88']">		
+	<append xpath="/lootcontainers/lootcontainer[@id='88']">
 		<item name="meleeRebarClub" prob=".01"/>
 	</append>
-
 	<!-- car parts shipping crate -->
 	<append xpath="/lootcontainers/lootcontainer[@id='90']">
 		<item name="modOilFilterSuppressor" prob="0.001"/>
 		<item name="meleeTireIron" prob=".1"/>
 	</append>
-
 	<!-- cntCollapsedChemistryStation -->
 	<append xpath="/lootcontainers/lootcontainer[@id='94']">
-		<item group="NukaGroup" count="1" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".01"/>
 		<item group="SSGroup" prob=".1"/>
 		<item name="resourceNukaBaseIngredients" count="1,2" prob=".1"/>
 	</append>
-
 	<!-- cntFoodPileSmall, cntFoodPileMedium, cntFoodPileLarge -->
 	<append xpath="/lootcontainers/lootcontainer[@id='111']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".01"/>
+		<item group="SSGroup" prob=".01"/>
 	</append>
 	<append xpath="/lootcontainers/lootcontainer[@id='112']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".01"/>
+		<item group="SSGroup" prob=".01"/>
 	</append>
 	<append xpath="/lootcontainers/lootcontainer[@id='113']">
-		<item group="NukaGroup" count="1" prob=".1"/>
-		<item group="SSGroup" prob=".1"/>
+		<item group="NukaGroup" count="1" prob=".04"/>
+		<item group="SSGroup" prob=".04"/>
 	</append>
-
 	<!-- closet hanger, cntModularClosetClosed -->
 	<append xpath="/lootcontainers/lootcontainer[@id='123']">
 		<item name="ammoBowlingball" count="1,2" prob=".05"/>
 	</append>
-
 	<!-- cntToolBoxClosed, cntRollingToolBoxClosed -->
 	<append xpath="/lootcontainers/lootcontainer[@id='124']">
 		<item name="modOilFilterSuppressor" prob="0.01"/>
 	</append>
-
 </configs>
