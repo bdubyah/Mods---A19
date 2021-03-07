@@ -175,6 +175,8 @@ OldRadio,blocks,Container,New,Old Radio
 OldRadioDesc,blocks,Container,New,Old Radio. Doesn't appear to work anymore.
 OldSafeClosedInsecure,blocks,Container,New,Old Safe
 OldSafeClosedInsecureDesc,blocks,Container,New,Old safe.
+OldSafeClosedPlayer,blocks,Container,New,Old Safe
+OldSafeClosedPlayerDesc,blocks,Container,New,Old safe.
 OldSafeClosed,blocks,Container,New,Old Safe
 OldSafeClosedDesc,blocks,Container,New,Old safe.
 OldSafe,blocks,Container,New,Old Safe
@@ -317,16 +319,18 @@ gun10mmRev,items,Gun,New,10mm Revolver,,,,,
 gun10mmRevDesc,items,Gun,New,Civilian revolver. Slightly stronger than regular 9mm. 6 round capacity with a bit more stopping power than the 10mm Pistol.,,,,,
 gun10mmSMG,items,Gun,New,10mm SMG,,,,,
 gun10mmSMGDesc,items,Gun,New,Civilian submachine gun. Slightly stronger than regular 9mm. High capacity magazine.,,,,,
+gunLaserPistolScrap,items,Gun,New,Scrap Laser Pistol,,,,,
+gunLaserPistolScrapDesc,items,Gun,New,Homemade laser weapon. Looks...safe. Scales with the Advanced Engineering perk.,,,,,
 gunLaserPistol,items,Gun,New,Laser Pistol,,,,,
-gunLaserPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunLaserPistolDesc,items,Gun,New,Experimental military-tech. Scales with the Advanced Engineering perk.,,,,,
 gunLaserRifle,items,Gun,New,Laser Rifle,,,,,
-gunLaserRifleDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunLaserRifleDesc,items,Gun,New,Experimental military-tech. Scales with the Advanced Engineering perk.,,,,,
 gunLaserShotgun,items,Gun,New,Laser Shotgun,,,,,
-gunLaserShotgunDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunLaserShotgunDesc,items,Gun,New,Experimental military-tech. Scales with the Advanced Engineering perk.,,,,,
 gunPlasmaPistol,items,Gun,New,Plasma Pistol,,,,,
-gunPlasmaPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunPlasmaPistolDesc,items,Gun,New,Experimental military-tech. Scales with the Advanced Engineering perk.,,,,,
 gunPlasmaRifle,items,Gun,New,Plasma Rifle,,,,,
-gunPlasmaRifleDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunPlasmaRifleDesc,items,Gun,New,Experimental military-tech. Scales with the Advanced Engineering perk.,,,,,
 gunFlareGun,items,Gun,New,Flare Gun,,,,,
 gunFlareGunDesc,items,Gun,New,Emergency flare gun. Can be used to show your location to others or to simply provide some light.,,,,,
 gunPipePistol,items,Gun,New,Pipe Pistol,,,,,
@@ -353,7 +357,19 @@ gunFatMan,items,Gun,New,Fat Man,,,,,
 gunFatManDesc,items,Gun,New,Left over military launcher that makes use of any mini nukes you can find. Can maybe use some other round object as ammo if you find the right one...,,,,,
 gunIncinerator,items,Gun,New,Incinerator,,,,,
 gunIncineratorDesc,items,Gun,New,Modified flamethrower. Semi-auto molotovs!,,,,,
+gunMiniG,items,Gun,New,Minigun,,,,,
+gunMiniGDesc,items,Gun,New,"Old, well-used minigun. Not the most modern tech, but will certainly still mow down anything in front of it.",,,,,
+gunBAR1,items,Gun,New,BAR,,,,,
+gunBAR1Desc,items,Gun,New,"An old relic of a gun.",,,,,
+gunm79,items,Gun,New,M-79,,,,,
+gunm79Desc,items,Gun,New,"Single-fire 40mm grenade launcher. Has AP, HE, and Smoke rounds",,,,,
 
+ammo40mmHE,items,Gun,New,40mm HE Grenade (Ammo),,,,,
+ammo40mmHEDesc,items,Gun,New,High-explosive 40mm grenade used in the M-79 launcher.,,,,,
+ammo40mmSmoke,items,Gun,New,40mm Smoke Grenade(Ammo),,,,,
+ammo40mmSmokeDesc,items,Gun,New,Smoke 40mm grenade used in the M-79 launcher.,,,,,
+ammo40mmAP,items,Gun,New,40mm AP Grenade (Ammo),,,,,
+ammo40mmAPDesc,items,Gun,New,"AP 40mm grenade used in the M-79 launcher. Lower entity damage, with much lower block damage.",,,,,
 ammoNuke,items,Gun,New,Nuke (Ammo),,,,,
 ammoNukeDesc,items,Gun,New,These things caused all of this so surely they can fix it. Right? Will wreck everything so handle with caution. Not advised for indoor use.,,,,,
 ammoNukeAP,items,Gun,New,Nuke AP (Ammo),,,,,
@@ -435,6 +451,8 @@ gunCryolator,items,Gun,New,[FFC300]Cryolator[-],,,,,
 gunCryolatorDesc,items,Gun,New,Unique military prototype. Able to slow enemies when hit and has a chance to completely freeze targets.,,,,,
 gunAlienBlaster,items,Gun,New,[FFC300]Alien Blaster[-],,,,,
 gunAlienBlasterDesc,items,Gun,New,"Not exactly sure how it works, but it has a trigger and it kills things...",,,,,
+gunAshmaker,items,Gun,New,[FFC300]Ashmaker[-],,,,,
+gunAshmakerDesc,items,Gun,New,"Slightly modified mingun that will set enemies on fire",,,,,
 
 gunServiceRifleSchematic,items,GunRifle,New,Service Rifle Schematic
 gunServiceRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Service Rifle. Scales with the Machine Gunner perk.
@@ -466,6 +484,14 @@ gunPlasmaPistolSchematic,items,GunPistol,New,Plasma Pistol Schematic
 gunPlasmaPistolSchematicDesc,items,GunPistol,New,Teaches you to craft the Plasma Pistol. Scales with the Advanced Engineering perk.
 gunPlasmaRifleSchematic,items,GunRifle,New,Plasma Rifle Schematic
 gunPlasmaRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Plasma Rifle. Scales with the Advanced Engineering perk.
+gunBAR1Schematic,items,GunRifle,New,BAR Schematic
+gunBAR1SchematicDesc,items,GunRifle,New,Teaches you to craft the BAR. Scales with the Machine Gunner perk.
+gunMiniGSchematic,items,GunRifle,New,Minigun Schematic
+gunMiniGSchematicDesc,items,GunRifle,New,Teaches you to craft the Minigun. Scales with the Machine Gunner perk.
+gunm79Schematic,items,GunRifle,New,M-79 Schematic
+gunm79SchematicDesc,items,GunRifle,New,Teaches you to craft the M-79. Scales with the Demolitions Expert perk.
+gunLaserPistolScrapSchematic,items,GunRifle,New,Scrap Laser Pistol Schematic
+gunLaserPistolScrapSchematicDesc,items,GunRifle,New,Teaches you to craft the Scrap Laser Pistol. Scales with the Advanced Engineering perk.
 
 modOverchargedCapacitorSchematic,item_modifiers,mod,New,Overcharged Capacitor Schematic
 modLaserSplitterSchematic,item_modifiers,mod,New,Laser Splitter Schematic
@@ -484,6 +510,8 @@ meleeCrowbar,items,Melee,KgNone,Crowbar,,,,,
 meleeCrowbarDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
 meleeCuestick,items,Melee,KgNone,Cue Stick,,,,,
 meleeCuestickDesc,items,Melee,KgNone,"A pool cue. Not the most effective, but it might keep you alive.",,,,,
+meleeKatana1,items,Melee,KgNone,Katana,,,,,
+meleeKatana1Desc,items,Melee,KgNone,"Meant for samurai warriors. But who's left to judge?",,,,,
 meleeNailBoard,items,Melee,KgNone,Nail Board,,,,,
 meleeNailBoardDesc,items,Melee,KgNone,A simple melee weapon.,,,,,
 meleePipeHammer,items,Melee,KgNone,Pipe Hammer,,,,,
@@ -514,6 +542,16 @@ meleeOpenBreakerDesc,items,Melee,KgNone,"Zombie killing is a 24/7 business. And 
 
 cntUFO,blocks,Container,New,Crashed UFO
 cntUFODesc,blocks,Container,New,UFO block
+
+vehicleVertibirdchassis,items,Part,EnChanged,Vertibird Chassis,,,,,
+vehicleVertibirdchassisDesc,items,Part,EnChanged,Parts needed to craft the Vertibird. Grease Monkey level 5 required.,,,,,
+vehicleVertibirdengines,items,Part,EnChanged,Vertibird Engines,,,,,
+vehicleVertibirdenginesDesc,items,Part,EnChanged,Parts needed to craft the Vertibird. Grease Monkey level 5 required.,,,,,
+vehicleVertibird,vehicles,vehicle,new,Vertibird,,,,,
+vehicleVertibirdplaceable,vehicles,item,EnChanged,Vertibird,,,,,
+vehicleVertibirdplaceableDesc,vehicles,item,EnChanged,Old military transport chopper. Can hold up to 6 people.,,,,,
+vehicleVertibirdchassisSchematic,items,Part,EnChanged,Vertibird Chassis Schematic
+vehicleVertibirdenginesSchematic,items,Part,EnChanged,Vertibird Engines Schematic
 
 RaiderLeaderLoot,blocks,Container,New,Raider Leader's Loot
 RaiderLeaderLootDesc,blocks,Container,New,Raider Leader's Loot
@@ -627,6 +665,9 @@ perkWildWastelandDesc,perk,book,New,A collection of random knowledge to give you
 perkWhiteRiverSG,perk,book,New,White River Survival Guide
 perkWhiteRiverSGDesc,perk,book,New,A collection of survival knowledge to help you get by out in the Wasteland.
 
+perkPowerArmor,perk,book,New,Power Armor and You
+perkPowerArmorDesc,perk,book,New,A collection of tips and tricks to help you get the most out of your Power Armor while roaming the Wasteland.
+
 bookWildWastelandHeavyHands,items,book,New,Wild Wasteland Vol 1
 bookWildWastelandPrecisionStrike,items,book,New,Wild Wasteland Vol 2
 bookWildWastelandLordoftheLimbs,items,book,New,Wild Wasteland Vol 3
@@ -642,6 +683,14 @@ bookWhiteRiverSGScratch,items,book,New,White River Survival Guide Vol 4
 bookWhiteRiverSGRecovery,items,book,New,White River Survival Guide Vol 5
 bookWhiteRiverSGSprinterWeekly,items,book,New,White River Survival Guide Vol 6
 bookWhiteRiverSGKeenEyes,items,book,New,White River Survival Guide Vol 7
+
+bookPowerArmorMasterRepair,items,book,New,Power Armor and You Vol 1
+bookPowerArmorExtraPlating,items,book,New,Power Armor and You Vol 2
+bookPowerArmorSteadyHands,items,book,New,Power Armor and You Vol 3
+bookPowerArmorBullRush,items,book,New,Power Armor and You Vol 4
+bookPowerArmorEfficientMovement,items,book,New,Power Armor and You Vol 5
+bookPowerArmorStealthCrouch,items,book,New,Power Armor and You Vol 6
+bookPowerArmorReflect,items,book,New,Power Armor and You Vol 7
 
 perkWildWastelandHeavyHandsDesc,perks,book,New,Gain a small chance to knock an enemy down when using melee weapons.
 perkWildWastelandHeavyHandsLongDesc,perks,book,New,"Heavy Hands: You've learned to be more effective with your melee attacks, allowing you a chance to knock your enemy down."
@@ -664,7 +713,7 @@ perkWhiteRiverSGTheHagglerDesc,perks,book,New,Sell for 10% more and buy for 10% 
 perkWhiteRiverSGTheHagglerLongDesc,perks,book,New,"The Haggler: Part of surviving is being able to get better deals with traders. Save a bit of coin when buying and line your pockets a little more when selling."
 perkWhiteRiverSGTumblersDesc,perks,book,New,Lockpicks are 25% less likely to break.
 perkWhiteRiverSGTumblersLongDesc,perks,book,New,"Tumblers of Tomorrow: Lockpicking is now a bit easier for you."
-perkWhiteRiverSGIronGutDesc,perks,book,New,Slows water and food loss. Lessens the chance of getting dysentery
+perkWhiteRiverSGIronGutDesc,perks,book,New,Slows water and food loss. Lessens the chance of getting dysentery.
 perkWhiteRiverSGIronGutLongDesc,perks,book,New,"Iron Gut: Over time you have learned to be able to go longer between meals. You also won't get dysentery as easily."
 perkWhiteRiverSGScratchDesc,perks,book,New,Adds a 20% resistance to most negative effects.
 perkWhiteRiverSGScratchLongDesc,perks,book,New,"'Tis But A Scratch: All those injuries have increased your resistance to most negative effects."
@@ -676,6 +725,23 @@ perkWhiteRiverSGKeenEyesDesc,perks,book,New,Adds 15% to your gamestage.
 perkWhiteRiverSGKeenEyesLongDesc,perks,book,New,"Keen Eyes: The experience you've gained scrounging through the wastes has honed your eyes, making it easier to find better loot."
 perkWhiteRiverSGCompleteDesc,perks,book,New,Learn how to craft various furniture.
 perkWhiteRiverSGCompleteLongDesc,perks,book,New,"Survive and Thrive: The next step after surviving is thriving. That means making your living space more comfortable. You may now craft an assortment of furniture and storage containers."
+
+perkPowerArmorMasterRepairDesc,perks,book,New,Craft repair kits for Power Armor 50% faster with less materials.
+perkPowerArmorMasterRepairLongDesc,perks,book,New,"Master Repair: Maintaining your Power Armor is vital. Spend less time and materials making Power Armor repair kits."
+perkPowerArmorExtraPlatingDesc,perks,book,New,Power Armor degrades 20% slower.
+perkPowerArmorExtraPlatingLongDesc,perks,book,New,"Extra Plating: Install some extra plating so your Power Armor lasts longer."
+perkPowerArmorSteadyHandsDesc,perks,book,New,Steady your aim when wearing Power Armor.
+perkPowerArmorSteadyHandsLongDesc,perks,book,New,"Steady Hands: Learn how to use Power Armor to increase your accuracy."
+perkPowerArmorBullRushDesc,perks,book,New,Running into zeds while wearing Power Armor will knock them down.
+perkPowerArmorBullRushLongDesc,perks,book,New,"Bull Rush: Put that extra weight to use and charge right through your enemies."
+perkPowerArmorEfficientMovementDesc,perks,book,New,Use less stamina when wearing Power Armor.
+perkPowerArmorEfficientMovementLongDesc,perks,book,New,"Efficient Movement: Learn how to make the Power Armor work for you to save stamina."
+perkPowerArmorStealthCrouchDesc,perks,book,New,Use less stamina and move faster when crouch running.
+perkPowerArmorStealthCrouchLongDesc,perks,book,New,"Stealth Crouch: Move stealthily, faster! Run faster and use less stamina when crouching."
+perkPowerArmorReflectDesc,perks,book,New,Reflect 25 damage onto your attacker.
+perkPowerArmorReflectLongDesc,perks,book,New,"Reflect: You can now literally watch your enemies kill themselves with each swing! Just know if it kills them you'll get no XP."
+perkPowerArmorCompleteDesc,perks,book,New,Raise your max Health and Stamina.
+perkPowerArmorCompleteLongDesc,perks,book,New,"Walking Tank: You have unlocked the full potential of the Power Armor."
 
 questPewPew,items,Quest,New,Sunset Sarsaparilla flier
 questPewPewDesc,items,Quest,New,A flier for the Star Bottlecap giveaway. Read it to learn where to go to claim your prize!

@@ -13,6 +13,7 @@
 			<item name="gunLeFusilTerribles" count="1"/>
 			<item name="gunHeavySniperGobi" count="1"/>
 			<item name="gunFatMan" count="1"/>
+			<item name="gunAshmaker" count="1"/>
 		</lootgroup>
 		<lootgroup name="LegendaryEnergyGuns">
 			<item name="gun10mmPistol" count="1"/>
@@ -55,6 +56,10 @@
 			<item name="gunIncinerator" count="1"/>
 			<item name="gunHeavySniper" count="1"/>
 			<item name="gunServiceRifle" count="1"/>
+			<item name="gunBAR1" count="1"/>
+			<item name="gunLaserPistolScrap" count="1"/>
+			<item name="gunMiniG" count="1"/>
+			<item name="gunm79" count="1"/>
 		</lootgroup>
 		<lootgroup name="RegularEnergyGuns">
 			<item name="gunLaserPistol" count="1"/>
@@ -80,6 +85,7 @@
 			<item name="meleePipeHammer" count="1"/>
 			<item name="meleeRebarClub" count="1"/>
 			<item name="meleeSupaSledge" count="1"/>
+			<item name="meleeKatana1" count="1"/>
 		</lootgroup>
 		<lootgroup name="LaserMods">
 			<item name="modLaserSplitter" count="1"/>
@@ -100,10 +106,16 @@
 			<item name="gunTripleBarrelShotgunSchematic" count="1"/>
 		</lootgroup>
 		<lootgroup name="RegularWeaponSchemsT2">
-			<item name="gun10mmSMGSchematic" count="1"/>
-			<item name="gun10mmRevSchematic" count="1"/>
-			<item name="gun10mmPistolSchematic" count="1"/>
-			<item name="gunTripleBarrelShotgunSchematic" count="1"/>
+			<item name="gunServiceRifleSchematic" count="1"/>
+			<item name="gunBAR1Schematic" count="1"/>
+			<item name="gunMiniGSchematic" count="1"/>
+			<item name="gunm79Schematic" count="1"/>
+			<item name="gunLaserPistolScrapSchematic" count="1"/>
+			<item name="gunLARSchematic" count="1"/>
+			<item name="gunHeavySniperSchematic" count="1"/>
+			<item name="gunRailwayRifleSchematic" count="1"/>
+			<item name="gunIncineratorSchematic" count="1"/>
+			<item name="gunCombatShotgunSchematic" count="1"/>
 		</lootgroup>
 		<lootgroup name="EnergyWeaponSchems">
 			<item name="gunLaserPistolSchematic" count="1"/>
@@ -312,6 +324,9 @@
 			<item group="LegendaryGuns" count="1" prob=".05"/>
 			<item group="LegendaryMelee" count="1" prob=".05"/>
 			<item name="ammoAB" count="5,15" prob=".05"/>
+			<item name="ammo40mmHE" count="3" prob=".2"/>
+			<item name="ammo40mmAP" count="3" prob=".2"/>
+			<item name="ammo40mmSmoke" count="3" prob=".2"/>
 		</lootcontainer>
 		<!-- VT loot box -->
 		<lootcontainer id="939" count="2" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="2" loot_quality_template="qualBaseTemplate">
@@ -362,6 +377,9 @@
 			<item name="ammoShotgunBreachingSlug" count="20" prob=".5"/>
 			<item name="ammoRocketHE" count="20" prob=".2"/>
 			<item name="ammoRocketFrag" count="20" prob=".2"/>
+			<item name="ammo40mmHE" count="3" prob=".2"/>
+			<item name="ammo40mmAP" count="3" prob=".2"/>
+			<item name="ammo40mmSmoke" count="3" prob=".2"/>
 			<item group="PowerArmorMods" prob=".01"/>
 		</lootcontainer>
 		<!-- Power Armor Stand -->
@@ -379,6 +397,19 @@
 			<item group="PA11"/>
 		</lootcontainer>
 	</insertAfter>
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+		<lootgroup name="Vertibirdgroup">
+			<item name="vehicleVertibirdchassis"/>
+			<item name="vehicleVertibirdengines"/>
+		</lootgroup>
+	</insertBefore>
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="Vertibirdgroup" loot_prob_template="ProbT3"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+		<item name="vehicleVertibirdchassisSchematic"/>
+		<item name="vehicleVertibirdenginesSchematic"/>
+	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='groupModAllT3']">
 		<item group="PowerArmorMods" prob=".7"/>
 	</append>
@@ -397,6 +428,13 @@
 		<item name="bookWhiteRiverSGRecovery"/>
 		<item name="bookWhiteRiverSGSprinterWeekly"/>
 		<item name="bookWhiteRiverSGKeenEyes"/>
+		<item name="bookPowerArmorMasterRepair"/>
+		<item name="bookPowerArmorExtraPlating"/>
+		<item name="bookPowerArmorSteadyHands"/>
+		<item name="bookPowerArmorBullRush"/>
+		<item name="bookPowerArmorEfficientMovement"/>
+		<item name="bookPowerArmorStealthCrouch"/>
+		<item name="bookPowerArmorReflect"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT2']">
 		<item group="RegularGunsT1"/>
@@ -420,6 +458,30 @@
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT2']">
 		<item group="LegendaryMelee" count="1" prob=".02"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
+		<item name="ammo40mmHE" count="1"/>
+		<item name="ammo40mmAP" count="1"/>
+		<item name="ammo40mmSmoke" count="1"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRocket']">
+		<item name="ammo40mmHE" count="1"/>
+		<item name="ammo40mmAP" count="1"/>
+		<item name="ammo40mmSmoke" count="1"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']">		
+		<item name="ammo10mmBullet" count="75"  loot_prob_template="QuestT2Prob"/>
+		<item name="ammo10mmBulletAP" count="75"  loot_prob_template="QuestT2Prob"/>
+		<item name="ammo10mmBulletHP" count="75"  loot_prob_template="QuestT2Prob"/>
+		<item name="ammo40mmHE" count="5" loot_prob_template="QuestT3Prob"/>
+		<item name="ammo40mmAP" count="5" loot_prob_template="QuestT3Prob"/>
+		<item name="ammo40mmSmoke" count="5" loot_prob_template="QuestT3Prob"/>
+		<item name="ammoEC" count="25" loot_prob_template="QuestT3Prob"/>
+		<item name="ammoIncinerator" count="25" loot_prob_template="QuestT3Prob"/>
+		<item name="ammoMFC" count="25" loot_prob_template="QuestT3Prob"/>
+		<item name="ammoPEC" count="25" loot_prob_template="QuestT3Prob"/>
+		<item name="ammoPMFC" count="25" loot_prob_template="QuestT3Prob"/>
+		<item name="ammoSMFC" count="64" loot_prob_template="QuestT3Prob"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']">
 		<item group="RegularWeaponSchemsT1"/>
@@ -654,7 +716,7 @@
 	</append>
 	<!-- car parts shipping crate -->
 	<append xpath="/lootcontainers/lootcontainer[@id='90']">
-		<item name="modOilFilterSuppressor" prob="0.001"/>
+		<item name="modOilFilterSuppressor" prob="0.01"/>
 		<item name="meleeTireIron" prob=".1"/>
 	</append>
 	<!-- cntCollapsedChemistryStation -->
@@ -682,6 +744,6 @@
 	</append>
 	<!-- cntToolBoxClosed, cntRollingToolBoxClosed -->
 	<append xpath="/lootcontainers/lootcontainer[@id='124']">
-		<item name="modOilFilterSuppressor" prob="0.01"/>
+		<item name="modOilFilterSuppressor" prob="0.001"/>
 	</append>
 </configs>

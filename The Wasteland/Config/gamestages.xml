@@ -1,55 +1,93 @@
 <configs>
 	<append xpath="/gamestages">
-	
 		<spawner name="SleeperRaidersMelee_b">
-			<gamestage stage="1"><spawn group="RaidersMeleesleepers_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="RaidersMeleesleepers_b+" num="1" maxAlive="1" duration="1"/></gamestage>
-		</spawner>		
-		<spawner name="SleeperRaidersRanged_b">
-			<gamestage stage="1"><spawn group="RaiderRangedsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="RaiderRangedsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
-		</spawner>		
-		<spawner name="SleeperRaidersMix_b">
-			<gamestage stage="1"><spawn group="RaiderMixsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="RaiderMixsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="RaidersMeleesleepers_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="RaidersMeleesleepers_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
-		
+		<spawner name="SleeperRaidersRanged_b">
+			<gamestage stage="1">
+				<spawn group="RaiderRangedsleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="RaiderRangedsleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+		<spawner name="SleeperRaidersMix_b">
+			<gamestage stage="1">
+				<spawn group="RaiderMixsleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="RaiderMixsleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
 		<spawner name="SleeperRaiderBossMelee_b">
-			<gamestage stage="1"><spawn group="RaiderBossMeleesleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="RaiderBossMeleesleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="RaiderBossMeleesleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="RaiderBossMeleesleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
 		<spawner name="SleeperRaiderBossRangedsleeper_b">
-			<gamestage stage="1"><spawn group="RaiderBossRangedsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="RaiderBossRangedsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="RaiderBossRangedsleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="RaiderBossRangedsleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
 		<spawner name="SleeperRaiderBossMixsleeper_b">
-			<gamestage stage="1"><spawn group="RaiderBossMixsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="RaiderBossMixsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="RaiderBossMixsleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="RaiderBossMixsleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
-		
 		<spawner name="SleeperSoldierMelee_b">
-			<gamestage stage="1"><spawn group="SoldierMeleesleepers_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="SoldierMeleesleepers_b+" num="1" maxAlive="1" duration="1"/></gamestage>
-		</spawner>		
+			<gamestage stage="1">
+				<spawn group="SoldierMeleesleepers_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="SoldierMeleesleepers_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
 		<spawner name="SleeperSoldierRanged_b">
-			<gamestage stage="1"><spawn group="SoldierRangedsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="SoldierRangedsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
-		</spawner>		
+			<gamestage stage="1">
+				<spawn group="SoldierRangedsleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="SoldierRangedsleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
 		<spawner name="SleeperSoldierMix_b">
-			<gamestage stage="1"><spawn group="SoldierMixsleeper_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="SoldierMixsleeper_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="SoldierMixsleeper_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="SoldierMixsleeper_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
 		<spawner name="SleeperMutantB_b">
-			<gamestage stage="1"><spawn group="MutantBHorde_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="MutantBHorde_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="MutantBHorde_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="MutantBHorde_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
 		<spawner name="SleeperMutants_b">
-			<gamestage stage="1"><spawn group="MutantsHorde_b" num="1" maxAlive="1" duration="1"/></gamestage>
-			<gamestage stage="500"><spawn group="MutantsHorde_b+" num="1" maxAlive="1" duration="1"/></gamestage>
+			<gamestage stage="1">
+				<spawn group="MutantsHorde_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="MutantsHorde_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
 		</spawner>
-
-
-
 		<group name="RaidersMelee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperRaidersMelee_b" count="5"/>
 		</group>
@@ -59,7 +97,6 @@
 		<group name="RaidersMix" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperRaidersMix_b" count="5"/>
 		</group>
-		
 		<group name="RaiderBossMelee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperRaiderBossMelee_b" count="1"/>
 		</group>
@@ -69,7 +106,6 @@
 		<group name="RaiderBossMix" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperRaiderBossMelee_b" count="1"/>
 		</group>
-		
 		<group name="SoldierMelee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperSoldierMelee_b" count="5"/>
 		</group>
@@ -85,19 +121,23 @@
 		<group name="Mutants" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperMutants_b" count="5"/>
 		</group>
-	
 	</append>
-	
 	<remove xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']"/>
 	<remove xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='45']"/>
 	<remove xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='49']"/>
 	<insertAfter xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[28]">
-		<gamestage stage="29"><spawn group="MutantsHorde_b" num="05" maxAlive="30" duration="09" /></gamestage>
+		<gamestage stage="29">
+			<spawn group="MutantsHorde_b" num="05" maxAlive="30" duration="09"/>
+		</gamestage>
 	</insertAfter>
 	<insertAfter xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[44]">
-		<gamestage stage="45"><spawn group="MutantBHorde_b" num="01" maxAlive="30" duration="09" /></gamestage>
+		<gamestage stage="45">
+			<spawn group="MutantBHorde_b" num="01" maxAlive="30" duration="09"/>
+		</gamestage>
 	</insertAfter>
 	<insertAfter xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[48]">
-		<gamestage stage="49"><spawn group="MutantsHorde_b" num="08" maxAlive="30" duration="09" /></gamestage>
+		<gamestage stage="49">
+			<spawn group="MutantsHorde_b" num="08" maxAlive="30" duration="09"/>
+		</gamestage>
 	</insertAfter>
 </configs>

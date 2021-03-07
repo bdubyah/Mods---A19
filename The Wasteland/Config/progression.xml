@@ -1,102 +1,88 @@
 <configs>
-
 	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunLAR"/>
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="gunHeavySniper"/>
 	</append>
-	
-	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group">
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="thrownNukaGrenade"/>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="thrownCryoGrenade"/>
-	</append>
-	
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,thrownNukaGrenade,thrownCryoGrenade,gunm79</append>
 	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunTripleBarrelShotgun"/>
 	</append>
-	
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='2,5']/@tags">,gunLaserPistolScrap</append>
 	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
 		<passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,4" tags="EnergyWeapons"/>
 	</append>
-	
 	<append xpath="/progression/perks/perk[@name='perkPistolPeteHPAmmo']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo10mmBulletHP"/>
 	</append>
-	
 	<append xpath="/progression/perks/perk[@name='perkPistolPeteAPAmmo']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo10mmBulletAP"/>
 	</append>
-	
 	<!-- Magazine Perks -->
-	
 	<append xpath="/progression/skills">
-	
-		<skill name="skillWildWasteland" parent="attBooks" name_key="perkWildWasteland" desc_key="perkWildWastelandDesc" long_desc_key="perkBookGroupLongDesc" icon="WildWastelandUI"><effect_group/></skill>
-		<skill name="skillWhiteRiverSG" parent="attBooks" name_key="perkWhiteRiverSG" desc_key="perkWhiteRiverSGDesc" long_desc_key="perkBookGroupLongDesc" icon="WhiteRiverUI"><effect_group/></skill>
-	
+		<skill name="skillWildWasteland" parent="attBooks" name_key="perkWildWasteland" desc_key="perkWildWastelandDesc" long_desc_key="perkBookGroupLongDesc" icon="WildWastelandUI">
+			<effect_group/>
+		</skill>
+		<skill name="skillWhiteRiverSG" parent="attBooks" name_key="perkWhiteRiverSG" desc_key="perkWhiteRiverSGDesc" long_desc_key="perkBookGroupLongDesc" icon="WhiteRiverUI">
+			<effect_group/>
+		</skill>
+		<skill name="skillPowerArmor" parent="attBooks" name_key="perkPowerArmor" desc_key="perkPowerArmorDesc" long_desc_key="perkBookGroupLongDesc" icon="PowerArmorUI">
+			<effect_group/>
+		</skill>
 	</append>
-	
 	<append xpath="/progression/perks">
-	
 		<!-- Wild Wasteland -->
 		<perk name="perkWildWastelandHeavyHands" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandHeavyHandsDesc" long_desc_key="perkWildWastelandHeavyHandsLongDesc">
 			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkWildWastelandHeavyHands" operation="Equals" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
-					<requirement name="ItemHasTags" tags="melee"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
-					<requirement name="ItemHasTags" tags="melee"/>
+					<requirement name="ItemHasTags" tags="perkBrawler"/>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
 				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ItemHasTags" tags="perkBrawler"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
 			</effect_group>
 		</perk>
-		
 		<perk name="perkWildWastelandPrecisionStrike" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" name_key="bookWildWastelandHeavyHands" desc_key="perkWildWastelandPrecisionStrikeDesc" long_desc_key="perkWildWastelandPrecisionStrikeLongDesc">
 			<effect_group>
-				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="1" />
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="1"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWildWastelandLordoftheLimbs" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandLordoftheLimbsDesc" long_desc_key="perkWildWastelandLordoftheLimbsLongDesc">
 			<effect_group>
-				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".05" />
-					<requirement name="HitLocation" body_parts="LeftUpperArm,RightUpperArm,LeftLowerArm,RightLowerArm,LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".05"/>
+				<requirement name="HitLocation" body_parts="LeftUpperArm,RightUpperArm,LeftLowerArm,RightLowerArm,LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWildWastelandDeepFreeze" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandDeepFreezeDesc" long_desc_key="perkWildWastelandDeepFreezeLongDesc">
-			<effect_group> 
+			<effect_group>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".2"/>
-					<requirement name="ItemHasTags" tags="Cryo"/>
+				<requirement name="ItemHasTags" tags="Cryo"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWildWastelandZap" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandZapDesc" long_desc_key="perkWildWastelandZapLongDesc">
 			<effect_group>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".2"/>
-					<requirement name="ItemHasTags" tags="Alien"/>
+				<requirement name="ItemHasTags" tags="Alien"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWildWastelandRaiderBully" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandRaiderBullyDesc" long_desc_key="perkWildWastelandRaiderBullyLongDesc">
 			<effect_group>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.15" tags="bandit"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWildWastelandZedtheImpaler" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" name_key="bookWildWastelandZedtheImpaler" desc_key="perkWildWastelandZedtheImpalerDesc" long_desc_key="perkWildWastelandZedtheImpalerLongDesc">
 			<effect_group>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.1" tags="zombie"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWildWastelandComplete" parent="skillWildWasteland" max_level="1" base_skill_point_cost="0" desc_key="perkWildWastelandCompleteDesc" long_desc_key="perkWildWastelandCompleteLongDesc">
 			<effect_group>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEC,ammoMFC,ammoSMFC,ammoPEC,ammoPMFC"/>
 			</effect_group>
 		</perk>
-		
 		<!-- White River Survival Guide -->
 		<perk name="perkWhiteRiverSGTheHaggler" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGTheHagglerDesc" long_desc_key="perkWhiteRiverSGTheHagglerLongDesc">
 			<effect_group>
@@ -104,13 +90,11 @@
 				<passive_effect name="BarteringSelling" operation="base_add" value="0.1"/>
 			</effect_group>
 		</perk>
-		
 		<perk name="perkWhiteRiverSGTumblers" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" name_key="bookWhiteRiverSGTumblers" desc_key="perkWhiteRiverSGTumblersDesc" long_desc_key="perkWhiteRiverSGTumblersLongDesc">
 			<effect_group>
 				<passive_effect name="LockPickBreakChance" operation="perc_subtract" value=".25"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWhiteRiverSGIronGut" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGIronGutDesc" long_desc_key="perkWhiteRiverSGIronGutLongDesc">
 			<effect_group>
 				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1" value="-.1"/>
@@ -120,33 +104,28 @@
 				<passive_effect name="BuffResistance" operation="base_add" value=".25" tags="buffInfectionCatch,buffDysenteryCatchFood,buffDysenteryCatchDrink"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWhiteRiverSGScratch" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGScratchDesc" long_desc_key="perkWhiteRiverSGScratchLongDesc">
-			<effect_group> 
+			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffDrowning01,buffDrowning02,buffArmorShredding,buffLegSprainedFallTrigger,buffLegBroken,buffArmSprained"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurningMolotov,buffBurning"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWhiteRiverSGRecovery" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGRecoveryDesc" long_desc_key="perkWhiteRiverSGRecoveryLongDesc">
 			<effect_group>
 				<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".011"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWhiteRiverSGSprinterWeekly" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGSprinterWeeklyDesc" long_desc_key="perkWhiteRiverSGSprinterWeeklyLongDesc">
 			<effect_group>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.1" tags="running"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWhiteRiverSGKeenEyes" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" name_key="bookWhiteRiverSGKeenEyes" desc_key="perkWhiteRiverSGKeenEyesDesc" long_desc_key="perkWhiteRiverSGKeenEyesLongDesc">
 			<effect_group>
 				<passive_effect name="LootGamestage" operation="perc_add" level="1" value=".15"/>
 			</effect_group>
 		</perk>
-
 		<perk name="perkWhiteRiverSGComplete" parent="skillWhiteRiverSG" max_level="1" base_skill_point_cost="0" desc_key="perkWhiteRiverSGCompleteDesc" long_desc_key="perkWhiteRiverSGCompleteLongDesc">
 			<effect_group>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="cntAmmoBoxPlayer,Bookcase1Player,Bunkbed1Player,Chair1,Chair2"/>
@@ -154,7 +133,74 @@
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="EspressoMachine,MetalShelves2Player,Microscope,OldSafeClosedPlayer,Rug1,WeaponCasePlayer,WelcomeMat"/>
 			</effect_group>
 		</perk>
-	
+		<!-- Power Armor and You -->
+		<perk name="perkPowerArmorMasterRepair" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorMasterRepairDesc" long_desc_key="perkPowerArmorMasterRepairLongDesc">
+			<effect_group>
+				<passive_effect name="CraftingTier" operation="base_set" level="0,1" value="0,1" tags="perkPowerArmor"/>
+				<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.5" tags="perkPowerArmor"/>
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorExtraPlating" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" name_key="bookPowerArmorExtraPlating" desc_key="perkPowerArmorExtraPlatingDesc" long_desc_key="perkPowerArmorExtraPlatingLongDesc">
+			<effect_group>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="perkPowerArmor"/>
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorSteadyHands" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorSteadyHandsDesc" long_desc_key="perkPowerArmorSteadyHandsLongDesc">
+			<effect_group>
+				<requirement name="HasBuff" buff="buffPAset"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" level="1" value="-.03" />
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" level="1" value="-.15" />
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" level="1" value="-.03" />
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" level="1" value="-.15" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="-.2" />
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorBullRush" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorBullRushDesc" long_desc_key="perkPowerArmorBullRushLongDesc">
+			<effect_group>						
+				<!-- Effect is applied from the book -->
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorEfficientMovement" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorEfficientMovementDesc" long_desc_key="perkPowerArmorEfficientMovementLongDesc">
+			<effect_group>
+				<requirement name="HasBuff" buff="buffPAset"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value=".2"/>
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorStealthCrouch" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorStealthCrouchDesc" long_desc_key="perkPowerArmorStealthCrouchLongDesc">
+			<effect_group>
+				<requirement name="HasBuff" buff="buffPAset"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="1.35" tags="running">
+					<requirement name="ProgressionLevel" progression_name="perkPowerArmorStealthCrouch" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="CrouchSpeed" operation="perc_add" value=".2">
+					<requirement name="ProgressionLevel" progression_name="perkPowerArmorStealthCrouch" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".2">
+					<requirement name="ProgressionLevel" progression_name="perkPowerArmorStealthCrouch" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="Mobility" operation="perc_add" value=".2">
+					<requirement name="ProgressionLevel" progression_name="perkPowerArmorStealthCrouch" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorReflect" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" name_key="bookPowerArmorReflect" desc_key="perkPowerArmorReflectDesc" long_desc_key="perkPowerArmorReflectLongDesc">
+			<effect_group>
+				<requirement name="HasBuff" buff="buffPAset"/>
+				<requirement name="ProgressionLevel" progression_name="perkPowerArmorReflect" operation="Equals" value="1"/>
+				<triggered_effect trigger="onOtherAttackedSelf" action="ModifyStats" target="other" stat="Health" operation="subtract" value="25"/>
+			</effect_group>
+		</perk>
+		<perk name="perkPowerArmorComplete" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorCompleteDesc" long_desc_key="perkPowerArmorCompleteLongDesc">
+			<effect_group>
+				<requirement name="HasBuff" buff="buffPAset"/>
+				<passive_effect name="HealthMax" operation="base_add" level="1" value="50"/>
+				<passive_effect name="StaminaMax" operation="base_add" level="1" value="50"/>
+			</effect_group>
+		</perk>
 	</append>
-	
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='5']/@tags">,vehicleVertibirdchassis,vehicleVertibirdaccessories</append>
 </configs>

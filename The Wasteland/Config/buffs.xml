@@ -1,8 +1,6 @@
 <configs>
 	<append xpath="/buffs">
-	
-	<!-- Nuka Stuff -->
-	
+		<!-- Nuka Stuff -->
 		<buff name="NukaColaBuff" name_key="Nuka Cola" description_key="The delicious taste of Nuka Cola has you feeling revitalized! Recover stamina quicker, and restore a small amount of max health and stamina. The small trace of radiation also allow for a slight movement speed boost for a limited time!" icon="NukaBuffIcon" tags="drug">
 			<stack_type value="replace"/>
 			<duration value="180"/>
@@ -12,18 +10,17 @@
 					<requirement name="NotHasBuff" buff="NukaQuartzBuff"/>
 					<requirement name="NotHasBuff" buff="NukaCherryBuff"/>
 				</passive_effect>
-				<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.05"/>		
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.05"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
 					<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 				</passive_effect>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 					<requirement name="HasBuff" buff="buffHealWaterMax"/>
-				</passive_effect>			
+				</passive_effect>
 				<passive_effect name="HealthMax" operation="base_add" value="5"/>
 				<passive_effect name="StaminaMax" operation="base_add" value="5"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="NukaCherryBuff" name_key="Nuka Cherry" description_key="Mmm...Nuka Cherry! Recover stamina quicker, increase melee damage, and restore a decent amount of max health and stamina. The traces of radiation also allow for a moderate movement speed boost for a limited time!" icon="NukaBuffIcon" tags="drug">
 			<stack_type value="replace"/>
 			<duration value="240"/>
@@ -41,13 +38,12 @@
 					<requirement name="HasBuff" buff="buffHealWaterMax"/>
 				</passive_effect>
 				<passive_effect name="EntityDamage" operation="perc_add" value="5">
-					<requirement name="HoldingItemHasTags" tags="fists,melee" />
-				</passive_effect>			
+					<requirement name="HoldingItemHasTags" tags="fists,melee"/>
+				</passive_effect>
 				<passive_effect name="HealthMax" operation="base_add" value="15"/>
 				<passive_effect name="StaminaMax" operation="base_add" value="15"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="NukaQuantumBuff" name_key="Nuka Quantum" description_key="Nuka Quantum has put you into overdrive! Recover stamina and health quicker, and restore a large amount of max health and stamina. The large amount of radiation also allows for a substantial movement speed boost for a limited time, but you'll probably feel it later!" icon="NukaBuffIcon" tags="drug">
 			<stack_type value="replace"/>
 			<duration value="300"/>
@@ -58,17 +54,16 @@
 					<requirement name="NotHasBuff" buff="NukaCherryBuff"/>
 				</passive_effect>
 				<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1"/>
-				<passive_effect name="HealthChangeOT" operation="perc_add" value="0.2"/>				
+				<passive_effect name="HealthChangeOT" operation="perc_add" value="0.2"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.33">
 					<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 				</passive_effect>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 					<requirement name="HasBuff" buff="buffHealWaterMax"/>
-				</passive_effect>			
+				</passive_effect>
 				<passive_effect name="HealthMax" operation="base_add" value="50"/>
 				<passive_effect name="StaminaMax" operation="base_add" value="50"/>
 			</effect_group>
-
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="NukaQuantumSideEffect"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NukaQuantumSideEffect">
@@ -76,7 +71,6 @@
 				</triggered_effect>
 			</effect_group>
 		</buff>
-		
 		<buff name="NukaQuantumSideEffect" name_key="Quantum Effect" description_key="Your body has crashed from the Quantum rush! But hey, at least your pee will glow for a week! Maybe you should lie down..." tooltip_key="buffDrugSteroidsSideEffectTooltip" icon="NukaSideEffectIcon" icon_color="255,128,0" tags="drug">
 			<damage_type value="disease"/>
 			<stack_type value="ignore"/>
@@ -85,11 +79,10 @@
 				<passive_effect name="RunSpeed" operation="perc_subtract" value=".1"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.2"/>
 				<passive_effect name="AttributeLevel" tags="attStrength,attAgility" operation="base_subtract" value="2"/>
-					<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-					<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			</effect_group>
-		</buff> 
-				
+		</buff>
 		<buff name="NukaQuartzBuff" name_key="Nuka Quartz" description_key="Was that expired? Too late now! Damage resistance is increased and health will regenerate, but it does make you queasy!" icon="NukaBuffIcon" tags="drug">
 			<stack_type value="replace"/>
 			<duration value="240"/>
@@ -101,28 +94,24 @@
 				</passive_effect>
 				<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1"/>
 				<passive_effect name="HealthLoss" operation="perc_subtract" value="0.25"/>
-				<passive_effect name="HealthChangeOT" operation="perc_add" value="0.1"/>			
+				<passive_effect name="HealthChangeOT" operation="perc_add" value="0.1"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.27">
 					<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 				</passive_effect>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 					<requirement name="HasBuff" buff="buffHealWaterMax"/>
-				</passive_effect>			
+				</passive_effect>
 				<passive_effect name="HealthMax" operation="base_add" value="35"/>
 				<passive_effect name="StaminaMax" operation="base_add" value="35"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned01CHTrigger,buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned01Shotgun,buffInjuryStunned02,buffInjuryStunned02Shotgun,buffInjuryStunned03,buffInjuryStunned03Shotgun"/>
 			</effect_group>
-			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="NukaQuartzSideEffect"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NukaQuartzSideEffect">
 					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="33"/>
 				</triggered_effect>
 			</effect_group>
-
-			
 		</buff>
-		
 		<buff name="NukaQuartzSideEffect" name_key="Quartz Effect" description_key="Your body did not appreciate that! Hopefully it was worth it..." tooltip_key="buffDrugSteroidsSideEffectTooltip" icon="NukaSideEffectIcon" icon_color="255,128,0" tags="drug">
 			<damage_type value="disease"/>
 			<stack_type value="ignore"/>
@@ -130,16 +119,15 @@
 			<effect_group>
 				<passive_effect name="HealthLoss" operation="perc_add" value="0.1"/>
 				<passive_effect name="AttributeLevel" tags="attStrength,attAgility" operation="base_subtract" value="1"/>
-					<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-					<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			</effect_group>
-		</buff> 
-		
+		</buff>
 		<buff name="SunsetSarsaparillaBuff" name_key="Sunset Sarsaparilla" description_key="The refreshing taste of Sunset Sarsaparilla has you feeling reinvigorated! Recover stamina quicker, and restore a small amount of max health and stamina." icon="NukaBuffIcon" tags="drug">
 			<stack_type value="replace"/>
 			<duration value="180"/>
 			<update_rate value="1"/>
-			<effect_group>			
+			<effect_group>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.2">
 					<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 				</passive_effect>
@@ -150,9 +138,7 @@
 				<passive_effect name="StaminaMax" operation="base_add" value="10"/>
 			</effect_group>
 		</buff>
-		
 		<!-- WW Stuff -->
-
 		<buff name="buffRailSpike" name_key="Spike" icon="ui_game_symbol_medical" hidden="true">
 			<damage_type value="knockdown"/>
 			<stack_type value="ignore"/>
@@ -160,45 +146,40 @@
 			<requirements compare_type="or">
 				<requirement name="NotHasBuff" buff="buffRailSpikeCooldown"/>
 			</requirements>
-
 			<effect_group>
-				<passive_effect name="RunSpeed" operation="perc_set" value=".5" />
-				<passive_effect name="WalkSpeed" operation="perc_set" value=".5" />
-				<passive_effect name="CrouchSpeed" operation="perc_set" value=".5" />
-				<passive_effect name="JumpStrength" operation="perc_set" value=".5" />			
-				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffRailSpikeBleed,buffRailSpikeCooldown"/>			
+				<passive_effect name="RunSpeed" operation="perc_set" value=".5"/>
+				<passive_effect name="WalkSpeed" operation="perc_set" value=".5"/>
+				<passive_effect name="CrouchSpeed" operation="perc_set" value=".5"/>
+				<passive_effect name="JumpStrength" operation="perc_set" value=".5"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffRailSpikeBleed,buffRailSpikeCooldown"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="buffRailSpikeBleed" name_key="Spike" icon="ui_game_symbol_medical" hidden="true">
 			<damage_type value="bloodloss"/>
 			<stack_type value="ignore"/>
 			<duration value="10"/>
-			
 			<effect_group>
 				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,10" value="2,4"/>
 			</effect_group>
 		</buff>
-		
-		<buff name="buffRailSpikeCooldown" hidden="true"> <duration value="10"/> <stack_type value="ignore"/> </buff>
-		
+		<buff name="buffRailSpikeCooldown" hidden="true">
+			<duration value="10"/>
+			<stack_type value="ignore"/>
+		</buff>
 		<buff name="buffLaserCrit" hidden="true">
 			<damage_type value="heat"/>
 			<stack_type value="replace"/>
 			<duration value="0"/>
-			
 			<effect_group>
 				<requirement name="!EntityTagCompare" tags="player"/>
-					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,1" value="1500,1500"/>					
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,1" value="1500,1500"/>
 			</effect_group>
-			
-			<effect_group name="run particles, cleanup"> 
-			<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>-->
+			<effect_group name="run particles, cleanup">
+				<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>-->
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Spine1"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="Spine1"/>
-			</effect_group>		
+			</effect_group>
 		</buff>
-		
 		<buff name="buffCryo" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="effect"/>
@@ -228,54 +209,51 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine1"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>	
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine1"/>
 			</effect_group>
-		</buff>	
-		
+		</buff>
 		<buff name="buffCryoCrit" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="effect"/>
-			<duration value="15"/>			
-				
-			<effect_group>	
+			<duration value="15"/>
+			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffCryo"/>
 				<passive_effect name="HealthLoss" operation="perc_add" value=".2"/>
 				<passive_effect name="RunSpeed" operation="base_set" value="0"/>
 				<passive_effect name="WalkSpeed" operation="base_set" value="0"/>
 				<passive_effect name="CrouchSpeed" operation="base_set" value="0"/>
-				<passive_effect name="JumpStrength" operation="base_set" value="0"/>				
+				<passive_effect name="JumpStrength" operation="base_set" value="0"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="Icicle1" local_offset="0,0,0" parent_transform="Spine2"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="Icicle1" local_offset="0,0,0" parent_transform="Spine2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Cryo1.unity3d?Icicle1" local_offset="0,0,0" parent_transform="Spine2"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Cryo1.unity3d?Icicle1" local_offset="0,0,0" parent_transform="Spine2"/>
-				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffCryoCritCooldown"/>		
-			</effect_group>	
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffCryoCritCooldown"/>
+			</effect_group>
 		</buff>
-		
-		<buff name="buffCryoCritCooldown" hidden="true"> <duration value="5"/> <stack_type value="ignore"/> </buff>
-		
+		<buff name="buffCryoCritCooldown" hidden="true">
+			<duration value="5"/>
+			<stack_type value="ignore"/>
+		</buff>
 		<buff name="buffCryoGrenade" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="15"/>			
-				
-			<effect_group>				
+			<duration value="15"/>
+			<effect_group>
 				<passive_effect name="HealthLoss" operation="perc_add" value=".1"/>
 				<passive_effect name="RunSpeed" operation="perc_subtract" value=".3"/>
 				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".3"/>
 				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".3"/>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value=".3"/>			
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".3"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine2"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="Cryo_GP" local_offset="0,0,0" parent_transform="Spine2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine2"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine2"/>			
-			</effect_group>	
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/NukaGrenades.unity3d?Cryo_GP" local_offset="0,0.25,0" parent_transform="Spine2"/>
+			</effect_group>
 		</buff>
-		
 		<buff name="buffPAhelmet" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPATrigger"/>
 			</effect_group>
@@ -283,10 +261,11 @@
 		<buff name="buffPAchest" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPATrigger"/>
-			</effect_group><!--
+			</effect_group>
+			<!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPAchest">
 					<requirement name="HasBuff" buff="buffPAset"/>
@@ -296,10 +275,11 @@
 		<buff name="buffPAarms" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPATrigger"/>
-			</effect_group><!--
+			</effect_group>
+			<!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPAarms">
 					<requirement name="HasBuff" buff="buffPAset"/>
@@ -309,10 +289,11 @@
 		<buff name="buffPAlegs" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPATrigger"/>
-			</effect_group><!--
+			</effect_group>
+			<!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPAlegs">
 					<requirement name="HasBuff" buff="buffPAset"/>
@@ -322,20 +303,22 @@
 		<buff name="buffPAboots" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPATrigger"/>
-			</effect_group><!--
+			</effect_group>
+			<!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPAboots">
 					<requirement name="HasBuff" buff="buffPAset"/>
 				</triggered_effect>
 			</effect_group>	-->
 		</buff>
-		<buff name="buffPATrigger" hidden="true">		
+		<buff name="buffPATrigger" hidden="true">
 			<stack_type value="ignore"/>
-			<duration value="0"/>					
-			<effect_group>				
+			<duration value="0"/>
+			<update_rate value=".1"/>
+			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPAset">
 					<requirement name="HasBuff" buff="buffPAhelmet"/>
 					<requirement name="HasBuff" buff="buffPAchest"/>
@@ -343,45 +326,68 @@
 					<requirement name="HasBuff" buff="buffPAlegs"/>
 					<requirement name="HasBuff" buff="buffPAboots"/>
 				</triggered_effect>
-			</effect_group>				
+			</effect_group>
 		</buff>
-		<buff name="buffPAset" hidden="true">		
+		<buff name="buffPAWeight" hidden="true">
 			<stack_type value="ignore"/>
 			<duration value="0"/>
-			<effect_group>				
-				<passive_effect name="Mobility" operation="perc_add" value=".9"/>	
-				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>	
+			<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPAWeight2">
+					<requirement name="HasBuff" buff="buffPAset"/>					
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffPAWeight2" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<passive_effect name="JumpStrength" operation="perc_add" value=".3"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".3"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPAWeight2">
+					<requirement name="NotHasBuff" buff="buffPAset"/>					
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffPAset" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<passive_effect name="Mobility" operation="perc_add" value=".9"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".1"/>
-			</effect_group>				
+			</effect_group>
 		</buff>
 		<buff name="buffPAhelmetRadar" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PAperception" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PAperception" operation="set" value="1"/>
-			</effect_group>				
+			</effect_group>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$PAperception" operation="set" value="0"/>
-			</effect_group>	
+			</effect_group>
 		</buff>
 		<buff name="buffPAhelmetRadarMK2" hidden="true">
 			<damage_type value="stun"/>
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
+			<duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PAperceptionMK2" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PAperceptionMK2" operation="set" value="1"/>
-			</effect_group>				
+			</effect_group>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$PAperceptionMK2" operation="set" value="0"/>
-			</effect_group>	
+			</effect_group>
 		</buff>
-		<buff name="buffPAhelmetScuba" hidden="true">			
+		<buff name="buffPAhelmetScuba" hidden="true">
 			<stack_type value="ignore"/>
-			<duration value="0"/>	
-			<update_rate value="1"/>	
+			<duration value="0"/>
+			<update_rate value="1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DrowningTimer" operation="add" value="1">
 					<requirement name="CVarCompare" cvar="_underwater" operation="Equals" value="1"/>
@@ -389,9 +395,9 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".DrowningTimerDisplay" operation="add" value="1">
 					<requirement name="CVarCompare" cvar="_underwater" operation="Equals" value="1"/>
 				</triggered_effect>
-			</effect_group>	
+			</effect_group>
 		</buff>
-	<!--
+		<!--
 		<buff name="IsHuman_b">
 			<stack_type value="ignore"/>
 			<duration value="0"/>
@@ -399,106 +405,98 @@
 				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="IsHuman" value="2"/>
 			</effect_group>
 		</buff>	-->
-		
-		<buff name="UseFactionsNo_b"> <!-- This sets the UseFactions switch to false incase its a vanilla only game.   -->
+		<buff name="UseFactionsNo_b">
+			<!-- This sets the UseFactions switch to false incase its a vanilla only game.   -->
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group name="UseFactions">
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HasFactions" operation="set" value="0"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HasFactions" operation="set" value="0"/>
 			</effect_group>
-		</buff>	
-		<buff name="UseFactionsYes_b"> <!-- This sets the UseFactions switch to true for NPCs.   -->
-			<stack_type value="ignore"/>
-			<duration value="0"/>
-			<effect_group name="UseFactions">
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HasFactions" operation="set" value="1"/>				
-			</effect_group>
-		</buff>	
-		
-<!--  Prevent bandits class characters from getting near trader POIs  -->
-
-		<buff name="buffTraderTrigger_b" hidden="true">
-				<stack_type value="replace"/>
-				<update_rate value="1"/>
-				<effect_group>
-					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="buffInfection04" target_tags="bandit,survivor"/>
-				</effect_group>
 		</buff>
-			
-		<buff name="buffTraderRagdollNPC" hidden="true" icon="ui_game_symbol_medical"> <!-- Not used, but funny to watch  -->
+		<buff name="UseFactionsYes_b">
+			<!-- This sets the UseFactions switch to true for NPCs.   -->
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group name="UseFactions">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HasFactions" operation="set" value="1"/>
+			</effect_group>
+		</buff>
+		<!--  Prevent bandits class characters from getting near trader POIs  -->
+		<buff name="buffTraderTrigger_b" hidden="true">
+			<stack_type value="replace"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="buffInfection04" target_tags="bandit,survivor"/>
+			</effect_group>
+		</buff>
+		<buff name="buffTraderRagdollNPC" hidden="true" icon="ui_game_symbol_medical">
+			<!-- Not used, but funny to watch  -->
 			<stack_type value="ignore"/>
 			<duration value="3"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="3" target_tags="bandit,survivor"/>
 			</effect_group>
-		</buff>  
-		
-<!-- Buffs to add weapons to zed class horde Mutants -->
-
+		</buff>
+		<!-- Buffs to add weapons to zed class horde Mutants -->
 		<buff name="SM1W1" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?SuperSledgeNPC2" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W2" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?TireIron2" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W3" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?NailBoard2" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W4" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?BloodyBatNPC" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W5" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?CuestickNPC" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W6" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?Machete1NPC" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W7" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?PipeHammer2" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SM1W8" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Melee1.unity3d?Rebar_Club1NPC" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="0,0,0"/>
 			</effect_group>
 		</buff>
-		
 		<buff name="SMBW1" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Ghouls.unity3d?Hydrant" parent_transform="RightWeapon" local_offset="0,0,0" local_rotation="180,0,0"/>
 			</effect_group>
 		</buff>
-		
+		<buff name="SM1Bomber" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/TimedCharge/timedChargePrefab.prefab" parent_transform="Spine1" local_offset="0,0,0.7" local_rotation="180,0,0"/>
+			</effect_group>
+		</buff>
 		<buff name="zombieFeralGhoulAOE" hidden="true">
 			<damage_type value="radiation"/>
 			<stack_type value="replace"/>
 			<duration value="0"/>
 			<update_rate value="1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="zombieFeralGhoulAOEEffect"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="zombieFeralGhoulAOEEffect"/>
 			</effect_group>
 		</buff>
-	
 		<buff name="zombieFeralGhoulAOEEffect" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" tooltip_key="buffRadiation03Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
 			<damage_type value="radiation"/>
 			<stack_type value="replace"/>
@@ -523,7 +521,68 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
 			</effect_group>
 		</buff>
-		
+		<buff name="buffInjuryKnockdownPABRtrigger" hidden="true">
+		<duration value="0"/>
+		<stack_type value="replace"/>
+		<update_rate value=".1"/>
+			<effect_group>
+				<requirement name="HasBuff" buff="buffPAset"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range=".5" buff="buffInjuryKnockdownPABR">
+					<requirement name="EntityHasMovementTag" tags="running"/>
+					<requirement name="NotHasBuff" buff="buffInjuryKnockdownPABR"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffInjuryKnockdownPABR" name_key="buffInjuryKnockdown01Name" description_key="buffInjuryKnockdown01Desc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+			<damage_type value="knockdown"/>
+			<stack_type value="ignore"/>
+			<duration value="4"/>
+			<update_rate value=".01"/>
+			<display_value value=".knockdownDisplay"/><display_value_key value="{0}"/>
+			<requirements compare_type="or">
+				<requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
+			</requirements>
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+				<passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+				<passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+				<passive_effect name="JumpStrength" operation="perc_set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="2">
+					<requirement name="!EntityTagCompare" tags="trader"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryKnockdown01Cooldown"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".knockdownDisplay" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+		<buff name="buffLaserShotgunNoFireTrigger" hidden="true">
+		<duration value="0"/>
+		<stack_type value="replace"/>
+		<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLaserShotgunNoFire">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+					<requirement name="RoundsInMagazine" operation="GT" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffLaserShotgunNoFire" hidden="true">
+		<duration value="0"/>
+		<stack_type value="replace"/>
+		<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLaserShotgunNoFireTrigger"/>
+				<requirement name="HoldingItemHasTags" tags="LNF"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLaserShotgunNoFire">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLaserShotgunNoFire">
+					<requirement name="!HoldingItemHasTags" tags="LNF"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
 		<!--
 		<buff name="buffNuke">
 			<damage_type value="knockout"/>

@@ -1,257 +1,208 @@
 <configs>
-
 	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/@blocked_tags">,no2x</append>
-
 	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
-		
 		<item_property_overrides name="gunLAR_Legendary">
 			<property name="CrosshairOnAim" value="false"/>
-			<property name="ScopeOffset" value="0,-0.027,0.019" />
-			<property name="ScopeScale" value=".9,.9,.9" />
-			<property name="ScopeCameraOffset" value="0,0,0" />
+			<property name="ScopeOffset" value="0,-0.027,0.019"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLAR">
 			<property name="CrosshairOnAim" value="false"/>
-			<property name="ScopeOffset" value="0,-0.027,0.019" />
-			<property name="ScopeScale" value=".9,.9,.9" />
-			<property name="ScopeCameraOffset" value="0,0,0" />
+			<property name="ScopeOffset" value="0,-0.027,0.019"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
 		</item_property_overrides>
-		
-	</append>	
-	
+	</append>
 	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
-	
 		<item_property_overrides name="gunMaria">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0.08,-0.1"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="0,-.0378,0"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmPistol">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="-0.01,0.0,-0"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="0,-.025,0"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmRev">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0.0,0"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="0,-.0215,0"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmSMG">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0.0,-0."/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="0,-.039,0.05"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunCombatShotgun">
 			<property name="CrosshairOnAim" value="false"/>
-			<property name="ScopeOffset" value="0,0.0,-0."/>			
+			<property name="ScopeOffset" value="0,0.0,-0."/>
 			<property name="ScopeCameraOffset" value="0.00025,.0452,0.0"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLaserShotgun">
 			<property name="CrosshairOnAim" value="false"/>
-			<property name="ScopeOffset" value="0,0.0,-0."/>			
+			<property name="ScopeOffset" value="0,0.0,-0."/>
 			<property name="ScopeCameraOffset" value="0.0,-.017,0.01"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0.0,-0."/>
 			<property name="ScopeCameraOffset" value="0.0002,.0452,0.0"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunServiceRifle">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0.0,-0."/>
 			<property name="ScopeCameraOffset" value="-0.00015,-.0748,0.0"/>
 		</item_property_overrides>
-		
+		<item_property_overrides name="gunBAR1">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeOffset" value="0,0.0,-0."/>
+			<property name="ScopeCameraOffset" value="-0.000,-.019,0.02"/>
+		</item_property_overrides>
 	</append>
-	
-	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
-		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
 		<item_property_overrides name="gun10mmSMG">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0,0"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="0,-.05,0.2"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunServiceRifle">
 			<property name="CrosshairOnAim" value="false"/>
 			<property name="ScopeOffset" value="0,0,0"/>
 			<property name="ScopeScale" value="0.02,0.02,0.02"/>
 			<property name="ScopeCameraOffset" value="-0.00015,-.0748,0.0"/>
 		</item_property_overrides>
-		
 	</append>
-	
 	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
-	
 		<item_property_overrides name="gunHeavySniper">
 			<property name="SideOffset" value="-0.012,0,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunHeavySniperGobi">
 			<property name="SideOffset" value="-0.012,0,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunMaria">
 			<property name="SideOffset" value="0,0.01,-0.008"/>
 			<property name="SideScale" value=".6,.6,.6"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmPistol">
 			<property name="SideOffset" value="-.01,0.0,0.01"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmRev">
 			<property name="SideOffset" value="-0.0,0.0,-0.0"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmSMG">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunTripleBarrelShotgun">
 			<property name="SideOffset" value="0,-0.01,-0.01"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLAR">
 			<property name="SideOffset" value="0,-0.013,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLAR_Legendary">
 			<property name="SideOffset" value="0,-0.013,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunCombatShotgun">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLaserShotgun">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunServiceRifle">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-	
 	</append>
-	
 	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
-	
 		<item_property_overrides name="gunHeavySniper">
 			<property name="SideOffset" value="-0.012,0,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunHeavySniperGobi">
 			<property name="SideOffset" value="-0.012,0,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunMaria">
 			<property name="SideOffset" value="0,0.01,-0.008"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmPistol">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmRev">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmSMG">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunTripleBarrelShotgun">
 			<property name="SideOffset" value="0,0,0"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLAR">
 			<property name="SideOffset" value="0,-0.013,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLAR_Legendary">
 			<property name="SideOffset" value="0,-0.013,0.65"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunCombatShotgun">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLaserShotgun">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="SideOffset" value="0,0.0,-0.00"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunServiceRifle">
 			<property name="SideOffset" value="0,0.0,0"/>
 			<property name="SideScale" value=".5,.5,.5"/>
 		</item_property_overrides>
-	
 	</append>
-	
 	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
-		
 		<item_property_overrides name="gunHeavySniper">
 			<property name="Sound_start" value="hunting_rifle_s_fire"/>
 			<property name="BarrelOffset" value="-0.012,-0.015,0.62"/>
 			<property name="BarrelScale" value="2,2,2"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmPistol">
 			<property name="Sound_start" value="pistol_s_fire"/>
 			<property name="BarrelOffset" value="0.001,-0.02,0.029"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmRev">
 			<property name="Sound_start" value="pistol_s_fire"/>
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gun10mmSMG">
 			<property name="Sound_start" value="mp5_s_fire"/>
 			<property name="Sound_end" value="silencefiller"/>
@@ -259,27 +210,23 @@
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunMaria">
 			<property name="Sound_start" value="pistol_s_fire"/>
 			<property name="BarrelOffset" value="0,0,-0.05"/>
 			<property name="BarrelScale" value="2,2,2"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunCombatShotgun">
 			<property name="Sound_start" value="pump_shotgun_s_fire"/>
 			<property name="Sound_loop" value="pump_shotgun_s_fire"/>
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunLeFusilTerribles">
 			<property name="Sound_start" value="pump_shotgun_s_fire"/>
 			<property name="Sound_loop" value="pump_shotgun_s_fire"/>
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 		<item_property_overrides name="gunServiceRifle">
 			<property name="Sound_start" value="ak47_s_fire"/>
 			<property name="Sound_end" value="silencefiller"/>
@@ -287,103 +234,121 @@
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
-		
 	</append>
-
-
 	<append xpath="/item_modifiers">
-	
-		<item_modifier name="modOilFilterSuppressor" installable_tags="gun,PipeGun" blocked_tags="revolver,flaredBarrel,Heavy,doubleBarrel,shotgun" modifier_tags="barrelAttachment" type="attachment">
+		<item_modifier name="modOilFilterSuppressor" installable_tags="gun,PipeGun" blocked_tags="revolver,flaredBarrel,Heavy,doubleBarrel,shotgun,PPLeg,noOF" modifier_tags="barrelAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="CustomIcon" value="modOilFilterSuppressor"/>
 			<property name="DescriptionKey" value="modOilFilterSuppressorDesc"/>
 			<property name="HandMeshfile" value="#@modfolder:Resources/Attachments.unity3d?OilFilterSuppressor"/>
 			<property name="DropMeshfile" value="#@modfolder:Resources/Attachments.unity3d?OilFilterSuppressor"/>
-			
 			<item_property_overrides name="*">
 				<property name="Sound_start" value="silenced_fire"/>
 				<property name="Sound_end" value=""/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gunPipePistol">
 				<property name="Sound_start" value="pistol_s_fire"/>
 				<property name="BarrelOffset" value="0,0,0"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gunPipeRifle">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunPipeRifle_Legendary">
 				<property name="Sound_start" value="sniperrifle_s_fire"/>
 				<property name="BarrelOffset" value="0,0,0"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gun10mmPistol">
 				<property name="Sound_start" value="pistol_s_fire"/>
-				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelOffset" value="0,0.045,0.188"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gun10mmRev">
 				<property name="Sound_start" value="pistol_s_fire"/>
-				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelOffset" value="0,0.059,0.165"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gun10mmSMG">
 				<property name="Sound_start" value="mp5_s_fire"/>
 				<property name="Sound_end" value="silencefiller"/>
 				<property name="Sound_loop" value="mp5_s_fire"/>
-				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelOffset" value="0,0.095,0.265"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gunMaria">
 				<property name="Sound_start" value="pistol_s_fire"/>
-				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelOffset" value="0,0.07,0.105"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-						
-			<item_property_overrides name="gunPistol">
+			<item_property_overrides name="gunHandgunT1Pistol">
 				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="BarrelOffset" value="0,0.063,0.285"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT3DesertVulture">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
 				<property name="BarrelOffset" value="0,0.073,0.16"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-
-			<item_property_overrides name="gunSMG5">
+			<item_property_overrides name="gunHandgunT3SMG5">
 				<property name="Sound_start" value="mp5_s_fire"/>
 				<property name="Sound_end" value="silencefiller"/>
 				<property name="Sound_loop" value="mp5_s_fire"/>
 				<property name="BarrelOffset" value="0.0,0.061,0.168"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
-			<item_property_overrides name="gunHuntingRifle">
+			<item_property_overrides name="gunRifleT1HuntingRifle">
 				<property name="Sound_start" value="hunting_rifle_s_fire"/>
 				<property name="BarrelOffset" value="0,0.055,0.71"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-
-			<item_property_overrides name="gunMR10">
+			<item_property_overrides name="gunRifleT2MarksmanRifle">
 				<property name="Sound_start" value="sniperrifle_s_fire"/>
 				<property name="BarrelOffset" value="0,0.04,0.35"/>
 				<property name="BarrelScale" value="0.88,0.88,0.88"/>
 			</item_property_overrides>
-			
-			<item_property_overrides name="gunAK47">
+			<item_property_overrides name="gunRifleT3SniperRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,0.038,0.68"/>
+				<property name="BarrelScale" value="0.88,0.88,0.88"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT1AK47">
 				<property name="Sound_start" value="ak47_s_fire"/>
 				<property name="Sound_end" value="silencefiller"/>
 				<property name="Sound_loop" value="ak47_s_fire"/>
 				<property name="BarrelOffset" value="0,0.04,0.48"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
-			
-			<item_property_overrides name="gunM60">
+			<item_property_overrides name="gunMGT2TacticalAR">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="-0.0,.065,.437"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT3M60">
 				<property name="Sound_start" value="m60_s_fire"/>
 				<property name="Sound_end" value="silencefiller"/>
 				<property name="Sound_loop" value="m60_s_fire"/>
-				<property name="BarrelOffset" value="0,.077,.64"/>
-			</item_property_overrides>			
-
+				<property name="BarrelOffset" value="0,.058,.47"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunBAR1">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,.078,.71"/>
+				<property name="BarrelScale" value="1.3,1.3,1.3"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunServiceRifle">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="-0.0,.045,.54"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
 			<effect_group tiered="false">
 				<passive_effect name="DegradationPerUse" operation="perc_add" value=".05"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.05">
@@ -400,28 +365,25 @@
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
 		<item_modifier name="modLargeMag" installable_tags="PipeGun" modifier_tags="magazine" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="CustomIcon" value="modLargeMag"/>
 			<property name="DescriptionKey" value="modLargeMagDesc"/>
 			<!--Adds increased Ammunition-->
 			<effect_group tiered="false">
-			<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
-			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?Mag_Large_Rifle.prefab" parent_transform="Attachments/Mag"/>
+				<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?Mag_Large_Rifle.prefab" parent_transform="Mesh/mag_small"/>
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
-		<item_modifier name="modLongRifleBarrel" installable_tags="LongBarrel" blocked_tags="flaredBarrel" modifier_tags="newbarrelAttachment" type="attachment">
+		<item_modifier name="modLongRifleBarrel" installable_tags="LongBarrel" blocked_tags="flaredBarrel,PipeLeg" modifier_tags="newbarrelAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="CustomIcon" value="modLongRifleBarrel"/>
 			<property name="DescriptionKey" value="modLongRifleBarrelDesc"/>
 			<item_property_overrides name="*">
 				<property name="HandMeshfile" value="#@modfolder:Resources/PipeRifle.unity3d?Pipe_Rifle_Long.prefab"/>
 			</item_property_overrides>
-
-			<effect_group tiered="false" name="Base Effects"> 
+			<effect_group tiered="false" name="Base Effects">
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
 				<passive_effect name="MaxRange" operation="base_set" value="130"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value=".4"/>
@@ -429,11 +391,9 @@
 				<passive_effect name="SpreadDegreesVertical" operation="perc_set" value="2"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="perc_set" value="2"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.6"/>
-				
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-			
 		<item_modifier name="modShotgunCylinderMag" installable_tags="none" modifier_tags="magazine" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="CustomIcon" value="modShotgunCylinderMag"/>
@@ -445,125 +405,143 @@
 				<property name="HandMeshfile" value="#@modfolder:Resources/PipeShotgunEM.unity3d?Pipe_Shotgun_EMLB"/>
 			</item_property_overrides>-->
 			<effect_group tiered="false">
-			<passive_effect name="MagazineSize" operation="perc_add" value="3"/>
-			<passive_effect name="RoundsPerMinute" operation="base_set" value="45"/>
-			<passive_effect name="WeaponHandling" operation="perc_subtract" value="0.1"/>
-			
+				<passive_effect name="MagazineSize" operation="perc_add" value="3"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="45"/>
+				<passive_effect name="WeaponHandling" operation="perc_subtract" value="0.1"/>
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
 		<item_modifier name="modLongShotgunBarrel" installable_tags="PipeShotgun" blocked_tags="flaredBarrel" modifier_tags="newbarrelAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="CustomIcon" value="modLongShotgunBarrel"/>
 			<property name="DescriptionKey" value="modLongShotgunBarrelDesc"/>
-			
 			<item_property_overrides name="gunPipeShotgunSMSB">
 				<property name="HandMeshfile" value="#@modfolder:Resources/PipeShotgun.unity3d?Pipe_Shotgun_SMLB"/>
 				<property name="ScopeCameraOffset" value="0,-0.026,0"/>
 			</item_property_overrides>
-			
 			<item_property_overrides name="gunPipeShotgunEMSB">
 				<property name="HandMeshfile" value="#@modfolder:Resources/PipeShotgunEM.unity3d?Pipe_Shotgun_EMLB"/>
 				<property name="ScopeCameraOffset" value="0,-0.026,0"/>
 			</item_property_overrides>
-			
-			<effect_group tiered="false" name="Base Effects"> 
+			<effect_group tiered="false" name="Base Effects">
 				<passive_effect name="MaxRange" operation="base_add" value="10"/>
 				<passive_effect name="DamageFalloffRange" operation="base_add" value="3"/>
 				<passive_effect name="DismemberChance" operation="perc_add" value=".25" tags="leg,arm"/>
 				<passive_effect name="SpreadDegreesVertical" operation="perc_subtract" value=".22"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="perc_subtract" value=".22"/>
-				
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
-		<item_modifier name="modFlashlight" installable_tags="PipeShotgun,PipeGun,LAR,LegPipeShotgun,gun,sideAttachments,laser" modifier_tags="sideAttachment" type="attachment">
+		<item_modifier name="modFlashlight" installable_tags="PipeShotgun,PipeGun,LAR,LegPipeShotgun,gun,sideAttachments,laser,turretMelee" modifier_tags="sideAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="LightValue" value="0.75"/>
-			<property name="CustomIcon" value="meleeToolFlashlight02"/><property name="CustomIconTint" value="4b844b"/>			
-			<item_property_overrides name="gunPistol">
-				<property name="SideOffset" value="0,0.025,0.085"/>
+			<property name="CustomIcon" value="meleeToolFlashlight02"/>
+			<property name="CustomIconTint" value="4b844b"/>
+			<item_property_overrides name="gunHandgunT1Pistol">
+				<property name="SideOffset" value="0,0.017,0.245"/>
 				<property name="SideRotation" value="0,0,90"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gun44Magnum">
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT2Magnum44">
 				<property name="SideOffset" value="-0.02,0.09,0.15"/>
 				<property name="SideRotation" value="0,0,0"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunSMG5">
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT3DesertVulture">
+				<property name="SideOffset" value="0,0.035,0.1"/>
+				<property name="SideRotation" value="0,0,90"/>
+				<property name="SideScale" value=".5,.5,.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT3SMG5">
 				<property name="SideOffset" value="0,0.025,0.08"/>
 				<property name="SideRotation" value="0,0,90"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunBlunderbuss">
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT0Blunderbuss">
 				<property name="SideOffset" value="0,-0.025,0.23"/>
 				<property name="SideRotation" value="0,0,90"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunDoubleBarrelShotgun">
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT1DoubleBarrel">
 				<property name="SideOffset" value="0,0.01,0.32"/>
 				<property name="SideRotation" value="-3,0,90"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunPumpShotgun">
-				<property name="SideOffset" value="-0.018,0.035,0.35"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT2PumpShotgun">
+				<property name="SideOffset" value="-0.018,0.035,0.5"/>
 				<property name="SideRotation" value="0,0,0"/>
 				<property name="SideScale" value=".9,.9,.9"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunHuntingRifle">
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT3AutoShotgun">
+				<property name="SideOffset" value="-0.018,0.035,0.5"/>
+				<property name="SideRotation" value="0,0,0"/>
+				<property name="SideScale" value=".9,.9,.9"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT1HuntingRifle">
 				<property name="SideOffset" value="-0.018,0.055,0.6"/>
 				<property name="SideRotation" value="0,0,0"/>
 				<property name="SideScale" value=".9,.9,.9"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunMR10">
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT2MarksmanRifle">
 				<property name="SideOffset" value="-0.033,0.045,0.2"/>
 				<property name="SideRotation" value="0,0,0"/>
 				<property name="SideScale" value=".9,.9,.9"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunAK47">
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT3SniperRifle">
+				<property name="SideOffset" value="-0.02,0.055,0.45"/>
+				<property name="SideRotation" value="0,0,0"/>
+				<property name="SideScale" value=".9,.9,.9"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT1AK47">
 				<property name="SideOffset" value="-0.02,0.0382,0.3519"/>
 				<property name="SideRotation" value="0,0,0"/>
 				<property name="SideScale" value="1,1,1"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunM60">
-				<property name="SideOffset" value="-0.025,0.0382,0.5"/>
-				<property name="SideRotation" value="0,0,-90"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT2TacticalAR">
+				<property name="SideOffset" value="-0.027,0.0734,0.367"/>
+				<property name="SideRotation" value="0,0,0"/>
 				<property name="SideScale" value="1,1,1"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunCrossbowIron">
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT3M60">
+				<property name="SideOffset" value="-0.021,0.0,0.42"/>
+				<property name="SideRotation" value="0,0,0"/>
+				<property name="SideScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunBowT1IronCrossbow">
 				<property name="SideOffset" value="-0.03,0.041,0.33"/>
 				<property name="SideScale" value="1,1,1"/>
 				<property name="SideRotation" value="0,0,0"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunCrossbowCompound">
+			</item_property_overrides>
+			<item_property_overrides name="gunBowT3CompoundCrossbow">
 				<property name="SideOffset" value="-0.023,0.05,0.23"/>
 				<property name="SideScale" value="1,1,1"/>
 			</item_property_overrides>
 			<item_property_overrides name="gunLaserPistol">
 				<property name="SideOffset" value="-0.042,0.054,0.018"/>
 				<property name="SideScale" value="1,1,1"/>
-			</item_property_overrides>			
+			</item_property_overrides>
+			<item_property_overrides name="gunPewPew">
+				<property name="SideOffset" value="-0.042,0.054,0.018"/>
+				<property name="SideScale" value="1,1,1"/>
+			</item_property_overrides>
 			<item_property_overrides name="gunLaserRifle">
 				<property name="SideOffset" value="-0.0443,0.072,0.37"/>
 				<property name="SideScale" value="1,1,1"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunPewPew">
-				<property name="SideOffset" value="-0.042,0.055,0.014"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunAERPrototype">
+				<property name="SideOffset" value="-0.0443,0.072,0.37"/>
 				<property name="SideScale" value="1,1,1"/>
-			</item_property_overrides>		
+			</item_property_overrides>
 			<item_property_overrides name="gun10mmPistol">
 				<property name="SideOffset" value="-.01,0.0,0.01"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
+			</item_property_overrides>
 			<item_property_overrides name="gun10mmRev">
 				<property name="SideOffset" value="-0.025,0.035,0.1"/>
 				<property name="SideScale" value=".5,.5,.5"/>
-			</item_property_overrides>			
+			</item_property_overrides>
 			<item_property_overrides name="gun10mmSMG">
-				<property name="SideOffset" value="0,0.0,-0.00"/>
+				<property name="SideOffset" value="-0.036,0.11,0.16"/>
 				<property name="SideScale" value=".5,.5,.5"/>
 			</item_property_overrides>
 			<item_property_overrides name="gunCombatShotgun">
@@ -578,11 +556,36 @@
 				<property name="SideOffset" value="0,0,0"/>
 				<property name="SideScale" value=".5,.5,.5"/>
 			</item_property_overrides>
+			<item_property_overrides name="gunBAR1">
+				<property name="SideOffset" value="-0.02,0.08,0.6"/>
+				<property name="SideScale" value=".5,.5,.5"/>
+			</item_property_overrides>
 			<item_property_overrides name="gunLaserShotgun">
 				<property name="SideOffset" value="-0.0253,0.001,0.575"/>
 				<property name="SideScale" value="1,1,1"/>
 			</item_property_overrides>
+			<item_property_overrides name="gunTripleBarrelShotgun">
+				<property name="SideOffset" value="0,0,0"/>
+				<property name="SideRotation" value="0,0,90"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMaria">
+				<property name="SideOffset" value="0,0.0245,0.08"/>
+				<property name="SideRotation" value="0,0,90"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunLAR">
+				<property name="SideOffset" value="-0.02,0.025,0.65"/>
+				<property name="SideScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunLAR_Legendary">
+				<property name="SideOffset" value="-0.02,0.025,0.65"/>
+				<property name="SideScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHeavySniper">
+				<property name="SideOffset" value="-0.04,0.048,0.7"/>
+				<property name="SideScale" value="1,1,1"/>
+			</item_property_overrides>
 			<effect_group tiered="false">
+				<requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?modFlashlight" parent_transform="Attachments/Side"/>
 				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Side" transform_path="lightSource"/>
 				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Side" transform_path="lightSource"/>
@@ -590,17 +593,17 @@
 			</effect_group>
 			<effect_group tiered="false" name="internal attachment prefab (A19)">
 			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
-				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="modflashlight"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="flashlight"/>
 				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
 				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
 				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
 		</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
 		<item_modifier name="modOverchargedCapacitor" installable_tags="lasermag" modifier_tags="magazine" type="attachment">
 			<property name="UnlockedBy" value="modOverchargedCapacitorSchematic"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="DescriptionKey" value="modOverchargedCapacitorDesc"/>
 			<effect_group tiered="false">
@@ -610,20 +613,28 @@
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
-		<item_modifier name="modLaserSplitter" installable_tags="laserbarrel" modifier_tags="barrel" type="attachment">	
+		<item_modifier name="modLaserSplitter" installable_tags="laserbarrel" modifier_tags="barrel" type="attachment">
 			<property name="UnlockedBy" value="modLaserSplitterSchematic"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>			
-			<property name="DescriptionKey" value="modLaserSplitterDesc"/>			
-			<item_property_overrides name="gunLaserPistol">				
-				<property name="BarrelOffset" value="0,0.0043,-0.0273"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="DescriptionKey" value="modLaserSplitterDesc"/>
+			<item_property_overrides name="gunLaserPistol">
+				<property name="BarrelOffset" value="-0.0,0.065,0.0865"/>
 				<property name="BarrelScale" value="1,1,1"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunLaserRifle">				
+			</item_property_overrides>
+			<item_property_overrides name="gunLaserRifle">
 				<property name="BarrelOffset" value="0.001,0.0735,0.405"/>
 				<property name="BarrelScale" value="1,1,1"/>
-			</item_property_overrides>			
+			</item_property_overrides>
+			<item_property_overrides name="gunPewPew">
+				<property name="BarrelOffset" value="-0.0,0.065,0.0865"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunLaserRifle">
+				<property name="BarrelOffset" value="0.001,0.0735,0.405"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
 			<effect_group tiered="false">
 				<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 				<passive_effect name="DegradationPerUse" operation="perc_add" value=".1"/>
@@ -631,27 +642,31 @@
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".5"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="1"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="2"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>				
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="3"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".8"/>
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/LaserAttachments.unity3d?modLaserSplitter" parent_transform="Attachments/Barrel"/>
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
-		<item_modifier name="modLaserFocuser" installable_tags="laserbarrel" modifier_tags="barrel" type="attachment">	
+		<item_modifier name="modLaserFocuser" installable_tags="laserbarrel" modifier_tags="barrel" type="attachment">
 			<property name="UnlockedBy" value="modLaserFocuserSchematic"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="DescriptionKey" value="modLaserFocuserDesc"/>			
-			<item_property_overrides name="gunLaserPistol">				
-				<property name="BarrelOffset" value="0,0.01,0.1"/>
+			<property name="DescriptionKey" value="modLaserFocuserDesc"/>
+			<item_property_overrides name="gunLaserPistol">
+				<property name="BarrelOffset" value="-0.0,0.065,0.0865"/>
 				<property name="BarrelScale" value="1,1,1"/>
-			</item_property_overrides>			
-			<item_property_overrides name="gunLaserRifle">				
+			</item_property_overrides>
+			<item_property_overrides name="gunLaserRifle">
 				<property name="BarrelOffset" value="0.001,0.0735,0.405"/>
 				<property name="BarrelScale" value="1,1,1"/>
-			</item_property_overrides>			
+			</item_property_overrides>
+			<item_property_overrides name="gunPewPew">
+				<property name="BarrelOffset" value="-0.0,0.065,0.0865"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
 			<effect_group tiered="false">
 				<passive_effect name="MaxRange" operation="base_add" value="50"/>
 				<passive_effect name="DegradationPerUse" operation="perc_add" value=".1"/>
@@ -661,10 +676,10 @@
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		
 		<item_modifier name="modLaserScope" installable_tags="laserscope" modifier_tags="scope" blocked_tags="shotgun" type="attachment">
 			<property name="UnlockedBy" value="modLaserScopeSchematic"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="DescriptionKey" value="modLaserScopeDesc"/>
 			<item_property_overrides name="*">
@@ -677,7 +692,12 @@
 				<property name="ScopeOffset" value="0,0.137,.0245"/>
 				<property name="ScopeScale" value="1,1,1"/>
 				<property name="ScopeCameraOffset" value="0,-0.022,0"/>
-			</item_property_overrides>			
+			</item_property_overrides>
+			<item_property_overrides name="gunAERPrototype">
+				<property name="ScopeOffset" value="0,0.137,.0245"/>
+				<property name="ScopeScale" value="1,1,1"/>
+				<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+			</item_property_overrides>
 			<effect_group tiered="false">
 				<passive_effect name="SpreadMultiplierAiming" operation="perc_subtract" value="0.35"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
@@ -687,158 +707,153 @@
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/LaserAttachments.unity3d?modLaserScope" parent_transform="Attachments/Scope"/>
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
-		</item_modifier>	
-		
-	<!-- Power Armor Mods -->
-	
+		</item_modifier>
+		<!-- Power Armor Mods -->
 		<item_modifier name="modPowerArmorHelmetRadar" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffPAhelmetRadar"/>
 				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffPAhelmetRadar"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorHelmetRadarMK2" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffPAhelmetRadarMK2"/>
 				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffPAhelmetRadarMK2"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorHelmetScuba" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffPAhelmetScuba"/>
 				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffPAhelmetScuba"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorArmsBlockBuster" installable_tags="powerarmorArms" modifier_tags="PAarms" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<passive_effect name="BlockDamage" operation="perc_add" value="10" tags="melee"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorArmsMelee" installable_tags="powerarmorArms" modifier_tags="PAarms" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
-					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire">
-						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
-					</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire">
+					<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+				</triggered_effect>
 			</effect_group>
 			<effect_group tiered="false" name="Power Attack">
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
-					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire">
-						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
-					</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire">
+					<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+				</triggered_effect>
 			</effect_group>
 			<effect_group tiered="false" name="Always extend bleeding">
 				<requirement name="HasBuff" target="other" buff="buffInjuryBleeding"/>
-					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
-						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
-					</triggered_effect>
-					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
-						<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
-					</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+					<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+					<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+				</triggered_effect>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorChestPlating" installable_tags="powerarmorChest" modifier_tags="PAchest" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<passive_effect name="HealthLoss" operation="perc_subtract" value=".25"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorChestEmergencyProto" installable_tags="powerarmorChest" modifier_tags="PAchest" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">		
+			<effect_group tiered="false">
 				<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value="0.5"/>
-				<passive_effect name="HealthChangeOT" operation="base_add" value=".12"/>					
+				<passive_effect name="HealthChangeOT" operation="base_add" value=".12"/>
 				<passive_effect name="HealthMaxBlockage" operation="base_add" value=".06"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorLegsShocks" installable_tags="powerarmorLegs" modifier_tags="PAlegs" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<passive_effect name="CarryCapacity" operation="base_add" value="300"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorLegsJumpBoost" installable_tags="powerarmorLegs" modifier_tags="PAlegs" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<passive_effect name="JumpStrength" operation="perc_add" value=".5"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorBootsGyros" installable_tags="powerarmorBoots" modifier_tags="PAboots" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".1"/>
 			</effect_group>
 		</item_modifier>
-		
 		<item_modifier name="modPowerArmorBootsDampener" installable_tags="powerarmorBoots" modifier_tags="PAboots" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
-			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<effect_group tiered="false">				
+			<effect_group tiered="false">
 				<passive_effect name="FallDamageReduction" operation="perc_add" value=".75"/>
 			</effect_group>
 		</item_modifier>
-		
-		
-		
-	</append>	
-	
-</configs>			
+	</append>
+</configs>

@@ -1,367 +1,516 @@
 <configs>
-<append xpath="/Sounds">
-
-	<SoundDataNode name="smash"> <AudioSource name="Sounds/AudioSource_Impact"/>
-		<Noise ID="5" range="10" volume="150" time="3" muffled_when_crouched="0.5"/>
-		<AudioClip ClipName="#@modfolder:Resources/sounds1.unity3d?smash1"/>
-		<LocalCrouchVolumeScale value="0.5"/> 
-		<CrouchNoiseScale value="0.5"/>
-		<NoiseScale value="1"/> 
-		<MaxVoices value="10"/> 
-		<MaxRepeatRate value="0.01"/>
-	</SoundDataNode>
-
-	<SoundDataNode name="whistle"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<append xpath="/Sounds">
+		<SoundDataNode name="smash">
+			<AudioSource name="Sounds/AudioSource_Impact"/>
+			<Noise ID="5" range="10" volume="150" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/sounds1.unity3d?smash1"/>
+			<LocalCrouchVolumeScale value="0.5"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="whistle">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="1" range="5" volume="5" time="3" heat_map_strength="0.005" heat_map_time="300"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?trainwhistle1"/>
-			<LocalCrouchVolumeScale value="0.5"/> 
+			<LocalCrouchVolumeScale value="0.5"/>
 			<CrouchNoiseScale value="0.5"/>
-			<NoiseScale value="1"/> 
-			<MaxVoices value="10"/> 
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
 			<MaxRepeatRate value="0.001"/>
-	</SoundDataNode>
-
-	<SoundDataNode name="PipeShotgunSMSBReload"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		</SoundDataNode>
+		<SoundDataNode name="PipeShotgunSMSBReload">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="2" range="7" volume="11" time="3" heat_map_strength="0.3" heat_map_time="120"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?PipeShotgunSMSBReload"/>
-			<LocalCrouchVolumeScale value="0.5"/> 
+			<LocalCrouchVolumeScale value="0.5"/>
 			<CrouchNoiseScale value="0.5"/>
-			<NoiseScale value="1"/> 
-			<MaxVoices value="10"/> 
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
 			<MaxRepeatRate value="0.001"/>
-	</SoundDataNode>
-	
-	<SoundDataNode name="LAR_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		</SoundDataNode>
+		<SoundDataNode name="LAR_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?LARfire"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="laser_shotgun_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="m79_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?m79f1"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?m79f2"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?m79f3"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="MGfire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?MGfire"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="50"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="MGloop">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?MGloop"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="laser_shotgun_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?LaserShotgun_fire"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="laser_rifle_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="laser_rifle_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?laser_pistol"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="laser_pistol_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="laser_pistol_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?laser_rifle"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="plasma_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="plasma_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?plasma"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="plasma_pistol_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="plasma_pistol_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?plasma_pistol"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="plasma_rifle_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="plasma_rifle_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?plasma_rifle"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="blaster_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="blaster_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Energy_sounds.unity3d?blaster"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="cryo_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="cryo_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?cryo_fire"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="10mmRev_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="10mmRev_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?10mmRev"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="SupaSledge"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="SupaSledge">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?SupaSledge"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="m16_fire"> 
-		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="m16_fire">
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?m16_fire1"/>
-			<LocalCrouchVolumeScale value="1"/> 
-			<CrouchNoiseScale value="1"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="30"/> 
-			<MaxVoicesPerEntity value="10"/> 
-			<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="VDopen"> 
-		<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<LocalCrouchVolumeScale value="1"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="30"/>
+			<MaxVoicesPerEntity value="10"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+		<SoundDataNode name="VDopen">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
 			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
 			<AudioClip ClipName="#@modfolder:Resources/VaultDoor1.unity3d?VDopen"/>
-			<LocalCrouchVolumeScale value="0.5"/> 
-			<CrouchNoiseScale value="0.5"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="10"/> 
-			<MaxRepeatRate value="0.01"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="VDclose"> 
-		<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<LocalCrouchVolumeScale value="0.5"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="VDclose">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
 			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
 			<AudioClip ClipName="#@modfolder:Resources/VaultDoor1.unity3d?VDclose"/>
-			<LocalCrouchVolumeScale value="0.5"/> 
-			<CrouchNoiseScale value="0.5"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="10"/> 
-			<MaxRepeatRate value="0.01"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="VMDopen_close"> 
-		<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<LocalCrouchVolumeScale value="0.5"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="VMDopen_close">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
 			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
 			<AudioClip ClipName="#@modfolder:Resources/VaultDoor1.unity3d?VMDopen_close"/>
-			<LocalCrouchVolumeScale value="0.5"/> 
-			<CrouchNoiseScale value="0.5"/> 
-			<NoiseScale value="1"/> 
-			<MaxVoices value="10"/> 
-			<MaxRepeatRate value="0.01"/> 
-	</SoundDataNode>
-	
-	<SoundDataNode name="MutantAlert"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Malert1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Malert2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Malert3"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="MutantAttack"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack5"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack6"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack7"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack8"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack9"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack10"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack11"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="MutantDeath"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath5"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="MutantHurt"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt5"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt6"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt7"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt8"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="MutantIdle"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle5"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle6"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="BehemothAlert"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Balert1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Balert2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Balert3"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="BehemothAttack"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack4"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="BehemothDeath"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bdeath1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bdeath2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath2"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="BehemothHurt"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit5"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="BehemothIdle"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bidle1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bidle2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle5"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle6"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="BehemothSense"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bsense1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bsense2"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="GhoulAlert"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Galert1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Galert2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Galert3"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="GhoulAttack"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack5"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="GhoulDeath"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath5"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="GhoulHurt"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt4"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt5"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-		
-	<SoundDataNode name="GhoulIdle"> <AudioSource name="Sounds/AudioSource_VO"/>
-		<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle1"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle2"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle3"/>
-		<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle4"/>
-		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
-
-</append>
+			<LocalCrouchVolumeScale value="0.5"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="MutantAlert">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Malert1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Malert2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Malert3"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="MutantAttack">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack5"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack6"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack7"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack8"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack9"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack10"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mattack11"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="MutantDeath">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath5"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="MutantHurt">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt5"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt6"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt7"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mhurt8"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="MutantIdle">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle5"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle6"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="BehemothAlert">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Balert1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Balert2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Balert3"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="BehemothAttack">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Battack4"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="BehemothDeath">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bdeath1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bdeath2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Mdeath2"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="BehemothHurt">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bhit5"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="BehemothIdle">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bidle1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bidle2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle5"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Midle6"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="BehemothSense">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bsense1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Bsense2"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="GhoulAlert">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Galert1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Galert2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Galert3"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="GhoulAttack">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gattack5"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="GhoulDeath">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gdeath5"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="GhoulHurt">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt4"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Ghurt5"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="GhoulIdle">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle1"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle2"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle3"/>
+			<AudioClip ClipName="#@modfolder:Resources/GMsounds.unity3d?Gidle4"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+		<SoundDataNode name="VB_horn">
+			<AudioSource name="Sounds/AudioSource_SmallHorn"/>
+			<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+			<AudioClip ClipName="#@modfolder:Resources/VB1.unity3d?VB_horn"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="1"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="3"/>
+			<MaxEntities name="6"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="VB_start">
+			<AudioSource name="Sounds/AudioSource_Vehicle"/>
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/VB1.unity3d?VB_start"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="VB_stop">
+			<AudioSource name="Sounds/AudioSource_Vehicle"/>
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/VB1.unity3d?VB_stop"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="VB_flying">
+			<AudioSource name="Sounds/AudioSource_Vehicle"/>
+			<AudioClip ClipName="#@modfolder:Resources/VB1.unity3d?VB_flying" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="VB_flying2">
+			<AudioSource name="Sounds/AudioSource_Vehicle"/>
+			<AudioClip ClipName="#@modfolder:Resources/VB1.unity3d?VB_flying" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+	</append>
 </configs>

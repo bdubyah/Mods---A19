@@ -1,6 +1,5 @@
 <config>
-
-	<append xpath="/quests/quest[@id='challenge_killthewabbit']/requirement[@id='requirementGroupShotgun']" >
+	<append xpath="/quests/quest[@id='challenge_killthewabbit']/requirement[@id='requirementGroupShotgun']">
 		<requirement type="Holding" id="gunCombatShotgun"/>
 		<requirement type="Holding" id="gunPipeShotgunSMSB"/>
 		<requirement type="Holding" id="gunPipeShotgunEMSB"/>
@@ -8,67 +7,51 @@
 		<requirement type="Holding" id="gunPipeShotgunSMSB_Legendary"/>
 		<requirement type="Holding" id="gunLeFusilTerribles"/>
 	</append>
-  
 	<append xpath="/quests">
-
-			<quest id="questPewPewstart">
-				
-				<property name="offer" value="You have collected enough Star Bottle Caps to redeem your reward!" />
-				<property name="name" value="The Legend of the Star" />
-				<property name="subtitle" value="The Legend of the Star" />
-				<property name="description" value="Head to the trader to collect your prize!" />
-				<property name="icon" value="ui_game_symbol_map_trader"/>
-				<property name="category_key" value="challenge"/>
-				<property name="difficulty" value="medium"/>
-				<property name="shareable" value="false"/>
-				<property name="repeatable" value="false"/>
-				
-				<objective type="Goto" id="trader" value="5" phase="1"/>
-
-				<objective type="InteractWithNPC">
-					<property name="phase" value="2"/>
-				</objective>
-
-				<reward type="Exp" value="500"/>
-				<reward type="Item" id="questoldMap">
-					
-				</reward>
-			</quest>
-			
-			<quest id="questPewPewfind">	
-				
-				<property name="offer" value="Someone ran off with the reward, but I heard where they should be headed. Here's a map of the area, hopefully you can find where they hid it. I'd keep my eyes peeled if I were you." />
-				<property name="name" value="A Valuable Lesson" />
-				<property name="subtitle" value="A Valuable Lesson" />
-				<property name="description" value="I guess I'd better get to hunting for their stash so I can get my reward." />
-				<property name="icon" value="ui_game_symbol_quest"/>
-				<property name="repeatable" value="false"/>
-				<property name="category_key" value="challenge"/>
-				<property name="difficulty" value="medium"/>				
-				<property name="statement_key" value="quest_fetch_clear_statement"/>
-				<property name="response_key" value="quest_fetch_clear_response"/>
-				
-				<objective type="RandomGoto" value="1100-1200" phase="1">
-					<property name="completion_distance" value="30"/>
-					<property name="nav_object" value="quest" />
-				</objective>				
-
-				<objective type="TreasureChest" phase="2">
-					<property name="block" value="cntPewPewLoot"/>
-					<property name="distance" value="15-30"/>
-					<property name="default_radius" value="12"/>
-					<property name="nav_object" value="treasure" />
-					<property name="direct_nav_object" value="treasure_direct" />
-					<property name="blocks_per_reduction" value="15" />
-					<property name="radius_reduction_sound" value="ui_radius_shrink" />
-				</objective>
-				
-				<action type="SpawnEnemy" id="humanRaider5Club,humanRaider4Club,humanRaider5SMG,humanRaider3Club,humanRaider2Club,humanRaider1Club" value="5-6" phase="2"/>
-
-				<reward type="Exp" value="5000"/>				
-				
-			</quest>
-			
-			
+		<quest id="questPewPewstart">
+			<property name="offer" value="You have collected enough Star Bottle Caps to redeem your reward!"/>
+			<property name="name" value="The Legend of the Star"/>
+			<property name="subtitle" value="The Legend of the Star"/>
+			<property name="description" value="Head to the trader to collect your prize!"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="repeatable" value="false"/>
+			<objective type="Goto" id="trader" value="5" phase="1"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="Item" id="questoldMap">
+			</reward>
+		</quest>
+		<quest id="questPewPewfind">
+			<property name="offer" value="Someone ran off with the reward, but I heard where they should be headed. Here's a map of the area, hopefully you can find where they hid it. I'd keep my eyes peeled if I were you."/>
+			<property name="name" value="A Valuable Lesson"/>
+			<property name="subtitle" value="A Valuable Lesson"/>
+			<property name="description" value="I guess I'd better get to hunting for their stash so I can get my reward."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="statement_key" value="quest_fetch_clear_statement"/>
+			<property name="response_key" value="quest_fetch_clear_response"/>
+			<objective type="RandomGoto" value="1100-1200" phase="1">
+				<property name="completion_distance" value="30"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="TreasureChest" phase="2">
+				<property name="block" value="cntPewPewLoot"/>
+				<property name="distance" value="15-30"/>
+				<property name="default_radius" value="12"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="15"/>
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+			</objective>
+			<action type="SpawnEnemy" id="humanRaider5Club,humanRaider4Club,humanRaider5SMG,humanRaider3Club,humanRaider2Club,humanRaider1Club" value="5-6" phase="2"/>
+			<reward type="Exp" value="5000"/>
+		</quest>
 	</append>
 </config>

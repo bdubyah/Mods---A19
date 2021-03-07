@@ -1,37 +1,28 @@
 <configs>
-	
 	<append xpath="/nav_object_classes">
-	
 		<nav_object_class name="PAperception">
-		<property name="requirement_type" value="CVar" />
-		<property name="requirement_name" value="$PAperception" />
-			
+			<property name="requirement_type" value="CVar"/>
+			<property name="requirement_name" value="$PAperception"/>
 			<compass_settings>
 				<property name="sprite_name" value="ui_game_symbol_enemy_dot"/>
 				<property name="min_distance" value="0"/>
 				<property name="max_distance" value="20"/>
 				<property name="color" value="255,0,0,255"/>
 				<property name="has_pulse" value="true"/>
-				<property name="icon_clamped" value="false" />
+				<property name="icon_clamped" value="false"/>
 			</compass_settings>
-
 		</nav_object_class>
-		
 		<nav_object_class name="PAperceptionMK2">
-		<property name="requirement_type" value="CVar" />
-		<property name="requirement_name" value="$PAperceptionMK2" />
-			
+			<property name="requirement_type" value="CVar"/>
+			<property name="requirement_name" value="$PAperceptionMK2"/>
 			<compass_settings>
 				<property name="sprite_name" value="ui_game_symbol_enemy_dot"/>
 				<property name="min_distance" value="0"/>
 				<property name="max_distance" value="50"/>
 				<property name="color" value="255,0,0,255"/>
 				<property name="has_pulse" value="true"/>
-				<property name="icon_clamped" value="false" />
+				<property name="icon_clamped" value="false"/>
 			</compass_settings>
-
 		</nav_object_class>
-		
 	</append>
-	
 </configs>
