@@ -1,10 +1,11 @@
 <configs>
+	<!-- Commenting out as it causes errors if CP is installed as well 
 	<append xpath="//entity_class[@name='zombieTemplateMale']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
 	<append xpath="//entity_class[@name='zombieTemplateMale']/property[@value='SetAsTargetIfHurt']/@data">,EntityAnimalStag,EntityBandit,EntitySurvivor</append>
 	<append xpath="//entity_class[@name='zombieTemplateMale']/property[@value='SetNearestEntityAsTarget']/@data">,EntityEnemyAnimal,0,0,EntityAnimalStag,0,0,EntityBandit,0,0,EntitySurvivor,0,0</append>
 	<append xpath="//entity_class[@name='zombieSpider']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
 	<append xpath="//entity_class[@name='zombieFatCop']/property[@value='ApproachAndAttackTarget']/@data">,0,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
-	<append xpath="//entity_class[@name='zombieDemolition']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append>
+	<append xpath="//entity_class[@name='zombieDemolition']/property[@value='ApproachAndAttackTarget']/@data">,EntityAnimalStag,0,EntityBandit,0,EntitySurvivor,0</append> -->
 	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
 	<append xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
 	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
@@ -19,9 +20,8 @@
 	<append xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
 	<append xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
 	<append xpath="/entity_classes/entity_class[@name='animalStag']/property[@name='NavObject']/@value">,PAperception,PAperceptionMK2</append>
-	<!-- Adds a buff to the traders in POIs so they kill bandits and survivors before the NRE when entering the trader protected zone  -->
 	<append xpath="/entity_classes/entity_class[@name='npcTraderTemplate']">
-		<effect_group name="Backaway or Die bandit">
+		<effect_group name="NREstopper">
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffTraderTrigger_b"/>
 		</effect_group>
 	</append>
@@ -41,9 +41,7 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="HasRagdoll" value="true"/>
 			<property name="Prefab" value="NPC"/>
-			<!--<property name="Class" value="EntityEnemyAnimal"/> -->
 			<property name="Class" value="EntityBandit"/>
-			<!-- This class NREs when inside a trader protection area, so POI traders have a buff that will kill them if they get close  -->
 			<property name="Parent" value="Enemies"/>
 			<property name="Mass" value="150"/>
 			<property name="Weight" value="70"/>
@@ -90,7 +88,7 @@
 			<!-- A19  -->
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="ApproachDistraction"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityEnemyAnimal,0"/>
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityEnemyAnimal,0,EntityAnimalRabbit,0,EntityAnimalStag,0"/>"/>
 			<property name="AITask-4" value="ApproachSpot"/>
 			<property name="AITask-5" value="Territorial"/>
 			<property name="AITask-6" value="Look"/>
@@ -98,7 +96,7 @@
 			<property name="AITask-8" value=""/>
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityPlayer,EntitySurvivor,EntityEnemyAnimal"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 			<property name="AITarget-4" value=""/>
 			<property name="WalkType" value="7"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -232,7 +230,7 @@
 			<property name="HandItem" value="gunBanditHuntingRifle_b"/>
 			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/>
 			<property name="AITask-2" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityZombie,0,EntitySurvivor,0,EntityEnemyAnimal,0"/>
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityZombie,0,EntitySurvivor,0,EntityEnemyAnimal,0,EntityAnimalRabbit,0,EntityAnimalStag,0"/>"/>
 			<property name="AITask-4" value="RunawayWhenHurt" data="runChance=.7;healthPer=.5;healthPerMax=0.75"/>
 			<property name="AITask-5" value="BreakBlock"/>
 			<property name="AITask-6" value="ApproachSpot"/>
@@ -242,7 +240,7 @@
 			<property name="AITask-10" value=""/>
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityZombie,EntitySurvivor,EntityEnemyAnimal"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 			<property name="AITarget-4" value=""/>
 		</entity_class>
 		<entity_class name="humanRangedFemaleTemplate_b" extends="humanRangedMaleTemplate_b">
@@ -294,26 +292,26 @@
 			<property name="Tags" value="entity,male,human,melee,sleeper"/>
 			<property name="HideInSpawnMenu" value="true"/>
 			<property name="Faction" value="bandits"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 		</entity_class>
 		<!--  Without this edit, sleeping bandits will not wake up when players are near.  -->
 		<entity_class name="humanMeleeFemaleSleeperTemplate_b" extends="humanMeleeFemaleTemplate_b">
 			<property name="Tags" value="entity,female,human,melee,sleeper"/>
 			<property name="HideInSpawnMenu" value="true"/>
 			<property name="Faction" value="bandits"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 		</entity_class>
 		<entity_class name="humanRangedMaleSleeperTemplate_b" extends="humanRangedMaleTemplate_b">
 			<property name="Tags" value="entity,male,human,ranged,sleeper"/>
 			<property name="HideInSpawnMenu" value="true"/>
 			<property name="Faction" value="bandits"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 		</entity_class>
 		<entity_class name="humanRangedFemaleSleeperTemplate_b" extends="humanRangedFemaleTemplate_b">
 			<property name="Tags" value="entity,female,human,ranged,sleeper"/>
 			<property name="HideInSpawnMenu" value="true"/>
 			<property name="Faction" value="bandits"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,15,15,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 		</entity_class>
 		<entity_class name="zombieStrongTemplate_b">
 			<property name="EntityType" value="Zombie"/>
@@ -345,14 +343,14 @@
 			<property name="AITask-2" value="DestroyArea"/>
 			<property name="AITask-3" value="Territorial"/>
 			<property name="AITask-4" value="ApproachDistraction"/>
-			<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,20,EntityEnemyAnimal,0,EntitySurvivor,0,EntityPlayer,0,EntityBandit,0"/>
+			<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,20,EntityEnemyAnimal,0,EntitySurvivor,0,EntityPlayer,0,EntityBandit,0,EntityAnimalRabbit,0,EntityAnimalStag,0"/>
 			<property name="AITask-6" value="ApproachSpot"/>
 			<property name="AITask-7" value="Look"/>
 			<property name="AITask-8" value="Wander"/>
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityEnemyAnimal,EntityPlayer"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/>
 			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
-			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAlive,0,0"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAlive,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 			<property class="FallLandBehavior">
 				<property name="1None" data="anim=None;height=0,1;weight=0.4"/>
 				<property name="1Land" data="anim=Land;height=0,1;weight=0.4"/>

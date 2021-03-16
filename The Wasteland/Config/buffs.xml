@@ -355,9 +355,7 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group>
-				<passive_effect name="Mobility" operation="perc_add" value=".9"/>
-				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".1"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".2"/>
 			</effect_group>
 		</buff>
 		<buff name="buffPAhelmetRadar" hidden="true">
@@ -581,6 +579,35 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLaserShotgunNoFire">
 					<requirement name="!HoldingItemHasTags" tags="LNF"/>
 				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="ShowToolbeltMessage" message_key="LaserShotgunNoFireDesc" sound="missingitemtorepair"/>
+			</effect_group>
+		</buff>
+		<buff name="buffAERNoFireTrigger" hidden="true">
+		<duration value="0"/>
+		<stack_type value="replace"/>
+		<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAERNoFire">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+					<requirement name="RoundsInMagazine" operation="GT" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffAERNoFire" hidden="true">
+		<duration value="0"/>
+		<stack_type value="replace"/>
+		<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffAERNoFireTrigger"/>
+				<requirement name="HoldingItemHasTags" tags="LNF"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAERNoFire">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAERNoFire">
+					<requirement name="!HoldingItemHasTags" tags="LNF"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="ShowToolbeltMessage" message_key="LaserShotgunNoFireDesc" sound="missingitemtorepair"/>
 			</effect_group>
 		</buff>
 		<!--

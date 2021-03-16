@@ -750,3 +750,5 @@ questoldMapDesc,items,Quest,New,An old map the trader gave me to show where the 
 questLetter,items,Quest,New,Old Letter,,,,,
 questLetterDesc,items,Quest,New,Some old letter that didn't make it to its intended target.,,,,,
 cntPewPewLoot,blocks,Container,New,Hidden Stash
+
+LaserShotgunNoFireDesc,buffs,Tooltip,New,This weapon doesn't have enough cells to fire. Reload with more ammo for it function correctly.

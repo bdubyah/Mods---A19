@@ -3,7 +3,7 @@
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunLAR"/>
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="gunHeavySniper"/>
 	</append>
-	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,thrownNukaGrenade,thrownCryoGrenade,gunm79</append>
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,thrownNukaGrenade,thrownCryoGrenade,gunm79,ammo40mmAP,ammo40mmHE,ammo40mmSmoke</append>
 	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunTripleBarrelShotgun"/>
 	</append>
@@ -142,7 +142,7 @@
 		</perk>
 		<perk name="perkPowerArmorExtraPlating" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" name_key="bookPowerArmorExtraPlating" desc_key="perkPowerArmorExtraPlatingDesc" long_desc_key="perkPowerArmorExtraPlatingLongDesc">
 			<effect_group>
-				<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="perkPowerArmor"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.5" tags="perkPowerArmor"/>
 			</effect_group>
 		</perk>
 		<perk name="perkPowerArmorSteadyHands" parent="skillPowerArmor" max_level="1" base_skill_point_cost="0" desc_key="perkPowerArmorSteadyHandsDesc" long_desc_key="perkPowerArmorSteadyHandsLongDesc">
