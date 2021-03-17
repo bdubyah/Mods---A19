@@ -1,4 +1,5 @@
 <configs>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='5']/@tags">,vehicleVertibirdchassis,vehicleVertibirdengines</append>
 	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunLAR"/>
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="gunHeavySniper"/>
