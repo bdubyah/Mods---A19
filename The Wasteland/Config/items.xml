@@ -11229,12 +11229,14 @@
 		<item name="vehicleVertibirdchassis">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleVertibirdchassis"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleVertibirdchassisSchematic"/>
 			<property name="DescriptionKey" value="vehicleVertibirdchassisDesc"/>
 			<property name="EconomicValue" value="100"/>
 		</item>
 		<item name="vehicleVertibirdengines">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="vehicleVertibirdengines"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleVertibirdenginesSchematic"/>
 			<property name="DescriptionKey" value="vehicleVertibirdenginesDesc"/>
 			<property name="EconomicValue" value="100"/>
 		</item>
