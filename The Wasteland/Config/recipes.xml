@@ -633,7 +633,7 @@
 	        <ingredient name="resourceElectricParts" count="40"/>
 	        <ingredient name="smallEngine" count="2"/>
 		</recipe>
-		<recipe name="vehicleVertibirdplaceable" count="1" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="60">
+		<recipe name="vehicleVertibirdplaceable" count="1" craft_area="workbench" tags="workbenchCrafting" craft_time="60">
 			<ingredient name="vehicleWheels" count="3"/>
 			<ingredient name="vehicleVertibirdengines" count="1"/>
 			<ingredient name="vehicleVertibirdchassis" count="1"/>
