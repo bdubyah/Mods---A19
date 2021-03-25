@@ -1,0 +1,863 @@
+Key,japanese
+drinkNukaCola,ヌカ・コーラ
+drinkNukaColaDesc,ウェイストランダーの好物！\nスタミナが素早く回復し、最大体力と最大スタミナも少量回復します。\n汚染の影響で、効果時間内は移動速度が上がります。
+drinkNukaCherry,ヌカ・チェリー
+drinkNukaCherryDesc,ヌカ・チェリー！\n力が湧いて、攻撃力が上がり、最大体力と最大スタミナも少量回復します。\n汚染の影響で、効果時間内は移動速度が上がります。
+drinkNukaQuantum,ヌカ・クアンタム
+drinkNukaQuantumDesc,ヌカ・クアンタムは安全ですよ！\n ブーストが一時的にかかりますが、後遺症があるかもしれません。
+drinkNukaQuartz,ヌカ・クォーツ
+drinkNukaQuartzDesc,見た目が少し怪しいけど、気にしたら負けです！\nダメージへの耐性が上がり、体力が徐々に回復しますが、少し気分が悪くなります。
+drinkSunsetSarsaparilla,サンセット・サルサパリラ
+drinkSunsetSarsaparillaDesc,新鮮ではありませんが、水よりは良いはずです。\n体力とスタミナが回復し、スタミナの回復速度が上がります。
+drinkSunsetSarsaparillaStar,サンセット・サルサパリラ
+drinkSunsetSarsaparillaStarDesc,新鮮ではありませんが、水よりは良いはずです。\n体力とスタミナが回復し、スタミナの回復速度が上がります。
+resourceNukaBaseIngredients,ヌカ・ベース材料
+resourceNukaBaseIngredientsDesc,それぞれ味のヌカの材料です。
+bookNukaRecipes,ヌカレシピ
+bookNukaRecipesDesc,いくつかの種類のヌカ・コーラがクラフト可能になります。
+thrownNukaNade,ヌカネード
+thrownNukaNadeDesc,クアンタムを飲む勇気がないのならば、爆弾の材料として使用する事も出来ます。
+
+VaultDoorKey,看守のオフィスの鍵
+VaultDoorKeyDesc,看守のオフィスのドアを開くために必要なキーカード。\n\n手に持った状態で対象に向け右クリックして使用します。
+OVDeskKey,看守の机の鍵
+OVDeskKeyDesc,看守の机を開くために必要なキーカード。\n\n手に持った状態で対象に向け右クリックして使用します。
+OVExitKey,看守の出口の鍵
+OVExitKeyDesc,看守の秘密の出口のドアを開くために必要なキーカード。\n\n手に持った状態で対象に向け右クリックして使用します。
+OVexitdoorunlocked,看守の秘密の出口
+
+VaultDoorKey_b,看守のオフィスの鍵(B)
+VaultDoorKey_bDesc,看守のオフィスのドアを開くために必要なキーカード。
+OVDeskKey_b,看守の机の鍵(B)
+OVDeskKey_bDesc,看守の机を開くために必要なキーカード。
+OVExitKey_b,看守の出口の鍵(B)
+OVExitKey_bDesc,看守の秘密の出口のドアを開くために必要なキーカード。
+
+NukaColaLight,ヌカ・コーラ
+NukaQuantumLight,ヌカ・クアンタム
+NukaQuartzLight,ヌカ・クォーツ
+NukaCherryLight,ヌカ・チェリー
+NukaTruck,ヌカ・トラック
+
+cntVTstoragePlayer,ボルトテック・コンテナ
+cntVTstoragePlayerDesc,収納箱
+cntVTstorageSecurePlayer,ボルトテック・コンテナ
+cntVTstorageSecurePlayerDesc,収納箱
+cntVTstorageLoot,ボルトテック・コンテナ
+cntVTstorageLootDesc,収納箱
+cntVTstorageLootInsecure,ボルトテック・コンテナ
+cntVTstorageLootInsecureDesc,収納箱
+cntVTstorageTallPlayer,ボルトテック・コンテナ
+cntVTstorageTallPlayerDesc,収納箱
+cntVTstorageTallSecurePlayer,ボルトテック・コンテナ
+cntVTstorageTallSecurePlayerDesc,収納箱
+cntVTstorageTallLoot,ボルトテック・コンテナ
+cntVTstorageTallLootDesc,収納箱
+cntVTstorageTallLootInsecure,ボルトテック・コンテナ
+cntVTstorageTallLootInsecureDesc,収納箱
+cntNukaCrateS0,閉じられたヌカ・クレート
+cntNukaCrateS1,閉じられたヌカ・クレート
+cntNukaCrateS2,閉じられたヌカ・クレート
+cntNukaCrate0,ヌカ・クレート
+cntNukaCrate1,ヌカ・クレート
+cntNukaCrate2,ヌカ・クレート
+cntNukaSafeSecure,鍵のかかったヌカ金庫
+cntNukaSafeSecureDesc,鍵がかかっているヌカ金庫
+cntNukaSafe,ヌカ金庫
+cntNukaSafeDesc,ヌカ金庫
+cntNukaVendingMachineBroken,壊れたヌカ自動販売機
+cntNukaVendingMachineBrokenDesc,壊れているヌカ自動販売機。
+cntNukaVendingMachine,ヌカ自動販売機
+cntNukaVendingMachineDesc,使用可能なヌカ自動販売機。
+cntSSVendingMachineBroken,壊れたサンセット・サルサパリラ自動販売機
+cntSSVendingMachineBrokenDesc,壊れているサンセット・サルサパリラ自動販売機
+cntSSVendingMachine,サンセット・サルサパリラ自動販売機
+cntSSVendingMachineDesc,使用可能なサンセット・サルサパリラ自動販売機。
+cntAmmoBox,弾薬箱
+cntAmmoBoxDesc,軍用弾薬ストレージ箱
+
+Terminal,ターミナル
+TerminalDesc,驚く事に、まだ使用可能です。
+Terminaloff,壊れたターミナル
+TerminaloffDesc,壊れているターミナル。
+Telephone,古い電話
+TelephoneDesc,"古い電話。\n\n使用可能だったとしても、かける相手がもういません。"
+Telephone2,古い電話
+Telephone2Desc,"古い電話。\n\n使用可能だったとしても、かける相手がもういません。"
+VaultDoor,ボルト・ドア
+VaultDoorDesc,メインのボルト・ドア
+VaultMetalDoorBroken,壊れたボルト・ドア
+VaultMetalDoorBrokenDesc,壊れたボルト・ドア
+VaultMetalDoorLocked,ボルト・ドア
+VaultMetalDoorLockedDesc,インテリア・ボルト・ドア
+VaultMetalDoorUnlocked,ボルト・ドア
+VaultMetalDoorUnlockedDesc,インテリア・ボルト・ドア
+VaultMetalDoorSmall,ボルト・ドア
+VaultMetalDoorSmallDesc,小さなボルト・ドア
+VaultMetalDoorSmallLocked,ボルト・ドア
+VaultMetalDoorSmallLockedDesc,小さなボルト・ドア
+Bookcase1,古くなった本棚
+Bookcase1Desc,古い本棚
+Bookcase2,古くなった本棚
+Bookcase2Desc,古い本棚
+Bookcase3,古くなった本棚
+Bookcase3Desc,古い本棚
+BottleCarrierEmpty,ボトルケース
+BottleCarrierEmptyDesc,瓶を持ち運ぶためのクレート
+BottleCarrier,ボトルケース
+BottleCarrierDesc,瓶を持ち運ぶためのクレート
+Boxes1,古い箱
+Boxes1Desc,古くなった箱。
+Boxes2,古い箱
+Boxes2Desc,古くなった箱。
+Boxes3,古い箱
+Boxes3Desc,古くなった箱。
+Boxes4,古い箱
+Boxes4Desc,古くなった箱。
+Boxes5,古い箱
+Boxes5Desc,古くなった箱。
+Boxes6,古い箱
+Boxes6Desc,古くなった箱。
+Boxes7,古い箱
+Boxes7Desc,古くなった箱。
+Bunkbed1,古い二段ベッド
+Bunkbed1Desc,古い二段ベッド
+Case1,ケース
+Case1Desc,ケース
+Case2,ケース
+Case2Desc,ケース
+Chair1,古びた椅子
+Chair1Desc,古びた椅子
+Chair2,古びたレトロ椅子
+Chair2Desc,古びた椅子
+Cistern1,貯水槽
+Cistern1Desc,貯水槽
+Curtain1,古いカーテン
+Curtain1Desc,古いカーテン
+Desk1,古い机
+Desk1Desc,古い机
+Dresser1,古いタンス
+Dresser1Desc,古いタンス
+Dresser2,古いタンス
+Dresser2Desc,古いタンス
+Dresser3,古いタンス
+Dresser3Desc,古いタンス
+Fatman_b,ニューク・ランチャー
+Fatman_bDesc,拾うとニューク・ランチャーが入手出来ます。
+ammoNuke_b,ニューク弾
+ammoNuke_bDesc,拾うとニューク弾が入手出来ます。
+Guitar1,古いギター
+Guitar1Desc,古びたギター
+IndustrialFan,工業用ファン
+IndustrialFanDesc,大きな工業用ファン。
+Lamp1,古いランプ
+Lamp1Desc,古いランプ
+MetalBox,金属製の箱
+MetalBoxDesc,古びた金属製の箱
+MetalBox2,金属製の箱
+MetalBox2Desc,古びた金属製の箱
+MetalContainer,金属製の箱
+MetalContainerDesc,古びた金属製の箱
+MetalContainer2,金属製の箱
+MetalContainer2Desc,古びた金属製の箱
+MetalContainer3,金属製のコンテナ
+MetalContainer3Desc,古びた金属製のコンテナ
+MetalContainer4,金属製のコンテナ
+MetalContainer4Desc,古びた金属製のコンテナ
+MetalShelves,金属製の棚
+MetalShelvesDesc,古びた金属製の棚
+MetalShelves2,金属製の棚
+MetalShelves2Desc,古びた金属製の棚
+NCRbobble,NCR首振り人形
+NCRbobbleDesc,古い首振り人形。\n\n売れるかもしれません。
+OldRadio,古いラジオ
+OldRadioDesc,古いラジオ。\n\n壊れているようです。
+OldSafeClosedInsecure,古い金庫
+OldSafeClosedInsecureDesc,古い金庫
+OldSafeClosedPlayer,古い金庫
+OldSafeClosedPlayerDesc,古い金庫
+OldSafeClosed,古い金庫
+OldSafeClosedDesc,古い金庫
+OldSafe,古い金庫
+OldSafeDesc,古い金庫
+OldServer1,古いサーバー
+OldServer1Desc,古いサーバー
+OldServer2,古いサーバー
+OldServer2Desc,古いサーバー
+OldServer3,古いサーバー
+OldServer3Desc,古いサーバー
+OldTV,古いテレビ
+OldTVDesc,古いテレビ
+OldTVon,古いテレビ
+OldTVonDesc,古いテレビ
+PipBoy,Pip-Boy 3000
+PipBoyDesc,驚く事にまだ使用可能なPip-Boy。
+Rug1,古いラグマット
+Rug1Desc,古いラグマット
+Server1,古いサーバー
+Server1Desc,古いサーバー
+Server2,古いサーバー
+Server2Desc,古いサーバー
+Server3,古いサーバー
+Server3Desc,古いサーバー
+ServerEmpty,古くて空のサーバー
+ServerEmptyDesc,古くて空のサーバー
+ServerFull,古くて中身入りのサーバー
+ServerFullDesc,古くて中身入りのサーバー
+Toolbox1,古いツールボックス
+Toolbox1Desc,古いツールボックス
+Transformer1,古い変成器
+Transformer1Desc,古い変成器
+Turbine1,古いタービン
+Turbine1Desc,古いタービン
+VaultBoycutout,ボルト・ボーイの切り抜き
+VaultBoycutoutDesc,ボルト・ボーイの切り抜き
+Vent1,古い通気口
+Vent1Desc,古い通気口
+Vent2,古い通気口(オフセット)
+Vent2Desc,古い通気口
+WarehouseCrates,古い倉庫クレート
+WarehouseCratesDesc,古い倉庫クレート
+WeaponCase,武器ケース
+WeaponCaseDesc,武器ケース
+OVglass,看守ガラス
+OVglassDesc,OVオフィス用のガラス。
+Grid,パワーグリッド・ディスプレイ
+GridDesc,OVオフィス用のパワーグリッド・ディスプレイ
+DeskRound,看守の机
+DeskRoundDesc,看守の机.
+DeskRound2,看守の机
+DeskRound2Desc,看守の机.
+BloodSplatter1,血痕
+BloodSplatter2,血痕
+BloodSplatter3,血痕
+BloodSplatter4,血痕
+BloodSplatter5,血痕
+BloodSplatter6,血痕
+BloodSplatter7,血痕
+chainLink_b,チェーンリンク・フェンス
+chainLink_bDesc,通常よりローテーションが多いチェーンリンク・フェンス。
+ConsoleWall,ウォール・コンソール
+ConsoleWallDesc,ウォール・コンソール
+Door1L,金属製の扉。(L)
+Door1LDesc,重い金属製の扉。
+Door1R,金属製の扉。(R)
+Door1RDesc,重い金属製の扉。
+Door1L2,金属製の扉。(L)
+Door1L2Desc,重い金属製の扉。
+Door1R2,金属製の扉。(R)
+Door1R2Desc,重い金属製の扉。
+Door2L,金属製の扉。(L)
+Door2LDesc,重い金属製の扉。
+Door2R,金属製の扉。(R)
+Door2RDesc,重い金属製の扉。
+Door2L2,金属製の扉。(L)
+Door2L2Desc,重い金属製の扉。
+Door2R2,金属製の扉。(R)
+Door2R2Desc,重い金属製の扉。
+Door3L,セキュリティ・ドア(L)
+Door3LDesc,セキュリティレベルの高い扉。
+Door3R,セキュリティ・ドア(R)
+Door3RDesc,セキュリティレベルの高い扉。
+Door3L2,セキュリティ・ドア(L)
+Door3L2Desc,セキュリティレベルの高い扉。
+Door3R2,セキュリティ・ドア(R)
+Door3R2Desc,セキュリティレベルの高い扉。
+Door4L,セキュリティ・ドア(L)
+Door4LDesc,セキュリティレベルの高い扉。
+Door4R,セキュリティ・ドア(R)
+Door4RDesc,セキュリティレベルの高い扉。
+Door4L2,セキュリティ・ドア(L)
+Door4L2Desc,セキュリティレベルの高い扉。
+Door4R2,セキュリティ・ドア(R)
+Door4R2Desc,セキュリティレベルの高い扉。
+EspressoMachine,エスプレッソマシン
+EspressoMachineDesc,エスプレッソマシン
+MedicalDivider,医療用パーテーション
+MedicalDividerDesc,医療用パーテーション
+MetalDrawer1,金属製引き出し
+MetalDrawer1Desc,古い金属製引き出し
+MetalDrawer2,金属製引き出し
+MetalDrawer2Desc,古い金属製引き出し
+Microscope,顕微鏡
+MicroscopeDesc,顕微鏡
+OldControlPanel,古いコントロールパネル
+OldControlPanelDesc,古いコントロールパネル
+OldProjector,古いプロジェクター
+OldProjectorDesc,古いプロジェクター
+Stepladder,脚立
+StepladderDesc,古い脚立
+WelcomeMat,玄関マット
+WelcomeMatDesc,Welcomeと書いてある玄関用マット。
+windowStoreThreeSidedBulletproofCTR,防弾ガラス
+windowStoreThreeSidedBulletproofCTRDesc,防弾ガラス/センター/3面
+windowStoreTwoSidedBulletproofCTR,防弾ガラス窓
+windowStoreTwoSidedBulletproofCTRDesc,防弾ガラス窓/センター/2面
+windowStoreThreeSidedCTR,窓枠
+windowStoreThreeSidedCTRDesc,窓枠/センター/3面
+windowStoreTwoSidedCTR,窓枠
+windowStoreTwoSidedCTRDesc,窓枠/センター/2面
+
+mineBottlecapMine,ボトルキャップ地雷
+mineBottlecapMineDesc,ランチボックスとボトルキャップで出来た、手作り地雷。
+cntLunchboxDesc,古くなったランチボックス。\n\n何かに使えるかもしれません。
+cntLunchbox,古いランチボックス
+resourceBottlecaps,ボトルキャップ
+resourceBottlecapsDesc,ヌカコーラのボトルキャップ。\n\n何かに使えるかもしれません。
+resourceBottlecapStar,サンセット・サルサパリラ・スター・ボトルキャップ
+resourceBottlecapStarDesc,非常にレアなボトルキャップ。\n\n売るか、集めてクラフト材料にすることが出来ます。
+
+
+
+gun10mmPistol,10mmピストル
+gun10mmPistolDesc,シビリアン・ピストル。\n\n9㎜用より威力が少し高くなっています。
+gun10mmRev,10mmリボルバー
+gun10mmRevDesc,シビリアン・リボルバー。\n\n9㎜用より威力が少し高くなっています。\n\n10㎜ピストルよりストッピング・パワーが高い、6弾装弾可能なハンドガン。
+gun10mmSMG,10mm SMG
+gun10mmSMGDesc,シビリアン・サブマシンガン。\n\n9㎜用より威力が少し高くなっています。\n\n大容量マガジン。
+gunLaserPistolScrap,スクラップレーザー・ピストル
+gunLaserPistolScrapDesc,手作りのレーザー武器。\n\n安全そうですが．．．どうでしょう\n\n高度エンジニアリングパークの影響を受けます。
+gunLaserPistol,レーザー・ピストル
+gunLaserPistolDesc,実験段階の軍事技術。\n\n高度エンジニアリングパークの影響を受けます。
+gunLaserRifle,レーザー・ライフル
+gunLaserRifleDesc,実験段階の軍事技術。\n\n高度エンジニアリングパークの影響を受けます。
+gunLaserShotgun,レーザー・ショットガン
+gunLaserShotgunDesc,実験段階の軍事技術。\n\n高度エンジニアリングパークの影響を受けます。
+gunPlasmaPistol,プラズマ・ピストル
+gunPlasmaPistolDesc,実験段階の軍事技術。\n\n高度エンジニアリングパークの影響を受けます。
+gunPlasmaRifle,プラズマ・ライフル
+gunPlasmaRifleDesc,実験段階の軍事技術。\n\n高度エンジニアリングパークの影響を受けます。
+gunFlareGun,フレアガン
+gunFlareGunDesc,緊急用のフレアガン。\n\n緊急時に位置を知らせる場合、もしくは明かりが必要な時に使用します。
+gunPipePistol,"パイプピストル"
+gunPipePistolDesc,"弱い手作りピストル。\n\n9mm弾を使用します。\n\n耐久が低く、壊れると消えてしまいます。"
+gunPipeRifle,"パイプライフル"
+gunPipeRifleDesc,"弱い手作りライフル\n\n9mm弾を使用します。\n\n耐久が低く、壊れると消えてしまいます。"
+gunPipeShotgunSMSB,"ショートパイプショットガン"
+gunPipeShotgunSMSBDesc,"弱い手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\n耐久が低く、壊れると消えてしまいます。"
+gunPipeShotgunEMSB,"ショートパイプショットガン (拡張マガジン)"
+gunPipeShotgunEMSBDesc,"手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\nカスタムシリンダーマガジンを取り付けてあるため、ソウダンスウが4に増えています。\n\n耐久が低く、壊れると消えてしまいます。"
+gunTripleBarrelShotgun,トリプルバレル・ショットガン
+gunTripleBarrelShotgunDesc,オーダーメイドのトリプルバレル・ショットガン。
+gunCombatShotgun,コンバット・ショットガン
+gunCombatShotgunDesc,軍用グレードのショットガン。
+gunHeavySniper,ヘビー・スナイパー・ライフル
+gunHeavySniperDesc,長距離射撃用スナイパー・ライフル。
+gunServiceRifle,サービス・ライフル
+gunServiceRifleDesc,標準歩兵用ライフル。
+gunLAR,レバー・アクション・ライフル
+gunLARDesc,.44マグナム弾を使用するレバーアクション、これ以上の物は望めませんね。
+gunRailwayRifle,"レールライフル"
+gunRailwayRifleDesc,"レールスパイクを発射するカスタムライフル。\n\n撃つと銃に負担がかかるため、耐久は低めになっています。"
+gunFatMan,"ニューク・ランチャー"
+gunFatManDesc,"ミニニュークを発射するためのミリタリーランチャー。\n\n他の丸い物も発射できそうですが..."
+gunIncinerator,インシネレーター
+gunIncineratorDesc,改造済みの火炎放射器。\n\nセミオート火炎瓶ですね！
+gunMiniG,ミニガン
+gunMiniGDesc,"古くてしよう感のあるミニガン。\n\n最新の物ではありませんが、威力は充分ありそうです。"
+gunBAR1,BAR
+gunBAR1Desc,"古い銃。"
+gunm79,M-79
+gunm79Desc,"40mm弾を使用する単発グレネードランチャー。\n\nAP弾、HE弾、そしてスモーク弾があります。"
+
+ammo40mmHE,40mm HEグレネード弾
+ammo40mmHEDesc,M-79で使用する40㎜榴弾。
+ammo40mmSmoke,40mmスモークグレネード弾
+ammo40mmSmokeDesc,M-79で使用する40㎜スモークグレネード弾。
+ammo40mmAP,40mm APグレネード弾
+ammo40mmAPDesc,"M-79で使用する40㎜ AP弾。\n\nブロックダメージは高くなっていますが、敵へのダメージは低くなっています。"
+ammoNuke,"ニューク弾"
+ammoNukeDesc,"これのせいで、こんな世界になってしまったのですから、これを使って元に戻す事は出来ないでしょうか？\n\n室内では使わないほうが良いでしょう。"
+ammoNukeAP,"ニューク AP弾"
+ammoNukeAPDesc,"ミニニュークでクラフトした対人用のニューク弾。\n\nブロックダメージが大変低くなっています。\n\nエンティティダメージもAOEも低めです。"
+ammoBowlingball,"ボーリングボール弾"
+ammoBowlingballDesc,"ニューク・ランチャーで撃つニュークが見つかりませんか？\n\nこれで代用しましょう！"
+ammoRailSpike,"レールスパイク弾"
+ammoRailSpikeDesc,"小さな弾薬だと物足りませんか?\n\nこの大きなスパイクを撃ってみましょう。"
+ammoIncinerator,インシネレーター用燃料
+ammoIncineratorDesc,インシネレーター用の弾薬。
+ammoFlareGun,フレア弾
+ammoFlareGunDesc,フレアガン用の弾薬。
+ammo10mmBullet,10mm弾
+ammo10mmBulletDesc,通常10mm弾。\n\n9㎜弾より僅かに威力が高くなっています。
+ammo10mmBulletHP,HP 10mm弾
+ammo10mmBulletHPDesc,HP 10mm弾。\n\nアーマー値の低い敵相手に適しています。\n\n9㎜弾より僅かに威力が高くなっています。
+ammo10mmBulletAP,AP 10mm弾
+ammo10mmBulletAPDesc,AP 10mm弾。\n\nアーマー値の高い敵相手に適しています。\n\n9㎜弾より僅かに威力が高くなっています。
+ammoAB,エイリアン・エナジーセル弾
+ammoABDesc,エイリアン・ブラスター用の弾薬。
+ammoEC,エナジーセル弾
+ammoECDesc,レーザー・ピストル用の弾薬。
+ammoMFC,マイクロフュージョン・セル弾
+ammoMFCDesc,レーザー・ライフル用の弾薬。
+ammoSMFC,マイクロフュージョン・セル弾(ショットガン)
+ammoSMFCDesc,レーザー・ショットガン用の弾薬。
+ammoPEC,プラズマ・エナジーセル弾
+ammoPECDesc,プラズマ・ピストル用の弾薬。
+ammoPMFC,プラズマ・マイクロフュージョン・セル弾
+ammoPMFCDesc,プラズマ・ライフル用の弾薬。
+ammoCMFC,クライオ・セル弾
+ammoCMFCDesc,クライオレーター用の弾薬。
+thrownCryoGrenade,クライオ・グレネード
+thrownCryoGrenadeDesc,"通常のグレネードほどの威力はありませんが、鈍足と弱体の効果が追加されています。\n\nフューズが短くなっています。"
+thrownNukaGrenade,ヌカ・グレネード
+thrownNukaGrenadeDesc,対有機物には非常に効果的です。
+
+modFlashlight,"武器用フラッシュライト(パイプショットガンにも可)"
+modFlashlightDesc,手作りのフラッシュライト・アタッチメント。
+modOilFilterSuppressor,"オイルフィルターサプレッサー"
+modOilFilterSuppressorDesc,"狙いにくくはなりますが、射撃音が低くなるので、外してもバレないはずです。"
+modLargeMag,"拡張マガジン (パイプ銃用)"
+modLargeMagDesc,"パイプ系の銃の装弾数を倍にします。"
+modLongRifleBarrel,"ロングライフルバレル (パイプライフル)"
+modLongRifleBarrelDesc,"ハンドリングは落ちますが、射程とダメージが上がります。\n\nパイプライフルにセット可能。"
+modShotgunCylinderMag,"ショットガンシリンダーマガジン"
+modShotgunCylinderMagDesc,"装弾数が 4 弾に増えるパイプショットガン用のシリンダー。"
+modLongShotgunBarrel,"ロングショットガンバレル (パイプショットガン)"
+modLongShotgunBarrelDesc,"ハンドリングは落ちますが、射程が伸びます。\n\nパイプショットガンにセット可能。"
+modOverchargedCapacitor,オーバーチャージ・コンデンサ
+modOverchargedCapacitorDesc,レーザー系の武器にセットすると装弾数とダメージ量が増えます。\n\nセットすると劣化速度が上がります。
+modLaserSplitter,レーザービームスプリッター
+modLaserSplitterDesc,レーザー系武器にセットすると、セル弾を2発同時に撃つことが出来るようになります。\n\nセットすると劣化速度が上がります。
+modLaserFocuser,レーザービームフォーカサー
+modLaserFocuserDesc,レーザー系武器にセットすると、射程とダメージ量が上がります。\n\nセットすると劣化速度が上がります。
+modLaserScope,レーザーライフルスコープ
+modLaserScopeDesc,レーザーライフルにセットすると、ターゲットが拡大して見えます。\n\nフォーカサーと使用すると良いです。
+
+
+gunPipePistol_Legendary,"[FFC300]伝説のパイプピストル[-]"
+gunPipePistol_LegendaryDesc,"レアなパイプピストル。\n\n壊れても消えません。\n\n通常のパイプピストルと比べ、ステータスが高く、最初からサイレンサーが付いています。"
+gunPipeShotgunSMSB_Legendary,"[FFC300]伝説のパイプショットガン[-]"
+gunPipeShotgunSMSB_LegendaryDesc,"レアなパイプショットガン。\n\n壊れても消えません。\n\n通常のパイプショットガンと比べ、ステータスが高く、命中すると敵を炎上させます。"
+gunPipeRifle_Legendary,"[FFC300]伝説のパイプライフル[-]"
+gunPipeRifle_LegendaryDesc,"レアなパイプライフル。\n\n壊れても消えません。\n\n通常のパイプライフルと比べ、威力が高く、最初からスコープが付いています。"
+gunLAR_Legendary,[FFC300]リンカーン・リピーター[-]
+gunLAR_LegendaryDesc,ユニークなレバーアクションライフル。\n\n貫通率と部位破壊率が高くなっており、 アイアンサイトに可変ズームが付いています。
+gunLeFusilTerribles,[FFC300]ル・フュジ・テリブル[-]
+gunLeFusilTerriblesDesc,ミリタリーティアのショットガン。
+gunHeavySniperGobi,[FFC300]アリゾナキャンペーン・スカウトライフル[-]
+gunHeavySniperGobiDesc,改造された長距離スナイパーライフル。
+gunMaria,[FFC300]マリア[-]
+gunMariaDesc,ユニークな9mmピストル。\n\n威力と部位破壊率が高くなっています。
+gunPewPew,[FFC300]ピューピュー[-]
+gunPewPewDesc,ユニークなレーザーピストル。\n\n威力が上がる用改造されています。
+gunAERPrototype,[FFC300]AER15プロトタイプ[-]
+gunAERPrototypeDesc,ユニークなレーザーライフルのプロトタイプ。\n\n威力が高く、1トリガーで5発撃つことが出来ます。\n\n腰うちの場合はショットガンに似ていますが、エイム中は1体の敵に高いダメージを与えることが出来ます。
+gunCryolator,[FFC300]クライオレーター[-]
+gunCryolatorDesc,ユニークな軍用プロトタイプ。\n\n敵に鈍足効果を与え、確率で完全に動きを止めることが出来ます。
+gunAlienBlaster,[FFC300]エイリアンブラスター[-]
+gunAlienBlasterDesc,"よく分からないけど、トリガーを引くと生き物を殺せるようです．．．"
+gunAshmaker,[FFC300]アッシュメーカー[-]
+gunAshmakerDesc,"改造されたミニガン。\n\n敵を炎上させることが出来ます。"
+
+gunServiceRifleSchematic,サービス・ライフルの図
+gunServiceRifleSchematicDesc,次の武器がクラフト可能になります : サービス・ライフル\n\nマシンガンナーのパークの影響を受けます。
+gun10mmPistolSchematic,10mmピストルの図
+gun10mmPistolSchematicDesc,次の武器がクラフト可能になります : 10mmピストル\n\nガンスリンガーのパークの影響を受けます。
+gun10mmRevSchematic,10mmリボルバーの図
+gun10mmRevSchematicDesc,次の武器がクラフト可能になります : 10mmリボルバー\n\nガンスリンガーのパークの影響を受けます。
+gun10mmSMGSchematic,10mm SMGの図
+gun10mmSMGSchematicDesc,次の武器がクラフト可能になります : 10mm SMG\n\nガンスリンガーのパークの影響を受けます。
+gunLARSchematic,レバーアクション・ライフルの図
+gunLARSchematicDesc,次の武器がクラフト可能になります : レバーアクション・ライフル\n\n射撃の名手のパークの影響を受けます。
+gunHeavySniperSchematic,ヘビー・スナイパー・ライフルの図
+gunHeavySniperSchematicDesc,次の武器がクラフト可能になります : ヘビー・スナイパー・ライフル\n\n射撃の名手のパークの影響を受けます。
+gunRailwayRifleSchematic,レイルウェイ・ライフルの図
+gunRailwayRifleSchematicDesc,次の武器がクラフト可能になります : レイルウェイ・ライフル\n\n高度エンジニアリングのパークの影響を受けます。
+gunIncineratorSchematic,インシネレーターの図
+gunIncineratorSchematicDesc,次の武器がクラフト可能になります : インシネレーター\n\n解体専門家のパークの影響を受けます。
+gunTripleBarrelShotgunSchematic,トリプルバレル・ショットガンの図
+gunTripleBarrelShotgunSchematicDesc,次の武器がクラフト可能になります : トリプルバレル・ショットガン\n\nブームスティックのパークの影響を受けます。
+gunCombatShotgunSchematic,コンバット・ショットガンの図
+gunCombatShotgunSchematicDesc,次の武器がクラフト可能になります : コンバット・ショットガン\n\nブームスティックのパークの影響を受けます。
+gunLaserPistolSchematic,レーザー・ピストルの図
+gunLaserPistolSchematicDesc,次の武器がクラフト可能になります : レーザー・ピストル\n\n高度エンジニアリングのパークの影響を受けます。
+gunLaserRifleSchematic,レーザー・ライフルの図
+gunLaserRifleSchematicDesc,次の武器がクラフト可能になります : レーザー・ライフル\n\n高度エンジニアリングのパークの影響を受けます。
+gunLaserShotgunSchematic,レーザー・ショットガンの図
+gunLaserShotgunSchematicDesc,次の武器がクラフト可能になります : レーザー・ショットガン\n\n高度エンジニアリングのパークの影響を受けます。
+gunPlasmaPistolSchematic,プラズマ・ピストルの図
+gunPlasmaPistolSchematicDesc,次の武器がクラフト可能になります : プラズマ・ピストル\n\n高度エンジニアリングのパークの影響を受けます。
+gunPlasmaRifleSchematic,プラズマ・ライフルの図
+gunPlasmaRifleSchematicDesc,次の武器がクラフト可能になります : プラズマ・ライフル\n\n高度エンジニアリングのパークの影響を受けます。
+gunBAR1Schematic,BARの図
+gunBAR1SchematicDesc,次の武器がクラフト可能になります :  BAR\n\nマシンガンナーのパークの影響を受けます。
+gunMiniGSchematic,ミニガンの図
+gunMiniGSchematicDesc,次の武器がクラフト可能になります :  ミニガン\n\nマシンガンナーのパークの影響を受けます。
+gunm79Schematic,M-79の図
+gunm79SchematicDesc,次の武器がクラフト可能になります :  M-79\n\n解体専門家のパークの影響を受けます。
+gunLaserPistolScrapSchematic,スクラップレーザー・ピストルの図
+gunLaserPistolScrapSchematicDesc,次の武器がクラフト可能になります :  スクラップレーザー・ピストル\n\n高度エンジニアリングのパークの影響を受けます。
+
+modOverchargedCapacitorSchematic,オーバーチャージ・コンデンサの図
+modLaserSplitterSchematic,レーザービームスプリッターの図
+modLaserFocuserSchematic,レーザービームフォーカサーの図
+modLaserScopeSchematic,レーザーライフルスコープの図
+cntVTstorageSecurePlayerSchematic,ヴォルトテック・ストレージの図
+cntVTstorageTallSecurePlayerSchematic,ヴォルトテック・ストレージ2の図
+
+meleeBanjo,バンジョー
+meleeBanjoDesc,打撃武器として使えそうです。
+meleeBaton,警棒
+meleeBatonDesc,シンプルな近接武器。
+meleeCleaver,包丁
+meleeCleaverDesc,シンプルな近接武器。
+meleeCrowbar,バール
+meleeCrowbarDesc,シンプルな近接武器。
+meleeCuestick,キュー
+meleeCuestickDesc,"ビリアードのキュー。\n\nあまり威力は高くありませんが、武器として使えます。"
+meleeKatana1,刀
+meleeKatana1Desc,"侍用の武器ですが、誰が使っても文句を言う人はもういないでしょう。"
+meleeNailBoard,釘付き木材
+meleeNailBoardDesc,シンプルな近接武器。
+meleePipeHammer,パイプ・ハンマー
+meleePipeHammerDesc,シンプルな近接武器。
+meleePipeWrench,パイプ・レンチ
+meleePipeWrenchDesc,シンプルな近接武器。
+meleeRebarClub,鉄筋クラブ
+meleeRebarClubDesc,重い打撃武器。\n\n荒れ地の瓦礫の中で見つけました...
+meleeRollingPin,めん棒
+meleeRollingPinDesc,調理用の道具ですが、今は近接武器です。
+meleeTireIron,タイヤ鉄
+meleeTireIronDesc,"重くて鉄で出来ているので、近接武器として使用できます。"
+meleeSupaSledge,スーパースレッジ
+meleeSupaSledgeDesc,"改造されたスレッジハンマー。\n\n重くて振りが遅いけど、威力が非常に高い近接武器。"
+meleeGuitar,ギター
+meleeGuitarDesc,"古いギター。\n\n頭蓋骨を破壊するためにしか使えそうにありません。"
+
+meleeTheBreak,[FFC300]ザ・ブレイク[-]
+meleeTheBreakDesc,オーダーメイドのキュー。\n\n通常の物より与ダメージ量と部位破壊率が高くなっています。
+meleeDukeSledge,[FFC300]デュークの判決[-]
+meleeDukeSledgeDesc,強力なスーパースレッジ。
+meleeMBC,[FFC300]マッドビーン棍棒[-]
+meleeMBCDesc,荒れ地で見つけた近接武器。\n\nこんなものを作った人物には出会いたくありません．．．
+meleeNavSlugger,[FFC300]Navezganeスラッガー[-]
+meleeNavSluggerDesc,ゾンビの頭でホームランを打ちましょう。
+meleeOpenBreaker,[FFC300]オープン・ブレーカー[-]
+meleeOpenBreakerDesc,"ゾンビ退治は24時間営業中です。"
+
+cntUFO,墜落したUFO
+cntUFODesc,UFOブロック
+
+vehicleVertibirdchassis,ベルチバード・シャーシ
+vehicleVertibirdchassisDesc,ベルチバードをクラフトするために必要なパーツ。\n\nグリースモンキーのレベル5が必要です。
+vehicleVertibirdengines,ベルチバード・エンジン
+vehicleVertibirdenginesDesc,ベルチバードをクラフトするために必要なパーツ。\n\nグリースモンキーのレベル5が必要です。
+vehicleVertibird,ベルチバード
+vehicleVertibirdplaceable,ベルチバード
+vehicleVertibirdplaceableDesc,6人まで乗ることが出来る軍用ヘリ。
+vehicleVertibirdchassisSchematic,ベルチバード・シャーシの図
+vehicleVertibirdenginesSchematic,ベルチバード・エンジンの図
+
+RaiderLeaderLoot,レイダー・リーダーの宝
+RaiderLeaderLootDesc,レイダー・リーダーの宝
+resourcePowerArmorRepairKit,パワーアーマー・リペアキット
+resourcePowerArmorRepairKitDesc,パワーアーマーを修理するために必要な修理キット。
+powerArmorMaster1Desc,"パワーアーマーの部位。\n全部位着用するまでは機動力への負担がかかりますが、一式全て身に着けると機動力が大幅に上がります。\n\nパワーアーマー・リペアキットで修理可能。"
+powerArmorHelmet_Model_A1,A1 パワーアーマー(頭)
+powerArmorHelmet_Model_B1,B1 パワーアーマー(頭)
+powerArmorHelmet_Model_C1,C1 パワーアーマー(頭)
+powerArmorHelmet_Model_D1,D1 パワーアーマー(頭)
+powerArmorHelmet_Model_E1,E1 パワーアーマー(頭)
+powerArmorHelmet_Model_F1,F1 パワーアーマー(頭)
+powerArmorHelmet_Model_G1,G1 パワーアーマー(頭)
+powerArmorHelmet_Model_H1,H1 パワーアーマー(頭)
+powerArmorHelmet_Model_I1,I1 パワーアーマー(頭)
+powerArmorHelmet_Model_J1,J1 パワーアーマー(頭)
+powerArmorHelmet_Model_K1,K1 パワーアーマー(頭)
+powerArmorChest_Model_A1,A1 パワーアーマー(胴)
+powerArmorChest_Model_B1,B1 パワーアーマー(胴)
+powerArmorChest_Model_C1,C1 パワーアーマー(胴)
+powerArmorChest_Model_D1,D1 パワーアーマー(胴)
+powerArmorChest_Model_E1,E1 パワーアーマー(胴)
+powerArmorChest_Model_F1,F1 パワーアーマー(胴)
+powerArmorChest_Model_G1,G1 パワーアーマー(胴)
+powerArmorChest_Model_H1,H1 パワーアーマー(胴)
+powerArmorChest_Model_I1,I1 パワーアーマー(胴)
+powerArmorChest_Model_J1,J1 パワーアーマー(胴)
+powerArmorChest_Model_K1,K1 パワーアーマー(胴)
+powerArmorArms_Model_A1,A1 パワーアーマー(腕)
+powerArmorArms_Model_B1,B1 パワーアーマー(腕)
+powerArmorArms_Model_C1,C1 パワーアーマー(腕)
+powerArmorArms_Model_D1,D1 パワーアーマー(腕)
+powerArmorArms_Model_E1,E1 パワーアーマー(腕)
+powerArmorArms_Model_F1,F1 パワーアーマー(腕)
+powerArmorArms_Model_G1,G1 パワーアーマー(腕)
+powerArmorArms_Model_H1,H1 パワーアーマー(腕)
+powerArmorArms_Model_I1,I1 パワーアーマー(腕)
+powerArmorArms_Model_J1,J1 パワーアーマー(腕)
+powerArmorArms_Model_K1,K1 パワーアーマー(腕)
+powerArmorLegs_Model_A1,A1 パワーアーマー(足)
+powerArmorLegs_Model_B1,B1 パワーアーマー(足)
+powerArmorLegs_Model_C1,C1 パワーアーマー(足)
+powerArmorLegs_Model_D1,D1 パワーアーマー(足)
+powerArmorLegs_Model_E1,E1 パワーアーマー(足)
+powerArmorLegs_Model_F1,F1 パワーアーマー(足)
+powerArmorLegs_Model_G1,G1 パワーアーマー(足)
+powerArmorLegs_Model_H1,H1 パワーアーマー(足)
+powerArmorLegs_Model_I1,I1 パワーアーマー(足)
+powerArmorLegs_Model_J1,J1 パワーアーマー(足)
+powerArmorLegs_Model_K1,K1 パワーアーマー(足)
+powerArmorBoots_Model_A1,A1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_B1,B1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_C1,C1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_D1,D1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_E1,E1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_F1,F1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_G1,G1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_H1,H1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_I1,I1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_J1,J1 パワーアーマー(ブーツ)
+powerArmorBoots_Model_K1,K1 パワーアーマー(ブーツ)
+PABundle1,パワーアーマー・セット
+PABundle1Desc,パワーアーマー一式が入っています。
+PABundle2,パワーアーマー・セット
+PABundle2Desc,パワーアーマー一式が入っています。
+PABundle3,パワーアーマー・セット
+PABundle3Desc,パワーアーマー一式が入っています。
+PABundle4,パワーアーマー・セット
+PABundle4Desc,パワーアーマー一式が入っています。
+PABundle5,パワーアーマー・セット
+PABundle5Desc,パワーアーマー一式が入っています。
+PABundle6,パワーアーマー・セット
+PABundle6Desc,パワーアーマー一式が入っています。
+PABundle7,パワーアーマー・セット
+PABundle7Desc,パワーアーマー一式が入っています。
+PABundle8,パワーアーマー・セット
+PABundle8Desc,パワーアーマー一式が入っています。
+PABundle9,パワーアーマー・セット
+PABundle9Desc,パワーアーマー一式が入っています。
+PABundle10,パワーアーマー・セット
+PABundle10Desc,パワーアーマー一式が入っています。
+PABundle11,パワーアーマー・セット
+PABundle11Desc,パワーアーマー一式が入っています。
+PowerArmorStand,パワーアーマー・スタンド
+modPowerArmorHelmetRadar,パワーアーマー・レーダー
+modPowerArmorHelmetRadarDesc,パワーアーマー(頭)にセット可能。\n\n近くにいる敵の位置がコンパス上に表示されるようになります。
+modPowerArmorHelmetRadarMK2,パワーアーマー・レーダーMkII
+modPowerArmorHelmetRadarMK2Desc,パワーアーマー(頭)にセット可能。\n\n敵の位置がコンパス上に表示されるようになります。
+modPowerArmorHelmetScuba,パワーアーマー用酸素Mod
+modPowerArmorHelmetScubaDesc,パワーアーマー(頭)にセット可能。\n\n水の中にいても溺れなくなります。
+modPowerArmorArmsBlockBuster,パワーアーマー用ダメージアップMod
+modPowerArmorArmsBlockBusterDesc,パワーアーマー(腕)にセット可能。\n\n近接ブロックダメージが上がります。
+modPowerArmorArmsMelee,パワーアーマー用出血Mod
+modPowerArmorArmsMeleeDesc,パワーアーマー(腕)にセット可能。\n\n攻撃時に敵に出血デバフを与えます。
+modPowerArmorChestPlating,パワーアーマー用プレーティングMod
+modPowerArmorChestPlatingDesc,パワーアーマー(胴)にセット可能。\n\n受けるダメージ量が軽減されます。
+modPowerArmorChestEmergencyProto,パワーアーマー用体力回復Mod
+modPowerArmorChestEmergencyProtoDesc,パワーアーマー(胴)にセット可能。\n\n体力が全体の50%以下の場合、ゆっくりと体力が回復します。
+modPowerArmorLegsShocks,パワーアーマー用重量Mod
+modPowerArmorLegsShocksDesc,パワーアーマー(足)にセット可能。\n\nインベントリ内の重量制限がかかっているスロットが全て解除されます。
+modPowerArmorLegsJumpBoost,パワーアーマー用ジャンプ力Mod
+modPowerArmorLegsJumpBoostDesc,パワーアーマー(足)にセット可能。\n\nジャンプ可能な高度が50%上がります。
+modPowerArmorBootsGyros,パワーアーマー用走行Mod
+modPowerArmorBootsGyrosDesc,パワーアーマー(ブーツ)にセット可能。\n\n走行中の移動速度が上がり、スタミナ消費が下がります。
+modPowerArmorBootsDampener,パワーアーマー用衝撃吸収Mod
+modPowerArmorBootsDampenerDesc,パワーアーマー(ブーツ)にセット可能。\n\n落下ダメージを75%軽減します。
+
+perkWildWasteland,ワイルド・ウェイストランド
+perkWildWastelandDesc,荒れ地で生き残るために役に立つ知識が習得できる本シリーズ。
+
+perkWhiteRiverSG,ホワイトリバー・サバイバルガイド
+perkWhiteRiverSGDesc,荒れ地で生き残るために役に立つ知識が習得できる本シリーズ。
+
+perkPowerArmor,パワーアーマーとあなた
+perkPowerArmorDesc,パワーアーマーを使用する際に役に立つコツが書いてある本シリーズ。
+
+
+bookWildWastelandHeavyHands,ワイルド・ウェイストランドVol 1
+bookWildWastelandPrecisionStrike,ワイルド・ウェイストランドVol 2
+bookWildWastelandLordoftheLimbs,ワイルド・ウェイストランドVol 3
+bookWildWastelandDeepFreeze,ワイルド・ウェイストランドVol 4
+bookWildWastelandZap,ワイルド・ウェイストランドVol 5
+bookWildWastelandRaiderBully,ワイルド・ウェイストランドVol 6
+bookWildWastelandZedtheImpaler,ワイルド・ウェイストランドVol 7
+
+bookWhiteRiverSGTheHaggler,ホワイトリバー・サバイバルガイドVol 1
+bookWhiteRiverSGTumblers,ホワイトリバー・サバイバルガイドVol 2
+bookWhiteRiverSGIronGut,ホワイトリバー・サバイバルガイドVol 3
+bookWhiteRiverSGScratch,ホワイトリバー・サバイバルガイドVol 4
+bookWhiteRiverSGRecovery,ホワイトリバー・サバイバルガイドVol 5
+bookWhiteRiverSGSprinterWeekly,ホワイトリバー・サバイバルガイドVol 6
+bookWhiteRiverSGKeenEyes,ホワイトリバー・サバイバルガイドVol 7
+
+bookPowerArmorMasterRepair,パワーアーマーとあなた Vol 1
+bookPowerArmorExtraPlating,パワーアーマーとあなた Vol 2
+bookPowerArmorSteadyHands,パワーアーマーとあなた Vol 3
+bookPowerArmorBullRush,パワーアーマーとあなた Vol 4
+bookPowerArmorEfficientMovement,パワーアーマーとあなた Vol 5
+bookPowerArmorStealthCrouch,パワーアーマーとあなた Vol 6
+bookPowerArmorReflect,パワーアーマーとあなた Vol 7
+
+perkWildWastelandHeavyHandsDesc,近接武器使用時の敵をノックダウンさせる確率が少し上がります。
+perkWildWastelandHeavyHandsLongDesc,"近接武器使用時の敵をノックダウンさせる確率が少し上がります。"
+perkWildWastelandPrecisionStrikeDesc,稀に与ダメージ量が2倍になります。
+perkWildWastelandPrecisionStrikeLongDesc,"稀に与ダメージ量が2倍になります。"
+perkWildWastelandLordoftheLimbsDesc,手足へのダメージ量上昇。
+perkWildWastelandLordoftheLimbsLongDesc,"敵の手足に与えるダメージ量が上がります。"
+perkWildWastelandDeepFreezeDesc,クライオレーター使用時のダメージ量が20%上がります。
+perkWildWastelandDeepFreezeLongDesc,"クライオレーター使用時のダメージ量が20%上がります。"
+perkWildWastelandZapDesc,エイリアン・ブラスター使用時のダメージ量が20%上がります。
+perkWildWastelandZapLongDesc,"エイリアン・ブラスター使用時のダメージ量が20%上がります。"
+perkWildWastelandRaiderBullyDesc,レイダーへのダメージ量が15%上がります。
+perkWildWastelandRaiderBullyLongDesc,"レイダーへの怒りにより、彼らに与えるダメージ量が上がりました。"
+perkWildWastelandZedtheImpalerDesc,ゾンビへのダメージ量が10%上がります。
+perkWildWastelandZedtheImpalerLongDesc,"たくさんのゾンビと戦った経験により、彼らへのダメージ量が上がりました。"
+perkWildWastelandCompleteDesc,エナジー武器の弾薬がクラフト可能になります。
+perkWildWastelandCompleteLongDesc,"荒れ地は危険な場所です。\n生き残るためには強い武器が必要なため、エナジー武器の弾薬の作り方を習得しました。"
+
+perkWhiteRiverSGTheHagglerDesc,取引価格が10%お得になります。
+perkWhiteRiverSGTheHagglerLongDesc,"トレーダーと上手く交渉する事も大切なサバイバルスキルです。\nお得に取引をするコツを学びます。"
+perkWhiteRiverSGTumblersDesc,ロックピックが壊れる確率を25%下げます。
+perkWhiteRiverSGTumblersLongDesc,"ピッキングより成功しやすくなります。"
+perkWhiteRiverSGIronGutDesc,満腹値や水分値が減る速度が落ち、赤痢になりにくくなります。
+perkWhiteRiverSGIronGutLongDesc,"満腹値や水分値が減る速度が落ち、赤痢になりにくくなります。"
+perkWhiteRiverSGScratchDesc,ほとんどのデバフへの抵抗が20%ずつ上がります。
+perkWhiteRiverSGScratchLongDesc,"鍛えられたため、ほとんどのデバフへの抵抗が上がります。"
+perkWhiteRiverSGRecoveryDesc,少量の体力が持続回復するようになります。
+perkWhiteRiverSGRecoveryLongDesc,"自然治癒力が見に着いたため、ゆっくりと体力が回復するようになりました。"
+perkWhiteRiverSGSprinterWeeklyDesc,走行中のスタミナ消費が10%軽減されます。
+perkWhiteRiverSGSprinterWeeklyLongDesc,"走行中のスタミナ消費が軽減されます。"
+perkWhiteRiverSGKeenEyesDesc,ゲームステージが15%上昇します。
+perkWhiteRiverSGKeenEyesLongDesc,"ゴミ漁りの経験により、探索中に良い物を見つける確率が上がります。"
+perkWhiteRiverSGCompleteDesc,様々な家具がクラフト可能になります。
+perkWhiteRiverSGCompleteLongDesc,"サバイバルに慣れてきたので、生活エリアをより居心地よくする余裕が出てきました。\n\n様々な家具やストレージがクラフト可能になります。"
+
+perkPowerArmorMasterRepairDesc,パワーアーマー・リペアキットのクラフトに必要な材料が軽減され、クラフト時間が50%短縮されます。
+perkPowerArmorMasterRepairLongDesc,"パワーアーマー・リペアキットのクラフトに必要な材料が軽減され、クラフト時間が50%短縮されます。"
+perkPowerArmorExtraPlatingDesc,パワーアーマーの劣化速度が20%遅くなります。
+perkPowerArmorExtraPlatingLongDesc,"パワーアーマーの劣化速度が20%遅くなります。"
+perkPowerArmorSteadyHandsDesc,パワーアーマー着用時の命中精度が上がります。
+perkPowerArmorSteadyHandsLongDesc,"パワーアーマー着用時の命中精度が上がります。"
+perkPowerArmorBullRushDesc,走りながらゾンビと衝突するとノックダウンすることが出来るようになります。
+perkPowerArmorBullRushLongDesc,"走りながらゾンビと衝突するとノックダウンすることが出来るようになります。"
+perkPowerArmorEfficientMovementDesc,パワーアーマー着用時のスタミナ消費量が軽減されます。
+perkPowerArmorEfficientMovementLongDesc,"パワーアーマー着用時のスタミナ消費量が軽減されます。"
+perkPowerArmorStealthCrouchDesc,パワーアーマー着用時のしゃがみ移動速度が上がり、スタミナ消費が軽減されます。
+perkPowerArmorStealthCrouchLongDesc,"パワーアーマー着用時のしゃがみ移動速度が上がり、スタミナ消費が軽減されます。"
+perkPowerArmorReflectDesc,パワーアーマー着用時に攻撃を受けると、受けたダメージの25%分を相手に跳ね返します。
+perkPowerArmorReflectLongDesc,"パワーアーマー着用時に攻撃を受けると、受けたダメージの25%分を相手に跳ね返します。\n\n跳ね返したダメージにより敵が死んだ場合、キル経験値は獲得できません。"
+perkPowerArmorCompleteDesc,パワーアーマー着用時、最大体力値と最大スタミナ値上昇。
+perkPowerArmorCompleteLongDesc,"パワーアーマー着用時、最大体力値と最大スタミナ値上昇。"
+
+questPewPew,サンセット・サルサパリラ広告
+questPewPewDesc,スター・ボトルキャップのプレゼントキャンペーン情報が書いてあります。\n\n読むと当たり賞品の入手方法が分かります。
+questoldMap,古い地図
+questoldMapDesc,宝の隠し場所が書いてある地図。\n\n読むと場所が表示されます。
+questLetter,古い手紙
+questLetterDesc,宛先へ届くことがなかった古い手紙。
+cntPewPewLoot,隠された宝
+
+humanRaiderScoutClub,レイダー・シーフ
+humanRaiderScoutSMG,レイダー・シーフ
+humanRaiderScoutRifle,レイダー・シーフ
+humanRaider1Club,ワンダリング・レイダー
+humanRaider1SMG,ワンダリング・レイダー
+humanRaider1Rifle,ワンダリング・レイダー
+humanRaider2Club,ワイルド・レイダー
+humanRaider2SMG,ワイルド・レイダー
+humanRaider2Rifle,ワイルド・レイダー
+humanRaider3Club,マスク・レイダー
+humanRaider3Rifle,マスク・レイダー
+humanRaider3Shotty,マスク・レイダー
+humanRaider4Club,レイダー・ウォリック
+humanRaider4Rifle,レイダー・ウォリック
+humanRaider4Shotty,レイダー・ウォリック
+humanRaider5Club,レイダー・エンジニア
+humanRaider5Shotty,レイダー・エンジニア
+humanRaider5Rifle,レイダー・エンジニア
+humanRaiderLeaderRifle,レイダー・リーダー
+humanRaiderLeaderClub,レイダー・リーダー
+humanRaiderLeaderShotgun,レイダー・リーダー
+humanRaiderScoutClubsleeper,レイダー・シーフ
+humanRaiderScoutSMGsleeper,レイダー・シーフ
+humanRaiderScoutRiflesleeper,レイダー・シーフ
+humanRaider1Clubsleeper,ワンダリング・レイダー
+humanRaider1SMGsleeper,ワンダリング・レイダー
+humanRaider1Riflesleeper,ワンダリング・レイダー
+humanRaider2Clubsleeper,ワイルド・レイダー
+humanRaider2SMGsleeper,ワイルド・レイダー
+humanRaider2Riflesleeper,ワイルド・レイダー
+humanRaider3Clubsleeper,マスク・レイダー
+humanRaider3Riflesleeper,マスク・レイダー
+humanRaider3Shottysleeper,マスク・レイダー
+humanRaider4Clubsleeper,レイダー・ウォリック
+humanRaider4Riflesleeper,レイダー・ウォリック
+humanRaider4Shottysleeper,レイダー・ウォリック
+humanRaider5Clubsleeper,レイダー・エンジニア
+humanRaider5Shottysleeper,レイダー・エンジニア
+humanRaider5Riflesleeper,レイダー・エンジニア
+humanRaiderLeaderClubsleeper,レイダー・リーダー
+humanRaiderLeaderRiflesleeper,レイダー・リーダー
+humanRaiderLeaderShotgunsleeper,レイダー・リーダー
+humanSoldier1Knife,ソルジャー
+humanSoldier1Rifle,ソルジャー
+humanSoldier2Knife,ベテラン・ソルジャー
+humanSoldier2Rifle,ベテラン・ソルジャー
+humanSoldier3Knife,司令官
+humanSoldier3Rifle,司令官
+humanSoldier4Knife,マスク・ソルジャー
+humanSoldier4Rifle,マスク・ソルジャー
+humanSoldier5Knife,テック・ソルジャー
+humanSoldier5Rifle,テック・ソルジャー
+humanSoldier1Knifesleeper,ソルジャー
+humanSoldier1Riflesleeper,ソルジャー
+humanSoldier2Knifesleeper,ベテラン・ソルジャー
+humanSoldier2Riflesleeper,ベテラン・ソルジャー
+humanSoldier3Knifesleeper,司令官
+humanSoldier3Riflesleeper,司令官
+humanSoldier4Knifesleeper,マスク・ソルジャー
+humanSoldier4Riflesleeper,マスク・ソルジャー
+humanSoldier5Knifesleeper,テック・ソルジャー
+humanSoldier5Riflesleeper,テック・ソルジャー
+mutantSM1melee1,ミュータント
+mutantSM1melee2,ミュータント
+mutantSM1melee3,ミュータント
+mutantSM1melee4,ミュータント
+mutantSM1melee5,ミュータント
+mutantSM1melee6,ミュータント
+mutantSM1melee7,ミュータント
+mutantSM1melee8,ミュータント
+mutantSM1ranged1,ミュータント
+mutantSM1ranged2,ミュータント
+mutantSM1ranged3,ミュータント
+MutantSM1Bomber,ミュータント・ボマー
+MutantSM1horde1,ミュータント T-800
+MutantSM1horde2,ミュータント T-800
+MutantSM1horde3,ミュータント T-800
+MutantSM1horde4,ミュータント T-800
+MutantSM1horde5,ミュータント T-800
+MutantSM1horde6,ミュータント T-800
+MutantSM1horde7,ミュータント T-800
+MutantSM1horde8,ミュータント T-800
+mutantBehemoth,ミュータント・ベヒーモス
+mutantBehemoth2,ミュータント・ベヒーモス2
+zombieGhoul1,グール
+zombieFeralGhoul,汚染グール
+RaiderLeaderLoot,レイダー・リーダーのルート袋
+
+"Nuka Cola",ヌカ・コーラ
+"The delicious taste of Nuka Cola has you feeling revitalized! Recover stamina quicker, and restore a small amount of max health and stamina. The small trace of radiation also allow for a slight movement speed boost for a limited time!",美味しいヌカ・コーラを飲んだため、元気いっぱいです！\nスタミナ回復速度が上がり、少量の体力とスタミナが回復します。\n若干放射性物質が含まれているため、一時的に移動速度が上がります。
+"Nuka Cherry",ヌカ・チェリー
+"Mmm...Nuka Cherry! Recover stamina quicker, increase melee damage, and restore a decent amount of max health and stamina. The traces of radiation also allow for a moderate movement speed boost for a limited time!",ヌカ・チェリーは美味しいですね！\nスタミナ回復速度が上がり、少量の体力とスタミナが回復します。\n若干放射性物質が含まれているため、一時的に移動速度が上がります。
+"Nuka Quantum",ヌカ・クアンタム
+"Nuka Quantum has put you into overdrive! Recover stamina and health quicker, and restore a large amount of max health and stamina. The large amount of radiation also allows for a substantial movement speed boost for a limited time, but you'll probably feel it later!",ヌカ・クアンタムを飲んだため、体力とスタミナの回復速度が上昇し、放射性物質の効果で一時的に移動速度が上がります。\n後遺症はあるようなので、ほどほどに。
+"Quantum Effect",クアンタム効果
+"Your body has crashed from the Quantum rush! But hey, at least your pee will glow for a week! Maybe you should lie down...",クアンタムの後遺症を受けています。\n悪い事ばかりではありませんよ、あと一週間ほどあなたの尿が光ります！\n\n少し横になったほうが良いかもしれませんね．．．
+"Nuka Quartz",ヌカ・クォーツ
+"Was that expired? Too late now! Damage resistance is increased and health will regenerate, but it does make you queasy!",腐ってたのかな．．．？\nダメージへの抵抗が上がり、体力が徐々に回復していますが、なんだかクラクラします。
+"Quartz Effect",クォーツ効果
+"Your body did not appreciate that! Hopefully it was worth it...",健康には悪そうですが．．．
+"Sunset Sarsaparilla",サンセット・サルサパリラ
+"The refreshing taste of Sunset Sarsaparilla has you feeling reinvigorated! Recover stamina quicker, and restore a small amount of max health and stamina.",スッキリとしたサンセット・サルサパリラを飲んだため元気が出ました！\n\nスタミナ回復速度が上がり、体力とスタミナが回復しています。
+"You have collected enough Star Bottle Caps to redeem your reward!",賞品をもらうために必要な個数のスター・ボトルキャップが集まりました！\n\n賞品をもらいに行きましょう！
+"The Legend of the Star",伝説のスター
+"Head to the trader to collect your prize!",トレーダーから賞品をもらいに行きましょう！
+"Someone ran off with the reward, but I heard where they should be headed. Here's a map of the area, hopefully you can find where they hid it. I'd keep my eyes peeled if I were you.",残念ながら賞品は盗まれてしまった。\n\n盗んだ奴が逃げて行った方面を地図に示しておいたから、そのあたりを探してきてくれ。
+"A Valuable Lesson",貴重な学び
+"I guess I'd better get to hunting for their stash so I can get my reward.",賞品を手に入れるためには探しに行くしかなさそうだ。
+ammoBundle10mmBullet,10㎜弾入りの箱
+ammoBundle10mmBulletHP,10㎜ HP弾入りの箱
+ammoBundle10mmBulletAP,10㎜ AP弾入りの箱
+meleeMachete1,鉈(なた)
+LaserShotgunNoFireDesc,セル弾が足りません。\n\n撃つためにはリロードする必要があります。
