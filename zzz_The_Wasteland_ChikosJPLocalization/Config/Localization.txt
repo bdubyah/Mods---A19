@@ -96,11 +96,11 @@ VaultMetalDoorSmall,ボルト・ドア
 VaultMetalDoorSmallDesc,小さなボルト・ドア
 VaultMetalDoorSmallLocked,ボルト・ドア
 VaultMetalDoorSmallLockedDesc,小さなボルト・ドア
-Bookcase1,古くなった本棚
+Bookcase1,本棚
 Bookcase1Desc,古い本棚
-Bookcase2,古くなった本棚
+Bookcase2,本棚
 Bookcase2Desc,古い本棚
-Bookcase3,古くなった本棚
+Bookcase3,本棚
 Bookcase3Desc,古い本棚
 BottleCarrierEmpty,ボトルケース
 BottleCarrierEmptyDesc,瓶を持ち運ぶためのクレート
@@ -384,6 +384,9 @@ ammo10mmBulletHP,HP 10mm弾
 ammo10mmBulletHPDesc,HP 10mm弾。\n\nアーマー値の低い敵相手に適しています。\n\n9㎜弾より僅かに威力が高くなっています。
 ammo10mmBulletAP,AP 10mm弾
 ammo10mmBulletAPDesc,AP 10mm弾。\n\nアーマー値の高い敵相手に適しています。\n\n9㎜弾より僅かに威力が高くなっています。
+ammoBundle10mmBullet,箱詰めされた10mm弾 (100)
+ammoBundle10mmBulletHP,箱詰めされた10mm弾 (100)
+ammoBundle10mmBulletAP,箱詰めされた10mm弾 (100)
 ammoAB,エイリアン・エナジーセル弾
 ammoABDesc,エイリアン・ブラスター用の弾薬。
 ammoEC,エナジーセル弾
@@ -861,3 +864,308 @@ ammoBundle10mmBulletHP,10㎜ HP弾入りの箱
 ammoBundle10mmBulletAP,10㎜ AP弾入りの箱
 meleeMachete1,鉈(なた)
 LaserShotgunNoFireDesc,セル弾が足りません。\n\n撃つためにはリロードする必要があります。
+
+
+vehicleBoxTruckbody,ボックス・トラックボディ
+vehicleBoxTruckbodyDesc,ボックス・トラックをクラフトするために必要なパーツ。
+vehicleBoxTruckchassis,ボックス・トラックシャーシ
+vehicleBoxTruckchassisDesc,ボックス・トラックをクラフトするために必要なパーツ。
+vehicleBoxTruckPlain,ボックス・トラック
+vehicleBoxTruckPlainplaceable,ボックス・トラック
+vehicleBoxTruckPlainplaceableDesc,"古びたボックス・トラック。"
+vehicleBoxTruckHostess,"ボックス・トラック(文字入り)"
+vehicleBoxTruckHostessplaceable,"ボックス・トラック(文字入り)"
+vehicleBoxTruckHostessplaceableDesc,"タラハシーのお気に入り。"
+vehicleBoxTruckRHSchematic,ボックス・トラックの図
+vehicleGNXchassis,GNXシャーシ
+vehicleGNXchassisDesc,GNXをクラフトするために必要なパーツ。\n\nグリースモンキーのレベル4が必要です。
+vehicleGNXaccessories,GNXアクセサリ
+vehicleGNXaccessoriesDesc,GNXをクラフトするために必要なパーツ。
+vehicleGNXBlack,GNX
+vehicleGNXBlackplaceable,GNX(黒)
+vehicleGNXBlackplaceableDesc,荒れ地でスタイリッシュに乗り回しましょう！
+vehicleGNXRed,GNX
+vehicleGNXRedplaceable,GNX(赤)
+vehicleGNXRedplaceableDesc,荒れ地でスタイリッシュに乗り回しましょう！
+vehicleGolfCart,ゴルフカート
+vehicleGolfCartchassis,"ゴルフカート・シャーシ"
+vehicleGolfCartchassisDesc,"ゴルフカートをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 2 が必要です。"
+vehicleGolfCartaccessories,"ゴルフカートアクセサリ"
+vehicleGolfCartaccessoriesDesc,"ゴルフカートをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 2 が必要です。"
+vehicleGolfCartplaceable,ゴルフカート
+vehicleGolfCartplaceableDesc,"歩くよりは良いはずです！"
+meleeWpnClubT3GolfClub,ゴルフクラブ
+meleeWpnClubT3GolfClubDesc,"ゴルフボールがないって？\n\nスイングの練習ならゾンビ相手にすると良いですね。"
+mvehicleWillyJeep,ウィリスジープ
+vehicleWillyJeepplaceable,ウィリスジープ
+vehicleWillyJeepplaceableDesc,"第二次世界大戦で無事だったのなら大丈夫ですね！"
+vehicleWillyJeepTopless,"ウィリスジープ(屋根無し)"
+vehicleWillyJeepToplessplaceable,"ウィリスジープ(屋根無し)"
+vehicleWillyJeepToplessplaceableDesc,"風を感じながら走れます！"
+vehicleMRAP,MRAP
+vehicleMRAP2,MRAP
+vehicleMRAPplaceable,MRAP
+vehicleMRAP2placeableDesc,立派なMRAP軍用車両。
+vehicleMRAP2placeable,MRAP
+vehicleMRAPplaceableDesc,立派なMRAP軍用車両。
+vehicleMRAPaccessories,MRAPアクセサリ
+vehicleMRAPaccessoriesDesc,MRAPをクラフトするために必要なパーツ。
+vehicleMRAPparts,MRAPパーツ
+vehicleMRAPpartsDesc,MRAPをクラフトするために必要なパーツ。
+vehicleMarauder,マローダー
+vehicleMarauderplaceable,マローダー
+vehicleMarauderplaceableDesc,ゾンビも羨む素晴らしい乗り物！
+vehicleMarauderblack,マローダー
+vehicleMarauderblackplaceable,マローダー
+vehicleMarauderblackplaceableDesc,ゾンビも羨む素晴らしい乗り物！
+vehicleMarauderchassis,マローダー・シャーシ
+vehicleMarauderchassisDesc,マローダーをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 5 が必要です。
+vehicleMarauderaccessories,マローダー・アクセサリ
+vehicleMarauderaccessoriesDesc,マローダーをクラフトするために必要なパーツ。
+vehicleUAZ452chassis,UAZ 452シャーシ
+vehicleUAZ452chassisDesc,UAZ 452をクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleUAZ452,UAZ 452
+vehicleUAZ452placeable,UAZ 452
+vehicleUAZ452placeableDesc,アポカリプスの世界に綺麗に馴染んでいます。
+vehicleNovachassis,Novaシャーシ
+vehicleNovachassisDesc,Novaをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleNovaaccessories,Novaアクセサリ
+vehicleNovaaccessoriesDesc,Novaをクラフトするために必要なパーツ。
+vehicleNova,Nova
+vehicleNovaplaceable,Nova
+vehicleNovaplaceableDesc,これぞクラシック．．．
+vehicleNovared,Nova(赤)
+vehicleNovaredplaceable,Nova(赤)
+vehicleNovaredplaceableDesc,これぞクラシック．．．
+vehicleNovablack,Nova(黒)
+vehicleNovablackplaceable,Nova(黒)
+vehicleNovablackplaceableDesc,これぞクラシック．．．
+vehicleWorkTruckchassis,"作業用トラック・シャーシ"
+vehicleWorkTruckchassisDesc,"作業用トラックをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。"
+vehicleWorkTruckaccessories,"作業用トラック・アクセサリ"
+vehicleWorkTruckaccessoriesDesc,"作業用トラックをクラフトするために必要なパーツ。"
+vehicleWorkTruck,作業用トラック
+vehicleWorkTruckplaceable,作業用トラック
+vehicleWorkTruckplaceableDesc,"色々あって、ボロボロになっています。"
+vehicleBRDM2chassis,BRDM-2シャーシ
+vehicleBRDM2chassisDesc,BRDM-2をクラフトするために必要なパーツ。\n\nグリースモンキーレベル 5 が必要です。
+vehicleBRDM2accessories,BRDM-2アクセサリ
+vehicleBRDM2accessoriesDesc,BRDM-2をクラフトするために必要なパーツ。
+vehicleBRDM2,BRDM-2
+vehicleBRDM2placeable,BRDM-2
+vehicleBRDM2placeableDesc,驚くほどきれいな状態で残っている軍用車両。
+vehicleBRDM2desert,BRDM-2(砂漠)
+vehicleBRDM2desertplaceable,BRDM-2(砂漠)
+vehicleBRDM2desertplaceableDesc,驚くほどきれいな状態で残っている軍用車両。
+vehiclePickupchassis,ピックアップトラック・シャーシ
+vehiclePickupchassisDesc,ピックアップトラックをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehiclePickupaccessories,ピックアップトラック・アクセサリ
+vehiclePickupaccessoriesDesc,ピックアップトラックをクラフトするために必要なパーツ。
+vehiclePickup,ピックアップトラック
+vehiclePickupplaceable,ピックアップトラック
+vehiclePickupplaceableDesc,ゾンビも羨む素晴らしい乗り物！
+vehicleMD500chassis,MD-500シャーシ
+vehicleMD500chassisDesc,MD-500をクラフトするために必要なパーツ。\n\nグリースモンキーレベル 5 が必要です。
+vehicleMD500accessories,MD-500アクセサリ
+vehicleMD500accessoriesDesc,MD-500をクラフトするために必要なパーツ。
+vehicleMD500,MD-500
+vehicleMD500placeable,MD-500
+vehicleMD500placeableDesc,これに乗ればゾンビに捕まる事はないでしょう。
+vehicleDusterchassis,"ダスター・シャーシ"
+vehicleDusterchassisDesc,"ダスターをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 5 が必要です。"
+vehicleDusteraccessories,"ダスター・アクセサリ"
+vehicleDusteraccessoriesDesc,"ダスターをクラフトするために必要なパーツ。"
+vehicleDuster,ダスター
+vehicleDusterplaceable,ダスター
+vehicleDusterplaceableDesc,"飛べそうに見えはしますけど..."
+vehicleStallionchassis,スタリオン・シャーシ
+vehicleStallionchassisDesc,スタリオンをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleStallionaccessories,スタリオン・アクセサリ
+vehicleStallionaccessoriesDesc,スタリオンをクラフトするために必要なパーツ。
+vehicleStalliongreen,スタリオン
+vehicleStalliongreenplaceable,スタリオン(緑)
+vehicleStalliongreenplaceableDesc,これぞクラシック．．．
+vehicleStallionred,スタリオン
+vehicleStallionredplaceable,スタリオン(赤)
+vehicleStallionredplaceableDesc,これぞクラシック．．．
+vehicleStallionblue,スタリオン
+vehicleStallionblueplaceable,スタリオン(青)
+vehicleStallionblueplaceableDesc,これぞクラシック．．．
+vehicleStallionwhite,スタリオン
+vehicleStallionwhiteplaceable,スタリオン(白)
+vehicleStallionwhiteplaceableDesc,これぞクラシック．．．
+vehicleDirtBike,"オフロードバイク"
+vehicleDirtBikeplaceable,"オフロードバイク"
+vehicleDirtBikeplaceableDesc,"オフロードバイク。\n\n騒音で苦情をいうお隣さんももういないので、思う存分乗れますね！"
+vehicleDirtBikeChassis,オフロードバイク・シャーシ
+vehicleDirtBikeChassisDesc,"素晴らしい物が出来そうです！"
+vehicleDirtBikeParts,"オフロードバイク・パーツ"
+vehicleDirtBikePartsDesc,"これはあったほうが良いですね。"
+vehicleChargerchassis,"チャージャー・シャーシ"
+vehicleChargerchassisDesc,"チャージャーをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。"
+vehicleChargeraccessories,"チャージャー・アクセサリ"
+vehicleChargeraccessoriesDesc,"チャージャーをクラフトするために必要なパーツ。"
+vehicleChargerorange,チャージャー
+vehicleChargerorangeplaceable,"チャージャー(オレンジ)"
+vehicleChargerorangeplaceableDesc,これぞクラシック．．．
+vehicleChargerorange2,チャージャー
+vehicleChargerorange2placeable,"チャージャー(オレンジ2)"
+vehicleChargerorange2placeableDesc,これぞクラシック．．．
+vehicleChargerblack,チャージャー
+vehicleChargerblackplaceable,"チャージャー(黒)"
+vehicleChargerblackplaceableDesc,これぞクラシック．．．
+vehicleChargerblack2,チャージャー
+vehicleChargerblack2placeable,"チャージャー(黒2)"
+vehicleChargerblack2placeableDesc,これぞクラシック．．．
+vehicleChargeryellow,チャージャー
+vehicleChargeryellowplaceable,"チャージャー(黄)"
+vehicleChargeryellowplaceableDesc,これぞクラシック．．．
+vehicleChargeryellow2,チャージャー
+vehicleChargeryellow2placeable,"チャージャー(黄2)"
+vehicleChargeryellow2placeableDesc,これぞクラシック．．．
+vehicleChargergreen,チャージャー
+vehicleChargergreenplaceable,"チャージャー(緑)"
+vehicleChargergreenplaceableDesc,これぞクラシック．．．
+vehicleChargergreen2,チャージャー
+vehicleChargergreen2placeable,"チャージャー(緑2)"
+vehicleChargergreen2placeableDesc,これぞクラシック．．．
+vehicleChargerteal,チャージャー
+vehicleChargertealplaceable,"チャージャー(ティール)"
+vehicleChargertealplaceableDesc,これぞクラシック．．．
+vehicleChargerteal2,チャージャー
+vehicleChargerteal2placeable,"チャージャー(ティール2)"
+vehicleChargerteal2placeableDesc,これぞクラシック．．．
+vehicleChargerrust,チャージャー
+vehicleChargerrustplaceable,"チャージャー(錆び付き)"
+vehicleChargerrustplaceableDesc,これぞクラシック．．．
+vehicleChargerrust2,チャージャー
+vehicleChargerrust2placeable,"チャージャー(錆び付き2)"
+vehicleChargerrust2placeableDesc,これぞクラシック．．．
+vehicleJunker,ジャンカー
+vehicleJunkerplaceable,ジャンカー
+vehicleJunkerplaceableDesc,"古びたカスタムバイク。"
+vehicleJunker2,ジャンカー
+vehicleJunker2placeable,"ジャンカー (紫)"
+vehicleJunker2placeableDesc,"古びたカスタムバイク。"
+vehicleJunkerChassis,"ジャンカー・シャーシ"
+vehicleJunkerChassisDesc,"素晴らしい物が出来そうです！"
+vehicleJunkerbars,"ジャンカー・ハンドル"
+vehicleJunkerbarsDesc,"これはあったほうが良いですね。"
+vehicleCruiser,クルーザー
+vehicleCruiserplaceable,クルーザー
+vehicleCruiserplaceableDesc,"かっこ良いカスタムクルーザー"
+vehicleCruiser2,クルーザー
+vehicleCruiser2placeable,"クルーザー (色落ちした)"
+vehicleCruiser2placeableDesc,"かっこ良いカスタムクルーザー"
+vehicleCruiserChassis,"クルーザー・シャーシ"
+vehicleCruiserChassisDesc,"素晴らしい物が出来そうです！"
+vehicleCruiserbars,"クルーザー・ハンドル"
+vehicleCruiserbarsDesc,"これはあったほうが良いですね。"
+vehicleRat,ラットバイク
+vehicleRatplaceable,ラットバイク
+vehicleRatplaceableDesc,"カスタム・ラットバイク"
+vehicleRat2,ラットバイク
+vehicleRat2placeable,"ラットバイク (赤)"
+vehicleRat2placeableDesc,"カスタム・ラットバイク"
+vehicleRatChassis,"ラットバイク・シャーシ"
+vehicleRatChassisDesc,"素晴らしい物が出来そうです！"
+vehicleRatbars,"ラットバイク・ハンドル"
+vehicleRatbarsDesc,"これはあったほうが良いですね。"
+vehicleSHERPchassis,SHERPシャーシ
+vehicleSHERPchassisDesc,SHERPをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleSHERPaccessories,SHERPアクセサリ
+vehicleSHERPaccessoriesDesc,SHERPをクラフトするために必要なパーツ。
+vehicleSHERP,SHERP
+vehicleSHERPplaceable,SHERP
+vehicleSHERPplaceableDesc,カスタムオフロード車。
+vehicleUH60chassis,UH-60シャーシ
+vehicleUH60chassisDesc,UH-60をクラフトするために必要なパーツ。\n\nグリースモンキーレベル 5 が必要です。
+vehicleUH60accessories,UH-60アクセサリ
+vehicleUH60accessoriesDesc,UH-60をクラフトするために必要なパーツ。
+vehicleUH60,UH-60
+vehicleUH60placeable,UH-60
+vehicleUH60placeableDesc,これに乗ればゾンビに追いつかれる事はありません。
+vehicleHotRodchassis,ホットロッド・シャーシ
+vehicleHotRodchassisDesc,ホットロッドをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleHotRodaccessories,ホットロッド・アクセサリ
+vehicleHotRodaccessoriesDesc,ホットロッドをクラフトするために必要なパーツ。
+vehicleHotRod1,ホットロッド
+vehicleHotRod2,ホットロッド
+vehicleHotRod3,ホットロッド
+vehicleHotRod4,ホットロッド
+vehicleHotRod5,ホットロッド
+vehicleHotRod6,ホットロッド
+vehicleHotRod1placeable,ホットロッド
+vehicleHotRod1placeableDesc,カスタム・ホットロッド。
+vehicleHotRod2placeable,ホットロッド
+vehicleHotRod2placeableDesc,カスタム・ホットロッド。
+vehicleHotRod3placeable,ホットロッド
+vehicleHotRod3placeableDesc,カスタム・ホットロッド。
+vehicleHotRod4placeable,ホットロッド
+vehicleHotRod4placeableDesc,カスタム・ホットロッド。
+vehicleHotRod5placeable,ホットロッド
+vehicleHotRod5placeableDesc,カスタム・ホットロッド。
+vehicleHotRod6placeable,ホットロッド
+vehicleHotRod6placeableDesc,カスタム・ホットロッド。
+vehicleHumveechassis,ハンヴィー・シャーシ
+vehicleHumveechassisDesc,ハンヴィーをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleHumveebody,ハンヴィー・ボディ
+vehicleHumveebodyDesc,ハンヴィーをクラフトするために必要なパーツ。
+vehicleHumvee,ハンヴィー
+vehicleHumveeplaceable,ハンヴィー
+vehicleHumveeplaceableDesc,最高の軍用車両。
+vehicleHumveeTopless,ハンヴィー
+vehicleHumveeToplessplaceable,ハンヴィー(屋根無し)
+vehicleHumveeToplessplaceableDesc,最高の軍用車両。
+vehicleBuggychassis,バギー・シャーシ
+vehicleBuggychassisDesc,バギーをクラフトするために必要なパーツ。\n\nグリースモンキーレベル 4 が必要です。
+vehicleBuggyaccessories,バギー・アクセサリ
+vehicleBuggyaccessoriesDesc,バギーをクラフトするために必要なパーツ。
+vehicleBuggy,バギー
+vehicleBuggyplaceable,バギー
+vehicleBuggyplaceableDesc,古いオフロード・バギー・
+vehicleBoxTruckchassisSchematic,ボックス・トラックシャーシの図
+vehicleBoxTruckbodySchematic,ボックス・トラックボディの図
+vehicleBRDM2chassisSchematic,BRDM-2シャーシの図
+vehicleBRDM2accessoriesSchematic,BRDM-2アクセサリの図
+vehicleBuggychassisSchematic,バギー・シャーシの図
+vehicleBuggyaccessoriesSchematic,バギー・アクセサリの図
+vehicleChargerchassisSchematic,チャージャー・シャーシの図
+vehicleChargeraccessoriesSchematic,チャージャー・アクセサリの図
+vehicleCruiserChassisSchematic,クルーザー・シャーシの図
+vehicleCruiserbarsSchematic,クルーザー・ハンドルの図
+vehicleDirtBikeChassisSchematic,オフロードバイク・シャーシの図
+vehicleDirtBikePartsSchematic,オフロードバイク・パーツの図
+vehicleDusterchassisSchematic,ダスター・シャーシの図
+vehicleDusteraccessoriesSchematic,ダスター・アクセサリの図
+vehicleGNXchassisSchematic,GNXシャーシの図
+vehicleGNXaccessoriesSchematic,GNXアクセサリの図
+vehicleGolfCartchassisSchematic,ゴルフカート・シャーシの図
+vehicleGolfCartaccessoriesSchematic,ゴルフカート・アクセサリの図
+vehicleHotRodchassisSchematic,ホットロッド・シャーシの図
+vehicleHotRodaccessoriesSchematic,ホットロッド・アクセサリの図
+vehicleHumveechassisSchematic,ハンヴィー・シャーシの図
+vehicleHumveebodySchematic,ハンヴィー・ボディの図
+vehicleJunkerChassisSchematic,ジャンカー・シャーシの図
+vehicleJunkerbarsSchematic,ジャンカー・ハンドルの図
+vehicleMarauderchassisSchematic,マローダー・シャーシの図
+vehicleMarauderaccessoriesSchematic,マローダー・アクセサリの図
+vehicleMD500chassisSchematic,MD-500シャーシの図
+vehicleMD500accessoriesSchematic,MD-500アクセサリの図
+vehicleMRAPpartsSchematic,MRAPパーツの図
+vehicleMRAPaccessoriesSchematic,MRAPアクセサリの図
+vehicleNovachassisSchematic,Novaシャーシの図
+vehicleNovaaccessoriesSchematic,Novaアクセサリの図
+vehiclePickupchassisSchematic,ピックアップトラック・シャーシの図
+vehiclePickupaccessoriesSchematic,ピックアップトラック・アクセサリの図
+vehicleRatChassisSchematic,ラットバイク・シャーシの図
+vehicleRatbarsSchematic,ラットバイク・ハンドルの図
+vehicleSHERPchassisSchematic,SHERPシャーシの図
+vehicleSHERPaccessoriesSchematic,SHERPアクセサリの図
+vehicleStallionchassisSchematic,スタリオン・シャーシの図
+vehicleStallionaccessoriesSchematic,スタリオン・アクセサリの図
+vehicleUAZ452chassisSchematic,UAZ 452シャーシの図
+vehicleUH60chassisSchematic,UH-60シャーシの図
+vehicleUH60accessoriesSchematic,UH-60アクセサリの図
+vehicleWorkTruckchassisSchematic,作業用トラック・シャーシの図
+vehicleWorkTruckaccessoriesSchematic,作業用トラック・アクセサリの図
