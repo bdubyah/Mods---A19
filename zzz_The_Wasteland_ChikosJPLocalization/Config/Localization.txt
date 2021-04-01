@@ -357,6 +357,8 @@ gunMiniG,ミニガン
 gunMiniGDesc,"古くてしよう感のあるミニガン。\n\n最新の物ではありませんが、威力は充分ありそうです。"
 gunBAR1,BAR
 gunBAR1Desc,"古い銃。"
+gunSCAR,SCAR
+gunSCARDesc,"軍用アサルトライフル。"
 gunm79,M-79
 gunm79Desc,"40mm弾を使用する単発グレネードランチャー。\n\nAP弾、HE弾、そしてスモーク弾があります。"
 
@@ -385,8 +387,17 @@ ammo10mmBulletHPDesc,HP 10mm弾。\n\nアーマー値の低い敵相手に適し
 ammo10mmBulletAP,AP 10mm弾
 ammo10mmBulletAPDesc,AP 10mm弾。\n\nアーマー値の高い敵相手に適しています。\n\n9㎜弾より僅かに威力が高くなっています。
 ammoBundle10mmBullet,箱詰めされた10mm弾 (100)
-ammoBundle10mmBulletHP,箱詰めされた10mm弾 (100)
-ammoBundle10mmBulletAP,箱詰めされた10mm弾 (100)
+ammoBundle10mmBulletHP,箱詰めされたHP 10mm弾 (100)
+ammoBundle10mmBulletAP,箱詰めされたAP 10mm弾 (100)
+ammo556b,5.56mm弾
+ammo556bDesc,通常5.56mm弾。
+ammo556bHP,HP 5.56mm弾
+ammo556bHPDesc,ホローポイント5.56mm。\n\nアーマー値の低い敵に大ダメージを与えます。
+ammo556bAP,AP 5.56mm弾
+ammo556bAPDesc,5.56mm徹甲弾。\n\nアーマー値の高い敵に大ダメージを与えます。
+ammoBundle556b,箱詰めされた5.56mm弾 (100)
+ammoBundle556bHP,箱詰めされたHP 5.56mm弾 (100)
+ammoBundle556bAP,箱詰めされたAP 5.56mm弾 (100)
 ammoAB,エイリアン・エナジーセル弾
 ammoABDesc,エイリアン・ブラスター用の弾薬。
 ammoEC,エナジーセル弾
@@ -485,6 +496,8 @@ gunPlasmaRifleSchematic,プラズマ・ライフルの図
 gunPlasmaRifleSchematicDesc,次の武器がクラフト可能になります : プラズマ・ライフル\n\n高度エンジニアリングのパークの影響を受けます。
 gunBAR1Schematic,BARの図
 gunBAR1SchematicDesc,次の武器がクラフト可能になります :  BAR\n\nマシンガンナーのパークの影響を受けます。
+gunSCARSchematic,SCARの図
+gunSCARSchematicDesc,次の武器がクラフト可能になります :  SCAR\n\nマシンガンナーのパークの影響を受けます。
 gunMiniGSchematic,ミニガンの図
 gunMiniGSchematicDesc,次の武器がクラフト可能になります :  ミニガン\n\nマシンガンナーのパークの影響を受けます。
 gunm79Schematic,M-79の図
