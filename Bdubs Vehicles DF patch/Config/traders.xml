@@ -1,0 +1,56 @@
+<configs>
+	<append xpath="//trader_item_groups">
+    <trader_item_group name="vehiclePartsT0">
+      <item name="vehicleGolfCartchassis"/>
+      <item name="vehicleGolfCartaccessories"/>		
+      <item name="vehicleDirtBikeChassis"/>
+      <item name="vehicleDirtBikeParts"/>
+      <item name="vehicleCruiserChassis"/>
+      <item name="vehicleCruiserbars"/>
+      <item name="vehicleRatChassis"/>
+      <item name="vehicleRatbars"/>
+      <item name="vehicleJunkerChassis"/>
+      <item name="vehicleJunkerbars"/>
+		</trader_item_group>
+    <trader_item_group name="vehiclePartsT1">
+      <item name="vehicleWorkTruckchassis"/>
+      <item name="vehicleWorkTruckaccessories"/>
+      <item name="vehicleUAZ452chassis"/>
+      <item name="vehicleNovachassis"/>
+      <item name="vehicleNovaaccessories"/>
+      <item name="vehicleMRAPparts"/>
+      <item name="vehicleMRAPaccessories"/>
+      <item name="vehicleMD500chassis"/>
+      <item name="vehicleMD500accessories"/>
+      <item name="vehicleMarauderchassis"/>
+      <item name="vehicleMarauderaccessories"/>
+      <item name="vehicleGNXchassis"/>
+      <item name="vehicleGNXaccessories"/>
+      <item name="vehicleBRDM2chassis"/>
+      <item name="vehicleBRDM2accessories"/>
+      <item name="vehiclePickupchassis"/>
+      <item name="vehiclePickupaccessories"/>
+      <item name="vehicleDusterchassis"/>
+      <item name="vehicleDusteraccessories"/>
+      <item name="vehicleStallionchassis"/>
+      <item name="vehicleStallionaccessories"/>
+      <item name="vehicleChargerchassis"/>
+      <item name="vehicleChargeraccessories"/>
+      <item name="vehicleSHERPchassis"/>
+      <item name="vehicleSHERPaccessories"/>
+      <!-- <item name="vehicleUH60chassis"/>
+      <item name="vehicleUH60accessories"/> -->
+      <item name="vehicleHotRodchassis"/>
+      <item name="vehicleHotRodaccessories"/>	
+		</trader_item_group>
+	</append>
+  <set xpath="//item[@group='weaponsGunParts']/@group">weaponsPartsCommon</set>
+  <set xpath="//item[@group='weaponsGunsT1']/@group">weaponsGunsCommon</set>
+  <set xpath="//item[@group='weaponsGunsT2']/@group">weaponsGunsAdvanced</set>
+  <set xpath="//item[contains(@group, 'weaponsGunsT3')]/@group">weaponsGunsMilitary</set>
+  <set xpath="//item[@group='groupArmorLightT2']/@group">groupArmorLight</set>
+  <set xpath="//item[@group='groupArmorHeavyT2']/@group">groupArmorHeavy</set>
+  <set xpath="//item[@group='vehiclePartsMixed']/@group">vehicleParts</set>
+  <set xpath="//item[@group='perkBooks']/@group">books</set>
+  <setattribute xpath="//trader_info[@id='75']/*/item[@group='hazmatGear']" name="prob">0.1</setattribute>
+</configs>

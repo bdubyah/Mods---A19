@@ -1,0 +1,65 @@
+<configs>
+  <insertBefore xpath="//lootgroup[@name='vehicleParts']">
+    <lootgroup name="bdubsVehicles">
+      <item group="GolfCartgroup" loot_prob_template="ProbT1"/>
+      <item group="DirtBikegroup" loot_prob_template="ProbT2"/>
+      <item group="Cruisergroup" loot_prob_template="ProbT2"/>
+      <item group="Ratgroup" loot_prob_template="ProbT2"/>
+      <item group="Junkergroup" loot_prob_template="ProbT2"/>
+    </lootgroup>
+    <lootgroup name="bdubsHighTierVehicles">
+      <item group="MRAPgroup"/>
+      <item group="Maraudergroup"/>
+      <item group="BRDM2group"/>
+    </lootgroup>
+    <lootgroup name="vehicleFlyingParts">
+      <item group="MD500group"/>
+      <item group="Dustergroup"/>
+      <item group="UH60group"/>
+      <item name="vehicleWheels"/>
+      <item name="smallEngine"/>
+      <item name="carBattery"/>
+    </lootgroup>
+  </insertBefore>
+	<append xpath="//lootgroup[@name='vehicleParts']">
+    <item group="bdubsVehicles"/>
+	</append>
+  <append xpath="//lootgroup[@name='schematicsVehiclesCommon']">
+    <item name="BVGolfCartBook" prob="0.25"/>
+    <item name="BVJunkerBook" prob="0.2"/>
+    <item name="BVRatBook" prob="0.2"/>
+    <item name="BVCruiserBook" prob="0.2"/>
+    <item name="BVDirtBikeBook" prob="0.2"/>
+  </append>
+  <append xpath="//lootgroup[@name='perkBooks']">
+    <item name="BVGolfCartBook" prob="0.15"/>
+    <item name="BVJunkerBook" prob="0.05"/>
+    <item name="BVRatBook" prob="0.05"/>
+    <item name="BVCruiserBook" prob="0.05"/>
+    <item name="BVDirtBikeBook" prob="0.05"/>
+  </append>
+  <set xpath="//item[@group='gyroCopterParts' and @prob='0.05']/@prob">0.2</set>
+  <!-- Bossloot -->
+  <append xpath="//lootcontainer[@id='73']">
+    <item group="bdubsHighTierVehicles" loot_prob_template="probTemplate0.75"/>
+    <item name="BVMilitaryVehicleBook" prob="1"/>
+  </append>
+  <!-- Soldier Rad loot -->
+  <append xpath="//lootcontainer[@id='995']">
+    <item name="BVMilitaryVehicleBook" prob="0.05"/>
+  </append>
+  <!-- Soldier demon loot -->
+  <append xpath="//lootcontainer[@id='951']">
+    <item name="BVMilitaryVehicleBook" prob="0.1"/>
+  </append>
+  
+  <append xpath="//lootcontainer[@id='952']">
+    <item group="vehicleFlyingParts" prob="0.1"/>
+  </append>
+  <append xpath="//lootcontainer[@id='949']">
+    <item group="vehicleFlyingParts" prob="0.1"/>
+  </append>
+  <append xpath="//lootcontainer[@id='947']">
+    <item group="vehicleFlyingParts" prob="0.1"/>
+  </append>
+</configs>

@@ -1,0 +1,105 @@
+<configs>
+  <append xpath="/buffs">
+    <!-- Warning - doesn't work with vanilla-->
+    <buff name="buffGolfCartLvl" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Workaround for books that grant multiple skill levels">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkGolfCart" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkGolfCart" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkGreaseMonkey" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="LT" value="1"/>
+			</triggered_effect>
+        </effect_group>
+    </buff>
+    <buff name="buffGolfCartRefund" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Return book to player if skill maxed">
+            <triggered_effect trigger="onSelfBuffStart" action="CreateItemSDX, Mods" item="BVGolfCartBook" count="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="SkillBookRefund"/>
+        </effect_group>
+    </buff>
+    <buff name="buffJunkerLvl" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Workaround for books that grant multiple skill levels">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkJunker" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkJunker" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkGreaseMonkey" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="LT" value="2"/>
+			</triggered_effect>
+        </effect_group>      
+    </buff>
+    <buff name="buffJunkerRefund" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Return book to player if skill maxed">
+            <triggered_effect trigger="onSelfBuffStart" action="CreateItemSDX, Mods" item="BVJunkerBook" count="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="SkillBookRefund"/>
+        </effect_group>
+    </buff>
+    <buff name="buffRatLvl" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Workaround for books that grant multiple skill levels">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkRat" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkRat" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkGreaseMonkey" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="LT" value="2"/>
+			</triggered_effect>
+        </effect_group>      
+    </buff>
+    <buff name="buffRatRefund" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Return book to player if skill maxed">
+            <triggered_effect trigger="onSelfBuffStart" action="CreateItemSDX, Mods" item="BVRatBook" count="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="SkillBookRefund"/>
+        </effect_group>
+    </buff>
+    <buff name="buffCruiserLvl" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Workaround for books that grant multiple skill levels">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkCruiser" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkCruiser" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkGreaseMonkey" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="LT" value="2"/>
+			</triggered_effect>
+        </effect_group>      
+    </buff>
+    <buff name="buffCruiserRefund" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Return book to player if skill maxed">
+            <triggered_effect trigger="onSelfBuffStart" action="CreateItemSDX, Mods" item="BVCruiserBook" count="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="SkillBookRefund"/>
+        </effect_group>
+    </buff>
+    <buff name="buffDirtBikeLvl" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Workaround for books that grant multiple skill levels">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkDirtBike" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkDirtBike" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, Mods" tag="perkGreaseMonkey" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="LT" value="2"/>
+			</triggered_effect>
+        </effect_group>      
+    </buff>
+    <buff name="buffDirtBikeRefund" hidden="true" icon="ui_game_symbol_rifle">
+        <stack_type value="ignore"/>
+        <duration value="1"/>
+        <effect_group name="Return book to player if skill maxed">
+            <triggered_effect trigger="onSelfBuffStart" action="CreateItemSDX, Mods" item="BVDirtBikeBook" count="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="SkillBookRefund"/>
+        </effect_group>
+    </buff>
+  </append>
+</configs>
