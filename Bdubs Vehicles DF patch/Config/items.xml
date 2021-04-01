@@ -1,5 +1,5 @@
 <configs>
-  <append xpath="//item[@name='BDUBS VEHICLES DF PATCH NOTE - Intended warnings from the original mod: 1x loot, 4x progression and 2x trader. If this patch has any please let me know.']"></append>
+  <append xpath="//item[@name='BDUBS VEHICLES DF PATCH NOTE - Intended warnings from the original mod: 3x loot, 4x progression and 2x trader. If this patch has any please let me know.']"></append>
   <append xpath="//item[@name='meleeGolfClub']/property[@name='Tags']/@value">,1HandBlunt,weaponCrafting</append>
   <remove xpath="//item[@name='meleeGolfClub']/*/passive_effect[@name='DegradationMax']"/>
   <remove xpath="//item[@name='meleeGolfClub']/*/passive_effect[@name='ModSlots']"/>
@@ -26,7 +26,8 @@
   <append xpath="//item[contains(@name, 'Cruiser')]"><property name="UnlockedBy" value="perkGreaseMonkey,perkCruiser"/></append>
   <append xpath="//item[contains(@name, 'DirtBike')]"><property name="UnlockedBy" value="perkGreaseMonkey,perkDirtBike"/></append>
 
-  <append xpath="//item[contains(@name, 'BoxTruck')
+  <append xpath="//item[not(contains(@name, 'Schematic'))
+  and contains(@name, 'BoxTruck')
   or contains(@name, 'Buggy')
   or contains(@name, 'Humvee')
   or contains(@name, 'HotRod')
@@ -37,7 +38,12 @@
   or contains(@name, 'Nova')
   or contains(@name, 'Pickup')
   or contains(@name, 'GNX')
-  or contains(@name, 'UAZ452')]"><property name="UnlockedBy" value="perkMasterMechanic"/></append>
+  or contains(@name, 'UAZ452')
+  or contains(@name, 'WillyJeep')]"><property name="UnlockedBy" value="perkMasterMechanic"/></append>
+
+  <remove xpath="//item[contains(@name, 'MD500')
+  or contains(@name, 'Duster')
+  or contains(@name, 'UH60')]/property[@name='UnlockedBy']"/>
 
   <append xpath="//item[contains(@name, 'BRDM2')
   or contains(@name, 'MRAP')

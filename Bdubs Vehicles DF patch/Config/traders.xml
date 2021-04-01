@@ -44,6 +44,8 @@
       <item name="vehicleHotRodaccessories"/>	
 		</trader_item_group>
 	</append>
+  <remove xpath="//trader_item_group/item[starts-with(@name, 'vehicle')
+  and contains(@name, 'Schematic')]"/>
   <set xpath="//item[@group='weaponsGunParts']/@group">weaponsPartsCommon</set>
   <set xpath="//item[@group='weaponsGunsT1']/@group">weaponsGunsCommon</set>
   <set xpath="//item[@group='weaponsGunsT2']/@group">weaponsGunsAdvanced</set>
