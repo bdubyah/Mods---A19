@@ -336,7 +336,7 @@ gunPipeRifleDesc,"弱い手作りライフル\n\n9mm弾を使用します。\n\n
 gunPipeShotgunSMSB,"ショートパイプショットガン"
 gunPipeShotgunSMSBDesc,"弱い手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\n耐久が低く、壊れると消えてしまいます。"
 gunPipeShotgunEMSB,"ショートパイプショットガン (拡張マガジン)"
-gunPipeShotgunEMSBDesc,"手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\nカスタムシリンダーマガジンを取り付けてあるため、ソウダンスウが4に増えています。\n\n耐久が低く、壊れると消えてしまいます。"
+gunPipeShotgunEMSBDesc,"手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\nカスタムシリンダーマガジンを取り付けてあるため、装弾数が4に増えています。\n\n耐久が低く、壊れると消えてしまいます。"
 gunTripleBarrelShotgun,トリプルバレル・ショットガン
 gunTripleBarrelShotgunDesc,オーダーメイドのトリプルバレル・ショットガン。
 gunCombatShotgun,コンバット・ショットガン
@@ -534,7 +534,7 @@ meleeRebarClub,鉄筋クラブ
 meleeRebarClubDesc,重い打撃武器。\n\n荒れ地の瓦礫の中で見つけました...
 meleeRollingPin,めん棒
 meleeRollingPinDesc,調理用の道具ですが、今は近接武器です。
-meleeTireIron,タイヤ鉄
+meleeTireIron,L型レンチ
 meleeTireIronDesc,"重くて鉄で出来ているので、近接武器として使用できます。"
 meleeSupaSledge,スーパースレッジ
 meleeSupaSledgeDesc,"改造されたスレッジハンマー。\n\n重くて振りが遅いけど、威力が非常に高い近接武器。"
