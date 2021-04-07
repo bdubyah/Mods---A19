@@ -306,7 +306,8 @@ resourceBottlecaps,ボトルキャップ
 resourceBottlecapsDesc,ヌカコーラのボトルキャップ。\n\n何かに使えるかもしれません。
 resourceBottlecapStar,サンセット・サルサパリラ・スター・ボトルキャップ
 resourceBottlecapStarDesc,非常にレアなボトルキャップ。\n\n売るか、集めてクラフト材料にすることが出来ます。
-
+drugRadBGone,RAD-B-ゴーン
+drugRadBGoneDesc,放射能ダメージの治療に使用します。
 
 
 gun10mmPistol,10mmピストル
@@ -565,8 +566,12 @@ vehicleVertibirdplaceableDesc,6人まで乗ることが出来る軍用ヘリ。
 vehicleVertibirdchassisSchematic,ベルチバード・シャーシの図
 vehicleVertibirdenginesSchematic,ベルチバード・エンジンの図
 
-RaiderLeaderLoot,レイダー・リーダーの宝
-RaiderLeaderLootDesc,レイダー・リーダーの宝
+RaiderLeaderLoot,レイダー・リーダーのルート袋
+RaiderLeaderLootDesc,レイダー・リーダーのルート袋
+EntityLootContainerMutant,ミュータントのルート袋
+EntityLootContainerMutantDesc,ミュータントのルート袋
+EntityLootContainerGhoul,グールのルート袋
+EntityLootContainerGhoulDesc,グールのルート袋
 resourcePowerArmorRepairKit,パワーアーマー・リペアキット
 resourcePowerArmorRepairKitDesc,パワーアーマーを修理するために必要な修理キット。
 powerArmorMaster1Desc,"パワーアーマーの部位。\n全部位着用するまでは機動力への負担がかかりますが、一式全て身に着けると機動力が大幅に上がります。\n\nパワーアーマー・リペアキットで修理可能。"
@@ -763,6 +768,24 @@ questoldMapDesc,宝の隠し場所が書いてある地図。\n\n読むと場所
 questLetter,古い手紙
 questLetterDesc,宛先へ届くことがなかった古い手紙。
 cntPewPewLoot,隠された宝
+statCureRadiation,放射能治療
+buffRadiation01GetBetterDesc,軽度な放射能ダメージの治療を施しました。 完全に放射能ダメージが無くなるまで治療を続けてください。
+buffRadiation01GetBetterName,軽度な放射能ダメージ治療
+buffRadiation01UntreatedDesc,軽度な放射能ダメージを受けました。 悪化する前に放射能ダメージの治療を施してください。
+buffRadiation01UntreatedName,軽度な放射能ダメージ
+buffRadiation01UntreatedTooltip,放射能ダメージを受けました。 悪化する前に放射能ダメージ用の治療薬を使用してください。
+buffRadiation02GetBetterDesc,重度な放射能ダメージの治療を施しました。 完全に放射能ダメージが無くなるまで治療を続けてください。
+buffRadiation02GetBetterName,重度な放射能ダメージ治療
+buffRadiation02UntreatedDesc,重度な放射能ダメージを受けました。 治療せずにいると悪化し、死に至ります。 なるべく早く治療薬を使用してください。
+buffRadiation02UntreatedName,重度な放射能ダメージ
+buffRadiation03GetBetterDesc,致命的な放射能ダメージの治療を施しました。 完全に放射能ダメージが無くなるまで治療を続けてください。
+buffRadiation03GetBetterName,致命的な放射能ダメージ治療
+buffRadiation03UntreatedDesc,致命的な放射能ダメージを受けました。 今すぐ治療薬を使用してください。
+buffRadiation03UntreatedName,致命的な放射能ダメージ
+buffRadiation04Tooltip,放射能ダメージにより死亡しました。
+buffRadiationCureDisplayDesc,放射能ダメージ治療薬を使用したため、ダメージ量が減少し始めました。 治療薬を複数使用すると治療の持続時間が増えます。
+buffRadiationCureDisplayName,放射能ダメージ治療薬
+buffRadiationGettingWorseTooltip,治療薬の効果が切れました。　このままでは悪化します。
 
 humanRaiderScoutClub,レイダー・シーフ
 humanRaiderScoutSMG,レイダー・シーフ
