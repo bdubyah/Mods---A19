@@ -541,6 +541,8 @@ meleeSupaSledge,スーパースレッジ
 meleeSupaSledgeDesc,"改造されたスレッジハンマー。\n\n重くて振りが遅いけど、威力が非常に高い近接武器。"
 meleeGuitar,ギター
 meleeGuitarDesc,"古いギター。\n\n頭蓋骨を破壊するためにしか使えそうにありません。"
+meleeMachete1,サバイバル・マチェーテ
+meleeMachete1Desc,"古くて短いマチェーテ"
 
 meleeTheBreak,[FFC300]ザ・ブレイク[-]
 meleeTheBreakDesc,オーダーメイドのキュー。\n\n通常の物より与ダメージ量と部位破壊率が高くなっています。
@@ -898,7 +900,6 @@ RaiderLeaderLoot,レイダー・リーダーのルート袋
 ammoBundle10mmBullet,10㎜弾入りの箱
 ammoBundle10mmBulletHP,10㎜ HP弾入りの箱
 ammoBundle10mmBulletAP,10㎜ AP弾入りの箱
-meleeMachete1,鉈(なた)
 LaserShotgunNoFireDesc,セル弾が足りません。\n\n撃つためにはリロードする必要があります。
 
 
