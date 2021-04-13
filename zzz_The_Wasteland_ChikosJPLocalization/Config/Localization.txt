@@ -568,8 +568,8 @@ vehicleVertibirdplaceableDesc,6人まで乗ることが出来る軍用ヘリ。
 vehicleVertibirdchassisSchematic,ベルチバード・シャーシの図
 vehicleVertibirdenginesSchematic,ベルチバード・エンジンの図
 
-RaiderLeaderLoot,レイダー・リーダーのルート袋
-RaiderLeaderLootDesc,レイダー・リーダーのルート袋
+EntityLootContainerRaiderLeader,レイダー・リーダーのルート袋
+EntityLootContainerRaiderLeaderDesc,レイダー・リーダーのルート袋
 EntityLootContainerMutant,ミュータントのルート袋
 EntityLootContainerMutantDesc,ミュータントのルート袋
 EntityLootContainerGhoul,グールのルート袋
@@ -677,6 +677,8 @@ modPowerArmorBootsGyros,パワーアーマー用走行Mod
 modPowerArmorBootsGyrosDesc,パワーアーマー(ブーツ)にセット可能。\n\n走行中の移動速度が上がり、スタミナ消費が下がります。
 modPowerArmorBootsDampener,パワーアーマー用衝撃吸収Mod
 modPowerArmorBootsDampenerDesc,パワーアーマー(ブーツ)にセット可能。\n\n落下ダメージを75%軽減します。
+EntityLootContaineritem_modifiers,パワーアーマー放射能ダメージ耐性
+modPowerArmorRadResistantDesc,パワーアーマーにセット可能\n\nグールによる放射能ダメージを受けなくなります
 
 perkWildWasteland,ワイルド・ウェイストランド
 perkWildWastelandDesc,荒れ地で生き残るために役に立つ知識が習得できる本シリーズ。
