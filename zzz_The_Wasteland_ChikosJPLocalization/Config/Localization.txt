@@ -306,7 +306,8 @@ resourceBottlecaps,ボトルキャップ
 resourceBottlecapsDesc,ヌカコーラのボトルキャップ。\n\n何かに使えるかもしれません。
 resourceBottlecapStar,サンセット・サルサパリラ・スター・ボトルキャップ
 resourceBottlecapStarDesc,非常にレアなボトルキャップ。\n\n売るか、集めてクラフト材料にすることが出来ます。
-
+drugRadBGone,RAD-B-ゴーン
+drugRadBGoneDesc,放射能ダメージの治療に使用します。
 
 
 gun10mmPistol,10mmピストル
@@ -336,7 +337,7 @@ gunPipeRifleDesc,"弱い手作りライフル\n\n9mm弾を使用します。\n\n
 gunPipeShotgunSMSB,"ショートパイプショットガン"
 gunPipeShotgunSMSBDesc,"弱い手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\n耐久が低く、壊れると消えてしまいます。"
 gunPipeShotgunEMSB,"ショートパイプショットガン (拡張マガジン)"
-gunPipeShotgunEMSBDesc,"手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\nカスタムシリンダーマガジンを取り付けてあるため、ソウダンスウが4に増えています。\n\n耐久が低く、壊れると消えてしまいます。"
+gunPipeShotgunEMSBDesc,"手作りショットガン\n\n扱いにくく、射程は短くなっています。\n\nカスタムシリンダーマガジンを取り付けてあるため、装弾数が4に増えています。\n\n耐久が低く、壊れると消えてしまいます。"
 gunTripleBarrelShotgun,トリプルバレル・ショットガン
 gunTripleBarrelShotgunDesc,オーダーメイドのトリプルバレル・ショットガン。
 gunCombatShotgun,コンバット・ショットガン
@@ -357,6 +358,8 @@ gunMiniG,ミニガン
 gunMiniGDesc,"古くてしよう感のあるミニガン。\n\n最新の物ではありませんが、威力は充分ありそうです。"
 gunBAR1,BAR
 gunBAR1Desc,"古い銃。"
+gunSCAR,SCAR
+gunSCARDesc,"軍用アサルトライフル。"
 gunm79,M-79
 gunm79Desc,"40mm弾を使用する単発グレネードランチャー。\n\nAP弾、HE弾、そしてスモーク弾があります。"
 
@@ -385,8 +388,17 @@ ammo10mmBulletHPDesc,HP 10mm弾。\n\nアーマー値の低い敵相手に適し
 ammo10mmBulletAP,AP 10mm弾
 ammo10mmBulletAPDesc,AP 10mm弾。\n\nアーマー値の高い敵相手に適しています。\n\n9㎜弾より僅かに威力が高くなっています。
 ammoBundle10mmBullet,箱詰めされた10mm弾 (100)
-ammoBundle10mmBulletHP,箱詰めされた10mm弾 (100)
-ammoBundle10mmBulletAP,箱詰めされた10mm弾 (100)
+ammoBundle10mmBulletHP,箱詰めされたHP 10mm弾 (100)
+ammoBundle10mmBulletAP,箱詰めされたAP 10mm弾 (100)
+ammo556b,5.56mm弾
+ammo556bDesc,通常5.56mm弾。
+ammo556bHP,HP 5.56mm弾
+ammo556bHPDesc,ホローポイント5.56mm。\n\nアーマー値の低い敵に大ダメージを与えます。
+ammo556bAP,AP 5.56mm弾
+ammo556bAPDesc,5.56mm徹甲弾。\n\nアーマー値の高い敵に大ダメージを与えます。
+ammoBundle556b,箱詰めされた5.56mm弾 (100)
+ammoBundle556bHP,箱詰めされたHP 5.56mm弾 (100)
+ammoBundle556bAP,箱詰めされたAP 5.56mm弾 (100)
 ammoAB,エイリアン・エナジーセル弾
 ammoABDesc,エイリアン・ブラスター用の弾薬。
 ammoEC,エナジーセル弾
@@ -485,6 +497,8 @@ gunPlasmaRifleSchematic,プラズマ・ライフルの図
 gunPlasmaRifleSchematicDesc,次の武器がクラフト可能になります : プラズマ・ライフル\n\n高度エンジニアリングのパークの影響を受けます。
 gunBAR1Schematic,BARの図
 gunBAR1SchematicDesc,次の武器がクラフト可能になります :  BAR\n\nマシンガンナーのパークの影響を受けます。
+gunSCARSchematic,SCARの図
+gunSCARSchematicDesc,次の武器がクラフト可能になります :  SCAR\n\nマシンガンナーのパークの影響を受けます。
 gunMiniGSchematic,ミニガンの図
 gunMiniGSchematicDesc,次の武器がクラフト可能になります :  ミニガン\n\nマシンガンナーのパークの影響を受けます。
 gunm79Schematic,M-79の図
@@ -521,12 +535,14 @@ meleeRebarClub,鉄筋クラブ
 meleeRebarClubDesc,重い打撃武器。\n\n荒れ地の瓦礫の中で見つけました...
 meleeRollingPin,めん棒
 meleeRollingPinDesc,調理用の道具ですが、今は近接武器です。
-meleeTireIron,タイヤ鉄
+meleeTireIron,L型レンチ
 meleeTireIronDesc,"重くて鉄で出来ているので、近接武器として使用できます。"
 meleeSupaSledge,スーパースレッジ
 meleeSupaSledgeDesc,"改造されたスレッジハンマー。\n\n重くて振りが遅いけど、威力が非常に高い近接武器。"
 meleeGuitar,ギター
 meleeGuitarDesc,"古いギター。\n\n頭蓋骨を破壊するためにしか使えそうにありません。"
+meleeMachete1,サバイバル・マチェーテ
+meleeMachete1Desc,"古くて短いマチェーテ"
 
 meleeTheBreak,[FFC300]ザ・ブレイク[-]
 meleeTheBreakDesc,オーダーメイドのキュー。\n\n通常の物より与ダメージ量と部位破壊率が高くなっています。
@@ -552,8 +568,12 @@ vehicleVertibirdplaceableDesc,6人まで乗ることが出来る軍用ヘリ。
 vehicleVertibirdchassisSchematic,ベルチバード・シャーシの図
 vehicleVertibirdenginesSchematic,ベルチバード・エンジンの図
 
-RaiderLeaderLoot,レイダー・リーダーの宝
-RaiderLeaderLootDesc,レイダー・リーダーの宝
+EntityLootContainerRaiderLeader,レイダー・リーダーのルート袋
+EntityLootContainerRaiderLeaderDesc,レイダー・リーダーのルート袋
+EntityLootContainerMutant,ミュータントのルート袋
+EntityLootContainerMutantDesc,ミュータントのルート袋
+EntityLootContainerGhoul,グールのルート袋
+EntityLootContainerGhoulDesc,グールのルート袋
 resourcePowerArmorRepairKit,パワーアーマー・リペアキット
 resourcePowerArmorRepairKitDesc,パワーアーマーを修理するために必要な修理キット。
 powerArmorMaster1Desc,"パワーアーマーの部位。\n全部位着用するまでは機動力への負担がかかりますが、一式全て身に着けると機動力が大幅に上がります。\n\nパワーアーマー・リペアキットで修理可能。"
@@ -657,6 +677,8 @@ modPowerArmorBootsGyros,パワーアーマー用走行Mod
 modPowerArmorBootsGyrosDesc,パワーアーマー(ブーツ)にセット可能。\n\n走行中の移動速度が上がり、スタミナ消費が下がります。
 modPowerArmorBootsDampener,パワーアーマー用衝撃吸収Mod
 modPowerArmorBootsDampenerDesc,パワーアーマー(ブーツ)にセット可能。\n\n落下ダメージを75%軽減します。
+EntityLootContaineritem_modifiers,パワーアーマー放射能ダメージ耐性
+modPowerArmorRadResistantDesc,パワーアーマーにセット可能\n\nグールによる放射能ダメージを受けなくなります
 
 perkWildWasteland,ワイルド・ウェイストランド
 perkWildWastelandDesc,荒れ地で生き残るために役に立つ知識が習得できる本シリーズ。
@@ -750,6 +772,24 @@ questoldMapDesc,宝の隠し場所が書いてある地図。\n\n読むと場所
 questLetter,古い手紙
 questLetterDesc,宛先へ届くことがなかった古い手紙。
 cntPewPewLoot,隠された宝
+statCureRadiation,放射能治療
+buffRadiation01GetBetterDesc,軽度な放射能ダメージの治療を施しました。 完全に放射能ダメージが無くなるまで治療を続けてください。
+buffRadiation01GetBetterName,軽度な放射能ダメージ治療
+buffRadiation01UntreatedDesc,軽度な放射能ダメージを受けました。 悪化する前に放射能ダメージの治療を施してください。
+buffRadiation01UntreatedName,軽度な放射能ダメージ
+buffRadiation01UntreatedTooltip,放射能ダメージを受けました。 悪化する前に放射能ダメージ用の治療薬を使用してください。
+buffRadiation02GetBetterDesc,重度な放射能ダメージの治療を施しました。 完全に放射能ダメージが無くなるまで治療を続けてください。
+buffRadiation02GetBetterName,重度な放射能ダメージ治療
+buffRadiation02UntreatedDesc,重度な放射能ダメージを受けました。 治療せずにいると悪化し、死に至ります。 なるべく早く治療薬を使用してください。
+buffRadiation02UntreatedName,重度な放射能ダメージ
+buffRadiation03GetBetterDesc,致命的な放射能ダメージの治療を施しました。 完全に放射能ダメージが無くなるまで治療を続けてください。
+buffRadiation03GetBetterName,致命的な放射能ダメージ治療
+buffRadiation03UntreatedDesc,致命的な放射能ダメージを受けました。 今すぐ治療薬を使用してください。
+buffRadiation03UntreatedName,致命的な放射能ダメージ
+buffRadiation04Tooltip,放射能ダメージにより死亡しました。
+buffRadiationCureDisplayDesc,放射能ダメージ治療薬を使用したため、ダメージ量が減少し始めました。 治療薬を複数使用すると治療の持続時間が増えます。
+buffRadiationCureDisplayName,放射能ダメージ治療薬
+buffRadiationGettingWorseTooltip,治療薬の効果が切れました。　このままでは悪化します。
 
 humanRaiderScoutClub,レイダー・シーフ
 humanRaiderScoutSMG,レイダー・シーフ
@@ -862,7 +902,6 @@ RaiderLeaderLoot,レイダー・リーダーのルート袋
 ammoBundle10mmBullet,10㎜弾入りの箱
 ammoBundle10mmBulletHP,10㎜ HP弾入りの箱
 ammoBundle10mmBulletAP,10㎜ AP弾入りの箱
-meleeMachete1,鉈(なた)
 LaserShotgunNoFireDesc,セル弾が足りません。\n\n撃つためにはリロードする必要があります。
 
 
