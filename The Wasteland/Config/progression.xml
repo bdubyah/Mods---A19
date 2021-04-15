@@ -17,6 +17,18 @@
 	<append xpath="/progression/perks/perk[@name='perkPistolPeteAPAmmo']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo10mmBulletAP"/>
 	</append>
+	<append xpath="/progression/perks/perk[@name='perkPistolPeteComplete']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle10mmBullet,ammoBundle10mmBulletHP,ammoBundle10mmBulletAP"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkAutoWeaponsDamage']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo556bHP,ammo556bAP"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkAutoWeaponsComplete']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle556b,ammoBundle556bHP,ammoBundle556bAP"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4']/@tags">,drugRadBGone</append>
 	<!-- Magazine Perks -->
 	<append xpath="/progression/skills">
 		<skill name="skillWildWasteland" parent="attBooks" name_key="perkWildWasteland" desc_key="perkWildWastelandDesc" long_desc_key="perkBookGroupLongDesc" icon="WildWastelandUI">

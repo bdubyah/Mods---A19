@@ -146,7 +146,7 @@
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/NukaColas.unity3d?NukaQuantumDrink.prefab"/>
-			<property name="ModelOffset" value="-0.35,0,0"/>
+			<property name="ModelOffset" value="-0.35,0.01,0"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="OnlySimpleRotations" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
@@ -510,7 +510,7 @@
 			<property name="IsTerrainDecoration" value="false"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Path" value="solid"/>
-			<property name="Model" value="#@modfolder:Resources/telephone.unity3d?telephone.prefab"/>
+			<property name="Model" value="#@modfolder:Resources/telephone.unity3d?telephone1.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="OnlySimpleRotations" value="false"/>
@@ -734,7 +734,7 @@
 			<drop event="Destroy" count="0"/>
 			<property name="Group" value="Tools/Traps,Science"/>
 			<property name="EconomicValue" value="97"/>
-			<property name="FilterTags" value="fdecor,ftraps"/>
+			<property name="FilterTags" value="ftraps"/>
 			<property name="SortOrder1" value="70g0"/>
 		</block>
 		<!-- WW Stuff -->
@@ -1377,7 +1377,7 @@
 			<property name="LightOpacity" value="2"/>
 			<property name="CanPickup" value="true" param1="VaultDoorKey"/>
 			<property name="Model" value="#@modfolder:Resources/kc.unity3d?keycard3_b"/>
-			<property name="ModelOffset" value="0,0.001,0"/>
+			<property name="ModelOffset" value="0,0.0,0"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property class="RepairItems">
 				<property name="resourceScrapPolymers" value="5"/>
@@ -1393,7 +1393,7 @@
 			<property name="LightOpacity" value="2"/>
 			<property name="CanPickup" value="true" param1="OVDeskKey"/>
 			<property name="Model" value="#@modfolder:Resources/kc.unity3d?keycardM_b"/>
-			<property name="ModelOffset" value="0,0.001,0"/>
+			<property name="ModelOffset" value="0,0.0,0"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property class="RepairItems">
 				<property name="resourceScrapPolymers" value="5"/>

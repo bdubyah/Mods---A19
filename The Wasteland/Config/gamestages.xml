@@ -88,6 +88,14 @@
 				<spawn group="MutantsHorde_b+" num="1" maxAlive="1" duration="1"/>
 			</gamestage>
 		</spawner>
+		<spawner name="SleeperGhouls_b">
+			<gamestage stage="1">
+				<spawn group="Ghouls_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="Ghouls_b+" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
 		<group name="RaidersMelee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperRaidersMelee_b" count="5"/>
 		</group>
@@ -120,6 +128,9 @@
 		</group>
 		<group name="Mutants" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="SleeperMutants_b" count="5"/>
+		</group>
+		<group name="Ghouls" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperGhouls_b" count="5"/>
 		</group>
 	</append>
 	<remove xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']"/>

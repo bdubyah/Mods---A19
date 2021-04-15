@@ -64,6 +64,11 @@
 			<property name="ScopeOffset" value="0,0.0,-0."/>
 			<property name="ScopeCameraOffset" value="-0.000,-.019,0.02"/>
 		</item_property_overrides>
+		<item_property_overrides name="gunSCAR">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeOffset" value="0,0.0,-0."/>
+			<property name="ScopeCameraOffset" value="-0.0,-.046,0.02"/>
+		</item_property_overrides>
 	</append>
 	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
 		<item_property_overrides name="gun10mmSMG">
@@ -238,6 +243,7 @@
 	<append xpath="/item_modifiers">
 		<item_modifier name="modOilFilterSuppressor" installable_tags="gun,PipeGun" blocked_tags="revolver,flaredBarrel,Heavy,doubleBarrel,shotgun,PPLeg,noOF" modifier_tags="barrelAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="CustomIcon" value="modOilFilterSuppressor"/>
 			<property name="DescriptionKey" value="modOilFilterSuppressorDesc"/>
 			<property name="HandMeshfile" value="#@modfolder:Resources/Attachments.unity3d?OilFilterSuppressor"/>
@@ -367,6 +373,7 @@
 		</item_modifier>
 		<item_modifier name="modLargeMag" installable_tags="PipeGun" modifier_tags="magazine" type="attachment">
 			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="CustomIcon" value="modLargeMag"/>
 			<property name="DescriptionKey" value="modLargeMagDesc"/>
 			<!--Adds increased Ammunition-->
@@ -378,6 +385,7 @@
 		</item_modifier>
 		<item_modifier name="modLongRifleBarrel" installable_tags="LongBarrel" blocked_tags="flaredBarrel,PipeLeg" modifier_tags="newbarrelAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="CustomIcon" value="modLongRifleBarrel"/>
 			<property name="DescriptionKey" value="modLongRifleBarrelDesc"/>
 			<item_property_overrides name="*">
@@ -396,6 +404,7 @@
 		</item_modifier>
 		<item_modifier name="modShotgunCylinderMag" installable_tags="none" modifier_tags="magazine" type="attachment">
 			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="CustomIcon" value="modShotgunCylinderMag"/>
 			<property name="DescriptionKey" value="modShotgunCylinderMagDesc"/>
 			<property name="HandMeshfile" value="#@modfolder:Resources/Attachments.unity3d?ShotgunEM"/>
@@ -413,6 +422,7 @@
 		</item_modifier>
 		<item_modifier name="modLongShotgunBarrel" installable_tags="PipeShotgun" blocked_tags="flaredBarrel" modifier_tags="newbarrelAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="CustomIcon" value="modLongShotgunBarrel"/>
 			<property name="DescriptionKey" value="modLongShotgunBarrelDesc"/>
 			<item_property_overrides name="gunPipeShotgunSMSB">
@@ -435,6 +445,7 @@
 		<item_modifier name="modFlashlight" installable_tags="PipeShotgun,PipeGun,LAR,LegPipeShotgun,gun,sideAttachments,laser,turretMelee" modifier_tags="sideAttachment" type="attachment">
 			<property name="Stacknumber" value="1"/>
 			<property name="LightValue" value="0.75"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="CustomIcon" value="meleeToolFlashlight02"/>
 			<property name="CustomIconTint" value="4b844b"/>
 			<item_property_overrides name="gunHandgunT1Pistol">
@@ -604,6 +615,7 @@
 			<property name="UnlockedBy" value="modOverchargedCapacitorSchematic"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="DescriptionKey" value="modOverchargedCapacitorDesc"/>
 			<effect_group tiered="false">
@@ -617,6 +629,7 @@
 			<property name="UnlockedBy" value="modLaserSplitterSchematic"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="DescriptionKey" value="modLaserSplitterDesc"/>
 			<item_property_overrides name="gunLaserPistol">
@@ -629,10 +642,6 @@
 			</item_property_overrides>
 			<item_property_overrides name="gunPewPew">
 				<property name="BarrelOffset" value="-0.0,0.065,0.0865"/>
-				<property name="BarrelScale" value="1,1,1"/>
-			</item_property_overrides>
-			<item_property_overrides name="gunLaserRifle">
-				<property name="BarrelOffset" value="0.001,0.0735,0.405"/>
 				<property name="BarrelScale" value="1,1,1"/>
 			</item_property_overrides>
 			<effect_group tiered="false">
@@ -653,6 +662,7 @@
 			<property name="UnlockedBy" value="modLaserFocuserSchematic"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="DescriptionKey" value="modLaserFocuserDesc"/>
 			<item_property_overrides name="gunLaserPistol">
@@ -680,6 +690,7 @@
 			<property name="UnlockedBy" value="modLaserScopeSchematic"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="DescriptionKey" value="modLaserScopeDesc"/>
 			<item_property_overrides name="*">
@@ -708,13 +719,14 @@
 			</effect_group>
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
-		<!-- Power Armor Mods -->
+		<!-- Location Specific Power Armor Mods -->
 		<item_modifier name="modPowerArmorHelmetRadar" installable_tags="powerarmorHead" modifier_tags="PAhelmet" blocked_tags="noMods,clothing" type="attachment">
 			<property name="UnlockedBy" value=""/>
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -727,6 +739,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -739,6 +752,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -751,6 +765,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -762,6 +777,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -791,6 +807,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -802,6 +819,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -815,6 +833,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -826,6 +845,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -837,6 +857,7 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
@@ -849,10 +870,25 @@
 			<property name="CustomIcon" value="modPowerArmor"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
 			<effect_group tiered="false">
 				<passive_effect name="FallDamageReduction" operation="perc_add" value=".75"/>
+			</effect_group>
+		</item_modifier>
+		<!-- General Power Armor Mods -->
+		<item_modifier name="modPowerArmorRadResistant" installable_tags="PowerArmorMod" modifier_tags="waterPurifier" blocked_tags="noMods" type="attachment">
+			<property name="UnlockedBy" value=""/>
+			<property name="CustomIcon" value="modPowerArmor"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Group" value="Mods"/>
+			<property name="EconomicValue" value="500"/>	
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationCatch"/>
 			</effect_group>
 		</item_modifier>
 	</append>

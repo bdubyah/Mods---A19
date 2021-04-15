@@ -334,7 +334,7 @@
 			<update_rate value=".1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPAWeight2">
-					<requirement name="HasBuff" buff="buffPAset"/>					
+					<requirement name="HasBuff" buff="buffPAset"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>
@@ -347,7 +347,7 @@
 			</effect_group>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPAWeight2">
-					<requirement name="NotHasBuff" buff="buffPAset"/>					
+					<requirement name="NotHasBuff" buff="buffPAset"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>
@@ -492,7 +492,7 @@
 			<duration value="0"/>
 			<update_rate value="1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="zombieFeralGhoulAOEEffect"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="5" buff="zombieFeralGhoulAOEEffect"/>
 			</effect_group>
 		</buff>
 		<buff name="zombieFeralGhoulAOEEffect" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" tooltip_key="buffRadiation03Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
@@ -501,13 +501,13 @@
 			<duration value="4"/>
 			<update_rate value="1"/>
 			<effect_group>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" value="1.5"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
 					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity=".3" fade=".5" effect_name="Hot">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity=".15" fade=".5" effect_name="Hot">
 					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".5" effect_name="Hot">
@@ -518,11 +518,302 @@
 				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
 			</effect_group>
+			<!--
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSickness" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="RadiationSickness" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="buffRadiationSickness1">
+					<requirement name="CVarCompare" cvar="RadiationSickness" operation="Equals" value="10"/>
+				</triggered_effect>
+			</effect_group>-->
+		</buff>
+		<buff name="buffRadiationCatch" name_key="buff Radiation Catch" hidden="true">
+			<damage_type value="Bashing"/>
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="RadiationCounter" operation="set" value="25">
+					<requirement name="!HasBuff" buff="buffRadiationMain"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="RadiationCounter" operation="add" value="250">
+					<requirement name="HasBuff" buff="buffRadiationMain"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffRadiationMain"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiationMain" name_key="buff Radiation Main" hidden="true" icon="ui_game_symbol_radiation">
+			<damage_type value="Radiation"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<!-- Radiation is fully %-based. RadiationCounter is a float % value. Radiation kills the player when it reaches 100%, cures when it reaches 0%. -->
+			<effect_group>
+				<!-- $RadiationMaxDuration defined in buffStatusCheck01 (3.5 hours) -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationMaxDuration" operation="set" value="12100">
+					<requirement name="CVarCompare" cvar="$RadiationMaxDuration" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationStage2Duration" operation="set" value="14"/>
+				<!-- % of the full buff duration -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationStage3Duration" operation="set" value="57"/>
+				<!-- % of the full buff duration -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationDisplayDivisor" operation="set" value="@$RadiationMaxDuration"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationDisplayDivisor" operation="divide" value="100"/>
+				<!-- .RadiationDisplayPerc = RadiationCounter / $RadiationDisplayDivisor	-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationStage2Duration" operation="multiply" value="@$RadiationDisplayDivisor"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationStage3Duration" operation="multiply" value="@$RadiationDisplayDivisor"/>
+				<!-- cleanup -->
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="RadiationCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RadiationDisplayPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RadiationDisplayDivisor" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RadiationCureCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RadiationStage2Duration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RadiationStage3Duration" operation="set" value="0"/>
+			</effect_group>
+			<effect_group name="main loop">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationCounter" operation="add" value="1.25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="set" value="@$critHitNaturalHealingRate"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="divide" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationCounter" operation="subtract" value="@.dummy"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationCounter" operation="add" value="-3">
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationCounter" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RadiationCureCounter" operation="add" value="-2">
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RadiationCureCounter" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="LT" value="0"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="shut down">
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiationMain">
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LTE" value="0"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiationCureDisplay"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiation01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiation02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiation03Untreated"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRadiation03GetBetter"/>
+			</effect_group>
+			<effect_group name="display % values">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RadiationDisplayPerc" operation="set" value="@RadiationCounter"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RadiationDisplayPerc" operation="divide" value="@$RadiationDisplayDivisor"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RadiationCureDisplayPerc" operation="set" value="@$RadiationCureCounter"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RadiationCureDisplayPerc" operation="divide" value="@$RadiationDisplayDivisor"/>
+			</effect_group>
+			<effect_group name="signaling buffs">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiationCureDisplay">
+					<requirement name="NotHasBuff" buff="buffRadiationCureDisplay"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01Untreated">
+					<requirement name="NotHasBuff" buff="buffRadiation01Untreated"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="@$RadiationStage2Duration"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01GetBetter">
+					<requirement name="NotHasBuff" buff="buffRadiation01GetBetter"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="@$RadiationStage2Duration"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiation01GetBetter">
+					<requirement name="HasBuff" buff="buffRadiation01GetBetter"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation02Untreated">
+					<requirement name="NotHasBuff" buff="buffRadiation02Untreated"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GTE" value="@$RadiationStage2Duration"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="@$RadiationStage3Duration"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation02GetBetter">
+					<requirement name="NotHasBuff" buff="buffRadiation02GetBetter"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GTE" value="@$RadiationStage2Duration"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="@$RadiationStage3Duration"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation03Untreated">
+					<requirement name="NotHasBuff" buff="buffRadiation03Untreated"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GTE" value="@$RadiationStage3Duration"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="@$RadiationMaxDuration"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation03GetBetter">
+					<requirement name="NotHasBuff" buff="buffRadiation03GetBetter"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GTE" value="@$RadiationStage3Duration"/>
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="LT" value="@$RadiationMaxDuration"/>
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation04">
+					<requirement name="CVarCompare" cvar="RadiationCounter" operation="GTE" value="@$RadiationMaxDuration"/>
+				</triggered_effect>
+			</effect_group><!--
+			<effect_group name="getting hit makes it worse">
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffRadiationGetsWorse"/>
+			</effect_group>-->
+		</buff>
+		<buff name="buffRadiationGetsWorse" name_key="buff Radiation Gets Worse" icon="ui_game_symbol_brokenbone" icon_color="255,128,0" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1.1"/>
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_add" value="2" tags="buffRadiation01GetBetter,buffRadiation01Untreated,buffRadiation02GetBetter,buffRadiation02Untreated,buffRadiation03GetBetter,buffRadiation03Untreated,buffRadiation04"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiationAddCure" name_key="buff Radiation Add Cure" hidden="true" icon="ui_game_symbol_pills">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffRadiationAddCurePerc" operation="multiply" value="@$RadiationMaxDuration"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffRadiationAddCurePerc" operation="divide" value="100"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationCureCounter" operation="add" value="@$buffRadiationAddCurePerc"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffRadiationAddCurePerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RadiationCureCounter" operation="set" value="@$RadiationMaxDuration">
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="GT" value="@$RadiationMaxDuration"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffRadiationMain"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiationCureDisplay" name_key="buffRadiationCureDisplayName" description_key="buffRadiationCureDisplayDesc" showonhud="false" icon="ui_game_symbol_pills">
+			<duration value="0"/>
+			<update_rate value="1.7"/>
+			<display_value value=".RadiationCureDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<requirements compare_type="or">
+					<requirement name="CVarCompare" cvar="$RadiationCureCounter" operation="LTE" value="0"/>
+					<requirement name="NotHasBuff" buff="buffRadiationMain"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiationCureDisplay"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RadiationCureCounter" operation="set" value="0"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RadiationCureDisplayPerc" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation01Untreated" name_key="buffRadiation01UntreatedName" description_key="buffRadiation01UntreatedDesc" tooltip_key="buffRadiation01UntreatedTooltip" icon="ui_game_symbol_radiation">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".RadiationDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03GetBetter"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation01GetBetter" name_key="buffRadiation01GetBetterName" description_key="buffRadiation01GetBetterDesc" icon="ui_game_symbol_radiation_better">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".RadiationDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03GetBetter"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation02Untreated" name_key="buffRadiation02UntreatedName" description_key="buffRadiation02UntreatedDesc" icon="ui_game_symbol_radiation" icon_color="224,224,0">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".RadiationDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03GetBetter"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.25"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation02GetBetter" name_key="buffRadiation02GetBetterName" description_key="buffRadiation02GetBetterDesc" icon="ui_game_symbol_radiation_better" icon_color="255,128,0">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".RadiationDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03GetBetter"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.125"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation03Untreated" name_key="buffRadiation03UntreatedName" description_key="buffRadiation03UntreatedDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".RadiationDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffRadiation03Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03GetBetter"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="AttributeLevel" operation="base_subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.35"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation03GetBetter" name_key="buffRadiation03GetBetterName" description_key="buffRadiation03GetBetterDesc" icon="ui_game_symbol_radiation_better" icon_color="255,0,0">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".RadiationDisplayPerc"/>
+			<display_value_key value="{0:0.0}%"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRadiation03Untreated"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="AttributeLevel" operation="base_subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.17"/>
+			</effect_group>
+		</buff>
+		<buff name="buffRadiation04" tooltip_key="buffRadiation04Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+			<damage_type value="Radiation"/>
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
+			</effect_group>
 		</buff>
 		<buff name="buffInjuryKnockdownPABRtrigger" hidden="true">
-		<duration value="0"/>
-		<stack_type value="replace"/>
-		<update_rate value=".1"/>
+			<duration value="0"/>
+			<stack_type value="replace"/>
+			<update_rate value=".1"/>
 			<effect_group>
 				<requirement name="HasBuff" buff="buffPAset"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range=".5" buff="buffInjuryKnockdownPABR">
@@ -536,7 +827,8 @@
 			<stack_type value="ignore"/>
 			<duration value="4"/>
 			<update_rate value=".01"/>
-			<display_value value=".knockdownDisplay"/><display_value_key value="{0}"/>
+			<display_value value=".knockdownDisplay"/>
+			<display_value_key value="{0}"/>
 			<requirements compare_type="or">
 				<requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
 			</requirements>
@@ -555,9 +847,9 @@
 			</effect_group>
 		</buff>
 		<buff name="buffLaserShotgunNoFireTrigger" hidden="true">
-		<duration value="0"/>
-		<stack_type value="replace"/>
-		<update_rate value=".1"/>
+			<duration value="0"/>
+			<stack_type value="replace"/>
+			<update_rate value=".1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLaserShotgunNoFire">
 					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
@@ -566,11 +858,10 @@
 			</effect_group>
 		</buff>
 		<buff name="buffLaserShotgunNoFire" hidden="true">
-		<duration value="0"/>
-		<stack_type value="replace"/>
-		<update_rate value=".1"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLaserShotgunNoFireTrigger"/>
+			<duration value="0"/>
+			<stack_type value="replace"/>
+			<update_rate value=".1"/>
+			<effect_group>				
 				<requirement name="HoldingItemHasTags" tags="LNF"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLaserShotgunNoFire">
@@ -583,9 +874,9 @@
 			</effect_group>
 		</buff>
 		<buff name="buffAERNoFireTrigger" hidden="true">
-		<duration value="0"/>
-		<stack_type value="replace"/>
-		<update_rate value=".1"/>
+			<duration value="0"/>
+			<stack_type value="replace"/>
+			<update_rate value=".1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAERNoFire">
 					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
@@ -594,11 +885,10 @@
 			</effect_group>
 		</buff>
 		<buff name="buffAERNoFire" hidden="true">
-		<duration value="0"/>
-		<stack_type value="replace"/>
-		<update_rate value=".1"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffAERNoFireTrigger"/>
+			<duration value="0"/>
+			<stack_type value="replace"/>
+			<update_rate value=".1"/>
+			<effect_group>				
 				<requirement name="HoldingItemHasTags" tags="LNF"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAERNoFire">

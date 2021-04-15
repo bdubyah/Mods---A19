@@ -25,12 +25,15 @@
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 		</item_display_info>
+		<item_display_info display_type="cureRadiation" display_group="groupConsumables">
+			<display_entry name="dCureRadiation" title_key="statCureRadiation" display_type="Percent"/>
+		</item_display_info>
 		<!-- Weapons -->
 		<item_display_info display_type="EnergyDisplay" display_group="groupRanged">
-			<display_entry name="EntityDamage" title_key="statEntityDamageRangedImpact" tags="perkAdvancedEngineering,admin"/>
+			<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkAdvancedEngineering,admin"/>
 			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkAdvancedEngineering,admin"/>
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkAdvancedEngineering,admin"/>						
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkAdvancedEngineering,admin"/>
-			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkAdvancedEngineering,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkAdvancedEngineering,admin"/>
 		</item_display_info>
 	</append>

@@ -30,19 +30,25 @@
 			<ingredient name="foodCropGraceCorn" count="10"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
-		<recipe name="thrownNukaNade" count="1" craft_area="chemistryStation" craft_time="60" craft_exp_gain="75">
+		<recipe name="thrownNukaNade" count="1" craft_area="workbench" craft_time="60" craft_exp_gain="75">
 			<ingredient name="drinkNukaQuantum" count="1"/>
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 			<ingredient name="resourceAcid" count="1"/>
 			<ingredient name="resourceGunPowder" count="2"/>
 			<ingredient name="drinkCanEmpty" count="1"/>
 		</recipe>
-		<recipe name="mineBottlecapMine" count="1" craft_area="chemistryStation" craft_time="60" craft_exp_gain="75">
+		<recipe name="mineBottlecapMine" count="1" craft_area="workbench" craft_time="60" craft_exp_gain="75">
 			<ingredient name="resourceDuctTape" count="2"/>
 			<ingredient name="resourceElectricParts" count="5"/>
 			<ingredient name="resourceBottlecaps" count="10"/>
 			<ingredient name="resourceGunPowder" count="15"/>
 			<ingredient name="cntLunchbox" count="1"/>
+		</recipe>
+		<recipe name="drugRadBGone" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourceNuclearMaterials" count="2"/>
+			<ingredient name="drugAntibiotics" count="2"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+			<ingredient name="drinkJarPureMineralWater" count="1"/>
 		</recipe>
 		<!-- Furniture -->
 		<recipe name="cntAmmoBoxPlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
@@ -215,7 +221,7 @@
 		</recipe>
 		<!-- Misc -->
 		<recipe name="questPewPew" count="1" craft_time="15">
-			<ingredient name="resourceBottlecapStar" count="50"/>
+			<ingredient name="resourceBottlecapStar" count="100"/>
 		</recipe>
 		<recipe name="cntVTstorageSecurePlayer" count="1" craft_area="workbench" craft_time="30" tags="learnable">
 			<ingredient name="resourceForgedIron" count="10"/>
@@ -242,6 +248,21 @@
 		<recipe name="ammoBundle10mmBulletAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="80"/>
 			<ingredient name="resourceGunPowder" count="200"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		<recipe name="ammoBundle556b" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="210"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		<recipe name="ammoBundle556bHP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="160"/>
+			<ingredient name="resourceGunPowder" count="210"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		<recipe name="ammoBundle556bAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="350"/>
 			<ingredient name="resourceBulletCasing" count="80"/>
 		</recipe>
 		<recipe name="resourcePowerArmorRepairKit" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting,perkPowerArmor">
@@ -330,6 +351,16 @@
 			<ingredient name="resourceForgedSteel" count="13"/>
 			<ingredient name="resourceDuctTape" count="3"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunMGT1AK47Parts,resourceForgedIron,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+			</effect_group>
+		</recipe>
+		<recipe name="gunSCAR" count="1" craft_area="workbench" tags="learnable,perkMachineGunner">
+			<ingredient name="gunMGT1AK47Parts" count="6"/>
+			<ingredient name="resourceForgedSteel" count="12"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
 			<ingredient name="resourceSpring" count="5"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunMGT1AK47Parts,resourceForgedIron,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
@@ -556,10 +587,9 @@
 			<ingredient name="ammoGasCan" count="100"/>
 			<ingredient name="resourceForgedSteel" count="3"/>
 		</recipe>
-		<recipe name="ammoBowlingball" count="1" craft_area="workbench" craft_time="60">
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceScrapPolymers" count="10"/>
-			<ingredient name="resourcePaint" count="5"/>
+		<recipe name="ammoBowlingball" count="1" craft_area="workbench" craft_time="30">
+			<ingredient name="resourceScrapPolymers" count="20"/>
+			<ingredient name="resourcePaint" count="1"/>
 			<ingredient name="resourceFishingWeight" count="3"/>
 		</recipe>
 		<recipe name="ammoNukeAP" count="1" craft_area="workbench" craft_time="25">
@@ -581,6 +611,21 @@
 		<recipe name="ammo10mmBulletAP" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
 			<ingredient name="resourceBulletTip" count="1"/>
 			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		<recipe name="ammo556b" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		<recipe name="ammo556bHP" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceBulletTip" count="2"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		<recipe name="ammo556bAP" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
 			<ingredient name="resourceBulletCasing" count="1"/>
 		</recipe>
 		<recipe name="ammoEC" count="50" craft_area="workbench" tags="workbenchCrafting,learnable" craft_time="100">

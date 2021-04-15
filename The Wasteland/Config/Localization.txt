@@ -309,7 +309,9 @@ cntLunchboxDesc,items,Item,New,Some old lunchbox. Might be useful for something.
 resourceBottlecaps,items,Item,New,Bottlecaps,,,,,
 resourceBottlecapsDesc,items,Item,New,Bottlecaps left over from various Nuka Colas. Might be useful for something...,,,,,
 resourceBottlecapStar,items,Item,New,Sunset Sarsaparilla Star Bottlecap,,,,,
-resourceBottlecapStarDesc,items,Item,New,Very rare Sunset Sarsaparilla cap. Probably worth some coin or collect 50 and craft a reward...,,,,,
+resourceBottlecapStarDesc,items,Item,New,Very rare Sunset Sarsaparilla cap. Probably worth some coin or collect 100 and craft a reward...,,,,,
+drugRadBGone,items,Item,New,Rad-B-Gone,,,,,
+drugRadBGoneDesc,items,Item,New,Provides moderate relief from radiation poisoning.,,,,,
 
 
 
@@ -361,6 +363,8 @@ gunMiniG,items,Gun,New,Minigun,,,,,
 gunMiniGDesc,items,Gun,New,"Old, well-used minigun. Not the most modern tech, but will certainly still mow down anything in front of it.",,,,,
 gunBAR1,items,Gun,New,BAR,,,,,
 gunBAR1Desc,items,Gun,New,"An old relic of a gun.",,,,,
+gunSCAR,items,Gun,New,SCAR,,,,,
+gunSCARDesc,items,Gun,New,"Military-issue assault rifle.",,,,,
 gunm79,items,Gun,New,M-79,,,,,
 gunm79Desc,items,Gun,New,"Single-fire 40mm grenade launcher. Has AP, HE, and Smoke rounds",,,,,
 
@@ -384,10 +388,22 @@ ammoFlareGun,items,Gun,New,Flare (Ammo),,,,,
 ammoFlareGunDesc,items,Gun,New,Ammo for the Flare Gun.,,,,,
 ammo10mmBullet,items,Gun,New,10mm (Ammo),,,,,
 ammo10mmBulletDesc,items,Gun,New,Regular 10mm round. Marginally better than regular 9mm rounds.,,,,,
-ammo10mmBulletHP,items,Gun,New,HP 10mm (Ammo),,,,,
-ammo10mmBulletHPDesc,items,Gun,New,HP 10mm round. Best against soft targets. Marginally better than HP 9mm rounds.,,,,,
-ammo10mmBulletAP,items,Gun,New,AP 10mm (Ammo),,,,,
-ammo10mmBulletAPDesc,items,Gun,New,AP 10mm round. Best against armored targets. Marginally better than AP 9mm rounds.,,,,,
+ammo10mmBulletHP,items,Gun,New,10mm HP (Ammo),,,,,
+ammo10mmBulletHPDesc,items,Gun,New,10mm HP round. Best against soft targets. Marginally better than HP 9mm rounds.,,,,,
+ammo10mmBulletAP,items,Gun,New,10mm AP (Ammo),,,,,
+ammo10mmBulletAPDesc,items,Gun,New,10mm AP round. Best against armored targets. Marginally better than AP 9mm rounds.,,,,,
+ammoBundle10mmBullet,items,Gun,New,Box of 10mm Ammo (100),,,,,
+ammoBundle10mmBulletHP,items,Gun,New,Box of HP 10mm Ammo (100),,,,,
+ammoBundle10mmBulletAP,items,Gun,New,Box of AP 10mm Ammo (100),,,,,
+ammo556b,items,Gun,New,5.56mm (Ammo),,,,,
+ammo556bDesc,items,Gun,New,Regular 5.56mm round.,,,,,
+ammo556bHP,items,Gun,New,5.56mm HP (Ammo),,,,,
+ammo556bHPDesc,items,Gun,New,5.56mm HP round. Best against soft targets.,,,,,
+ammo556bAP,items,Gun,New,5.56mm AP (Ammo),,,,,
+ammo556bAPDesc,items,Gun,New,5.56mm AP round. Best against armored targets.,,,,,
+ammoBundle556b,items,Gun,New,Box of 5.56mm Ammo (100),,,,,
+ammoBundle556bHP,items,Gun,New,Box of HP 5.56mm Ammo (100),,,,,
+ammoBundle556bAP,items,Gun,New,Box of AP 5.56mm Ammo (100),,,,,
 ammoAB,items,Gun,New,Alien Energy Cell (Ammo),,,,,
 ammoABDesc,items,Gun,New,Ammo used by the Alien Blaster.,,,,,
 ammoEC,items,Gun,New,Energy Cell (Ammo),,,,,
@@ -486,6 +502,8 @@ gunPlasmaRifleSchematic,items,GunRifle,New,Plasma Rifle Schematic
 gunPlasmaRifleSchematicDesc,items,GunRifle,New,Teaches you to craft the Plasma Rifle. Scales with the Advanced Engineering perk.
 gunBAR1Schematic,items,GunRifle,New,BAR Schematic
 gunBAR1SchematicDesc,items,GunRifle,New,Teaches you to craft the BAR. Scales with the Machine Gunner perk.
+gunSCARSchematic,items,GunRifle,New,SCAR Schematic
+gunSCARSchematicDesc,items,GunRifle,New,Teaches you to craft the SCAR. Scales with the Machine Gunner perk.
 gunMiniGSchematic,items,GunRifle,New,Minigun Schematic
 gunMiniGSchematicDesc,items,GunRifle,New,Teaches you to craft the Minigun. Scales with the Machine Gunner perk.
 gunm79Schematic,items,GunRifle,New,M-79 Schematic
@@ -528,6 +546,8 @@ meleeSupaSledge,items,Melee,KgNone,Supa Sledge,,,,,
 meleeSupaSledgeDesc,items,Melee,KgNone,"Modified sledgehammer. Heavy and slow, but very powerful.",,,,,
 meleeGuitar,items,Melee,KgNone,Guitar,,,,,
 meleeGuitarDesc,items,Melee,KgNone,"An old guitar. Probably only good for cracking skulls at this point.",,,,,
+meleeMachete1,items,Melee,KgNone,Survival Machete,,,,,
+meleeMachete1Desc,items,Melee,KgNone,"A worn, short machete.",,,,,
 
 meleeTheBreak,items,Melee,KgNone,[FFC300]The Break[-],,,,,
 meleeTheBreakDesc,items,Melee,KgNone,A custom pool cue. Higher damage and dismemberment.,,,,,
@@ -553,8 +573,12 @@ vehicleVertibirdplaceableDesc,vehicles,item,EnChanged,Old military transport cho
 vehicleVertibirdchassisSchematic,items,Part,EnChanged,Vertibird Chassis Schematic
 vehicleVertibirdenginesSchematic,items,Part,EnChanged,Vertibird Engines Schematic
 
-RaiderLeaderLoot,blocks,Container,New,Raider Leader's Loot
-RaiderLeaderLootDesc,blocks,Container,New,Raider Leader's Loot
+EntityLootContainerRaiderLeader,blocks,Container,New,Leader's Loot
+EntityLootContainerRaiderLeaderDesc,blocks,Container,New,Leader's Loot
+EntityLootContainerMutant,blocks,Container,New,Mutant's Loot
+EntityLootContainerMutantDesc,blocks,Container,New,Mutant's Loot
+EntityLootContainerGhoul,blocks,Container,New,Ghoul's Loot
+EntityLootContainerGhoulDesc,blocks,Container,New,Ghoul's Loot
 resourcePowerArmorRepairKit,item,Items,New,Power Armor Repair Kit
 resourcePowerArmorRepairKitDesc,item,Items,New,Resource kit used to repair Power Armor.
 powerArmorMaster1Desc,armor,Armor,New,"A piece of Power Armor. When anything less than a full set is equipped, there is a mobility penalty. But when a full set is worn, you will get a small movement bonus. Repairs with Power Armor Repair Kit."
@@ -658,6 +682,8 @@ modPowerArmorBootsGyros,item_modifiers,mod,New,Power Armor Enhanced Gyros,,,,,
 modPowerArmorBootsGyrosDesc,item_modifiers,mod,New,Can be installed in Power Armor Boots. Allows you to run faster while using less stamina.,,,,,
 modPowerArmorBootsDampener,item_modifiers,mod,New,Power Armor Fall Dampener,,,,,
 modPowerArmorBootsDampenerDesc,item_modifiers,mod,New,Can be installed in Power Armor Boots. Reduces fall damage by 75%.,,,,,
+modPowerArmorRadResistant,item_modifiers,mod,New,Power Armor Rad Resistant,,,,,
+modPowerArmorRadResistantDesc,item_modifiers,mod,New,Can be installed in Power Armor. Makes you immune to radiation sickness from ghouls.,,,,,
 
 perkWildWasteland,perk,book,New,Wild Wasteland
 perkWildWastelandDesc,perk,book,New,A collection of random knowledge to give you various benefits out in the Wasteland.
@@ -752,3 +778,21 @@ questLetterDesc,items,Quest,New,Some old letter that didn't make it to its inten
 cntPewPewLoot,blocks,Container,New,Hidden Stash
 
 LaserShotgunNoFireDesc,buffs,Tooltip,New,This weapon doesn't have enough cells to fire. Reload with more ammo for it function correctly.
+statCureRadiation,UI,Display,New,Cure Radiation
+buffRadiation01GetBetterDesc,buffs,Buff,New,You have treated mild radiation sickness. Continue anti-radiation medication until the poisoning is cleared up.
+buffRadiation01GetBetterName,buffs,Buff,New,Treated Mild Radiation Poisoning
+buffRadiation01UntreatedDesc,buffs,Buff,New,You have mild radiation poisoning. It will get worse wuickly if you don't find some anti-radiation medicine.
+buffRadiation01UntreatedName,buffs,Buff,New,Mild Radiation Poisoning
+buffRadiation01UntreatedTooltip,buffs,Buff,New,You are sick. Take anti-radiation medicine to avoid symptoms.
+buffRadiation02GetBetterDesc,buffs,Buff,New,You have treated serious radiation poisoning. Continue anti-radiation medication.
+buffRadiation02GetBetterName,buffs,Buff,New,Treated Radiation Poisoning
+buffRadiation02UntreatedDesc,buffs,Buff,New,You have serious radiation poisoning. If left untreated it could lead to severe radiation poisoning which can cause death. Take anti-radiation medication as soon as possible.
+buffRadiation02UntreatedName,buffs,Buff,New,Radiation Poisoning
+buffRadiation03GetBetterDesc,buffs,Buff,New,You have treated life threatening severe radiation poisoning. Continue anti-radiation medication and avoid contact with infectious substances.
+buffRadiation03GetBetterName,buffs,Buff,New,Treated Severe Radiation Poisoning
+buffRadiation03UntreatedDesc,buffs,Buff,New,You have life threatening severe radiation poisoning. Take anti-radiation medication immediately.
+buffRadiation03UntreatedName,buffs,Buff,New,Severe Radiation Poisoning
+buffRadiation04Tooltip,buffs,Buff,New,You have died from radiation poisoning.
+buffRadiationCureDisplayDesc,buffs,Buff,New,You have taken anti-radiation medication which will reduce radiation poisoning that you may be suffering. You can stack anti-radiation medication to increase duration.
+buffRadiationCureDisplayName,buffs,Buff,New,Anti-radiation Medication
+buffRadiationGettingWorseTooltip,buffs,Buff,New,Your radiation poisoning will no longer heal on its own.

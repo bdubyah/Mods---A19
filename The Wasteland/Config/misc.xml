@@ -1,0 +1,6 @@
+<configs>
+	<remove xpath="/iteminfo/animation/hold_type[@id='65']"/>
+	<insertAfter xpath="/iteminfo/animation/hold_type[@id='64']">
+		<hold_type id="65" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" third_person_rotation="-15,180,0" />
+	</insertAfter>
+</configs>

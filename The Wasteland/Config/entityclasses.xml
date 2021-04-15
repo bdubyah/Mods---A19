@@ -85,7 +85,20 @@
 			<property name="SwimStrokeRate" value="1.1,1.5"/>
 			<!-- A19  -->
 			<property name="NavObject" value="clear_sleeper,PAperception,PAperceptionMK2"/>
-			<!-- A19  -->
+			<!-- A19  -->	
+				<!-- RunAway test
+			<property name="AITask-1" value="BreakBlock"/>
+			<property name="AITask-2" value="Territorial"/>
+			<property name="AITask-3" value="RunawayWhenHurt" data="runChance=.4;healthPer=.15;healthPerMax=0.2"/>
+			<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityZombie,10,EntityPlayer,12,EntitySurvivor,0,EntityEnemyAnimal,8"/>
+			<property name="AITask-5" value="ApproachSpot"/>
+			<property name="AITask-6" value="Look"/>
+			<property name="AITask-7" value="Wander"/>
+			<property name="AITask-8" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,10,15,EntityZombie,5,10,EntitySurvivor,10,15,EntityEnemyAnimal,0,0"/> 
+			<property name="AITarget-4" value=""/> -->
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="ApproachDistraction"/>
 			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityEnemyAnimal,0,EntityAnimalRabbit,0,EntityAnimalStag,0"/>"/>
@@ -228,17 +241,15 @@
 			<property name="RightHandJointName" value="Gunjoint"/>
 			<!-- Ranged weapons goes on this child object (Except longbows) -->
 			<property name="HandItem" value="gunBanditHuntingRifle_b"/>
-			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/>
-			<property name="AITask-2" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityZombie,0,EntitySurvivor,0,EntityEnemyAnimal,0,EntityAnimalRabbit,0,EntityAnimalStag,0"/>"/>
-			<property name="AITask-4" value="RunawayWhenHurt" data="runChance=.7;healthPer=.5;healthPerMax=0.75"/>
-			<property name="AITask-5" value="BreakBlock"/>
-			<property name="AITask-6" value="ApproachSpot"/>
-			<property name="AITask-7" value="Territorial"/>
-			<property name="AITask-8" value="Look"/>
-			<property name="AITask-9" value="Wander"/>
-			<property name="AITask-10" value=""/>
-			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityZombie,EntitySurvivor,EntityEnemyAnimal"/>
+			<property name="AITask-1" value="BreakBlock"/>
+			<property name="AITask-2" value="ApproachDistraction"/>
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityEnemyAnimal,0,EntityAnimalRabbit,0,EntityAnimalStag,0"/>"/>
+			<property name="AITask-4" value="ApproachSpot"/>
+			<property name="AITask-5" value="Territorial"/>
+			<property name="AITask-6" value="Look"/>
+			<property name="AITask-7" value="Wander"/>
+			<property name="AITask-8" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityPlayer,EntitySurvivor,EntityEnemyAnimal"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/>
 			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,0,EntitySurvivor,0,0,EntityEnemyAnimal,0,0,EntityAnimalRabbit,0,0,EntityAnimalStag,0,0"/>
 			<property name="AITarget-4" value=""/>
@@ -432,11 +443,11 @@
 			<property name="MaxTurnSpeed" value="250"/>
 			<property name="MoveSpeed" value="0.08"/>
 			<!-- Just shambling around -->
-			<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+			<property name="MoveSpeedAggro" value="0.2, 1.15"/>
 			<!-- Chasing a target min/max (like day or night)-->
-			<property name="MoveSpeedRand" value="-.2, .25"/>
+			<property name="MoveSpeedRand" value="-.1, .15"/>
 			<!-- Rand added to min aggro speed -->
-			<property name="MoveSpeedPanic" value="0.55"/>
+			<property name="MoveSpeedPanic" value="0.35"/>
 			<property name="SwimSpeed" value="1"/>
 			<!-- A19  -->
 			<property name="SwimStrokeRate" value="1,1.5"/>
@@ -780,7 +791,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditSupaSledge_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditSupaSledge_b"/>
 			<property name="ExperienceGain" value="1000"/>
-			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerRaiderLeader"/>
 			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="750"/>
@@ -798,7 +809,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ExperienceGain" value="1000"/>
-			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerRaiderLeader"/>
 			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="750"/>
@@ -814,7 +825,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ExperienceGain" value="1000"/>
-			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerRaiderLeader"/>
 			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="750"/>
@@ -1251,7 +1262,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditSupaSledge_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditSupaSledge_b"/>
 			<property name="ExperienceGain" value="1000"/>
-			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerRaiderLeader"/>
 			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="750"/>
@@ -1269,7 +1280,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle_b,ammoNPC762mmBulletAP_b"/>
 			<property name="ExperienceGain" value="1000"/>
-			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerRaiderLeader"/>
 			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="750"/>
@@ -1285,7 +1296,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAutoShotty_b,ammoNPCShotgunShell_b"/>
 			<property name="ExperienceGain" value="1000"/>
-			<property name="LootDropEntityClass" value="RaiderLeaderLoot"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerRaiderLeader"/>
 			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="750"/>
@@ -1447,20 +1458,7 @@
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 			</effect_group>
-		</entity_class>
-		<!-- Loot Bags -->
-		<entity_class name="RaiderLeaderLoot">
-			<property name="HideInSpawnMenu" value="true"/>
-			<property name="Mesh" value="#Entities/LootContainers?zpackPrefab.prefab"/>
-			<property name="ModelType" value="Custom"/>
-			<property name="Prefab" value="Backpack"/>
-			<property name="Class" value="EntityLootContainer"/>
-			<property name="Parent" value="Backpack"/>
-			<property name="IsEnemyEntity" value="false"/>
-			<property name="TimeStayAfterDeath" value="1200"/>
-			<property name="LootListOnDeath" value="938"/>
-			<property name="Faction" value="none"/>
-		</entity_class>
+		</entity_class>		
 		<!-- Zeds -->
 		<entity_class name="zombieFeralGhoul" extends="zombieStrongTemplate_b">
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
@@ -1470,12 +1468,12 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value=".25"/>
-			<property name="MoveSpeedAggro" value=".5, 1.45"/>
-			<property name="HandItem" value="meleeHandZombieFeral_b"/>
+			<property name="MoveSpeedAggro" value=".5, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieFeral2_b"/>
 			<property name="Mass" value="200"/>
-			<property name="ExperienceGain" value="1000"/>
+			<property name="ExperienceGain" value="1500"/>
 			<property name="LootDropProb" value=".5"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerGhoul"/>
 			<property name="SoundRandom" value="GhoulIdle"/>
 			<property name="SoundAlert" value="GhoulAlert"/>
 			<property name="SoundAttack" value="GhoulAttack"/>
@@ -1484,7 +1482,7 @@
 			<property name="SoundSense" value="GhoulAlert"/>
 			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="5"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="10"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
@@ -1499,7 +1497,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value=".25"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.25"/>
 			<property name="HandItem" value="meleeHandZombieFeral_b"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
@@ -1517,22 +1515,22 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1hordetemplate" extends="zombieStrongTemplate_b">
+		<entity_class name="mutantSM1hordetemplate" extends="zombieStrongTemplate_b">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SM1new"/>
-			<property name="HandItem" value="meleeHandMutant_b"/>
+			<property name="HandItem" value="meleeHandmutant_b"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1500"/>
 			<property name="LootDropProb" value=".5"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-			<property name="SoundRandom" value="MutantIdle"/>
-			<property name="SoundAlert" value="MutantAlert"/>
-			<property name="SoundAttack" value="MutantAttack"/>
-			<property name="SoundHurt" value="MutantHurt"/>
-			<property name="SoundDeath" value="MutantDeath"/>
-			<property name="SoundSense" value="MutantAlert"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerMutant"/>
+			<property name="SoundRandom" value="mutantIdle"/>
+			<property name="SoundAlert" value="mutantAlert"/>
+			<property name="SoundAttack" value="mutantAttack"/>
+			<property name="SoundHurt" value="mutantHurt"/>
+			<property name="SoundDeath" value="mutantDeath"/>
+			<property name="SoundSense" value="mutantAlert"/>
 			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
 			<property name="KnockdownProneDamageThreshold" value="0"/>
 			<property name="KnockdownProneStunDuration" value="0"/>
@@ -1550,9 +1548,9 @@
 			<property name="DismemberMultiplierLegs" value=".2"/>
 			<property name="LegCrippleScale" value=".01"/>
 			<property name="LegCrawlerThreshold" value="0"/>
-			<property name="MoveSpeed" value="0.1"/>
+			<property name="MoveSpeed" value="0.08"/>
 			<!-- Just shambling around -->
-			<property name="MoveSpeedAggro" value="0.4, 1.45"/>
+			<property name="MoveSpeedAggro" value="0.4, 1.15"/>
 			<!-- Chasing a target min/max (like day or night)-->
 			<property name="MoveSpeedRand" value=".1, .25"/>
 			<!-- Rand added to min aggro speed -->
@@ -1566,7 +1564,7 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde1" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde1" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1576,7 +1574,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W1"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde2" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde2" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1586,7 +1584,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W2"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde3" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde3" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1596,7 +1594,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W3"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde4" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde4" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1606,7 +1604,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W4"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde5" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde5" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1616,7 +1614,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W5"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde6" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde6" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1626,7 +1624,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W6"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde7" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde7" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1636,7 +1634,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W7"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1horde8" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1horde8" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,cp,male,zombie,feral"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
@@ -1646,7 +1644,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1W8"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="MutantSM1Bomber" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantSM1Bomber" extends="mutantSM1hordetemplate">
 			<!-- This is just so I can use these guys in wandering and BM hordes since Bandits can't be used -->
 			<property name="Tags" value="entity,zombie,walker,zombieCop"/>
 			<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCopRagdoll.prefab"/>
@@ -1692,7 +1690,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SM1Bomber"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="mutantBehemoth" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantBehemoth" extends="mutantSM1hordetemplate">
 			<property name="Tags" value="entity,cp,male,zombie,walker"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SMBenf"/>
@@ -1700,7 +1698,8 @@
 			<property name="DismemberMultiplierArms" value=".1"/>
 			<property name="DismemberMultiplierLegs" value=".1"/>
 			<property name="PainResistPerHit" value="3"/>
-			<property name="MoveSpeedAggro" value=".5, 1.25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.0"/>
+			<property name="MoveSpeed" value="0.07"/>
 			<property name="WalkType" value="7"/>
 			<property name="HandItem" value="meleeHandMutantBehemoth_b"/>
 			<property name="Mass" value="300"/>
@@ -1720,7 +1719,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SMBW1"/>
 			</effect_group>
 		</entity_class>
-		<entity_class name="mutantBehemoth2" extends="MutantSM1hordetemplate">
+		<entity_class name="mutantBehemoth2" extends="mutantSM1hordetemplate">
 			<property name="Tags" value="entity,cp,male,zombie,walker"/>
 			<property name="PhysicsBody" value="Bandit_b"/>
 			<property name="Mesh" value="#@modfolder:Resources/Ghouls.unity3d?SMBenf"/>
@@ -1728,7 +1727,8 @@
 			<property name="DismemberMultiplierArms" value=".1"/>
 			<property name="DismemberMultiplierLegs" value=".1"/>
 			<property name="PainResistPerHit" value="3"/>
-			<property name="MoveSpeedAggro" value=".5, 1.25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.0"/>
+			<property name="MoveSpeed" value="0.07"/>
 			<property name="WalkType" value="7"/>
 			<property name="HandItem" value="meleeHandMutantBehemoth2_b"/>
 			<property name="Mass" value="300"/>
@@ -1756,7 +1756,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1785,7 +1785,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1814,7 +1814,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1843,7 +1843,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1872,7 +1872,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1901,7 +1901,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1930,7 +1930,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -1959,7 +1959,7 @@
 			<property name="DismemberMultiplierArms" value=".7"/>
 			<property name="DismemberMultiplierLegs" value=".7"/>
 			<property name="PainResistPerHit" value="1.5"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="MoveSpeedAggro" value=".5, 1.15"/>
 			<property name="Mass" value="200"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropProb" value=".75"/>
@@ -2072,6 +2072,43 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="25" />
 			</effect_group>
 		</entity_class> -->
+		<!-- Loot Bags -->
+		<entity_class name="EntityLootContainerRaiderLeader">
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Mesh" value="#Entities/LootContainers?zpackPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="1200"/>
+			<property name="LootListOnDeath" value="938"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		<entity_class name="EntityLootContainerMutant">
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Mesh" value="#Entities/LootContainers?zpackPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="1200"/>
+			<property name="LootListOnDeath" value="944"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		<entity_class name="EntityLootContainerGhoul">
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Mesh" value="#Entities/LootContainers?zpackPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="1200"/>
+			<property name="LootListOnDeath" value="945"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
 		<!-- Vehicles -->
 		<entity_class name="vehicleVertibird">
 			<property name="Tags" value="vehicle"/>

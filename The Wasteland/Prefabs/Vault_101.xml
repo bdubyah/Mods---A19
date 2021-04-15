@@ -21,19 +21,19 @@
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,0,0,0,0,0,0,0,0,0,0,0,2" />
   <property class="Stats">
-    <property name="TotalVertices" value="2188280" />
-    <property name="TotalTriangles" value="2063273" />
+    <property name="TotalVertices" value="2163557" />
+    <property name="TotalTriangles" value="2043345" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1678527" />
-      <property name="Triangles" value="1651081" />
+      <property name="Vertices" value="1646536" />
+      <property name="Triangles" value="1628719" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="308443" />
-      <property name="Triangles" value="164490" />
+      <property name="Vertices" value="317541" />
+      <property name="Triangles" value="170616" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
+      <property name="Vertices" value="128" />
+      <property name="Triangles" value="64" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="824" />
@@ -44,8 +44,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="96354" />
-      <property name="Triangles" value="80526" />
+      <property name="Vertices" value="96426" />
+      <property name="Triangles" value="80562" />
     </property>
     <property class="ChunkMeshes5">
       <property name="Vertices" value="0" />
@@ -56,8 +56,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes7">
-      <property name="Vertices" value="104038" />
-      <property name="Triangles" value="166620" />
+      <property name="Vertices" value="102008" />
+      <property name="Triangles" value="162828" />
     </property>
     <property class="ChunkMeshes8">
       <property name="Vertices" value="94" />
