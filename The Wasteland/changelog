@@ -1,0 +1,29 @@
+Current mod version: 2.1
+Game version: 19.4
+
+-----FIXED/CHANGED-----
+-Added: Feral Ghoul to spawning lists
+-Added: Radiation Sickness (can be contracted from the Feral Ghoul)
+-Added: Rad-B-Gone
+-Added: Rad Resistant Power Armor mod
+-Added: SCAR rifle
+-Added: 5.56 ammo
+-Changed: Minigun, Service Rifle and Tactical AR now use 5.56
+-Changed: All mutants are now zombie class entities
+-Changed: Made Crowbar more effective against blocks
+-Changed: Tweaked several item's economic values
+-Changed: All Sunset Sarsaparillas give Star caps now
+-Changed: Sunset Sarsaparilla flier now costs 100 Star caps
+-Changed: Various loot tweaks (guns, melee, nuka stuff)
+-Changed: Bottlecap Mine now crafted at workbench
+-Changed: Added pipe weapons to a few loot sources
+-Changed: Slightly increased ammo/throwable stack sizes
+-Changed: Katana no longer uses prefab attachments, should fix any visual bugs with it
+-Fixed: Settlement_1 POI missing quest satchel
+-Fixed: Missing Ghoul sounds
+-Fixed: Missing localizations
+-Fixed: 10mm bundle unlocks
+-Fixed: Survival Machete positioning and localization
+-Fixed: Laser Shotgun No Fire buff not working correctly
+-Fixed: Made several custom blocks easier to loot/pick up
+-Fixed: Energy weapons can now shoot through blocks like iron bars
