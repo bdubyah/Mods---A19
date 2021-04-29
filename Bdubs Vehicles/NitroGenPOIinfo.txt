@@ -1,2 +1,0 @@
-Trader_Mechanic,ANY,2,-4,47,22,49,trader
-
